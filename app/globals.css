@@ -14,11 +14,10 @@ body {
   min-height: 100vh;
 }
 
-/* Neon Effects */
 .text-glow {
   text-shadow: 0 0 10px rgba(0, 243, 255, 0.7);
 }
 
 .box-glow {
-  box-shadow: 0 0 20px rgba(255, 0, 85, 0.2);
+  box-shadow: 0 0 20px rgba(255, 0, 85, 0.25);
 }
