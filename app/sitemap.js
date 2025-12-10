@@ -1,9 +1,15 @@
+// app/sitemap.js
 export default function sitemap() {
-  const base = "https://spanishtvshows.com";
+  const baseUrl = "https://spanishtvshows.com";
 
-  return [
-    { url: `${base}/`, lastModified: new Date() },
-    { url: `${base}/learn-spanish`, lastModified: new Date() },
-    { url: `${base}/best-on-netflix`, lastModified: new Date() }
-  ];
+  const routes = ["", "/about", "/terms", "/privacy"];
+
+  const now = new Date().toISOString();
+
+  return routes.map((route) => ({
+    url: `${baseUrl}${route}`,
+    lastModified: now,
+    changeFrequency: "weekly",
+    priority: route === "" ? 1.0 : 0.6,
+  }));
 }
