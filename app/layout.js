@@ -10,11 +10,11 @@ export const metadata = {
     template: "%s | SpanishTVShows.com",
   },
   description:
-    "Live rankings of the best Spanish-language TV shows in 2025. Discover what to watch, where to stream it, and use TV to level up your Spanish.",
+    "Live rankings of the best Spanish-language TV shows in 2025. Trending series, where to watch them, and how to level up your Spanish using TV.",
   openGraph: {
     title: "SpanishTVShows.com – Best Spanish TV Shows Ranked (2025)",
     description:
-      "Discover the top Spanish-language TV shows, where to stream them, and how to use binge-watching to improve your Spanish.",
+      "Discover the best Spanish-language TV shows, streaming links, and language-learning tips updated for 2025.",
     url: "https://spanishtvshows.com",
     siteName: "SpanishTVShows.com",
     type: "website",
@@ -24,7 +24,7 @@ export const metadata = {
         url: "/Screenshot_20251210_151420_Grok.jpg",
         width: 1365,
         height: 768,
-        alt: "SpanishTVShows.com – Ranked Spanish TV shows with streaming and language-learning tips.",
+        alt: "SpanishTVShows.com – Ranked Spanish TV shows with streaming links and language-learning tips.",
       },
     ],
   },
@@ -32,17 +32,19 @@ export const metadata = {
     card: "summary_large_image",
     title: "SpanishTVShows.com – Best Spanish TV Shows Ranked (2025)",
     description:
-      "Ranked Spanish TV shows, where to watch them, and how to learn Spanish faster using your favorite series.",
+      "Ranked Spanish-language series, streaming links, and Spanish-learning hacks powered by TV.",
     images: ["/Screenshot_20251210_151420_Grok.jpg"],
   },
   alternates: {
     canonical: "https://spanishtvshows.com",
   },
-  icons: {
-    icon: "/Screenshot_20251210_150918_Grok.jpg",
-    shortcut: "/Screenshot_20251210_150918_Grok.jpg",
-    apple: "/Screenshot_20251210_150918_Grok.jpg",
-  },
+};
+
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 1,
+  userScalable: false,
 };
 
 export default function RootLayout({ children }) {
@@ -55,7 +57,7 @@ export default function RootLayout({ children }) {
         url: "https://spanishtvshows.com",
         name: "SpanishTVShows.com",
         description:
-          "Ranked Spanish-language TV shows with streaming links and language-learning tips.",
+          "Ranked list of the best Spanish-language TV shows with streaming links and language-learning tips.",
         inLanguage: "en-US",
         publisher: {
           "@id": "https://spanishtvshows.com/#organization",
@@ -74,14 +76,22 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* JSON-LD for rich results */}
+        {/* Structured data */}
         <script
           type="application/ld+json"
           suppressHydrationWarning
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
+        {/* PWA manifest */}
+        <link rel="manifest" href="/manifest.json" />
+        {/* Favicon / browser icon */}
+        <link
+          rel="icon"
+          href="/Screenshot_20251210_150918_Grok.jpg"
+          type="image/jpeg"
+        />
       </head>
-      <body className="bg-dark text-white">
+      <body className="bg-slate-950 text-slate-50">
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />
