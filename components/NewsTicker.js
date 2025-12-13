@@ -1,281 +1,160 @@
 "use client";
 
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function NewsTicker() {
   const [items, setItems] = useState([]);
-  const [status, setStatus] = useState("loading");
-  const [animKey, setAnimKey] = useState(0);
 
   useEffect(() => {
-    let alive = true;
-
-    async function load() {
-      try {
-        setStatus("loading");
-        const res = await fetch("/api/news", { cache: "no-store" });
-        if (!res.ok) throw new Error("bad response");
-        const data = await res.json();
-        if (!alive) return;
-
-        const list = Array.isArray(data?.items) ? data.items : [];
-        setItems(list.slice(0, 18));
-        setStatus("ready");
-        setAnimKey((k) => k + 1); // kick Safari
-      } catch {
-        if (!alive) return;
-        setItems([]);
-        setStatus("error");
-        setAnimKey((k) => k + 1);
-      }
-    }
-
-    load();
-    const t = setInterval(load, 30 * 60 * 1000);
-    return () => {
-      alive = false;
-      clearInterval(t);
-    };
+    fetch("/api/news")
+      .then((r) => r.json())
+      .then((d) => setItems(d.items || []))
+      .catch(() => setItems([]));
   }, []);
 
-  const ready = status === "ready" && items.length > 0;
-  const contentItems = useMemo(() => items.slice(0, 18), [items]);
-
-  function ContentBlock({ ariaHidden, tabIndex }) {
-    return (
-      <div className="content" aria-hidden={ariaHidden}>
-        {contentItems.map((it, i) => (
-          <a
-            key={`${it.link}-${ariaHidden ? "dup" : "a"}-${i}`}
-            href={it.link}
-            target="_blank"
-            rel="noreferrer"
-            className="item"
-            tabIndex={tabIndex}
-          >
-            <span className="dot">•</span>
-            <span className="text">{it.title}</span>
-          </a>
-        ))}
-      </div>
-    );
-  }
-
   return (
-    <div className="tickerWrap" aria-label="Spanish TV entertainment headlines">
-      {/* DESKTOP */}
-      <div className="tickerDesktop">
-        <span className="label">NEWS UPDATE:</span>
+    <div className="ticker-root">
+      <div className="ticker-row">
+        <span className="ticker-label">NEWS UPDATE:</span>
 
-        <div className="viewport">
-          {ready ? (
-            <div key={animKey} className="track trackDesktop">
-              <ContentBlock ariaHidden={false} tabIndex={0} />
-              <ContentBlock ariaHidden={true} tabIndex={-1} />
-            </div>
-          ) : (
-            <div className="idleRow">
-              <span className="item muted">Loading Spanish TV headlines…</span>
-            </div>
-          )}
-        </div>
-      </div>
-
-      {/* MOBILE */}
-      <div className="tickerMobile">
-        <div className="pill">News Update</div>
-
-        <div className="viewport">
-          {ready ? (
-            <div key={`m-${animKey}`} className="track trackMobile">
-              <ContentBlock ariaHidden={false} tabIndex={0} />
-              <ContentBlock ariaHidden={true} tabIndex={-1} />
-            </div>
-          ) : (
-            <div className="idleRow">
-              <span className="item muted">Loading Spanish TV headlines…</span>
-            </div>
-          )}
+        <div className="ticker-viewport">
+          <div className="ticker-track">
+            {[...items, ...items].map((it, i) => (
+              <a
+                key={i}
+                href={it.link}
+                target="_blank"
+                rel="noreferrer"
+                className="ticker-item"
+              >
+                • {it.title}
+              </a>
+            ))}
+          </div>
         </div>
       </div>
 
       <style jsx>{`
-        .tickerWrap {
-          width: 100%;
-          background: rgba(0, 0, 0, 0.72);
+        /* ROOT — sits BELOW sticky header */
+        .ticker-root {
+          position: relative;
+          z-index: 20;
+          background: rgba(0, 0, 0, 0.85);
           border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-          backdrop-filter: blur(10px);
+          margin-top: 64px; /* 👈 HEADER HEIGHT — adjust if needed */
+          transform: translateZ(0);
+          -webkit-transform: translateZ(0);
         }
 
-        /* DESKTOP ROW: lock alignment */
-        .tickerDesktop {
+        /* ROW */
+        .ticker-row {
           display: flex;
-          align-items: center; /* key */
-          padding: 0 18px; /* vertical handled by fixed height */
-          height: 44px; /* key: same row height every time */
-          width: 100%;
+          align-items: center;
+          height: 40px;
+          padding: 0 16px;
+          overflow: hidden;
         }
 
-        .label {
-          flex: 0 0 auto;
-          font-weight: 900;
-          font-size: 14px;
-          letter-spacing: 0.12em;
-          text-transform: uppercase;
-          color: #ffb000;
-          white-space: nowrap;
-          line-height: 44px; /* key: matches row height */
+        .ticker-label {
+          flex-shrink: 0;
           margin-right: 14px;
-        }
-
-        /* MOBILE */
-        .tickerMobile {
-          display: none;
-          padding: 12px;
-        }
-
-        .pill {
-          display: inline-block;
           font-weight: 900;
           font-size: 13px;
           letter-spacing: 0.12em;
           text-transform: uppercase;
-          padding: 6px 12px;
-          border-radius: 999px;
-          background: rgba(255, 176, 0, 0.18);
-          border: 1px solid rgba(255, 176, 0, 0.35);
           color: #ffb000;
-          margin-bottom: 8px;
+          white-space: nowrap;
         }
 
-        /* VIEWPORT: center the animated line vertically */
-        .viewport {
-          flex: 1 1 auto;
-          overflow: hidden;
-          height: 44px; /* same as row */
-          display: flex; /* key */
-          align-items: center; /* key */
+        /* VIEWPORT */
+        .ticker-viewport {
           position: relative;
-          transform: translateZ(0);
-          -webkit-transform: translateZ(0);
+          overflow: hidden;
+          flex: 1;
         }
 
-        .idleRow {
-          display: flex;
-          align-items: center;
-          height: 44px;
-        }
-
-        /* TRACK */
-        .track {
+        /* TRACK — FAST ENOUGH FOR SAFARI */
+        .ticker-track {
           display: inline-flex;
-          width: max-content;
+          white-space: nowrap;
+          animation: scroll-desktop 28s linear infinite;
+          -webkit-animation: scroll-desktop 28s linear infinite;
           will-change: transform;
           transform: translate3d(0, 0, 0);
-          -webkit-transform: translate3d(0, 0, 0);
-          backface-visibility: hidden;
-          -webkit-backface-visibility: hidden;
         }
 
-        .content {
-          display: inline-flex;
-          width: max-content;
-          white-space: nowrap;
-          align-items: center; /* key */
-        }
-
-        .trackDesktop {
-          animation: move 60s linear infinite;
-          -webkit-animation: move 60s linear infinite;
-        }
-
-        .trackMobile {
-          animation: move 50s linear infinite;
-          -webkit-animation: move 50s linear infinite;
-        }
-
-        .tickerDesktop .viewport:hover .trackDesktop {
-          animation-play-state: paused;
-          -webkit-animation-play-state: paused;
-        }
-
-        /* ITEMS: match row vertical rhythm */
-        .item {
-          display: inline-flex;
-          align-items: center;
-          flex: 0 0 auto;
-          text-decoration: none;
-          color: rgba(255, 255, 255, 0.95);
-          font-weight: 900;
-          font-size: 15px;
-          line-height: 44px; /* key: aligns with label */
-          margin-right: 26px;
-          transform: translateZ(0);
-          -webkit-transform: translateZ(0);
-          white-space: nowrap;
-        }
-
-        .item:hover {
-          color: #ffb000;
-        }
-
-        .muted {
-          color: rgba(255, 255, 255, 0.6);
+        .ticker-item {
+          display: inline-block;
+          margin-right: 28px;
           font-weight: 800;
           font-size: 14px;
-          margin-right: 0;
-          line-height: 44px;
-        }
-
-        .dot {
-          color: #ffb000;
-          margin-right: 10px;
-          flex: 0 0 auto;
-        }
-
-        .text {
-          display: inline-block;
-          max-width: 75vw;
-          overflow: hidden;
-          text-overflow: ellipsis;
+          color: #ffffff;
+          text-decoration: none;
           white-space: nowrap;
         }
 
-        @-webkit-keyframes move {
-          0% {
-            -webkit-transform: translate3d(0, 0, 0);
+        .ticker-item:hover {
+          color: #ffb000;
+        }
+
+        /* DESKTOP KEYFRAMES */
+        @keyframes scroll-desktop {
+          from {
+            transform: translateX(0);
           }
-          100% {
-            -webkit-transform: translate3d(-50%, 0, 0);
+          to {
+            transform: translateX(-50%);
           }
         }
 
-        @keyframes move {
-          0% {
-            transform: translate3d(0, 0, 0);
+        @-webkit-keyframes scroll-desktop {
+          from {
+            -webkit-transform: translateX(0);
           }
-          100% {
-            transform: translate3d(-50%, 0, 0);
+          to {
+            -webkit-transform: translateX(-50%);
           }
         }
 
+        /* 🚨 SAFARI / iOS OVERRIDE 🚨 */
+        @supports (-webkit-touch-callout: none) {
+          .ticker-track {
+            animation: scroll-safari 18s linear infinite;
+            -webkit-animation: scroll-safari 18s linear infinite;
+          }
+
+          @keyframes scroll-safari {
+            from {
+              transform: translate3d(0, 0, 0);
+            }
+            to {
+              transform: translate3d(-50%, 0, 0);
+            }
+          }
+
+          @-webkit-keyframes scroll-safari {
+            from {
+              -webkit-transform: translate3d(0, 0, 0);
+            }
+            to {
+              -webkit-transform: translate3d(-50%, 0, 0);
+            }
+          }
+        }
+
+        /* MOBILE */
         @media (max-width: 768px) {
-          .tickerDesktop {
-            display: none;
+          .ticker-root {
+            margin-top: 56px; /* slightly smaller header */
           }
-          .tickerMobile {
-            display: block;
+
+          .ticker-row {
+            height: 36px;
           }
-          .viewport {
-            height: 34px;
-          }
-          .item {
-            font-size: 16px;
+
+          .ticker-item {
+            font-size: 15px;
             font-weight: 900;
-            line-height: 1.25;
-          }
-          .text {
-            max-width: 85vw;
           }
         }
       `}</style>
