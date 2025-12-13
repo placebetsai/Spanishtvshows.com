@@ -2,10 +2,56 @@
 
 import { useEffect, useMemo, useState } from "react";
 
+const KEYWORDS = [
+  "Netflix",
+  "HBO",
+  "HBO Max",
+  "Max",
+  "Telemundo",
+  "Univision",
+  "ViX",
+  "Vix",
+  "Prime Video",
+  "Amazon",
+  "Disney+",
+  "Disney Plus",
+  "Apple TV+",
+  "Apple TV Plus",
+];
+
+function escapeRegExp(s) {
+  return s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+}
+
+function highlightTitle(title) {
+  const t = String(title || "");
+  if (!t) return t;
+
+  // longest-first so "HBO Max" beats "HBO"
+  const sorted = [...KEYWORDS].sort((a, b) => b.length - a.length);
+  const pattern = new RegExp(`(${sorted.map(escapeRegExp).join("|")})`, "gi");
+
+  const parts = t.split(pattern);
+  return parts.map((part, idx) => {
+    if (!part) return null;
+    const isKeyword = sorted.some((k) => k.toLowerCase() === part.toLowerCase());
+    return isKeyword ? (
+      <span key={idx} className="kw">
+        {part}
+      </span>
+    ) : (
+      <span key={idx}>{part}</span>
+    );
+  });
+}
+
 export default function NewsTicker() {
   const [items, setItems] = useState([]);
   const [ready, setReady] = useState(false);
   const [runKey, setRunKey] = useState(0);
+
+  // tap-to-pause (mobile)
+  const [pausedMobile, setPausedMobile] = useState(false);
 
   useEffect(() => {
     let alive = true;
@@ -45,7 +91,6 @@ export default function NewsTicker() {
   }, []);
 
   const contentItems = useMemo(() => items.slice(0, 18), [items]);
-
   const hasItems = contentItems.length > 0;
 
   return (
@@ -70,9 +115,10 @@ export default function NewsTicker() {
                     target="_blank"
                     rel="noreferrer"
                     className="item"
+                    title={it.title}
                   >
                     <span className="dot">•</span>
-                    <span className="text">{it.title}</span>
+                    <span className="text">{highlightTitle(it.title)}</span>
                   </a>
                 ))}
               </div>
@@ -86,9 +132,10 @@ export default function NewsTicker() {
                     rel="noreferrer"
                     className="item"
                     tabIndex={-1}
+                    title={it.title}
                   >
                     <span className="dot">•</span>
-                    <span className="text">{it.title}</span>
+                    <span className="text">{highlightTitle(it.title)}</span>
                   </a>
                 ))}
               </div>
@@ -97,17 +144,28 @@ export default function NewsTicker() {
         </div>
       </div>
 
-      {/* MOBILE (capsule stays) */}
+      {/* MOBILE (subtle label + tap-to-pause) */}
       <div className="mobileRow">
-        <div className="pill">News Update</div>
+        <div className="mobileLabel">
+          <span className="mobileDot">•</span>
+          <span className="mobileText">News Update</span>
+          <span className="tapHint">{pausedMobile ? "Paused" : "Tap to pause"}</span>
+        </div>
 
-        <div className="viewport">
+        <div
+          className="viewport"
+          role="button"
+          aria-label="Tap to pause or resume headlines"
+          onClick={() => setPausedMobile((p) => !p)}
+        >
           {!hasItems ? (
             <div className="idle">Loading Spanish TV headlines…</div>
           ) : (
             <div
               key={`m-${runKey}`}
-              className={`track ${ready ? "run mobileSpeed" : ""}`}
+              className={`track ${ready ? "run mobileSpeed" : ""} ${
+                pausedMobile ? "paused" : ""
+              }`}
             >
               <div className="content">
                 {contentItems.map((it, i) => (
@@ -117,9 +175,15 @@ export default function NewsTicker() {
                     target="_blank"
                     rel="noreferrer"
                     className="item"
+                    title={it.title}
+                    onClick={(e) => {
+                      // If pausedMobile toggle was intended, allow it; but don't block link taps.
+                      // If you want "tap pauses only, second tap opens link", tell me.
+                      e.stopPropagation();
+                    }}
                   >
                     <span className="dot">•</span>
-                    <span className="text">{it.title}</span>
+                    <span className="text">{highlightTitle(it.title)}</span>
                   </a>
                 ))}
               </div>
@@ -133,9 +197,11 @@ export default function NewsTicker() {
                     rel="noreferrer"
                     className="item"
                     tabIndex={-1}
+                    title={it.title}
+                    onClick={(e) => e.stopPropagation()}
                   >
                     <span className="dot">•</span>
-                    <span className="text">{it.title}</span>
+                    <span className="text">{highlightTitle(it.title)}</span>
                   </a>
                 ))}
               </div>
@@ -145,7 +211,6 @@ export default function NewsTicker() {
       </div>
 
       <style jsx>{`
-        /* NO margin-top. No black gap. */
         .tickerRoot {
           width: 100%;
           background: rgba(0, 0, 0, 0.72);
@@ -183,21 +248,37 @@ export default function NewsTicker() {
           padding: 10px 12px 12px;
         }
 
-        .pill {
-          display: inline-block;
-          font-weight: 900;
-          font-size: 13px;
-          letter-spacing: 0.12em;
-          text-transform: uppercase;
-          padding: 6px 12px;
-          border-radius: 999px;
-          background: rgba(255, 176, 0, 0.18);
-          border: 1px solid rgba(255, 176, 0, 0.35);
-          color: #ffb000;
-          margin-bottom: 8px;
+        .mobileLabel {
+          display: flex;
+          align-items: baseline;
+          gap: 8px;
+          margin-bottom: 6px;
         }
 
-        /* VIEWPORT */
+        .mobileDot {
+          color: #ffb000;
+          font-size: 18px;
+          line-height: 1;
+        }
+
+        .mobileText {
+          font-weight: 900;
+          font-size: 12px;
+          letter-spacing: 0.14em;
+          text-transform: uppercase;
+          color: #ffb000;
+        }
+
+        .tapHint {
+          margin-left: auto;
+          font-size: 11px;
+          font-weight: 800;
+          color: rgba(255, 255, 255, 0.55);
+          letter-spacing: 0.04em;
+          text-transform: uppercase;
+        }
+
+        /* VIEWPORT + EDGE FADE */
         .viewport {
           flex: 1 1 auto;
           overflow: hidden;
@@ -206,6 +287,37 @@ export default function NewsTicker() {
           align-items: center;
           transform: translateZ(0);
           -webkit-transform: translateZ(0);
+          position: relative;
+        }
+
+        /* gradient fade edges */
+        .viewport::before,
+        .viewport::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          width: 44px;
+          pointer-events: none;
+          z-index: 3;
+        }
+
+        .viewport::before {
+          left: 0;
+          background: linear-gradient(
+            to right,
+            rgba(0, 0, 0, 0.95),
+            rgba(0, 0, 0, 0)
+          );
+        }
+
+        .viewport::after {
+          right: 0;
+          background: linear-gradient(
+            to left,
+            rgba(0, 0, 0, 0.95),
+            rgba(0, 0, 0, 0)
+          );
         }
 
         .idle {
@@ -234,24 +346,30 @@ export default function NewsTicker() {
           white-space: nowrap;
         }
 
-        /* Start animation only when ready (prevents Safari vanish) */
+        /* start animation only when ready */
         .run.desktopSpeed {
-          animation: move 80s linear infinite;
-          -webkit-animation: move 80s linear infinite;
+          animation: move 86s linear infinite;
+          -webkit-animation: move 86s linear infinite;
         }
 
         .run.mobileSpeed {
-          animation: move 55s linear infinite;
+          animation: move 55s linear infinite; /* unchanged */
           -webkit-animation: move 55s linear infinite;
         }
 
-        /* Pause on hover desktop */
+        /* pause on hover (desktop) */
         .desktopRow .viewport:hover .run.desktopSpeed {
           animation-play-state: paused;
           -webkit-animation-play-state: paused;
         }
 
-        /* Items: no flex-gap inside animation (Safari hates it) */
+        /* tap-to-pause (mobile) */
+        .paused {
+          animation-play-state: paused !important;
+          -webkit-animation-play-state: paused !important;
+        }
+
+        /* Items: no flex-gap inside animation */
         .item {
           display: inline-flex;
           align-items: center;
@@ -282,6 +400,12 @@ export default function NewsTicker() {
           text-overflow: ellipsis;
           white-space: nowrap;
           display: inline-block;
+        }
+
+        /* keyword color pop */
+        :global(.kw) {
+          color: #ffb000;
+          font-weight: 950;
         }
 
         /* Safari-safe keyframes */
@@ -319,6 +443,10 @@ export default function NewsTicker() {
           }
           .text {
             max-width: 85vw;
+          }
+          .viewport::before,
+          .viewport::after {
+            width: 34px;
           }
         }
       `}</style>
