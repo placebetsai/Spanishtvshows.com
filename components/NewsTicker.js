@@ -77,7 +77,7 @@ export default function NewsTicker() {
         .ticker-track {
           display: inline-flex;
           white-space: nowrap;
-          animation: scroll-desktop 28s linear infinite;
+          animation: scroll-desktop 60s linear infinite;
           -webkit-animation: scroll-desktop 28s linear infinite;
           will-change: transform;
           transform: translate3d(0, 0, 0);
@@ -119,7 +119,7 @@ export default function NewsTicker() {
         /* 🚨 SAFARI / iOS OVERRIDE 🚨 */
         @supports (-webkit-touch-callout: none) {
           .ticker-track {
-            animation: scroll-safari 18s linear infinite;
+            animation: scroll-safari 50s linear infinite;
             -webkit-animation: scroll-safari 18s linear infinite;
           }
 
