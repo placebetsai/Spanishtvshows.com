@@ -236,8 +236,8 @@ export default function NewsTicker() {
 
         /* Start animation only when ready (prevents Safari vanish) */
         .run.desktopSpeed {
-          animation: move 70s linear infinite;
-          -webkit-animation: move 70s linear infinite;
+          animation: move 80s linear infinite;
+          -webkit-animation: move 80s linear infinite;
         }
 
         .run.mobileSpeed {
