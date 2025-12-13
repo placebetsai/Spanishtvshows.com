@@ -149,7 +149,7 @@ export default function NewsTicker() {
         <div className="mobileLabel">
           <span className="mobileDot">•</span>
           <span className="mobileText">News Update</span>
-          <span className="tapHint">{pausedMobile ? "Paused" : "Tap to pause"}</span>
+          <span className="tapHint">{pausedMobile ? "Paused" : "Tap to open"}</span>
         </div>
 
         <div
