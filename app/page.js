@@ -1,12 +1,11 @@
 // app/page.js
 import Link from "next/link";
 import { FireIcon, StarIcon } from "@heroicons/react/24/solid";
+import NewsTicker from "../components/NewsTicker";
 
 async function getTopSpanish() {
   const apiKey = process.env.TMDB_API_KEY;
-  if (!apiKey) {
-    return [];
-  }
+  if (!apiKey) return [];
 
   try {
     const res = await fetch(
@@ -27,6 +26,9 @@ export default async function Home() {
 
   return (
     <div className="bg-dark min-h-screen">
+      {/* NEWS TICKER (above hero, homepage only) */}
+      <NewsTicker />
+
       {/* ===================== HERO – #1 SHOW FULL BACKGROUND ===================== */}
       <section
         className="relative overflow-hidden"
@@ -56,9 +58,9 @@ export default async function Home() {
           </h1>
 
           <p className="text-gray-300 text-base md:text-lg max-w-2xl mx-auto font-mono mb-8">
-            Spanish-language TV is cooking your favorite English shows.
-            Narcos, Elite, novelas, crime – 600M+ people know what’s really
-            good. We just say it out loud.
+            Spanish-language TV is cooking your favorite English shows. Narcos,
+            Elite, novelas, crime – 600M+ people know what’s really good. We
+            just say it out loud.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -85,40 +87,28 @@ export default async function Home() {
               {topShow.vote_average
                 ? `${topShow.vote_average.toFixed(1)}★`
                 : "No rating"}{" "}
-              •{" "}
-              {Math.round(topShow.popularity || 0)}
-              {" HEAT"}
+              • {Math.round(topShow.popularity || 0)} {" HEAT"}
             </p>
           )}
         </div>
       </section>
 
       {/* ===================== TOP 10 GRID ===================== */}
-      <section
-        id="top10"
-        className="max-w-7xl mx-auto px-6 pb-20 pt-12 md:pt-16"
-      >
+      <section id="top10" className="max-w-7xl mx-auto px-6 pb-20 pt-12 md:pt-16">
         <h2 className="text-3xl md:text-4xl font-black tracking-tight text-center mb-4">
-          Top 10 Spanish Shows Destroying{" "}
-          <span className="text-neon">2025</span>
+          Top 10 Spanish Shows Destroying <span className="text-neon">2025</span>
         </h2>
         <p className="text-gray-400 text-sm md:text-base text-center mb-10 max-w-2xl mx-auto font-mono">
-          Data from TMDB · Sorted by global heat · Not sponsored. If it’s mid,
-          it doesn’t make the list.
+          Data from TMDB · Sorted by global heat · Not sponsored. If it’s mid, it
+          doesn’t make the list.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
           {shows.slice(0, 10).map((show, index) => (
-            <Link
-              key={show.id}
-              href={`/show/${show.id}`}
-              className="group block relative"
-            >
+            <Link key={show.id} href={`/show/${show.id}`} className="group block relative">
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden mb-4 border border-gray-800 group-hover:border-neon transition-colors box-glow">
                 <img
-                  src={`https://image.tmdb.org/t/p/w500${
-                    show.backdrop_path || show.poster_path
-                  }`}
+                  src={`https://image.tmdb.org/t/p/w500${show.backdrop_path || show.poster_path}`}
                   alt={show.name}
                   className="w-full h-full object-cover opacity-75 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
                 />
@@ -132,29 +122,20 @@ export default async function Home() {
                   }`}
                 >
                   #{index + 1}{" "}
-                  {index === 0
-                    ? "🔥🔥🔥"
-                    : index === 1
-                    ? "🔥🔥"
-                    : index === 2
-                    ? "🔥"
-                    : ""}
+                  {index === 0 ? "🔥🔥🔥" : index === 1 ? "🔥🔥" : index === 2 ? "🔥" : ""}
                 </div>
               </div>
 
               <div className="flex items-center gap-3 text-[0.7rem] md:text-xs font-bold text-hot mb-2">
                 <span className="flex items-center">
-                  <FireIcon className="h-3 w-3 mr-1" />{" "}
-                  {Math.round(show.popularity || 0)} HEAT
+                  <FireIcon className="h-3 w-3 mr-1" /> {Math.round(show.popularity || 0)} HEAT
                 </span>
                 <span className="flex items-center text-yellow-400">
                   <StarIcon className="h-3 w-3 mr-1" />
                   {show.vote_average ? show.vote_average.toFixed(1) : "N/A"}
                 </span>
                 {show.first_air_date && (
-                  <span className="text-gray-500">
-                    {show.first_air_date.slice(0, 4)}
-                  </span>
+                  <span className="text-gray-500">{show.first_air_date.slice(0, 4)}</span>
                 )}
               </div>
 
@@ -181,10 +162,7 @@ export default async function Home() {
             Best Spanish TV Shows 2025 – Netflix, HBO Max, Prime Video, ViX
           </h3>
           <p className="text-gray-400 text-sm md:text-base leading-relaxed">
-            We rank Spanish-language series from Spain, Mexico, Colombia,
-            Argentina and across Latin America – crime, novelas, dystopian
-            stuff, comedies and everything in between. If you’re tired of mid
-            English shows, this is your watchlist.
+            We rank Spanish-language series from Spain, Mexico, Colombia, Argentina and across Latin America – crime, novelas, dystopian stuff, comedies and everything in between. If you’re tired of mid English shows, this is your watchlist.
           </p>
 
           <p className="text-gray-400 text-sm md:text-base leading-relaxed">
@@ -192,8 +170,7 @@ export default async function Home() {
             <span className="text-gray-200 font-semibold">
               Netflix, HBO Max, Prime Video, Disney+, ViX, and other platforms
             </span>
-            . We use live data from TMDB and real viewer scores – no studio
-            marketing, no fake hype.
+            . We use live data from TMDB and real viewer scores – no studio marketing, no fake hype.
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 pt-2">
@@ -212,11 +189,10 @@ export default async function Home() {
           </div>
 
           <p className="text-[0.7rem] md:text-xs text-gray-500 font-mono pt-2">
-            Spanishtvshows.com is for Spanish speakers & Latinos who know their
-            TV is better. English-speakers are welcome to cry in the comments.
+            Spanishtvshows.com is for Spanish speakers & Latinos who know their TV is better. English-speakers are welcome to cry in the comments.
           </p>
         </div>
       </section>
     </div>
   );
-              }
+}
