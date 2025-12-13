@@ -4,21 +4,18 @@ import { useEffect, useMemo, useState } from "react";
 
 export default function NewsTicker() {
   const [items, setItems] = useState([]);
-  const [status, setStatus] = useState("loading"); // loading | ready | error
+  const [status, setStatus] = useState("loading");
 
   useEffect(() => {
     let alive = true;
 
     async function load() {
       try {
-        setStatus("loading");
         const res = await fetch("/api/news", { cache: "no-store" });
         if (!res.ok) throw new Error("bad response");
         const data = await res.json();
         if (!alive) return;
-
-        const list = Array.isArray(data?.items) ? data.items : [];
-        setItems(list.slice(0, 18));
+        setItems((data.items || []).slice(0, 18));
         setStatus("ready");
       } catch {
         if (!alive) return;
@@ -35,28 +32,26 @@ export default function NewsTicker() {
     };
   }, []);
 
-  const loopItems = useMemo(() => {
-    if (!items.length) return [];
-    return [...items, ...items];
-  }, [items]);
+  const loopItems = useMemo(
+    () => (items.length ? [...items, ...items] : []),
+    [items]
+  );
 
-  const isEmpty = status !== "ready" || loopItems.length === 0;
+  const empty = status !== "ready" || !loopItems.length;
 
   return (
-    <div className="tickerWrap" aria-label="Spanish TV entertainment headlines">
+    <div className="tickerWrap">
       {/* DESKTOP */}
       <div className="tickerDesktop">
-        <div className="label">News Update:</div>
+        <span className="label">NEWS UPDATE:</span>
         <div className="viewport">
-          <div className={`track trackDesktop ${isEmpty ? "trackIdle" : ""}`}>
-            {isEmpty ? (
-              <span className="item muted">
-                Loading Spanish & Latin entertainment headlines…
-              </span>
+          <div className={`track trackDesktop ${empty ? "idle" : ""}`}>
+            {empty ? (
+              <span className="item muted">Loading Spanish TV headlines…</span>
             ) : (
-              loopItems.map((it, idx) => (
+              loopItems.map((it, i) => (
                 <a
-                  key={`${it.link}-${idx}`}
+                  key={`${it.link}-${i}`}
                   href={it.link}
                   target="_blank"
                   rel="noreferrer"
@@ -75,15 +70,13 @@ export default function NewsTicker() {
       <div className="tickerMobile">
         <div className="pill">News Update</div>
         <div className="viewport">
-          <div className={`track trackMobile ${isEmpty ? "trackIdle" : ""}`}>
-            {isEmpty ? (
-              <span className="item muted">
-                Loading Spanish & Latin entertainment headlines…
-              </span>
+          <div className={`track trackMobile ${empty ? "idle" : ""}`}>
+            {empty ? (
+              <span className="item muted">Loading Spanish TV headlines…</span>
             ) : (
-              loopItems.map((it, idx) => (
+              loopItems.map((it, i) => (
                 <a
-                  key={`${it.link}-m-${idx}`}
+                  key={`${it.link}-m-${i}`}
                   href={it.link}
                   target="_blank"
                   rel="noreferrer"
@@ -102,44 +95,40 @@ export default function NewsTicker() {
         .tickerWrap {
           width: 100%;
           background: rgba(0, 0, 0, 0.7);
-          border-bottom: 1px solid rgba(255, 255, 255, 0.06);
+          border-bottom: 1px solid rgba(255, 255, 255, 0.08);
           backdrop-filter: blur(10px);
         }
 
-        /* ---------- DESKTOP ---------- */
+        /* DESKTOP */
         .tickerDesktop {
           display: flex;
           align-items: center;
-          gap: 12px;
-          padding: 12px 18px;
+          padding: 14px 20px;
           max-width: 1200px;
           margin: 0 auto;
         }
 
         .label {
           font-weight: 900;
-          font-size: 13px;
-          letter-spacing: 0.1em;
+          font-size: 14px;
+          letter-spacing: 0.12em;
           text-transform: uppercase;
-          padding: 6px 12px;
-          border-radius: 999px;
-          background: rgba(255, 176, 0, 0.18);
-          border: 1px solid rgba(255, 176, 0, 0.35);
           color: #ffb000;
           white-space: nowrap;
+          margin-right: 14px; /* no flex gap */
+          flex: 0 0 auto;
         }
 
-        /* ---------- MOBILE ---------- */
+        /* MOBILE */
         .tickerMobile {
           display: none;
           padding: 12px;
         }
 
         .pill {
-          display: inline-flex;
           font-weight: 900;
           font-size: 13px;
-          letter-spacing: 0.1em;
+          letter-spacing: 0.12em;
           text-transform: uppercase;
           padding: 6px 12px;
           border-radius: 999px;
@@ -147,33 +136,36 @@ export default function NewsTicker() {
           border: 1px solid rgba(255, 176, 0, 0.35);
           color: #ffb000;
           margin-bottom: 8px;
+          display: inline-block;
         }
 
-        /* ---------- SHARED ---------- */
+        /* SHARED */
         .viewport {
           overflow: hidden;
           width: 100%;
-          min-height: 28px;
+          min-height: 34px; /* more vertical room for bold fonts */
+          -webkit-transform: translateZ(0);
         }
 
         .track {
-          display: inline-flex;
+          display: flex;
           align-items: center;
-          gap: 22px;
           white-space: nowrap;
+          flex-wrap: nowrap;
           will-change: transform;
           transform: translate3d(0, 0, 0);
+          -webkit-transform: translate3d(0, 0, 0);
         }
 
         /* SPEED CONTROL */
         .trackDesktop {
-          animation: tickerMove 90s linear infinite;
-          -webkit-animation: tickerMove 90s linear infinite;
+          animation: move 90s linear infinite;
+          -webkit-animation: move 90s linear infinite;
         }
 
         .trackMobile {
-          animation: tickerMove 70s linear infinite;
-          -webkit-animation: tickerMove 70s linear infinite;
+          animation: move 70s linear infinite;
+          -webkit-animation: move 70s linear infinite;
         }
 
         .tickerDesktop .viewport:hover .track {
@@ -181,19 +173,25 @@ export default function NewsTicker() {
           -webkit-animation-play-state: paused;
         }
 
-        .trackIdle {
+        .idle {
           animation: none !important;
+          -webkit-animation: none !important;
           transform: none !important;
+          -webkit-transform: none !important;
         }
 
+        /* IMPORTANT: no flex-gap; use margins for Safari */
         .item {
           display: inline-flex;
           align-items: center;
-          gap: 10px;
-          font-size: 15px; /* BIGGER */
-          font-weight: 800; /* BOLDER */
-          color: rgba(255, 255, 255, 0.92);
+          flex: 0 0 auto;
           text-decoration: none;
+          color: rgba(255, 255, 255, 0.95);
+          font-size: 15px;
+          font-weight: 900;
+          line-height: 1.25; /* prevents overlap */
+          margin-right: 26px; /* spacing instead of gap */
+          -webkit-transform: translateZ(0);
         }
 
         .item:hover {
@@ -202,19 +200,27 @@ export default function NewsTicker() {
 
         .muted {
           font-size: 14px;
-          font-weight: 600;
+          font-weight: 700;
           color: rgba(255, 255, 255, 0.6);
+          margin-right: 0;
         }
 
         .dot {
           color: #ffb000;
+          margin-right: 10px; /* spacing instead of gap */
+          flex: 0 0 auto;
         }
 
         .text {
-          max-width: 75vw;
+          display: inline-block;
+          max-width: 80vw;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
         }
 
-        @-webkit-keyframes tickerMove {
+        /* Safari-safe keyframes */
+        @-webkit-keyframes move {
           0% {
             -webkit-transform: translate3d(0, 0, 0);
           }
@@ -223,7 +229,7 @@ export default function NewsTicker() {
           }
         }
 
-        @keyframes tickerMove {
+        @keyframes move {
           0% {
             transform: translate3d(0, 0, 0);
           }
@@ -240,7 +246,7 @@ export default function NewsTicker() {
             display: block;
           }
           .item {
-            font-size: 16px; /* EXTRA BIG on mobile */
+            font-size: 16px;
             font-weight: 900;
           }
         }
