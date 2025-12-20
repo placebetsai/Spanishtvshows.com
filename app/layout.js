@@ -66,6 +66,13 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
+        {/* Google AdSense – SAFE, async, non-blocking */}
+        <script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-013785725476350"
+          crossOrigin="anonymous"
+        />
+
         {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
@@ -73,10 +80,8 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
 
-        {/* Link the manifest so favicons actually work */}
         <link rel="manifest" href="/manifest.json" />
 
-        {/* Extra favicons for browsers */}
         <link
           rel="icon"
           href="/Screenshot_20251210_150918_Grok.jpg"
