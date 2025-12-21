@@ -1,0 +1,31 @@
+name: Generate Spanish Pages
+
+on:
+  schedule:
+    - cron: "0 13 * * *" # daily
+  workflow_dispatch:
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - run: npm ci
+
+      - name: Generate pages
+        env:
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+        run: node scripts/generate-spanish-pages.cjs
+
+      - name: Commit & push if changed
+        run: |
+          git config user.name "spanishtvshows-bot"
+          git config user.email "bot@spanishtvshows.com"
+          git add content/generated
+          git diff --cached --quiet || (git commit -m "Auto-generate Spanish pages" && git push)
