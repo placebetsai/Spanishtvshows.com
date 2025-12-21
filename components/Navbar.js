@@ -2,11 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import {
-  Bars3Icon,
-  XMarkIcon,
-  FireIcon,
-} from "@heroicons/react/24/solid";
+import { Bars3Icon, XMarkIcon, FireIcon } from "@heroicons/react/24/solid";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -31,10 +27,7 @@ export default function Navbar() {
             Home
           </Link>
 
-          <Link
-            href="/trending"
-            className="hover:text-neon transition-colors"
-          >
+          <Link href="/trending" className="hover:text-neon transition-colors">
             Trending
           </Link>
 
@@ -59,10 +52,15 @@ export default function Navbar() {
             Learn English
           </Link>
 
+          {/* ✅ NEW: Resources */}
           <Link
-            href="/contact"
+            href="/resources"
             className="hover:text-neon transition-colors"
           >
+            Resources
+          </Link>
+
+          <Link href="/contact" className="hover:text-neon transition-colors">
             Contact
           </Link>
 
@@ -131,6 +129,15 @@ export default function Navbar() {
             className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon"
           >
             Learn English
+          </Link>
+
+          {/* ✅ NEW: Resources */}
+          <Link
+            href="/resources"
+            onClick={closeMenu}
+            className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon"
+          >
+            Resources
           </Link>
 
           <Link
