@@ -1,13 +1,13 @@
 // app/learn-english/page.js
 import Link from "next/link";
-import { amazonSearchUrl } from "@/lib/amazon";
+import { amazonSearchUrl } from "../../lib/amazon";
 
 function Card({ title, desc, href, note }) {
   return (
     <a
       href={href}
       target="_blank"
-      rel="noopener noreferrer"
+      rel="noopener noreferrer nofollow"
       className="group block rounded-3xl border border-gray-800 bg-gradient-to-b from-[#0b1220] to-black p-6 hover:border-neon transition"
     >
       <div className="flex items-start justify-between gap-4">
@@ -27,39 +27,39 @@ function Card({ title, desc, href, note }) {
 export default function LearnEnglishPage() {
   const links = [
     {
-      title: "English learning books (TV + subtitles)",
-      desc: "Same strategy: subtitles + phrase mining + real dialogue.",
+      title: "Learn English with TV + subtitles (books)",
+      desc: "Subtitle-based learning + phrase mining + real dialogue.",
       href: amazonSearchUrl("learn english with tv subtitles book"),
       note: "Amazon search results (tagged: spanishtvshow-20)",
     },
     {
-      title: "Pronunciation training (clear speaking)",
-      desc: "Accent and pronunciation tools people buy when they actually want results.",
+      title: "English pronunciation training",
+      desc: "Tools that help you speak clearer and sound more natural.",
       href: amazonSearchUrl("english pronunciation training book"),
       note: "Amazon search results (tagged: spanishtvshow-20)",
     },
     {
       title: "English frequency dictionary",
-      desc: "Learn the words that show up constantly in TV, not random junk.",
+      desc: "Learn the words that show up constantly in real TV dialogue.",
       href: amazonSearchUrl("english frequency dictionary"),
       note: "Amazon search results (tagged: spanishtvshow-20)",
     },
     {
-      title: "ESL workbooks (fast drills)",
-      desc: "Practice that sticks — short drills people complete.",
+      title: "ESL workbooks (adult)",
+      desc: "Short drills that people actually finish.",
       href: amazonSearchUrl("ESL workbook adult"),
       note: "Amazon search results (tagged: spanishtvshow-20)",
     },
   ];
 
   return (
-    <main className="max-w-7xl mx-auto px-6 py-12">
+    <main className="max-w-7xl mx-auto px-6 py-12 text-white">
       <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tight">
         Learn English with <span className="text-neon">TV + Subtitles</span>
       </h1>
 
       <p className="mt-4 text-gray-300 max-w-3xl leading-relaxed">
-        Same idea as Spanish: watch, repeat, steal phrases, and speak better.
+        Same concept: watch, steal phrases, repeat. Subtitles help you level up fast.
       </p>
 
       <div className="mt-10 flex flex-col sm:flex-row gap-4">
