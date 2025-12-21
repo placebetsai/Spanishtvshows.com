@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { amazonSearchUrl, amazonDisclosure } from "@/lib/amazon";
+import { amazonSearchUrl } from "@/lib/amazon";
 
 export const metadata = {
   title: "Learn Spanish with TV – SpanishTVShows.com",
@@ -69,16 +69,28 @@ export default function LearnSpanishPage() {
       </h1>
 
       <p className="mt-4 text-gray-300 max-w-3xl leading-relaxed">
-        Stop wasting time on random app streaks. Pick one show, use smart subtitles,
-        steal phrases, and speak once a week. That’s the whole game.
+        Stop wasting time on random app streaks. Pick one show, use smart
+        subtitles, steal phrases, and speak once a week. That’s the whole game.
       </p>
 
       {/* Routine */}
       <section className="mt-10 grid grid-cols-1 md:grid-cols-3 gap-6">
         {[
-          { n: "Step 1", t: "Pick one show", d: "Choose a show you actually like. Rewatching is the cheat code." },
-          { n: "Step 2", t: "Watch smart", d: "Use double subtitles + click-to-translate. Save lines you love." },
-          { n: "Step 3", t: "Speak weekly", d: "One italki session per week. Talk ONLY about the show." },
+          {
+            n: "Step 1",
+            t: "Pick one show",
+            d: "Choose a show you actually like. Rewatching is the cheat code.",
+          },
+          {
+            n: "Step 2",
+            t: "Watch smart",
+            d: "Use double subtitles + click-to-translate. Save lines you love.",
+          },
+          {
+            n: "Step 3",
+            t: "Speak weekly",
+            d: "One italki session per week. Talk ONLY about the show.",
+          },
         ].map((x) => (
           <div
             key={x.n}
@@ -88,7 +100,9 @@ export default function LearnSpanishPage() {
               {x.n}
             </div>
             <div className="mt-2 text-xl font-black">{x.t}</div>
-            <div className="mt-2 text-gray-300 text-sm leading-relaxed">{x.d}</div>
+            <div className="mt-2 text-gray-300 text-sm leading-relaxed">
+              {x.d}
+            </div>
           </div>
         ))}
       </section>
@@ -113,7 +127,9 @@ export default function LearnSpanishPage() {
                   {x.tag}
                 </span>
               </div>
-              <p className="mt-3 text-gray-300 text-sm leading-relaxed">{x.desc}</p>
+              <p className="mt-3 text-gray-300 text-sm leading-relaxed">
+                {x.desc}
+              </p>
               <div className="mt-4 text-neon font-black group-hover:translate-x-1 transition">
                 Open →
               </div>
@@ -128,7 +144,8 @@ export default function LearnSpanishPage() {
           Recommended Books (Amazon)
         </h2>
         <p className="mt-2 text-gray-300 max-w-2xl">
-          These are high-intent clicks. People already want to learn — this just gives them the right tools.
+          These are high-intent clicks. People already want to learn — this just
+          gives them the right tools.
         </p>
 
         <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-6">
@@ -141,7 +158,9 @@ export default function LearnSpanishPage() {
               className="group rounded-3xl border border-gray-800 bg-black/60 p-6 hover:border-neon transition"
             >
               <div className="text-xl font-black">{x.title}</div>
-              <p className="mt-3 text-gray-300 text-sm leading-relaxed">{x.desc}</p>
+              <p className="mt-3 text-gray-300 text-sm leading-relaxed">
+                {x.desc}
+              </p>
               <div className="mt-4 text-neon font-black group-hover:translate-x-1 transition">
                 Shop →
               </div>
@@ -149,7 +168,10 @@ export default function LearnSpanishPage() {
           ))}
         </div>
 
-        <p className="mt-6 text-xs text-gray-500">{amazonDisclosure()}</p>
+        {/* ✅ Static disclosure: never breaks builds */}
+        <p className="mt-6 text-xs text-gray-500">
+          As an Amazon Associate, we earn from qualifying purchases.
+        </p>
       </section>
 
       <div className="mt-12 flex flex-col sm:flex-row gap-4">
@@ -168,4 +190,4 @@ export default function LearnSpanishPage() {
       </div>
     </main>
   );
-                                                      }
+                }
