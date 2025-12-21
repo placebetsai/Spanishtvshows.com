@@ -1,115 +1,92 @@
+// app/learn-english/page.js
 import Link from "next/link";
+import { amazonSearchUrl } from "@/lib/amazon";
 
-export const metadata = {
-  title: "Learn English with TV – Spanishtvshows.com",
-  description:
-    "Use TV shows, subtitles, and simple routines to learn real English, not textbook English.",
-};
+function Card({ title, desc, href, note }) {
+  return (
+    <a
+      href={href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className="group block rounded-3xl border border-gray-800 bg-gradient-to-b from-[#0b1220] to-black p-6 hover:border-neon transition"
+    >
+      <div className="flex items-start justify-between gap-4">
+        <h3 className="text-xl md:text-2xl font-black uppercase tracking-tight">
+          {title}
+        </h3>
+        <span className="text-neon font-black group-hover:translate-x-1 transition">
+          Open →
+        </span>
+      </div>
+      <p className="mt-3 text-gray-300 leading-relaxed">{desc}</p>
+      {note ? <p className="mt-4 text-xs text-gray-500">{note}</p> : null}
+    </a>
+  );
+}
 
 export default function LearnEnglishPage() {
+  const links = [
+    {
+      title: "English learning books (TV + subtitles)",
+      desc: "Same strategy: subtitles + phrase mining + real dialogue.",
+      href: amazonSearchUrl("learn english with tv subtitles book"),
+      note: "Amazon search results (tagged: spanishtvshow-20)",
+    },
+    {
+      title: "Pronunciation training (clear speaking)",
+      desc: "Accent and pronunciation tools people buy when they actually want results.",
+      href: amazonSearchUrl("english pronunciation training book"),
+      note: "Amazon search results (tagged: spanishtvshow-20)",
+    },
+    {
+      title: "English frequency dictionary",
+      desc: "Learn the words that show up constantly in TV, not random junk.",
+      href: amazonSearchUrl("english frequency dictionary"),
+      note: "Amazon search results (tagged: spanishtvshow-20)",
+    },
+    {
+      title: "ESL workbooks (fast drills)",
+      desc: "Practice that sticks — short drills people complete.",
+      href: amazonSearchUrl("ESL workbook adult"),
+      note: "Amazon search results (tagged: spanishtvshow-20)",
+    },
+  ];
+
   return (
-    <div className="bg-dark min-h-screen">
-      <section className="max-w-7xl mx-auto px-6 py-16">
-        <p className="text-xs font-mono tracking-[0.25em] uppercase text-neon mb-4">
-          PARA HISPANOHABLANTES
-        </p>
-        <h1 className="text-4xl md:text-5xl font-black tracking-tight mb-4">
-          Aprende inglés viendo series, no solo en apps.
-        </h1>
-        <p className="text-gray-300 text-lg md:text-xl max-w-3xl mb-10">
-          Usa Netflix, YouTube y unas pocas herramientas para pasar de
-          “I understand a little” a conversaciones reales en 6–12 meses.
-        </p>
+    <main className="max-w-7xl mx-auto px-6 py-12">
+      <h1 className="text-4xl md:text-6xl font-black uppercase tracking-tight">
+        Learn English with <span className="text-neon">TV + Subtitles</span>
+      </h1>
 
-        <div className="grid md:grid-cols-3 gap-6 mb-14">
-          <div className="bg-black/80 border border-gray-800 rounded-xl p-6 box-glow">
-            <h2 className="text-sm font-mono text-gray-400 tracking-[0.25em] uppercase mb-2">
-              1. INPUT
-            </h2>
-            <h3 className="text-lg font-bold mb-2">Series en inglés con subtítulos</h3>
-            <p className="text-sm text-gray-300">
-              Elige 1–2 series (*Friends, Suits, The Office*). Primero con
-              subtítulos en español, luego en inglés.
-            </p>
-          </div>
-          <div className="bg-black/80 border border-gray-800 rounded-xl p-6 box-glow">
-            <h2 className="text-sm font-mono text-gray-400 tracking-[0.25em] uppercase mb-2">
-              2. VOCABULARIO
-            </h2>
-            <h3 className="text-lg font-bold mb-2">Subtítulos inteligentes</h3>
-            <p className="text-sm text-gray-300">
-              Usa Language Reactor, Lingopie o Netflix con subtítulos dobles.
-              Pausa, guarda frases, repite en voz alta.
-            </p>
-          </div>
-          <div className="bg-black/80 border border-gray-800 rounded-xl p-6 box-glow">
-            <h2 className="text-sm font-mono text-gray-400 tracking-[0.25em] uppercase mb-2">
-              3. SPEAKING
-            </h2>
-            <h3 className="text-lg font-bold mb-2">Habla una vez por semana</h3>
-            <p className="text-sm text-gray-300">
-              1 clase en italki a la semana hablando solo de las series:
-              personajes, chismes, trabajo, insultos.
-            </p>
-          </div>
-        </div>
+      <p className="mt-4 text-gray-300 max-w-3xl leading-relaxed">
+        Same idea as Spanish: watch, repeat, steal phrases, and speak better.
+      </p>
 
-        <div className="grid md:grid-cols-2 gap-6">
-          <a
-            href="https://www.languagereactor.com/"
-            target="_blank"
-            rel="noreferrer"
-            className="bg-black/90 border border-gray-800 rounded-xl p-6 box-glow hover:border-neon hover:-translate-y-1 transition-all flex flex-col justify-between"
-          >
-            <div>
-              <h3 className="text-lg font-bold mb-2">
-                Language Reactor para Netflix/YouTube
-              </h3>
-              <p className="text-sm text-gray-300">
-                Subtítulos dobles (inglés + español), traducciones rápidas y
-                guardado de vocabulario mientras ves tus series favoritas.
-              </p>
-            </div>
-            <span className="mt-4 text-neon text-xs font-mono tracking-[0.25em]">
-              ABRIR ↗
-            </span>
-          </a>
+      <div className="mt-10 flex flex-col sm:flex-row gap-4">
+        <Link
+          href="/"
+          className="rounded-full border border-gray-700 px-8 py-4 font-black uppercase text-gray-200 hover:border-neon hover:text-neon transition text-center"
+        >
+          Back to Home →
+        </Link>
 
-          <a
-            href="https://www.italki.com/"
-            target="_blank"
-            rel="noreferrer"
-            className="bg-black/90 border border-gray-800 rounded-xl p-6 box-glow hover:border-neon hover:-translate-y-1 transition-all flex flex-col justify-between"
-          >
-            <div>
-              <h3 className="text-lg font-bold mb-2">italki – clases 1:1 baratas</h3>
-              <p className="text-sm text-gray-300">
-                Profesores nativos desde $8/hora. Lleva tus notas de series y
-                practica inglés real, no diálogos del libro.
-              </p>
-            </div>
-            <span className="mt-4 text-neon text-xs font-mono tracking-[0.25em]">
-              ABRIR ↗
-            </span>
-          </a>
-        </div>
+        <Link
+          href="/best-on-netflix"
+          className="rounded-full bg-neon text-black px-8 py-4 font-black uppercase hover:bg-white transition text-center"
+        >
+          Best on Netflix →
+        </Link>
+      </div>
 
-        <div className="mt-14 border-t border-gray-900 pt-8 flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-          <p className="text-sm text-gray-400 max-w-xl">
-            Plan simple:{" "}
-            <span className="text-neon font-semibold">
-              1 episodio al día + 10 minutos de repaso + 1 clase a la semana
-            </span>
-            . Nada de perfección, solo constancia.
-          </p>
-          <Link
-            href="/contact"
-            className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-neon text-black font-black text-xs tracking-[0.25em] uppercase hover:bg-white transition-colors"
-          >
-            Pregúntanos por tu nivel
-          </Link>
-        </div>
+      <section className="mt-12 grid grid-cols-1 md:grid-cols-2 gap-6">
+        {links.map((x) => (
+          <Card key={x.title} {...x} />
+        ))}
       </section>
-    </div>
+
+      <div className="mt-10 text-xs text-gray-500">
+        Disclosure: As an Amazon Associate, we earn from qualifying purchases.
+      </div>
+    </main>
   );
-                }
+}
