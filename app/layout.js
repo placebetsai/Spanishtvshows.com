@@ -66,10 +66,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* ✅ Google AdSense verification / loader script */}
+        {/* ✅ AdSense ownership / loader (NEW ACCOUNT) */}
         <script
           async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9103785725476350"
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7215975042937417"
           crossOrigin="anonymous"
         />
 
