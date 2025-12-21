@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { amazonSearchUrl, amazonDisclosure } from "@/lib/amazon";
+import { amazonSearchUrl } from "@/lib/amazon";
 
 export const metadata = {
   title: "Learn English with TV – SpanishTVShows.com",
@@ -42,7 +42,8 @@ export default function LearnEnglishPage() {
       </h1>
 
       <p className="mt-4 text-gray-300 max-w-3xl leading-relaxed">
-        If you speak Spanish and want English fast: watch daily, steal phrases, and speak weekly.
+        If you speak Spanish and want English fast: watch daily, steal phrases,
+        and speak weekly.
       </p>
 
       <section className="mt-12">
@@ -60,7 +61,9 @@ export default function LearnEnglishPage() {
               className="group rounded-3xl border border-gray-800 bg-black/60 p-6 hover:border-neon transition"
             >
               <div className="text-xl font-black">{x.title}</div>
-              <p className="mt-3 text-gray-300 text-sm leading-relaxed">{x.desc}</p>
+              <p className="mt-3 text-gray-300 text-sm leading-relaxed">
+                {x.desc}
+              </p>
               <div className="mt-4 text-neon font-black group-hover:translate-x-1 transition">
                 Shop →
               </div>
@@ -68,7 +71,10 @@ export default function LearnEnglishPage() {
           ))}
         </div>
 
-        <p className="mt-6 text-xs text-gray-500">{amazonDisclosure()}</p>
+        {/* ✅ Static disclosure: never breaks builds */}
+        <p className="mt-6 text-xs text-gray-500">
+          As an Amazon Associate, we earn from qualifying purchases.
+        </p>
       </section>
 
       <div className="mt-12 flex flex-col sm:flex-row gap-4">
