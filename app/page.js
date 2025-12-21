@@ -1,4 +1,3 @@
-// app/page.js
 import Link from "next/link";
 import { FireIcon, StarIcon } from "@heroicons/react/24/solid";
 import NewsTicker from "../components/NewsTicker";
@@ -26,10 +25,10 @@ export default async function Home() {
 
   return (
     <div className="bg-dark min-h-screen">
-      {/* NEWS TICKER (above hero, homepage only) */}
+      {/* NEWS TICKER */}
       <NewsTicker />
 
-      {/* ===================== HERO – #1 SHOW FULL BACKGROUND ===================== */}
+      {/* ===================== HERO ===================== */}
       <section
         className="relative overflow-hidden"
         style={{
@@ -41,7 +40,6 @@ export default async function Home() {
           backgroundPosition: "center",
         }}
       >
-        {/* Dark overlay */}
         <div className="absolute inset-0 bg-black/80" />
 
         <div className="relative max-w-5xl mx-auto px-6 py-24 md:py-32 text-center">
@@ -58,9 +56,8 @@ export default async function Home() {
           </h1>
 
           <p className="text-gray-300 text-base md:text-lg max-w-2xl mx-auto font-mono mb-8">
-            Spanish-language TV is cooking your favorite English shows. Narcos,
-            Elite, novelas, crime – 600M+ people know what’s really good. We
-            just say it out loud.
+            Spanish-language TV is cooking your favorite English shows. Crime,
+            novelas, chaos, twists. We just say it out loud.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -80,32 +77,68 @@ export default async function Home() {
               </Link>
             )}
           </div>
+        </div>
+      </section>
 
-          {topShow && (
-            <p className="text-gray-500 text-xs md:text-sm mt-6 font-mono">
-              {topShow.first_air_date?.slice(0, 4) || "????"} •{" "}
-              {topShow.vote_average
-                ? `${topShow.vote_average.toFixed(1)}★`
-                : "No rating"}{" "}
-              • {Math.round(topShow.popularity || 0)} {" HEAT"}
-            </p>
-          )}
+      {/* ===================== POPULAR GUIDES (DISCOVERABILITY) ===================== */}
+      <section className="max-w-6xl mx-auto px-6 mt-12 mb-12">
+        <div className="bg-black/70 border border-gray-800 rounded-2xl p-6 box-glow">
+          <h2 className="text-white font-black text-2xl mb-2">
+            Popular Spanish TV Guides
+          </h2>
+          <p className="text-gray-400 text-sm font-mono mb-6">
+            Start here. Find a show. Click “Where to Watch.”
+          </p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+            <Link
+              href="/shows-like-money-heist"
+              className="bg-black/80 border border-gray-800 rounded-xl p-5 hover:border-neon transition block"
+            >
+              <div className="text-neon font-black text-lg">
+                Shows Like Money Heist
+              </div>
+              <div className="text-gray-400 text-xs mt-2">
+                Heists, chaos, betrayals, big twists.
+              </div>
+            </Link>
+
+            <Link
+              href="/best-spanish-crime-shows"
+              className="bg-black/80 border border-gray-800 rounded-xl p-5 hover:border-neon transition block"
+            >
+              <div className="text-neon font-black text-lg">
+                Best Spanish Crime Shows
+              </div>
+              <div className="text-gray-400 text-xs mt-2">
+                Ranked by ratings + real vote count.
+              </div>
+            </Link>
+
+            <Link
+              href="/trending"
+              className="bg-black/80 border border-gray-800 rounded-xl p-5 hover:border-neon transition block"
+            >
+              <div className="text-neon font-black text-lg">
+                Trending Right Now
+              </div>
+              <div className="text-gray-400 text-xs mt-2">
+                What’s exploding this week.
+              </div>
+            </Link>
+          </div>
         </div>
       </section>
 
       {/* ===================== TOP 10 GRID ===================== */}
-      <section id="top10" className="max-w-7xl mx-auto px-6 pb-20 pt-12 md:pt-16">
+      <section id="top10" className="max-w-7xl mx-auto px-6 pb-20 pt-12">
         <h2 className="text-3xl md:text-4xl font-black tracking-tight text-center mb-4">
           Top 10 Spanish Shows Destroying <span className="text-neon">2025</span>
         </h2>
-        <p className="text-gray-400 text-sm md:text-base text-center mb-10 max-w-2xl mx-auto font-mono">
-          Data from TMDB · Sorted by global heat · Not sponsored. If it’s mid, it
-          doesn’t make the list.
-        </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
           {shows.slice(0, 10).map((show, index) => (
-            <Link key={show.id} href={`/show/${show.id}`} className="group block relative">
+            <Link key={show.id} href={`/show/${show.id}`} className="group block">
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden mb-4 border border-gray-800 group-hover:border-neon transition-colors box-glow">
                 <img
                   src={`https://image.tmdb.org/t/p/w500${show.backdrop_path || show.poster_path}`}
@@ -113,86 +146,18 @@ export default async function Home() {
                   className="w-full h-full object-cover opacity-75 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
                 />
 
-                {/* Rank badge */}
-                <div
-                  className={`absolute top-3 left-3 px-3 py-1 rounded-full font-black text-xs md:text-sm font-mono ${
-                    index < 3
-                      ? "bg-neon text-black"
-                      : "bg-black/80 text-gray-200 border border-gray-700"
-                  }`}
-                >
-                  #{index + 1}{" "}
-                  {index === 0 ? "🔥🔥🔥" : index === 1 ? "🔥🔥" : index === 2 ? "🔥" : ""}
+                <div className="absolute top-3 left-3 px-3 py-1 rounded-full font-black text-xs font-mono bg-neon text-black">
+                  #{index + 1}
                 </div>
               </div>
 
-              <div className="flex items-center gap-3 text-[0.7rem] md:text-xs font-bold text-hot mb-2">
-                <span className="flex items-center">
-                  <FireIcon className="h-3 w-3 mr-1" /> {Math.round(show.popularity || 0)} HEAT
-                </span>
-                <span className="flex items-center text-yellow-400">
-                  <StarIcon className="h-3 w-3 mr-1" />
-                  {show.vote_average ? show.vote_average.toFixed(1) : "N/A"}
-                </span>
-                {show.first_air_date && (
-                  <span className="text-gray-500">{show.first_air_date.slice(0, 4)}</span>
-                )}
-              </div>
-
-              <h3 className="text-xl md:text-2xl font-black uppercase leading-tight mb-2 group-hover:text-neon transition-colors">
+              <h3 className="text-xl font-black group-hover:text-neon transition-colors">
                 {show.name}
               </h3>
-
-              <p className="text-gray-400 text-xs md:text-sm line-clamp-2 leading-relaxed mb-2">
-                {show.overview || "No description available yet."}
-              </p>
-
-              <p className="text-[0.7rem] md:text-xs text-gray-500 font-mono">
-                Click for breakdown, streaming links & “is this worth my time?”
-              </p>
             </Link>
           ))}
         </div>
       </section>
-
-      {/* ===================== SEO + MONEY SECTION ===================== */}
-      <section className="border-t border-gray-900 bg-black/70 py-12 md:py-16">
-        <div className="max-w-5xl mx-auto px-6 space-y-6">
-          <h3 className="text-xl md:text-2xl font-black">
-            Best Spanish TV Shows 2025 – Netflix, HBO Max, Prime Video, ViX
-          </h3>
-          <p className="text-gray-400 text-sm md:text-base leading-relaxed">
-            We rank Spanish-language series from Spain, Mexico, Colombia, Argentina and across Latin America – crime, novelas, dystopian stuff, comedies and everything in between. If you’re tired of mid English shows, this is your watchlist.
-          </p>
-
-          <p className="text-gray-400 text-sm md:text-base leading-relaxed">
-            Most of these are available on{" "}
-            <span className="text-gray-200 font-semibold">
-              Netflix, HBO Max, Prime Video, Disney+, ViX, and other platforms
-            </span>
-            . We use live data from TMDB and real viewer scores – no studio marketing, no fake hype.
-          </p>
-
-          <div className="flex flex-col sm:flex-row gap-4 pt-2">
-            <Link
-              href="/learn-english"
-              className="inline-flex items-center justify-center px-6 py-3 rounded-full bg-neon text-black font-black text-xs md:text-sm tracking-wide hover:bg-white transition-colors"
-            >
-              Use these shows to improve your English →
-            </Link>
-            <Link
-              href="/contact"
-              className="inline-flex items-center justify-center px-6 py-3 rounded-full border border-gray-700 text-gray-200 text-xs md:text-sm font-bold tracking-wide hover:border-neon hover:text-neon transition-colors"
-            >
-              Suggest a show · Complain · Partner →
-            </Link>
-          </div>
-
-          <p className="text-[0.7rem] md:text-xs text-gray-500 font-mono pt-2">
-            Spanishtvshows.com is for Spanish speakers & Latinos who know their TV is better. English-speakers are welcome to cry in the comments.
-          </p>
-        </div>
-      </section>
     </div>
   );
-}
+        }
