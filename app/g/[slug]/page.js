@@ -1,57 +1,63 @@
 import fs from "fs";
 import path from "path";
-import Link from "next/link";
+import { notFound } from "next/navigation";
 
-const OUT_DIR = path.join(process.cwd(), "content", "generated");
+const DATA_PATH = path.join(process.cwd(), "content", "generated", "spanish-pages.json");
 
-export async function generateStaticParams() {
-  if (!fs.existsSync(OUT_DIR)) return [];
-  const files = fs.readdirSync(OUT_DIR).filter((f) => f.endsWith(".json"));
-  return files.map((f) => ({ slug: f.replace(".json", "") }));
+function loadAllPages() {
+  if (!fs.existsSync(DATA_PATH)) return [];
+
+  const raw = fs.readFileSync(DATA_PATH, "utf-8");
+  const json = JSON.parse(raw);
+
+  // Support multiple shapes
+  if (Array.isArray(json)) return json;
+  if (Array.isArray(json.pages)) return json.pages;
+  if (Array.isArray(json.items)) return json.items;
+  if (Array.isArray(json.data)) return json.data;
+
+  return [];
 }
 
-export default async function GeneratedPage({ params }) {
-  const file = path.join(OUT_DIR, `${params.slug}.json`);
+export async function generateStaticParams() {
+  const pages = loadAllPages();
 
-  if (!fs.existsSync(file)) {
-    return (
-      <div className="max-w-3xl mx-auto px-6 py-12">
-        <h1 className="text-2xl font-black">Not found</h1>
-        <Link className="text-neon font-black hover:underline" href="/">
-          ← Home
-        </Link>
-      </div>
-    );
-  }
+  // If we can't find any pages, generate nothing (but don't crash build)
+  return pages
+    .filter((p) => p && typeof p.slug === "string" && p.slug.length > 0)
+    .map((p) => ({ slug: p.slug }));
+}
 
-  const data = JSON.parse(fs.readFileSync(file, "utf8"));
+export default function GeneratedPage({ params }) {
+  const pages = loadAllPages();
+  const page = pages.find((p) => p && p.slug === params.slug);
+
+  if (!page) return notFound();
+
+  const title = page.title || page.h1 || params.slug.replace(/-/g, " ");
+  const description = page.description || page.metaDescription || "";
 
   return (
-    <div className="bg-dark min-h-screen">
-      <div className="max-w-3xl mx-auto px-6 py-10">
-        <Link href="/" className="text-neon font-black hover:underline">
-          ← Home
-        </Link>
+    <main style={{ maxWidth: 820, margin: "0 auto", padding: "24px 16px" }}>
+      <h1 style={{ fontSize: 34, lineHeight: 1.15, marginBottom: 10 }}>{title}</h1>
 
-        <h1 className="text-3xl md:text-5xl font-black mt-6">{data.title}</h1>
-        <p className="text-gray-400 text-sm font-mono mt-2">
-          By {data.byline?.name} · {data.byline?.role}
-        </p>
+      {description ? (
+        <p style={{ opacity: 0.85, fontSize: 18, marginBottom: 18 }}>{description}</p>
+      ) : null}
 
-        <div
-          className="prose prose-invert max-w-none mt-8"
-          dangerouslySetInnerHTML={{ __html: data.html }}
-        />
-
-        <div className="mt-10 flex gap-4 text-sm font-mono">
-          <a className="text-neon font-black hover:underline" href={data.justwatch} target="_blank" rel="noreferrer">
-            Where to watch →
-          </a>
-          <Link className="text-neon font-black hover:underline" href="/trending">
-            Trending →
-          </Link>
+      {/* Render content if present */}
+      {page.content ? (
+        <div style={{ fontSize: 18, lineHeight: 1.65, whiteSpace: "pre-wrap" }}>
+          {page.content}
         </div>
+      ) : null}
+
+      {/* Debug section (helps you confirm it's working) */}
+      <hr style={{ margin: "28px 0", opacity: 0.2 }} />
+      <div style={{ fontSize: 12, opacity: 0.75 }}>
+        <div><b>slug:</b> {params.slug}</div>
+        <div><b>keys:</b> {Object.keys(page).join(", ")}</div>
       </div>
-    </div>
+    </main>
   );
-          }
+}
