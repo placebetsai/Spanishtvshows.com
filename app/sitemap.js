@@ -4,23 +4,17 @@ import path from "path";
 const SITE_URL = "https://spanishtvshows.com";
 const DATA_PATH = path.join(process.cwd(), "content", "generated", "spanish-pages.json");
 
-function loadSlugs() {
+function readSlugs() {
   if (!fs.existsSync(DATA_PATH)) return [];
-  const json = JSON.parse(fs.readFileSync(DATA_PATH, "utf-8"));
+  const raw = fs.readFileSync(DATA_PATH, "utf8").trim();
+  if (!raw) return [];
 
-  const pages = Array.isArray(json)
-    ? json
-    : Array.isArray(json.pages)
-    ? json.pages
-    : Array.isArray(json.items)
-    ? json.items
-    : Array.isArray(json.data)
-    ? json.data
-    : [];
+  const parsed = JSON.parse(raw);
+  const pages = Array.isArray(parsed) ? parsed : Array.isArray(parsed.pages) ? parsed.pages : [];
 
   return pages
-    .filter((p) => p && typeof p.slug === "string" && p.slug.length > 0)
-    .map((p) => p.slug);
+    .map((p) => (p && typeof p.slug === "string" ? p.slug : null))
+    .filter(Boolean);
 }
 
 export default function sitemap() {
@@ -33,13 +27,14 @@ export default function sitemap() {
     { url: `${SITE_URL}/terms`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
   ];
 
-  const slugs = loadSlugs();
-  const generated = slugs.map((slug) => ({
+  const slugs = readSlugs();
+
+  const generatedPages = slugs.map((slug) => ({
     url: `${SITE_URL}/g/${slug}`,
     lastModified: new Date(),
     changeFrequency: "weekly",
     priority: 0.7,
   }));
 
-  return [...staticPages, ...generated];
+  return [...staticPages, ...generatedPages];
 }
