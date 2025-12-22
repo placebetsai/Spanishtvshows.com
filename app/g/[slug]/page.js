@@ -44,11 +44,11 @@ export default async function GeneratedPage({ params }) {
         />
 
         <div className="mt-10 flex gap-4 text-sm font-mono">
+          <a className="text-neon font-black hover:underline" href={data.justwatch} target="_blank" rel="noreferrer">
+            Where to watch →
+          </a>
           <Link className="text-neon font-black hover:underline" href="/trending">
             Trending →
-          </Link>
-          <Link className="text-neon font-black hover:underline" href="/best-on-netflix">
-            Best on Netflix →
           </Link>
         </div>
       </div>
