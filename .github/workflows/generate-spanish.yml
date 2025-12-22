@@ -2,15 +2,11 @@ name: Generate Spanish Pages
 
 on:
   schedule:
-    - cron: "0 13 * * *" # daily at 13:00 UTC
+    - cron: "0 13 * * *" # daily
   workflow_dispatch:
 
 permissions:
   contents: write
-
-concurrency:
-  group: generate-spanish-pages
-  cancel-in-progress: true
 
 jobs:
   generate:
@@ -20,17 +16,16 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
-        with:
-          fetch-depth: 0
 
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "npm"
 
-      - name: Install
-        run: npm ci
+      # 🚫 NO npm ci
+      # 🚫 NO cache
+      # 🚫 NO install step
+      # This repo does NOT need dependencies
 
       - name: Generate pages
         env:
@@ -46,7 +41,7 @@ jobs:
           git add content/generated
 
           if git diff --cached --quiet; then
-            echo "No changes to commit."
+            echo "No changes to commit"
             exit 0
           fi
 
