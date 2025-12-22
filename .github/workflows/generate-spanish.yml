@@ -2,7 +2,7 @@ name: Generate Spanish Pages
 
 on:
   schedule:
-    - cron: "0 13 * * *" # daily (13:00 UTC)
+    - cron: "0 13 * * *" # daily 13:00 UTC
   workflow_dispatch:
 
 permissions:
@@ -15,7 +15,6 @@ concurrency:
 jobs:
   generate:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -26,50 +25,20 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20
-          cache: "npm"
 
-      - name: Print versions
-        run: |
-          node -v
-          npm -v
-
-      - name: Install deps (no lockfile required)
+      - name: Install deps
         run: npm install --no-audit --no-fund
-
-      - name: Sanity check secrets (won't print values)
-        run: |
-          if [ -z "${OPENAI_API_KEY}" ]; then echo "MISSING OPENAI_API_KEY"; exit 1; fi
-          if [ -z "${TMDB_API_KEY}" ]; then echo "MISSING TMDB_API_KEY"; exit 1; fi
-          echo "Secrets present ✅"
-        env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
-
-      - name: Show scripts folder
-        run: |
-          echo "Repo root:"
-          ls -la
-          echo "scripts folder:"
-          ls -la scripts || true
-          echo "content folder:"
-          ls -la content || true
 
       - name: Generate pages
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          PAGES_PER_RUN: "10"
         run: node scripts/generate-spanish-pages.cjs
 
       - name: Commit & push if changed
         run: |
           git config user.name "spanishtvshows-bot"
           git config user.email "bot@spanishtvshows.com"
-
-          # Add everything that changed (not only one folder)
-          git add -A
-
-          # If nothing changed, stop cleanly
-          git diff --cached --quiet && echo "No changes to commit ✅" && exit 0
-
-          git commit -m "Auto-generate Spanish pages"
-          git push
+          git add content/generated
+          git diff --cached --quiet || (git commit -m "Auto-generate Spanish pages" && git push)
