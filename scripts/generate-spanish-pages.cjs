@@ -1,24 +1,4 @@
-#!/usr/bin/env node
-/**
- * scripts/generate-spanish-pages.cjs
- *
- * Generates SEO content pages daily into:
- *   content/generated/
- *
- * Uses:
- *  - TMDB_API_KEY (required)
- *  - OPENAI_API_KEY (optional but recommended)
- *
- * Outputs:
- *  - content/generated/<slug>.mdx
- *  - content/generated/_index.json (manifest)
- *
- * Env options:
- *  - PAGES_PER_RUN (default 12, max 60)
- *  - LANGUAGE (default "en-US")
- *  - REGION (default "US")
- */
-
+// scripts/generate-spanish-pages.cjs
 const fs = require("fs");
 const path = require("path");
 
@@ -34,384 +14,211 @@ process.on("uncaughtException", (err) => {
 const TMDB_API_KEY = process.env.TMDB_API_KEY;
 const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
-const LANGUAGE = process.env.LANGUAGE || "en-US";
-const REGION = process.env.REGION || "US";
-
-const PAGES_PER_RUN_RAW = Number(process.env.PAGES_PER_RUN || 12);
-const PAGES_PER_RUN = Math.max(1, Math.min(60, Number.isFinite(PAGES_PER_RUN_RAW) ? PAGES_PER_RUN_RAW : 12));
+const PAGES_PER_RUN = Math.max(
+  1,
+  Math.min(60, Number(process.env.PAGES_PER_RUN || 10) || 10)
+);
 
 const OUT_DIR = path.join(process.cwd(), "content", "generated");
-const INDEX_FILE = path.join(OUT_DIR, "_index.json");
 
-function nowISO() {
-  return new Date().toISOString();
-}
-
-function slugify(input) {
-  return String(input || "")
+function slugify(str) {
+  return String(str || "")
     .toLowerCase()
     .replace(/&/g, "and")
     .replace(/[^a-z0-9]+/g, "-")
-    .replace(/^-+|-+$/g, "")
+    .replace(/(^-|-$)/g, "")
     .slice(0, 80);
 }
 
-function sleep(ms) {
-  return new Promise((r) => setTimeout(r, ms));
-}
-
 async function fetchJson(url, opts = {}) {
-  const res = await fetch(url, {
-    ...opts,
-    headers: {
-      ...(opts.headers || {}),
-    },
-  });
+  const res = await fetch(url, opts);
   if (!res.ok) {
     const text = await res.text().catch(() => "");
-    throw new Error(`Fetch failed ${res.status} ${res.statusText} for ${url}\n${text.slice(0, 500)}`);
+    throw new Error(`Fetch failed ${res.status} for ${url}\n${text.slice(0, 500)}`);
   }
   return res.json();
 }
 
-async function tmdb(pathname, query = {}) {
-  if (!TMDB_API_KEY) throw new Error("TMDB_API_KEY is missing (set it in GitHub Secrets).");
-
+async function tmdb(pathname, params = {}) {
+  if (!TMDB_API_KEY) throw new Error("Missing TMDB_API_KEY (set in GitHub Secrets).");
   const url = new URL(`https://api.themoviedb.org/3${pathname}`);
   url.searchParams.set("api_key", TMDB_API_KEY);
-  url.searchParams.set("language", LANGUAGE);
-
-  for (const [k, v] of Object.entries(query)) {
-    if (v === undefined || v === null || v === "") continue;
-    url.searchParams.set(k, String(v));
-  }
+  url.searchParams.set("language", "en-US");
+  for (const [k, v] of Object.entries(params)) url.searchParams.set(k, String(v));
   return fetchJson(url.toString());
 }
 
-async function getSpanishShowsPool() {
-  // We want REAL pages tied to REAL titles.
-  // Use multiple endpoints to get a larger pool.
-  const pools = [];
+function templateHtml(showName, overview, similarNames) {
+  const safeOverview = (overview || "No overview available yet.").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+  const lis = similarNames.map((n) => `<li><strong>${n}</strong> — Similar vibe, solid binge potential.</li>`).join("");
+  return `
+<h2>Quick take</h2>
+<p><strong>${showName}</strong> is a Spanish-language series people binge fast. If you want the same vibe, here are the closest matches.</p>
 
-  // 1) Popular Spanish-language TV
-  pools.push(
-    tmdb("/discover/tv", {
-      sort_by: "popularity.desc",
-      with_original_language: "es",
-      vote_count.gte: 50,
-      include_adult: "false",
-      page: 1,
-    })
-  );
+<h2>What it’s about</h2>
+<p>${safeOverview}</p>
 
-  // 2) Top rated Spanish-language TV
-  pools.push(
-    tmdb("/discover/tv", {
-      sort_by: "vote_average.desc",
-      with_original_language: "es",
-      vote_count.gte: 200,
-      include_adult: "false",
-      page: 1,
-    })
-  );
+<h2>Shows like ${showName}</h2>
+<ul>${lis}</ul>
 
-  // 3) Trending this week
-  pools.push(tmdb("/trending/tv/week", {}));
+<h2>Where to watch</h2>
+<p>Streaming rights change by country. Search the title on JustWatch to see current options in your region.</p>
 
-  const results = await Promise.allSettled(pools);
-
-  const all = [];
-  for (const r of results) {
-    if (r.status === "fulfilled") {
-      const arr = r.value?.results || [];
-      for (const item of arr) all.push(item);
-    }
-  }
-
-  // De-dupe by id
-  const seen = new Set();
-  const deduped = [];
-  for (const s of all) {
-    if (!s || !s.id) continue;
-    if (seen.has(s.id)) continue;
-    seen.add(s.id);
-    deduped.push(s);
-  }
-
-  // Shuffle a bit so daily runs don’t always pick same first N
-  for (let i = deduped.length - 1; i > 0; i--) {
-    const j = Math.floor(Math.random() * (i + 1));
-    [deduped[i], deduped[j]] = [deduped[j], deduped[i]];
-  }
-
-  return deduped;
+<h2>FAQ</h2>
+<h3>Is ${showName} worth watching?</h3>
+<p>If you like tight pacing, twists, and Spanish-language storytelling, yes.</p>
+<h3>Is it on Netflix?</h3>
+<p>Availability changes. Check JustWatch for your region.</p>
+<h3>What should I watch after ${showName}?</h3>
+<p>Start with the list above — those are the closest matches right now.</p>
+`.trim();
 }
 
-function mdxEscape(str) {
-  return String(str || "")
-    .replace(/\r/g, "")
-    .replace(/\u0000/g, "");
-}
-
-function frontmatter(obj) {
-  // simple YAML
-  const lines = ["---"];
-  for (const [k, v] of Object.entries(obj)) {
-    if (v === undefined || v === null) continue;
-    if (Array.isArray(v)) {
-      lines.push(`${k}:`);
-      for (const item of v) lines.push(`  - "${String(item).replace(/"/g, '\\"')}"`);
-    } else if (typeof v === "number" || typeof v === "boolean") {
-      lines.push(`${k}: ${v}`);
-    } else {
-      lines.push(`${k}: "${String(v).replace(/"/g, '\\"')}"`);
-    }
-  }
-  lines.push("---");
-  return lines.join("\n");
-}
-
-async function openaiWrite({ title, showName, overview, year, genres }) {
-  // If OpenAI key is missing, return null and we’ll fall back to template content.
+async function openaiHtml({ title, showName, overview, similarNames }) {
   if (!OPENAI_API_KEY) return null;
 
-  // Use the Responses API (new-style). Node 20 has fetch built in.
   const prompt = `
-You are writing an SEO page for SpanishTVShows.com.
+Write an SEO article in VALID HTML only.
 
-Goal:
-- Rank for long-tail searches about Spanish TV shows.
-- Be factual and safe: do NOT invent platform availability. Say "Check JustWatch" instead.
-- Tone: punchy, helpful, not cringe.
+TITLE: ${title}
+Audience: streaming viewers looking for what to watch next.
+Tone: confident, helpful, not cringe.
 
-Page title: ${title}
-Show: ${showName}
-Year: ${year || "Unknown"}
-Genres: ${(genres || []).join(", ") || "Unknown"}
-Overview: ${overview || "No overview provided"}
+Rules:
+- 900–1200 words
+- Use <h2> sections
+- Include short intro (2–4 sentences)
+- Include a list of the 6 similar shows below (use exactly these names)
+- Include "Where to Watch" section (do NOT claim a specific service; say "Check JustWatch")
+- Include FAQ with 3 questions
+- Do NOT mention AI
+- Output ONLY HTML (no markdown fences)
 
-Write:
-1) A short hook (2–3 sentences).
-2) "What it’s about" section (4–6 bullets).
-3) "Why people love it" section (4–6 bullets).
-4) "If you liked this, try these" section (5 related Spanish-language shows) — only suggest real titles? If unsure, give generic category suggestions (crime, thriller, novela) without naming titles.
-5) A "Where to watch" paragraph that tells the reader to use JustWatch and their local Netflix/Prime/Max/etc search. Do not claim it's on a specific service.
+SHOW: ${showName}
+OVERVIEW: ${overview || ""}
 
-Keep it under 900 words. Use clean headings. No markdown tables.
-`;
+SIMILAR SHOWS:
+${similarNames.map((s) => `- ${s}`).join("\n")}
+`.trim();
 
-  const body = {
-    model: "gpt-5-nano",
-    input: prompt,
-  };
-
-  const res = await fetch("https://api.openai.com/v1/responses", {
+  const res = await fetch("https://api.openai.com/v1/chat/completions", {
     method: "POST",
     headers: {
       "Content-Type": "application/json",
       Authorization: `Bearer ${OPENAI_API_KEY}`,
     },
-    body: JSON.stringify(body),
+    body: JSON.stringify({
+      model: "gpt-4.1-mini",
+      temperature: 0.6,
+      messages: [
+        { role: "system", content: "You write clean entertainment SEO articles in valid HTML." },
+        { role: "user", content: prompt },
+      ],
+    }),
   });
 
   if (!res.ok) {
-    const text = await res.text().catch(() => "");
-    throw new Error(`OpenAI API failed ${res.status} ${res.statusText}\n${text.slice(0, 1000)}`);
+    const t = await res.text().catch(() => "");
+    throw new Error(`OpenAI error ${res.status}: ${t.slice(0, 800)}`);
   }
 
   const data = await res.json();
-
-  // Try common shapes:
-  // data.output_text (often present), else search output array.
-  if (typeof data.output_text === "string" && data.output_text.trim()) {
-    return data.output_text.trim();
-  }
-
-  const out = data.output || [];
-  const chunks = [];
-  for (const item of out) {
-    if (item?.type === "message") {
-      const content = item?.content || [];
-      for (const c of content) {
-        if (c?.type === "output_text" && c.text) chunks.push(c.text);
-      }
-    }
-  }
-
-  const joined = chunks.join("\n").trim();
-  return joined || null;
-}
-
-function templateWrite({ title, showName, overview }) {
-  // fallback content if OPENAI not set
-  const safeOverview = overview ? mdxEscape(overview) : "No overview available yet.";
-  return mdxEscape(`
-## Quick take
-
-**${showName}** is one of those Spanish-language shows people binge fast. If you’re hunting for the vibe—story, tone, and what to watch next—this page is the shortcut.
-
-## What it’s about
-
-- ${safeOverview.slice(0, 180)}${safeOverview.length > 180 ? "…" : ""}
-- Strong cast chemistry and momentum
-- Easy to binge in short bursts
-- Often recommended in thriller/crime/novela circles
-
-## Why people love it
-
-- Pacing that keeps moving
-- Big twists and cliffhangers
-- Spanish-language storytelling hits different
-- Great for subtitles + listening practice (optional)
-
-## If you liked this, try these vibes
-
-- More Spanish crime thrillers
-- Political dramas from Spain / LATAM
-- Dark mysteries and suspense
-- Character-driven novelas
-- Limited series with tight seasons
-
-## Where to watch
-
-Streaming rights change constantly by country. Use **JustWatch** (or your local Netflix/Prime/Max search) and type the show name to see the latest “where to watch” options in your region.
-`.trim());
-}
-
-function buildPageSlug(show) {
-  const name = show?.name || show?.original_name || `show-${show?.id}`;
-  const base = slugify(name);
-  return `${show.id}-${base}`;
-}
-
-function ensureDir(p) {
-  fs.mkdirSync(p, { recursive: true });
-}
-
-function writeFileIfChanged(filePath, content) {
-  if (fs.existsSync(filePath)) {
-    const current = fs.readFileSync(filePath, "utf8");
-    if (current === content) return false;
-  }
-  fs.writeFileSync(filePath, content, "utf8");
-  return true;
+  const html = data.choices?.[0]?.message?.content?.trim() || "";
+  if (!html.startsWith("<")) throw new Error("OpenAI did not return HTML.");
+  return html;
 }
 
 async function main() {
-  console.log("=== Generate Spanish Pages ===");
-  console.log("Time:", nowISO());
-  console.log("Node:", process.version);
+  console.log("✅ generator start");
   console.log("TMDB key present:", !!TMDB_API_KEY);
   console.log("OpenAI key present:", !!OPENAI_API_KEY);
   console.log("Pages per run:", PAGES_PER_RUN);
-  console.log("Language:", LANGUAGE, "Region:", REGION);
 
-  ensureDir(OUT_DIR);
+  fs.mkdirSync(OUT_DIR, { recursive: true });
 
-  const pool = await getSpanishShowsPool();
-  if (!pool.length) {
-    throw new Error("TMDB returned no shows. Check TMDB_API_KEY or API limits.");
-  }
+  // Pull a pool of Spanish shows (real)
+  const pool = await tmdb("/discover/tv", {
+    sort_by: "popularity.desc",
+    with_original_language: "es",
+    "vote_count.gte": 50,
+    page: 1,
+  });
 
-  const selected = pool.slice(0, PAGES_PER_RUN);
+  const shows = (pool.results || []).slice(0, PAGES_PER_RUN);
 
-  const manifest = {
-    generatedAt: nowISO(),
-    count: selected.length,
-    pages: [],
-  };
+  for (const s of shows) {
+    const showName = s?.name || "Spanish TV Show";
+    const showId = s?.id;
+    if (!showId) continue;
 
-  let wroteAny = false;
+    const baseSlug = `${showId}-${slugify(showName)}`;
+    const outFile = path.join(OUT_DIR, `shows-like-${baseSlug}.json`);
 
-  for (let i = 0; i < selected.length; i++) {
-    const s = selected[i];
-    const slug = buildPageSlug(s);
-
-    // Get richer details
-    let details = null;
-    try {
-      details = await tmdb(`/tv/${s.id}`, { region: REGION });
-    } catch (e) {
-      console.warn("TMDB details failed for", s.id, e.message);
+    if (fs.existsSync(outFile)) {
+      console.log("Skip existing:", outFile);
+      continue;
     }
 
-    const showName = details?.name || s?.name || "Spanish TV Show";
-    const overview = details?.overview || s?.overview || "";
-    const year = (details?.first_air_date || "").slice(0, 4);
-    const genres = (details?.genres || []).map((g) => g.name).filter(Boolean);
-
-    const title = `${showName} – What It’s About, Why It’s Popular, Where to Watch`;
-    const description = (overview || `Guide to ${showName}: what it’s about, why people love it, and where to watch.`)
-      .replace(/\s+/g, " ")
-      .slice(0, 155);
-
-    let body = null;
-
-    // Try OpenAI content (optional)
+    // recommendations (real titles)
+    let recs = [];
     try {
-      body = await openaiWrite({ title, showName, overview, year, genres });
+      const rec = await tmdb(`/tv/${showId}/recommendations`, { page: 1 });
+      recs = (rec.results || []).map((x) => x?.name).filter(Boolean);
     } catch (e) {
-      console.warn("OpenAI generation failed (falling back to template):", e.message);
-      body = null;
+      console.warn("Recs failed:", showId, e.message);
     }
 
-    if (!body) body = templateWrite({ title, showName, overview });
+    const similarNames = recs.slice(0, 6);
+    if (similarNames.length < 6) {
+      // if too few recommendations, still generate using fallback names from discover list
+      const fallback = (pool.results || [])
+        .map((x) => x?.name)
+        .filter(Boolean)
+        .filter((n) => n !== showName)
+        .slice(0, 12);
 
-    const jw = `https://www.justwatch.com/${REGION.toLowerCase()}/search?q=${encodeURIComponent(showName)}`;
-    const poster = details?.poster_path || s?.poster_path || "";
-    const backdrop = details?.backdrop_path || s?.backdrop_path || "";
+      const merged = [...similarNames, ...fallback].slice(0, 6);
+      while (merged.length < 6) merged.push("Spanish TV Series");
+      recs = merged;
+    } else {
+      recs = similarNames;
+    }
 
-    const fm = frontmatter({
-      type: "generated",
-      slug,
-      tmdb_id: s.id,
+    const title = `Shows Like ${showName} (Spanish Series You Should Watch Next)`;
+    const jw = `https://www.justwatch.com/us/search?q=${encodeURIComponent(showName)}`;
+
+    let html = null;
+    try {
+      html = await openaiHtml({
+        title,
+        showName,
+        overview: s?.overview || "",
+        similarNames: recs,
+      });
+    } catch (e) {
+      console.warn("OpenAI failed; using template:", e.message);
+      html = null;
+    }
+
+    if (!html) html = templateHtml(showName, s?.overview || "", recs);
+
+    const page = {
+      slug: `shows-like-${baseSlug}`,
       title,
-      description,
+      byline: { name: "SpanishTVShows Editorial", role: "Streaming Guides" },
+      showId,
       showName,
-      year: year || "",
-      genres,
+      createdAt: new Date().toISOString(),
       justwatch: jw,
-      poster_path: poster,
-      backdrop_path: backdrop,
-      createdAt: nowISO(),
-      updatedAt: nowISO(),
-    });
+      html,
+      similarShows: recs,
+    };
 
-    const mdx = `${fm}
-
-# ${mdxEscape(showName)}
-
-${mdxEscape(body)}
-
----
-
-### Quick links
-- **Where to watch (JustWatch):** ${jw}
-- **More guides:** /best-on-netflix • /best-spanish-crime-shows • /shows-like-money-heist
-`;
-
-    const outPath = path.join(OUT_DIR, `${slug}.mdx`);
-    const changed = writeFileIfChanged(outPath, mdx);
-    if (changed) wroteAny = true;
-
-    manifest.pages.push({
-      slug,
-      tmdb_id: s.id,
-      title,
-      showName,
-      year: year || null,
-      updatedAt: nowISO(),
-    });
-
-    // Tiny delay so you don’t hammer APIs
-    await sleep(250);
+    fs.writeFileSync(outFile, JSON.stringify(page, null, 2), "utf8");
+    console.log("Wrote:", path.basename(outFile));
   }
 
-  // Write manifest
-  const manifestChanged = writeFileIfChanged(INDEX_FILE, JSON.stringify(manifest, null, 2) + "\n");
-  if (manifestChanged) wroteAny = true;
-
-  console.log("Done. Files updated:", wroteAny ? "YES" : "NO changes");
+  console.log("✅ generator done");
 }
 
 main().catch((e) => {
