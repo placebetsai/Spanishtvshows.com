@@ -1,227 +1,209 @@
-// scripts/generate-spanish-pages.cjs
+/* scripts/generate-spanish-pages.cjs
+   Dependency-free generator (Node 20+).
+   - Pulls Spanish TV shows from TMDB
+   - Writes content/generated/spanish-pages.json
+   - Optionally enriches blurbs with OpenAI if OPENAI_API_KEY exists
+*/
+
 const fs = require("fs");
 const path = require("path");
 
-process.on("unhandledRejection", (err) => {
-  console.error("UNHANDLED REJECTION ❌", err);
-  process.exit(1);
-});
-process.on("uncaughtException", (err) => {
-  console.error("UNCAUGHT EXCEPTION ❌", err);
-  process.exit(1);
-});
-
-const TMDB_API_KEY = process.env.TMDB_API_KEY;
-const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
-
-const PAGES_PER_RUN = Math.max(
-  1,
-  Math.min(60, Number(process.env.PAGES_PER_RUN || 10) || 10)
-);
-
 const OUT_DIR = path.join(process.cwd(), "content", "generated");
+const OUT_FILE = path.join(OUT_DIR, "spanish-pages.json");
 
-function slugify(str) {
-  return String(str || "")
+function log(...args) {
+  console.log("[generate-spanish-pages]", ...args);
+}
+
+function safeSlug(s) {
+  return (s || "")
     .toLowerCase()
-    .replace(/&/g, "and")
+    .replace(/['"]/g, "")
     .replace(/[^a-z0-9]+/g, "-")
-    .replace(/(^-|-$)/g, "")
+    .replace(/^-+|-+$/g, "")
     .slice(0, 80);
 }
 
-async function fetchJson(url, opts = {}) {
-  const res = await fetch(url, opts);
+async function fetchJson(url) {
+  const res = await fetch(url, {
+    headers: { "accept": "application/json" },
+  });
   if (!res.ok) {
     const text = await res.text().catch(() => "");
-    throw new Error(`Fetch failed ${res.status} for ${url}\n${text.slice(0, 500)}`);
+    throw new Error(`Fetch failed ${res.status} ${res.statusText}: ${text.slice(0, 200)}`);
   }
   return res.json();
 }
 
-async function tmdb(pathname, params = {}) {
-  if (!TMDB_API_KEY) throw new Error("Missing TMDB_API_KEY (set in GitHub Secrets).");
-  const url = new URL(`https://api.themoviedb.org/3${pathname}`);
-  url.searchParams.set("api_key", TMDB_API_KEY);
-  url.searchParams.set("language", "en-US");
-  for (const [k, v] of Object.entries(params)) url.searchParams.set(k, String(v));
-  return fetchJson(url.toString());
+async function tmdbDiscoverSpanish(tmdbKey) {
+  // Spanish originals, sorted by popularity; require some vote count to avoid junk
+  const url =
+    "https://api.themoviedb.org/3/discover/tv" +
+    `?api_key=${encodeURIComponent(tmdbKey)}` +
+    "&language=en-US" +
+    "&sort_by=popularity.desc" +
+    "&with_original_language=es" +
+    "&vote_count.gte=50";
+
+  const data = await fetchJson(url);
+  return Array.isArray(data.results) ? data.results : [];
 }
 
-function templateHtml(showName, overview, similarNames) {
-  const safeOverview = (overview || "No overview available yet.").replace(/</g, "&lt;").replace(/>/g, "&gt;");
-  const lis = similarNames.map((n) => `<li><strong>${n}</strong> — Similar vibe, solid binge potential.</li>`).join("");
-  return `
-<h2>Quick take</h2>
-<p><strong>${showName}</strong> is a Spanish-language series people binge fast. If you want the same vibe, here are the closest matches.</p>
+async function openaiBlurb(openaiKey, prompt) {
+  // Uses the Responses API with a small model.
+  // If this fails, we return null and continue (no crashing the workflow).
+  try {
+    const res = await fetch("https://api.openai.com/v1/responses", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${openaiKey}`,
+      },
+      body: JSON.stringify({
+        model: "gpt-5-nano",
+        input: prompt,
+      }),
+    });
 
-<h2>What it’s about</h2>
-<p>${safeOverview}</p>
+    if (!res.ok) {
+      const t = await res.text().catch(() => "");
+      log("OpenAI call failed:", res.status, res.statusText, t.slice(0, 140));
+      return null;
+    }
 
-<h2>Shows like ${showName}</h2>
-<ul>${lis}</ul>
+    const json = await res.json();
+    // Responses API usually returns text in output[0].content[0].text
+    const text =
+      json?.output?.[0]?.content?.map((c) => c?.text).filter(Boolean).join("\n") ||
+      null;
 
-<h2>Where to watch</h2>
-<p>Streaming rights change by country. Search the title on JustWatch to see current options in your region.</p>
-
-<h2>FAQ</h2>
-<h3>Is ${showName} worth watching?</h3>
-<p>If you like tight pacing, twists, and Spanish-language storytelling, yes.</p>
-<h3>Is it on Netflix?</h3>
-<p>Availability changes. Check JustWatch for your region.</p>
-<h3>What should I watch after ${showName}?</h3>
-<p>Start with the list above — those are the closest matches right now.</p>
-`.trim();
-}
-
-async function openaiHtml({ title, showName, overview, similarNames }) {
-  if (!OPENAI_API_KEY) return null;
-
-  const prompt = `
-Write an SEO article in VALID HTML only.
-
-TITLE: ${title}
-Audience: streaming viewers looking for what to watch next.
-Tone: confident, helpful, not cringe.
-
-Rules:
-- 900–1200 words
-- Use <h2> sections
-- Include short intro (2–4 sentences)
-- Include a list of the 6 similar shows below (use exactly these names)
-- Include "Where to Watch" section (do NOT claim a specific service; say "Check JustWatch")
-- Include FAQ with 3 questions
-- Do NOT mention AI
-- Output ONLY HTML (no markdown fences)
-
-SHOW: ${showName}
-OVERVIEW: ${overview || ""}
-
-SIMILAR SHOWS:
-${similarNames.map((s) => `- ${s}`).join("\n")}
-`.trim();
-
-  const res = await fetch("https://api.openai.com/v1/chat/completions", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json",
-      Authorization: `Bearer ${OPENAI_API_KEY}`,
-    },
-    body: JSON.stringify({
-      model: "gpt-4.1-mini",
-      temperature: 0.6,
-      messages: [
-        { role: "system", content: "You write clean entertainment SEO articles in valid HTML." },
-        { role: "user", content: prompt },
-      ],
-    }),
-  });
-
-  if (!res.ok) {
-    const t = await res.text().catch(() => "");
-    throw new Error(`OpenAI error ${res.status}: ${t.slice(0, 800)}`);
+    return text ? text.trim() : null;
+  } catch (e) {
+    log("OpenAI call exception:", e?.message || e);
+    return null;
   }
-
-  const data = await res.json();
-  const html = data.choices?.[0]?.message?.content?.trim() || "";
-  if (!html.startsWith("<")) throw new Error("OpenAI did not return HTML.");
-  return html;
 }
 
 async function main() {
-  console.log("✅ generator start");
-  console.log("TMDB key present:", !!TMDB_API_KEY);
-  console.log("OpenAI key present:", !!OPENAI_API_KEY);
-  console.log("Pages per run:", PAGES_PER_RUN);
+  const TMDB_API_KEY = process.env.TMDB_API_KEY;
+  const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
+
+  if (!TMDB_API_KEY) {
+    // Don’t fail the workflow—just log and exit cleanly.
+    log("TMDB_API_KEY is missing. Add it in GitHub Secrets as TMDB_API_KEY.");
+    // Still ensure folder exists so later steps don't freak out
+    fs.mkdirSync(OUT_DIR, { recursive: true });
+    if (!fs.existsSync(OUT_FILE)) {
+      fs.writeFileSync(
+        OUT_FILE,
+        JSON.stringify(
+          {
+            generatedAt: new Date().toISOString(),
+            note: "TMDB_API_KEY missing; no data generated.",
+            pages: [],
+          },
+          null,
+          2
+        )
+      );
+    }
+    return;
+  }
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
 
-  // Pull a pool of Spanish shows (real)
-  const pool = await tmdb("/discover/tv", {
-    sort_by: "popularity.desc",
-    with_original_language: "es",
-    "vote_count.gte": 50,
-    page: 1,
+  log("Fetching Spanish shows from TMDB...");
+  const shows = await tmdbDiscoverSpanish(TMDB_API_KEY);
+
+  const top = shows.slice(0, 20).map((s) => ({
+    id: s.id,
+    name: s.name,
+    slug: safeSlug(s.name),
+    popularity: s.popularity,
+    voteAverage: s.vote_average,
+    voteCount: s.vote_count,
+    firstAirDate: s.first_air_date,
+    overview: s.overview || "",
+    backdropPath: s.backdrop_path || null,
+    posterPath: s.poster_path || null,
+  }));
+
+  // Build “pages” you can wire into routes.
+  // This keeps it real: "Where to watch", "Shows like X", "Best Spanish crime shows", etc.
+  const basePages = [];
+
+  // Always include a trending page and a “best crime” page (these match your app routes)
+  basePages.push({
+    type: "collection",
+    route: "/trending",
+    title: "Trending Spanish TV Right Now",
+    slug: "trending-spanish-tv-right-now",
+    blurb:
+      "Updated daily. The Spanish-language shows everyone is actually watching this week.",
   });
 
-  const shows = (pool.results || []).slice(0, PAGES_PER_RUN);
+  basePages.push({
+    type: "collection",
+    route: "/best-spanish-crime-shows",
+    title: "Best Spanish Crime Shows",
+    slug: "best-spanish-crime-shows",
+    blurb:
+      "Ranked by popularity + real vote count. No fluff, just bangers.",
+  });
 
-  for (const s of shows) {
-    const showName = s?.name || "Spanish TV Show";
-    const showId = s?.id;
-    if (!showId) continue;
-
-    const baseSlug = `${showId}-${slugify(showName)}`;
-    const outFile = path.join(OUT_DIR, `shows-like-${baseSlug}.json`);
-
-    if (fs.existsSync(outFile)) {
-      console.log("Skip existing:", outFile);
-      continue;
-    }
-
-    // recommendations (real titles)
-    let recs = [];
-    try {
-      const rec = await tmdb(`/tv/${showId}/recommendations`, { page: 1 });
-      recs = (rec.results || []).map((x) => x?.name).filter(Boolean);
-    } catch (e) {
-      console.warn("Recs failed:", showId, e.message);
-    }
-
-    const similarNames = recs.slice(0, 6);
-    if (similarNames.length < 6) {
-      // if too few recommendations, still generate using fallback names from discover list
-      const fallback = (pool.results || [])
-        .map((x) => x?.name)
-        .filter(Boolean)
-        .filter((n) => n !== showName)
-        .slice(0, 12);
-
-      const merged = [...similarNames, ...fallback].slice(0, 6);
-      while (merged.length < 6) merged.push("Spanish TV Series");
-      recs = merged;
-    } else {
-      recs = similarNames;
-    }
-
-    const title = `Shows Like ${showName} (Spanish Series You Should Watch Next)`;
-    const jw = `https://www.justwatch.com/us/search?q=${encodeURIComponent(showName)}`;
-
-    let html = null;
-    try {
-      html = await openaiHtml({
-        title,
-        showName,
-        overview: s?.overview || "",
-        similarNames: recs,
-      });
-    } catch (e) {
-      console.warn("OpenAI failed; using template:", e.message);
-      html = null;
-    }
-
-    if (!html) html = templateHtml(showName, s?.overview || "", recs);
-
-    const page = {
-      slug: `shows-like-${baseSlug}`,
-      title,
-      byline: { name: "SpanishTVShows Editorial", role: "Streaming Guides" },
-      showId,
-      showName,
-      createdAt: new Date().toISOString(),
-      justwatch: jw,
-      html,
-      similarShows: recs,
-    };
-
-    fs.writeFileSync(outFile, JSON.stringify(page, null, 2), "utf8");
-    console.log("Wrote:", path.basename(outFile));
+  // Generate “shows like {top show}” pages for the first few shows
+  for (const s of top.slice(0, 8)) {
+    basePages.push({
+      type: "cluster",
+      route: `/shows-like-${s.slug}`,
+      title: `Shows Like ${s.name}`,
+      slug: `shows-like-${s.slug}`,
+      seedShowId: s.id,
+      blurb: `If you liked ${s.name}, here are similar Spanish-language shows worth watching next.`,
+    });
   }
 
-  console.log("✅ generator done");
+  // Optional: ask OpenAI to rewrite blurbs (short + SEO friendly)
+  if (OPENAI_API_KEY) {
+    log("OPENAI_API_KEY found. Enriching blurbs with OpenAI...");
+    for (let i = 0; i < basePages.length; i++) {
+      const p = basePages[i];
+      const prompt =
+        `Write a punchy 1–2 sentence blurb for an SEO page.\n` +
+        `Title: ${p.title}\n` +
+        `Audience: people searching for Spanish TV show recommendations.\n` +
+        `Tone: confident, clean, not cringe, not spam.\n` +
+        `Return ONLY the blurb text.`;
+
+      const ai = await openaiBlurb(OPENAI_API_KEY, prompt);
+      if (ai) basePages[i].blurb = ai;
+    }
+  } else {
+    log("No OPENAI_API_KEY. Using built-in blurbs (still works).");
+  }
+
+  const payload = {
+    generatedAt: new Date().toISOString(),
+    countShows: top.length,
+    countPages: basePages.length,
+    shows: top,
+    pages: basePages,
+  };
+
+  // Only write if different (prevents useless commits)
+  const nextText = JSON.stringify(payload, null, 2) + "\n";
+  const prevText = fs.existsSync(OUT_FILE) ? fs.readFileSync(OUT_FILE, "utf8") : null;
+
+  if (prevText === nextText) {
+    log("No changes in generated output.");
+    return;
+  }
+
+  fs.writeFileSync(OUT_FILE, nextText);
+  log("Wrote:", path.relative(process.cwd(), OUT_FILE));
 }
 
 main().catch((e) => {
-  console.error("FAILED ❌", e);
+  console.error("[generate-spanish-pages] FATAL:", e?.stack || e);
   process.exit(1);
 });
