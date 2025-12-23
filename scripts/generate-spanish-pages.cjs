@@ -1,23 +1,31 @@
-/* scripts/generate-spanish-pages.cjs
-   Dependency-free generator (Node 20+).
-   - Pulls Spanish TV shows from TMDB
-   - Writes content/generated/spanish-pages.json
-   - Optionally enriches blurbs with OpenAI if OPENAI_API_KEY exists
-*/
+// scripts/generate-spanish-pages.cjs
+// Generates content/generated/spanish-pages.json from TMDB.
+// No OpenAI required. Uses TMDB show data + templates.
+// Runs on Vercel via "prebuild".
 
 const fs = require("fs");
 const path = require("path");
 
+const TMDB_API_KEY = process.env.TMDB_API_KEY;
+
+// OUTPUT (PROJECT ROOT)
 const OUT_DIR = path.join(process.cwd(), "content", "generated");
 const OUT_FILE = path.join(OUT_DIR, "spanish-pages.json");
 
-function log(...args) {
-  console.log("[generate-spanish-pages]", ...args);
+// Scale knobs (start safe, then increase)
+const SHOW_LIMIT = Number(process.env.SHOW_LIMIT || 200);      // 200 → 500 → 1000
+const PAGES_PER_SHOW = Number(process.env.PAGES_PER_SHOW || 3); // 3 or 4
+
+function die(msg) {
+  console.error(msg);
+  process.exit(1);
 }
 
-function safeSlug(s) {
-  return (s || "")
+function slugify(str) {
+  return String(str || "")
     .toLowerCase()
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
     .replace(/['"]/g, "")
     .replace(/[^a-z0-9]+/g, "-")
     .replace(/^-+|-+$/g, "")
@@ -25,185 +33,186 @@ function safeSlug(s) {
 }
 
 async function fetchJson(url) {
-  const res = await fetch(url, {
-    headers: { "accept": "application/json" },
-  });
-  if (!res.ok) {
-    const text = await res.text().catch(() => "");
-    throw new Error(`Fetch failed ${res.status} ${res.statusText}: ${text.slice(0, 200)}`);
-  }
+  const res = await fetch(url, { headers: { accept: "application/json" } });
+  if (!res.ok) throw new Error(`Fetch failed ${res.status}: ${url}`);
   return res.json();
 }
 
-async function tmdbDiscoverSpanish(tmdbKey) {
-  // Spanish originals, sorted by popularity; require some vote count to avoid junk
-  const url =
-    "https://api.themoviedb.org/3/discover/tv" +
-    `?api_key=${encodeURIComponent(tmdbKey)}` +
-    "&language=en-US" +
-    "&sort_by=popularity.desc" +
-    "&with_original_language=es" +
-    "&vote_count.gte=50";
+// Pull trending + discovery lists, then dedupe.
+// Goal: Spanish/LatAm shows in Spanish language (not perfect but good enough).
+async function fetchShows() {
+  const base = "https://api.themoviedb.org/3";
 
-  const data = await fetchJson(url);
-  return Array.isArray(data.results) ? data.results : [];
+  // Trending (mix)
+  const trending = await fetchJson(
+    `${base}/trending/tv/week?api_key=${TMDB_API_KEY}`
+  );
+
+  // Discover Spanish original language
+  // Sort by popularity so we get “real” shows first.
+  const discover = await fetchJson(
+    `${base}/discover/tv?api_key=${TMDB_API_KEY}` +
+      `&with_original_language=es&sort_by=popularity.desc&page=1`
+  );
+
+  const combined = [
+    ...(trending?.results || []),
+    ...(discover?.results || []),
+  ];
+
+  // Dedupe by id, filter basic quality
+  const map = new Map();
+  for (const s of combined) {
+    if (!s?.id) continue;
+    if (!s?.name) continue;
+    if ((s?.vote_count || 0) < 10) continue; // remove super-noisy junk
+    map.set(s.id, s);
+  }
+
+  // Take top SHOW_LIMIT by popularity
+  const shows = Array.from(map.values())
+    .sort((a, b) => (b.popularity || 0) - (a.popularity || 0))
+    .slice(0, SHOW_LIMIT);
+
+  return shows;
 }
 
-async function openaiBlurb(openaiKey, prompt) {
-  // Uses the Responses API with a small model.
-  // If this fails, we return null and continue (no crashing the workflow).
-  try {
-    const res = await fetch("https://api.openai.com/v1/responses", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json",
-        Authorization: `Bearer ${openaiKey}`,
-      },
-      body: JSON.stringify({
-        model: "gpt-5-nano",
-        input: prompt,
-      }),
-    });
+// For each show, pull richer details (overview, networks, seasons, genres)
+async function fetchShowDetails(id) {
+  const base = "https://api.themoviedb.org/3";
+  return fetchJson(
+    `${base}/tv/${id}?api_key=${TMDB_API_KEY}&language=en-US`
+  );
+}
 
-    if (!res.ok) {
-      const t = await res.text().catch(() => "");
-      log("OpenAI call failed:", res.status, res.statusText, t.slice(0, 140));
-      return null;
-    }
+// Simple, Google-safe templated content (unique per show via facts).
+function buildPageContent(show, details, pageType) {
+  const title = show.name || details.name || "Spanish TV Show";
+  const year = (details.first_air_date || show.first_air_date || "").slice(0, 4);
+  const overview = details.overview || show.overview || "";
+  const genres = (details.genres || []).map(g => g.name).filter(Boolean);
+  const networks = (details.networks || []).map(n => n.name).filter(Boolean);
+  const seasons = details.number_of_seasons || 0;
+  const episodes = details.number_of_episodes || 0;
 
-    const json = await res.json();
-    // Responses API usually returns text in output[0].content[0].text
-    const text =
-      json?.output?.[0]?.content?.map((c) => c?.text).filter(Boolean).join("\n") ||
-      null;
+  const baseIntro =
+    overview && overview.length > 30
+      ? overview.trim()
+      : `This is a Spanish-language TV series titled "${title}".`;
 
-    return text ? text.trim() : null;
-  } catch (e) {
-    log("OpenAI call exception:", e?.message || e);
-    return null;
+  if (pageType === "watch") {
+    return {
+      h1: `Where to watch ${title}${year ? ` (${year})` : ""}`,
+      paragraphs: [
+        `If you're looking for where to watch "${title}"${year ? ` (${year})` : ""}, start by checking the major streaming platforms available in your region.`,
+        `Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.`,
+        `Quick facts: ${seasons ? `${seasons} season(s)` : "multiple seasons"}${episodes ? `, ${episodes} episode(s)` : ""}${genres.length ? `, genres: ${genres.join(", ")}` : ""}.`,
+        baseIntro,
+        `Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation.`,
+      ],
+      bullets: [
+        `Search in-app for: "${title}"`,
+        `Try both English + Spanish title variants`,
+        `Use subtitles + pause/replay for language learning`,
+      ],
+    };
   }
+
+  if (pageType === "cast") {
+    return {
+      h1: `${title}${year ? ` (${year})` : ""} cast & key characters`,
+      paragraphs: [
+        `This page covers the cast overview for "${title}"${year ? ` (${year})` : ""} and how to explore actor credits.`,
+        `For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.`,
+        `Quick facts: ${seasons ? `${seasons} season(s)` : "multiple seasons"}${episodes ? `, ${episodes} episode(s)` : ""}${networks.length ? `, networks: ${networks.join(", ")}` : ""}.`,
+        baseIntro,
+        `If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading.`,
+      ],
+      bullets: [
+        `Look up the show on TMDB or IMDb for verified cast`,
+        `Check season-by-season credits (casts change)`,
+        `Save actor names you like → discover similar shows`,
+      ],
+    };
+  }
+
+  // default: summary
+  return {
+    h1: `${title}${year ? ` (${year})` : ""} overview`,
+    paragraphs: [
+      baseIntro,
+      `${genres.length ? `Genres: ${genres.join(", ")}.` : ""} ${networks.length ? `Networks: ${networks.join(", ")}.` : ""}`.trim(),
+      `If you're exploring Spanish-language TV and want to learn English with subtitles, "${title}" can work well if you build a simple routine: watch → pause → repeat → rewatch.`,
+      `Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing.`,
+    ].filter(Boolean),
+    bullets: [
+      `Best for: subtitle-based language practice`,
+      `Rewatch strategy beats binge-watching`,
+      `Save unknown words → review after the episode`,
+    ],
+  };
+}
+
+function makeSlug(show, details, pageType) {
+  const title = show.name || details.name || "show";
+  const base = slugify(title);
+  const id = show.id || details.id;
+  // slug includes id + type to keep it unique forever
+  return `${base}-${id}-${pageType}`;
 }
 
 async function main() {
-  const TMDB_API_KEY = process.env.TMDB_API_KEY;
-  const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
-
   if (!TMDB_API_KEY) {
-    // Don’t fail the workflow—just log and exit cleanly.
-    log("TMDB_API_KEY is missing. Add it in GitHub Secrets as TMDB_API_KEY.");
-    // Still ensure folder exists so later steps don't freak out
-    fs.mkdirSync(OUT_DIR, { recursive: true });
-    if (!fs.existsSync(OUT_FILE)) {
-      fs.writeFileSync(
-        OUT_FILE,
-        JSON.stringify(
-          {
-            generatedAt: new Date().toISOString(),
-            note: "TMDB_API_KEY missing; no data generated.",
-            pages: [],
-          },
-          null,
-          2
-        )
-      );
+    die("Missing TMDB_API_KEY env var. Add it to Vercel Environment Variables.");
+  }
+
+  console.log(`[generate] fetching shows... (limit=${SHOW_LIMIT})`);
+  const shows = await fetchShows();
+
+  const pageTypes = ["summary", "watch", "cast"].slice(0, PAGES_PER_SHOW);
+
+  const pages = [];
+  let i = 0;
+
+  for (const show of shows) {
+    i++;
+    try {
+      const details = await fetchShowDetails(show.id);
+
+      for (const pageType of pageTypes) {
+        const slug = makeSlug(show, details, pageType);
+        const content = buildPageContent(show, details, pageType);
+
+        pages.push({
+          slug,
+          pageType,
+          showId: show.id,
+          title: show.name || details.name || "",
+          year: (details.first_air_date || show.first_air_date || "").slice(0, 4),
+          posterPath: details.poster_path || show.poster_path || null,
+          backdropPath: details.backdrop_path || show.backdrop_path || null,
+          overview: details.overview || show.overview || "",
+          genres: (details.genres || []).map(g => g.name).filter(Boolean),
+          networks: (details.networks || []).map(n => n.name).filter(Boolean),
+          numberOfSeasons: details.number_of_seasons || 0,
+          numberOfEpisodes: details.number_of_episodes || 0,
+          lastUpdated: new Date().toISOString(),
+          content,
+        });
+      }
+
+      if (i % 25 === 0) console.log(`[generate] processed ${i}/${shows.length}`);
+    } catch (e) {
+      console.warn(`[generate] skipping show ${show?.id} due to error:`, e?.message || e);
     }
-    return;
   }
 
   fs.mkdirSync(OUT_DIR, { recursive: true });
-
-  log("Fetching Spanish shows from TMDB...");
-  const shows = await tmdbDiscoverSpanish(TMDB_API_KEY);
-
-  const top = shows.slice(0, 20).map((s) => ({
-    id: s.id,
-    name: s.name,
-    slug: safeSlug(s.name),
-    popularity: s.popularity,
-    voteAverage: s.vote_average,
-    voteCount: s.vote_count,
-    firstAirDate: s.first_air_date,
-    overview: s.overview || "",
-    backdropPath: s.backdrop_path || null,
-    posterPath: s.poster_path || null,
-  }));
-
-  // Build “pages” you can wire into routes.
-  // This keeps it real: "Where to watch", "Shows like X", "Best Spanish crime shows", etc.
-  const basePages = [];
-
-  // Always include a trending page and a “best crime” page (these match your app routes)
-  basePages.push({
-    type: "collection",
-    route: "/trending",
-    title: "Trending Spanish TV Right Now",
-    slug: "trending-spanish-tv-right-now",
-    blurb:
-      "Updated daily. The Spanish-language shows everyone is actually watching this week.",
-  });
-
-  basePages.push({
-    type: "collection",
-    route: "/best-spanish-crime-shows",
-    title: "Best Spanish Crime Shows",
-    slug: "best-spanish-crime-shows",
-    blurb:
-      "Ranked by popularity + real vote count. No fluff, just bangers.",
-  });
-
-  // Generate “shows like {top show}” pages for the first few shows
-  for (const s of top.slice(0, 8)) {
-    basePages.push({
-      type: "cluster",
-      route: `/shows-like-${s.slug}`,
-      title: `Shows Like ${s.name}`,
-      slug: `shows-like-${s.slug}`,
-      seedShowId: s.id,
-      blurb: `If you liked ${s.name}, here are similar Spanish-language shows worth watching next.`,
-    });
-  }
-
-  // Optional: ask OpenAI to rewrite blurbs (short + SEO friendly)
-  if (OPENAI_API_KEY) {
-    log("OPENAI_API_KEY found. Enriching blurbs with OpenAI...");
-    for (let i = 0; i < basePages.length; i++) {
-      const p = basePages[i];
-      const prompt =
-        `Write a punchy 1–2 sentence blurb for an SEO page.\n` +
-        `Title: ${p.title}\n` +
-        `Audience: people searching for Spanish TV show recommendations.\n` +
-        `Tone: confident, clean, not cringe, not spam.\n` +
-        `Return ONLY the blurb text.`;
-
-      const ai = await openaiBlurb(OPENAI_API_KEY, prompt);
-      if (ai) basePages[i].blurb = ai;
-    }
-  } else {
-    log("No OPENAI_API_KEY. Using built-in blurbs (still works).");
-  }
-
-  const payload = {
-    generatedAt: new Date().toISOString(),
-    countShows: top.length,
-    countPages: basePages.length,
-    shows: top,
-    pages: basePages,
-  };
-
-  // Only write if different (prevents useless commits)
-  const nextText = JSON.stringify(payload, null, 2) + "\n";
-  const prevText = fs.existsSync(OUT_FILE) ? fs.readFileSync(OUT_FILE, "utf8") : null;
-
-  if (prevText === nextText) {
-    log("No changes in generated output.");
-    return;
-  }
-
-  fs.writeFileSync(OUT_FILE, nextText);
-  log("Wrote:", path.relative(process.cwd(), OUT_FILE));
+  fs.writeFileSync(OUT_FILE, JSON.stringify({ generatedAt: new Date().toISOString(), pages }, null, 2));
+  console.log(`[generate] wrote ${pages.length} pages → ${OUT_FILE}`);
 }
 
 main().catch((e) => {
-  console.error("[generate-spanish-pages] FATAL:", e?.stack || e);
+  console.error("[generate] fatal:", e);
   process.exit(1);
 });
