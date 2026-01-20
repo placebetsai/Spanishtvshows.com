@@ -133,7 +133,7 @@ export default async function Home() {
       {/* ===================== TOP 10 GRID ===================== */}
       <section id="top10" className="max-w-7xl mx-auto px-6 pb-20 pt-12">
         <h2 className="text-3xl md:text-4xl font-black tracking-tight text-center mb-4">
-          Top 10 Spanish Shows Destroying <span className="text-neon">2025</span>
+          Top 10 Spanish Shows Destroying <span className="text-neon">2026</span>
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
