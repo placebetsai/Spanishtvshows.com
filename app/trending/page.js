@@ -4,7 +4,7 @@ import { FireIcon, StarIcon, PlayCircleIcon } from "@heroicons/react/24/solid";
 
 const API_BASE = "https://api.themoviedb.org/3";
 
-// Static fallback so the page is never "broken" to crawlers/reviewers
+// Static fallback so the page is NEVER empty/broken to crawlers/AdSense reviewers
 const FALLBACK_SHOWS = [
   {
     id: 71446,
@@ -72,9 +72,9 @@ async function getHiddenGems() {
 }
 
 export const metadata = {
-  title: "Trending Spanish TV Shows 2025 – What’s Actually Hot",
+  title: "Trending Spanish TV Shows 2026 – What’s Actually Hot",
   description:
-    "Live updated list of trending Spanish-language TV shows in 2025 – this week’s heat, new releases and hidden gems.",
+    "Updated list of trending Spanish-language TV shows in 2026 – this week’s heat, new releases, and hidden gems.",
 };
 
 export default async function TrendingPage() {
@@ -111,19 +111,17 @@ export default async function TrendingPage() {
             TRENDING · NEW RELEASES · HIDDEN GEMS
           </p>
 
-          <h1 className="text-3xl md:text-5xl lg:text-6xl font-black tracking-tight mb-4">
-            What Spanish TV is{" "}
-            <span className="text-neon">actually popping</span> right now
+          <h1 className="font-display text-4xl md:text-6xl tracking-tight mb-4">
+            What Spanish TV is <span className="text-neon">actually popping</span> right now
           </h1>
 
-          <p className="text-gray-300 text-xs md:text-sm max-w-2xl mx-auto font-mono mb-6">
-            Updated daily using public ranking signals. Bookmark this page if you want
-            the best Spanish-language series without digging through ten apps.
+          <p className="text-gray-300 text-xs md:text-sm max-w-2xl mx-auto mb-6">
+            Updated frequently in 2026. Bookmark this page for quick picks without digging through ten apps.
           </p>
 
           {heroShow && (
             <div className="inline-flex flex-col items-center gap-2 mt-2">
-              <span className="text-[0.65rem] md:text-[0.7rem] text-gray-500 font-mono uppercase tracking-[0.25em]">
+              <span className="text-[0.65rem] md:text-[0.7rem] text-gray-500 uppercase tracking-[0.25em]">
                 Right now everyone is talking about:
               </span>
               <Link
@@ -141,15 +139,13 @@ export default async function TrendingPage() {
       <div className="max-w-7xl mx-auto px-6 py-14 space-y-16 md:space-y-20">
         {/* THIS WEEK'S HEAT */}
         <section>
-          <div className="flex items-center justify-between gap-4 mb-6">
-            <div>
-              <h2 className="text-2xl md:text-3xl font-black tracking-tight">
-                This week&apos;s <span className="text-hot uppercase">heat</span>
-              </h2>
-              <p className="text-gray-400 text-[0.7rem] md:text-xs font-mono mt-1">
-                Spanish-language shows people are actually bingeing right now.
-              </p>
-            </div>
+          <div className="mb-6">
+            <h2 className="font-display text-3xl md:text-4xl tracking-tight">
+              This week&apos;s <span className="text-hot uppercase">heat</span>
+            </h2>
+            <p className="text-gray-400 text-[0.7rem] md:text-xs mt-1">
+              Spanish-language shows people are actually bingeing right now.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-10">
@@ -188,15 +184,13 @@ export default async function TrendingPage() {
 
         {/* NEW RELEASES */}
         <section>
-          <div className="flex items-center justify-between gap-4 mb-6">
-            <div>
-              <h2 className="text-2xl md:text-3xl font-black tracking-tight">
-                New Spanish releases <span className="text-neon">worth checking</span>
-              </h2>
-              <p className="text-gray-400 text-[0.7rem] md:text-xs font-mono mt-1">
-                Recent Spanish-language series that just dropped.
-              </p>
-            </div>
+          <div className="mb-6">
+            <h2 className="font-display text-3xl md:text-4xl tracking-tight">
+              New Spanish releases <span className="text-neon">worth checking</span>
+            </h2>
+            <p className="text-gray-400 text-[0.7rem] md:text-xs mt-1">
+              Recent Spanish-language series that just dropped.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-10">
@@ -222,15 +216,13 @@ export default async function TrendingPage() {
 
         {/* HIDDEN GEMS */}
         <section>
-          <div className="flex items-center justify-between gap-4 mb-6">
-            <div>
-              <h2 className="text-2xl md:text-3xl font-black tracking-tight">
-                Hidden gems <span className="text-hot">real fans talk about</span>
-              </h2>
-              <p className="text-gray-400 text-[0.7rem] md:text-xs font-mono mt-1">
-                High-rated but under-the-radar shows.
-              </p>
-            </div>
+          <div className="mb-6">
+            <h2 className="font-display text-3xl md:text-4xl tracking-tight">
+              Hidden gems <span className="text-hot">real fans talk about</span>
+            </h2>
+            <p className="text-gray-400 text-[0.7rem] md:text-xs mt-1">
+              High-rated but under-the-radar shows.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-10">
@@ -258,14 +250,12 @@ export default async function TrendingPage() {
           </div>
         </section>
 
-        {/* FOOTNOTE */}
         <section className="border-t border-gray-900 pt-8 md:pt-10">
           <p className="text-gray-400 text-[0.7rem] md:text-xs text-center max-w-2xl mx-auto leading-relaxed">
-            Rankings update frequently. If a page ever looks light on content, refresh later—
-            we keep improving the editorial and recommendations.
+            Rankings update frequently. If a page ever looks light on content, refresh later—we keep improving the editorial and recommendations.
           </p>
         </section>
       </div>
     </div>
   );
-                }
+          }
