@@ -44,7 +44,7 @@ export default async function Home() {
 
         <div className="relative max-w-5xl mx-auto px-6 py-24 md:py-32 text-center">
           <p className="text-xs md:text-sm uppercase tracking-[0.3em] text-neon mb-4">
-            LATIN TV IS CARRYING 2025
+            LATIN TV IS CARRYING 2026
           </p>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tighter mb-6">
