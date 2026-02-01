@@ -1,5 +1,4 @@
 import Link from "next/link";
-import { FireIcon, StarIcon } from "@heroicons/react/24/solid";
 import NewsTicker from "../components/NewsTicker";
 
 async function getTopSpanish() {
@@ -44,7 +43,7 @@ export default async function Home() {
 
         <div className="relative max-w-5xl mx-auto px-6 py-24 md:py-32 text-center">
           <p className="text-xs md:text-sm uppercase tracking-[0.3em] text-neon mb-4">
-            LATIN TV IS CARRYING 2026
+            LATIN TV IS CARRYING 2025
           </p>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tighter mb-6">
@@ -56,8 +55,8 @@ export default async function Home() {
           </h1>
 
           <p className="text-gray-300 text-base md:text-lg max-w-2xl mx-auto font-mono mb-8">
-            Spanish-language TV is cooking your favorite English shows. Crime,
-            novelas, chaos, twists. We just say it out loud.
+            We rank Spanish-language series with clear recommendations, where-to-watch info,
+            and beginner-friendly notes for learning Spanish through TV.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -77,10 +76,26 @@ export default async function Home() {
               </Link>
             )}
           </div>
+
+          {/* ✅ Editorial "purpose" block (AdSense approval signal) */}
+          <div className="max-w-3xl mx-auto mt-10 text-left bg-black/60 border border-gray-800 rounded-2xl p-6">
+            <h2 className="text-white font-black text-xl mb-2">
+              What this site is (and why it exists)
+            </h2>
+            <p className="text-gray-300 text-sm leading-relaxed">
+              SpanishTVShows.com is a recommendation site for people who want the best Spanish-language
+              series without wasting hours scrolling. We highlight what’s worth watching, who it’s for,
+              and where to stream it—plus practical notes for anyone learning Spanish and trying to
+              train their ear with real dialogue.
+            </p>
+            <p className="text-gray-400 text-xs mt-3">
+              Start with Trending, then click into a show page for details and streaming options.
+            </p>
+          </div>
         </div>
       </section>
 
-      {/* ===================== POPULAR GUIDES (DISCOVERABILITY) ===================== */}
+      {/* ===================== POPULAR GUIDES ===================== */}
       <section className="max-w-6xl mx-auto px-6 mt-12 mb-12">
         <div className="bg-black/70 border border-gray-800 rounded-2xl p-6 box-glow">
           <h2 className="text-white font-black text-2xl mb-2">
@@ -136,7 +151,13 @@ export default async function Home() {
           Top 10 Spanish Shows Destroying <span className="text-neon">2026</span>
         </h2>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
+        {shows.length === 0 && (
+          <p className="text-center text-gray-500 text-sm mt-6">
+            Rankings update frequently. Check back shortly for the latest Top 10.
+          </p>
+        )}
+
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12 mt-10">
           {shows.slice(0, 10).map((show, index) => (
             <Link key={show.id} href={`/show/${show.id}`} className="group block">
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden mb-4 border border-gray-800 group-hover:border-neon transition-colors box-glow">
@@ -160,4 +181,4 @@ export default async function Home() {
       </section>
     </div>
   );
-        }
+                }
