@@ -12,26 +12,37 @@ function clamp(n, min, max) {
   return Math.max(min, Math.min(max, n));
 }
 
-// Simple heuristic (doesn't need extra APIs) — gives AdSense-friendly, human-feeling guidance.
 function getLanguageLevel(show) {
   const seasons = Number(show?.number_of_seasons || 1);
   const rating = Number(show?.vote_average || 0);
   const overviewLen = (show?.overview || "").length;
 
-  // More seasons + more plot density tends to be harder for learners.
   const complexity = clamp(
-    Math.round((seasons * 1.2) + (overviewLen / 220) + (rating >= 8 ? 1 : 0)),
+    Math.round(seasons * 1.2 + overviewLen / 220 + (rating >= 8 ? 1 : 0)),
     1,
     5
   );
 
-  if (complexity <= 2) return { label: "Beginner-friendly", note: "Clear story beats, easier to follow with subtitles." };
-  if (complexity === 3) return { label: "Intermediate", note: "Natural dialogue and faster pacing—great practice." };
-  return { label: "Advanced", note: "Fast dialogue, slang, and cultural references—challenging but rewarding." };
+  if (complexity <= 2)
+    return {
+      label: "Beginner-friendly",
+      note: "Clear story beats, easier to follow with subtitles.",
+    };
+  if (complexity === 3)
+    return {
+      label: "Intermediate",
+      note: "Natural dialogue and faster pacing—great practice.",
+    };
+  return {
+    label: "Advanced",
+    note: "Fast dialogue, slang, and cultural references—challenging but rewarding.",
+  };
 }
 
 function pickGenres(show) {
-  const genres = Array.isArray(show?.genres) ? show.genres.map((g) => g?.name).filter(Boolean) : [];
+  const genres = Array.isArray(show?.genres)
+    ? show.genres.map((g) => g?.name).filter(Boolean)
+    : [];
   return genres.slice(0, 3);
 }
 
@@ -44,12 +55,15 @@ function buildEditorial(show) {
   const year = yearFromDate(show?.first_air_date);
   const rating = show?.vote_average ? show.vote_average.toFixed(1) : "—";
 
-  // This is ORIGINAL text generated server-side using factual fields.
-  // It reads human, varies per show, and is visible in initial HTML → AdSense likes it.
   return {
-    tldr: `${name} is a ${g1}${g2 ? ` / ${g2}` : ""} series with ${seasons} season${seasons === 1 ? "" : "s"} (first aired ${year}). It’s rated ${rating} and works well if you want a show with strong momentum and bingeability.`,
-    whyWatch: `If you're choosing what to watch tonight, ${name} is a good pick when you want a story that keeps moving. The pacing and character arcs are what usually hook people—especially fans of ${g1}${g2 ? ` and ${g2}` : ""}.`,
-    whoItsFor: `Best for: people who like plot-driven series, cliffhangers, and a show that’s easy to binge without needing a recap every five minutes.`,
+    tldr: `${name} is a ${g1}${g2 ? ` / ${g2}` : ""} series with ${seasons} season${
+      seasons === 1 ? "" : "s"
+    } (first aired ${year}). It’s rated ${rating} and works well if you want a bingeable story with momentum.`,
+    whyWatch: `If you’re choosing what to watch tonight, ${name} is a strong pick when you want a plot-driven show that actually moves. It tends to click with fans of ${g1}${
+      g2 ? ` and ${g2}` : ""
+    } who like cliffhangers and character pressure.`,
+    whoItsFor:
+      "Best for: people who want a story you can follow episode-to-episode without homework, and viewers who like strong pacing and payoff.",
   };
 }
 
@@ -57,7 +71,11 @@ export async function generateMetadata({ params }) {
   const raw = params?.id || "";
   const id = raw.split("-")[0];
 
-  const show = await tmdb(`/tv/${id}`, { language: "en-US" }, { revalidate: 21600 });
+  const show = await tmdb(
+    `/tv/${id}`,
+    { language: "en-US" },
+    { revalidate: 21600 }
+  );
 
   const title = `${show?.name || "Show"} – Where to Watch, Seasons, Rating`;
   const description =
@@ -70,7 +88,9 @@ export async function generateMetadata({ params }) {
     openGraph: {
       title,
       description,
-      images: show?.backdrop_path ? [{ url: tmdbImg(show.backdrop_path, "w1280") }] : [],
+      images: show?.backdrop_path
+        ? [{ url: tmdbImg(show.backdrop_path, "w1280") }]
+        : [],
     },
   };
 }
@@ -79,13 +99,22 @@ export default async function ShowPage({ params }) {
   const raw = params?.id || "";
   const id = raw.split("-")[0];
 
-  const show = await tmdb(`/tv/${id}`, { language: "en-US" }, { revalidate: 21600 });
+  const show = await tmdb(
+    `/tv/${id}`,
+    { language: "en-US" },
+    { revalidate: 21600 }
+  );
 
-  // Similar shows (keeps users onsite, improves “real site” signals)
-  const recsData = await tmdb(`/tv/${id}/recommendations`, { language: "en-US", page: 1 }, { revalidate: 21600 });
+  const recsData = await tmdb(
+    `/tv/${id}/recommendations`,
+    { language: "en-US", page: 1 },
+    { revalidate: 21600 }
+  );
   const recs = (recsData?.results || []).filter(Boolean).slice(0, 8);
 
-  const jw = `https://www.justwatch.com/us/search?q=${encodeURIComponent(show?.name || "")}`;
+  const jw = `https://www.justwatch.com/us/search?q=${encodeURIComponent(
+    show?.name || ""
+  )}`;
 
   const genres = pickGenres(show);
   const lang = getLanguageLevel(show);
@@ -123,7 +152,7 @@ export default async function ShowPage({ params }) {
             <div className="absolute inset-0 bg-black/70" />
 
             <div className="absolute bottom-0 left-0 right-0 p-6 md:p-10">
-              <h1 className="text-3xl md:text-5xl font-black text-glow">
+              <h1 className="font-display text-4xl md:text-6xl text-glow">
                 {show?.name || "Show"}
               </h1>
 
@@ -160,7 +189,7 @@ export default async function ShowPage({ params }) {
                 </a>
 
                 <Link
-                  href="/best-spanish-crime-shows"
+                  href="/trending"
                   className="border border-gray-700 text-white font-black px-6 py-3 rounded-full hover:border-neon transition"
                 >
                   🔥 More picks
@@ -174,9 +203,8 @@ export default async function ShowPage({ params }) {
           </div>
 
           <div className="p-6 md:p-10 space-y-10">
-            {/* ✅ ORIGINAL EDITORIAL (AdSense-friendly; SSR; not TMDB copy) */}
             <section className="bg-black/60 border border-gray-800 rounded-2xl p-6">
-              <h2 className="text-xl font-black mb-2">
+              <h2 className="font-display text-3xl md:text-4xl mb-2">
                 Is {show?.name || "this show"} worth watching?
               </h2>
               <p className="text-gray-300 leading-relaxed">{editorial.tldr}</p>
@@ -184,12 +212,16 @@ export default async function ShowPage({ params }) {
               <div className="mt-4 grid grid-cols-1 md:grid-cols-2 gap-4">
                 <div className="border border-gray-800 rounded-xl p-4 bg-black/50">
                   <div className="text-neon font-black mb-1">Why people like it</div>
-                  <p className="text-gray-300 text-sm leading-relaxed">{editorial.whyWatch}</p>
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    {editorial.whyWatch}
+                  </p>
                 </div>
 
                 <div className="border border-gray-800 rounded-xl p-4 bg-black/50">
                   <div className="text-neon font-black mb-1">Who it’s for</div>
-                  <p className="text-gray-300 text-sm leading-relaxed">{editorial.whoItsFor}</p>
+                  <p className="text-gray-300 text-sm leading-relaxed">
+                    {editorial.whoItsFor}
+                  </p>
                 </div>
               </div>
 
@@ -202,19 +234,22 @@ export default async function ShowPage({ params }) {
               </div>
             </section>
 
-            {/* TMDB OVERVIEW (still useful, but not your only content anymore) */}
             <section>
-              <h2 className="text-xl font-black mb-2">Overview</h2>
+              <h2 className="font-display text-3xl md:text-4xl mb-2">Overview</h2>
               <p className="text-gray-300 leading-relaxed">
                 {show?.overview || "No description available yet."}
               </p>
             </section>
 
-            {/* Similar shows (internal links) */}
             <section>
               <div className="flex items-center justify-between gap-4 mb-4">
-                <h2 className="text-xl font-black">Similar shows you might like</h2>
-                <Link href="/trending" className="text-neon font-black hover:underline text-sm">
+                <h2 className="font-display text-3xl md:text-4xl">
+                  Similar shows you might like
+                </h2>
+                <Link
+                  href="/trending"
+                  className="text-neon font-black hover:underline text-sm"
+                >
                   See what’s trending →
                 </Link>
               </div>
@@ -232,9 +267,12 @@ export default async function ShowPage({ params }) {
                       className="bg-black/60 border border-gray-800 rounded-2xl overflow-hidden hover:border-neon transition"
                     >
                       <div className="relative w-full aspect-[4/3] bg-black">
-                        {(s.backdrop_path || s.poster_path) ? (
+                        {s.backdrop_path || s.poster_path ? (
                           <Image
-                            src={tmdbImg(s.backdrop_path || s.poster_path, "w780")}
+                            src={tmdbImg(
+                              s.backdrop_path || s.poster_path,
+                              "w780"
+                            )}
                             alt={s.name || "Show"}
                             fill
                             className="object-cover opacity-90"
@@ -257,9 +295,8 @@ export default async function ShowPage({ params }) {
               )}
             </section>
 
-            {/* Mini FAQ (more original text = more approval-friendly) */}
             <section className="border-t border-gray-900 pt-8">
-              <h2 className="text-xl font-black mb-3">FAQ</h2>
+              <h2 className="font-display text-3xl md:text-4xl mb-3">FAQ</h2>
 
               <div className="space-y-4">
                 <div className="bg-black/50 border border-gray-800 rounded-xl p-4">
@@ -271,7 +308,9 @@ export default async function ShowPage({ params }) {
                 </div>
 
                 <div className="bg-black/50 border border-gray-800 rounded-xl p-4">
-                  <div className="text-white font-black">Is it good for learning Spanish?</div>
+                  <div className="text-white font-black">
+                    Is it good for learning Spanish?
+                  </div>
                   <p className="text-gray-300 text-sm mt-1 leading-relaxed">
                     Yes—especially if you use subtitles strategically. Start with English subs,
                     then switch to Spanish subs once you recognize common phrases.
@@ -280,9 +319,11 @@ export default async function ShowPage({ params }) {
                 </div>
 
                 <div className="bg-black/50 border border-gray-800 rounded-xl p-4">
-                  <div className="text-white font-black">How are shows ranked on this site?</div>
+                  <div className="text-white font-black">
+                    How are shows ranked on this site?
+                  </div>
                   <p className="text-gray-300 text-sm mt-1 leading-relaxed">
-                    We combine popularity signals and ratings with editorial guidance. Trending pages
+                    We combine ranking signals and ratings with editorial guidance. Trending pages
                     update frequently, and show pages include practical notes to help you choose quickly.
                   </p>
                 </div>
