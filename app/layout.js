@@ -66,7 +66,10 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* ✅ AdSense ownership / loader (NEW ACCOUNT) */}
+        {/* ✅ AdSense account meta (helps approval/verification) */}
+        <meta name="google-adsense-account" content="ca-pub-7215975042937417" />
+
+        {/* ✅ AdSense loader */}
         <script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7215975042937417"
@@ -80,10 +83,8 @@ export default function RootLayout({ children }) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
 
-        {/* Link the manifest so favicons actually work */}
         <link rel="manifest" href="/manifest.json" />
 
-        {/* Extra favicons for browsers */}
         <link
           rel="icon"
           href="/Screenshot_20251210_150918_Grok.jpg"
