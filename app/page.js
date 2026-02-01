@@ -24,10 +24,8 @@ export default async function Home() {
 
   return (
     <div className="bg-dark min-h-screen">
-      {/* NEWS TICKER */}
       <NewsTicker />
 
-      {/* ===================== HERO ===================== */}
       <section
         className="relative overflow-hidden"
         style={{
@@ -43,10 +41,10 @@ export default async function Home() {
 
         <div className="relative max-w-5xl mx-auto px-6 py-24 md:py-32 text-center">
           <p className="text-xs md:text-sm uppercase tracking-[0.3em] text-neon mb-4">
-            LATIN TV IS CARRYING 2026
+            LATIN TV IS CARRYING 2025
           </p>
 
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tighter mb-6">
+          <h1 className="font-display text-4xl md:text-6xl lg:text-7xl leading-[1.05] tracking-tighter mb-6">
             #1 Right Now:
             <br />
             <span className="bg-gradient-to-r from-neon via-hot to-orange-400 bg-clip-text text-transparent">
@@ -54,7 +52,7 @@ export default async function Home() {
             </span>
           </h1>
 
-          <p className="text-gray-300 text-base md:text-lg max-w-2xl mx-auto font-mono mb-8">
+          <p className="text-gray-300 text-base md:text-lg max-w-2xl mx-auto mb-8">
             We rank Spanish-language series with clear recommendations, where-to-watch info,
             and beginner-friendly notes for learning Spanish through TV.
           </p>
@@ -77,9 +75,8 @@ export default async function Home() {
             )}
           </div>
 
-          {/* ✅ Editorial "purpose" block (AdSense approval signal) */}
           <div className="max-w-3xl mx-auto mt-10 text-left bg-black/60 border border-gray-800 rounded-2xl p-6">
-            <h2 className="text-white font-black text-xl mb-2">
+            <h2 className="font-display text-2xl md:text-3xl text-white mb-2">
               What this site is (and why it exists)
             </h2>
             <p className="text-gray-300 text-sm leading-relaxed">
@@ -95,13 +92,12 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* ===================== POPULAR GUIDES ===================== */}
       <section className="max-w-6xl mx-auto px-6 mt-12 mb-12">
         <div className="bg-black/70 border border-gray-800 rounded-2xl p-6 box-glow">
-          <h2 className="text-white font-black text-2xl mb-2">
+          <h2 className="font-display text-3xl text-white mb-2">
             Popular Spanish TV Guides
           </h2>
-          <p className="text-gray-400 text-sm font-mono mb-6">
+          <p className="text-gray-400 text-sm mb-6">
             Start here. Find a show. Click “Where to Watch.”
           </p>
 
@@ -145,9 +141,8 @@ export default async function Home() {
         </div>
       </section>
 
-      {/* ===================== TOP 10 GRID ===================== */}
       <section id="top10" className="max-w-7xl mx-auto px-6 pb-20 pt-12">
-        <h2 className="text-3xl md:text-4xl font-black tracking-tight text-center mb-4">
+        <h2 className="font-display text-4xl md:text-5xl tracking-tight text-center mb-4">
           Top 10 Spanish Shows Destroying <span className="text-neon">2026</span>
         </h2>
 
@@ -167,7 +162,7 @@ export default async function Home() {
                   className="w-full h-full object-cover opacity-75 group-hover:opacity-100 group-hover:scale-105 transition-all duration-500"
                 />
 
-                <div className="absolute top-3 left-3 px-3 py-1 rounded-full font-black text-xs font-mono bg-neon text-black">
+                <div className="absolute top-3 left-3 px-3 py-1 rounded-full font-black text-xs bg-neon text-black">
                   #{index + 1}
                 </div>
               </div>
@@ -181,4 +176,4 @@ export default async function Home() {
       </section>
     </div>
   );
-                }
+}
