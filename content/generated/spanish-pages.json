@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-02-23T14:07:50.723Z",
+  "generatedAt": "2026-02-24T14:11:28.364Z",
   "pages": [
     {
       "slug": "a-knight-of-the-seven-kingdoms-224372-summary",
@@ -20,7 +20,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 6,
-      "lastUpdated": "2026-02-23T14:07:49.191Z",
+      "lastUpdated": "2026-02-24T14:11:24.457Z",
       "content": {
         "h1": "A Knight of the Seven Kingdoms (2026) overview",
         "paragraphs": [
@@ -55,7 +55,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 6,
-      "lastUpdated": "2026-02-23T14:07:49.191Z",
+      "lastUpdated": "2026-02-24T14:11:24.457Z",
       "content": {
         "h1": "Where to watch A Knight of the Seven Kingdoms (2026)",
         "paragraphs": [
@@ -91,7 +91,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 6,
-      "lastUpdated": "2026-02-23T14:07:49.191Z",
+      "lastUpdated": "2026-02-24T14:11:24.457Z",
       "content": {
         "h1": "A Knight of the Seven Kingdoms (2026) cast & key characters",
         "paragraphs": [
@@ -127,7 +127,7 @@
       ],
       "numberOfSeasons": 8,
       "numberOfEpisodes": 144,
-      "lastUpdated": "2026-02-23T14:07:49.233Z",
+      "lastUpdated": "2026-02-24T14:11:24.559Z",
       "content": {
         "h1": "The Rookie (2018) overview",
         "paragraphs": [
@@ -162,7 +162,7 @@
       ],
       "numberOfSeasons": 8,
       "numberOfEpisodes": 144,
-      "lastUpdated": "2026-02-23T14:07:49.233Z",
+      "lastUpdated": "2026-02-24T14:11:24.559Z",
       "content": {
         "h1": "Where to watch The Rookie (2018)",
         "paragraphs": [
@@ -198,7 +198,7 @@
       ],
       "numberOfSeasons": 8,
       "numberOfEpisodes": 144,
-      "lastUpdated": "2026-02-23T14:07:49.233Z",
+      "lastUpdated": "2026-02-24T14:11:24.559Z",
       "content": {
         "h1": "The Rookie (2018) cast & key characters",
         "paragraphs": [
@@ -216,30 +216,31 @@
       }
     },
     {
-      "slug": "family-guy-1434-summary",
+      "slug": "the-simpsons-456-summary",
       "pageType": "summary",
-      "showId": 1434,
-      "title": "Family Guy",
-      "year": "1999",
-      "posterPath": "/3PFsEuAiyLkWsP4GG6dIV37Q6gu.jpg",
-      "backdropPath": "/jbTqU6BJMufoMnPSlO4ThrcXs3Y.jpg",
-      "overview": "Sick, twisted, politically incorrect and Freakin' Sweet animated series featuring the adventures of the dysfunctional Griffin family. Bumbling Peter and long-suffering Lois have three kids. Stewie (a brilliant but sadistic baby bent on killing his mother and taking over the world), Meg (the oldest, and is the most unpopular girl in town) and Chris (the middle kid, he's not very bright but has a passion for movies). The final member of the family is Brian - a talking dog and much more than a pet, he keeps Stewie in check whilst sipping Martinis and sorting through his own life issues.",
+      "showId": 456,
+      "title": "The Simpsons",
+      "year": "1989",
+      "posterPath": "/uWpG7GqfKGQqX4YMAo3nv5OrglV.jpg",
+      "backdropPath": "/ukzJIPKTTSUzdr7jQoGKdrvZGk7.jpg",
+      "overview": "Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands. Since the beginning, the series has been a pop culture icon, attracting hundreds of celebrities to guest star. The show has also made name for itself in its fearless satirical take on politics, media and American life in general.",
       "genres": [
+        "Family",
         "Animation",
         "Comedy"
       ],
       "networks": [
         "FOX"
       ],
-      "numberOfSeasons": 24,
-      "numberOfEpisodes": 446,
-      "lastUpdated": "2026-02-23T14:07:49.262Z",
+      "numberOfSeasons": 37,
+      "numberOfEpisodes": 801,
+      "lastUpdated": "2026-02-24T14:11:24.658Z",
       "content": {
-        "h1": "Family Guy (1999) overview",
+        "h1": "The Simpsons (1989) overview",
         "paragraphs": [
-          "Sick, twisted, politically incorrect and Freakin' Sweet animated series featuring the adventures of the dysfunctional Griffin family. Bumbling Peter and long-suffering Lois have three kids. Stewie (a brilliant but sadistic baby bent on killing his mother and taking over the world), Meg (the oldest, and is the most unpopular girl in town) and Chris (the middle kid, he's not very bright but has a passion for movies). The final member of the family is Brian - a talking dog and much more than a pet, he keeps Stewie in check whilst sipping Martinis and sorting through his own life issues.",
-          "Genres: Animation, Comedy. Networks: FOX.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Family Guy\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands. Since the beginning, the series has been a pop culture icon, attracting hundreds of celebrities to guest star. The show has also made name for itself in its fearless satirical take on politics, media and American life in general.",
+          "Genres: Family, Animation, Comedy. Networks: FOX.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"The Simpsons\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
           "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
         ],
         "bullets": [
@@ -250,66 +251,68 @@
       }
     },
     {
-      "slug": "family-guy-1434-watch",
+      "slug": "the-simpsons-456-watch",
       "pageType": "watch",
-      "showId": 1434,
-      "title": "Family Guy",
-      "year": "1999",
-      "posterPath": "/3PFsEuAiyLkWsP4GG6dIV37Q6gu.jpg",
-      "backdropPath": "/jbTqU6BJMufoMnPSlO4ThrcXs3Y.jpg",
-      "overview": "Sick, twisted, politically incorrect and Freakin' Sweet animated series featuring the adventures of the dysfunctional Griffin family. Bumbling Peter and long-suffering Lois have three kids. Stewie (a brilliant but sadistic baby bent on killing his mother and taking over the world), Meg (the oldest, and is the most unpopular girl in town) and Chris (the middle kid, he's not very bright but has a passion for movies). The final member of the family is Brian - a talking dog and much more than a pet, he keeps Stewie in check whilst sipping Martinis and sorting through his own life issues.",
+      "showId": 456,
+      "title": "The Simpsons",
+      "year": "1989",
+      "posterPath": "/uWpG7GqfKGQqX4YMAo3nv5OrglV.jpg",
+      "backdropPath": "/ukzJIPKTTSUzdr7jQoGKdrvZGk7.jpg",
+      "overview": "Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands. Since the beginning, the series has been a pop culture icon, attracting hundreds of celebrities to guest star. The show has also made name for itself in its fearless satirical take on politics, media and American life in general.",
       "genres": [
+        "Family",
         "Animation",
         "Comedy"
       ],
       "networks": [
         "FOX"
       ],
-      "numberOfSeasons": 24,
-      "numberOfEpisodes": 446,
-      "lastUpdated": "2026-02-23T14:07:49.262Z",
+      "numberOfSeasons": 37,
+      "numberOfEpisodes": 801,
+      "lastUpdated": "2026-02-24T14:11:24.658Z",
       "content": {
-        "h1": "Where to watch Family Guy (1999)",
+        "h1": "Where to watch The Simpsons (1989)",
         "paragraphs": [
-          "If you're looking for where to watch \"Family Guy\" (1999), start by checking the major streaming platforms available in your region.",
+          "If you're looking for where to watch \"The Simpsons\" (1989), start by checking the major streaming platforms available in your region.",
           "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 24 season(s), 446 episode(s), genres: Animation, Comedy.",
-          "Sick, twisted, politically incorrect and Freakin' Sweet animated series featuring the adventures of the dysfunctional Griffin family. Bumbling Peter and long-suffering Lois have three kids. Stewie (a brilliant but sadistic baby bent on killing his mother and taking over the world), Meg (the oldest, and is the most unpopular girl in town) and Chris (the middle kid, he's not very bright but has a passion for movies). The final member of the family is Brian - a talking dog and much more than a pet, he keeps Stewie in check whilst sipping Martinis and sorting through his own life issues.",
+          "Quick facts: 37 season(s), 801 episode(s), genres: Family, Animation, Comedy.",
+          "Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands. Since the beginning, the series has been a pop culture icon, attracting hundreds of celebrities to guest star. The show has also made name for itself in its fearless satirical take on politics, media and American life in general.",
           "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
         ],
         "bullets": [
-          "Search in-app for: \"Family Guy\"",
+          "Search in-app for: \"The Simpsons\"",
           "Try both English + Spanish title variants",
           "Use subtitles + pause/replay for language learning"
         ]
       }
     },
     {
-      "slug": "family-guy-1434-cast",
+      "slug": "the-simpsons-456-cast",
       "pageType": "cast",
-      "showId": 1434,
-      "title": "Family Guy",
-      "year": "1999",
-      "posterPath": "/3PFsEuAiyLkWsP4GG6dIV37Q6gu.jpg",
-      "backdropPath": "/jbTqU6BJMufoMnPSlO4ThrcXs3Y.jpg",
-      "overview": "Sick, twisted, politically incorrect and Freakin' Sweet animated series featuring the adventures of the dysfunctional Griffin family. Bumbling Peter and long-suffering Lois have three kids. Stewie (a brilliant but sadistic baby bent on killing his mother and taking over the world), Meg (the oldest, and is the most unpopular girl in town) and Chris (the middle kid, he's not very bright but has a passion for movies). The final member of the family is Brian - a talking dog and much more than a pet, he keeps Stewie in check whilst sipping Martinis and sorting through his own life issues.",
+      "showId": 456,
+      "title": "The Simpsons",
+      "year": "1989",
+      "posterPath": "/uWpG7GqfKGQqX4YMAo3nv5OrglV.jpg",
+      "backdropPath": "/ukzJIPKTTSUzdr7jQoGKdrvZGk7.jpg",
+      "overview": "Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands. Since the beginning, the series has been a pop culture icon, attracting hundreds of celebrities to guest star. The show has also made name for itself in its fearless satirical take on politics, media and American life in general.",
       "genres": [
+        "Family",
         "Animation",
         "Comedy"
       ],
       "networks": [
         "FOX"
       ],
-      "numberOfSeasons": 24,
-      "numberOfEpisodes": 446,
-      "lastUpdated": "2026-02-23T14:07:49.262Z",
+      "numberOfSeasons": 37,
+      "numberOfEpisodes": 801,
+      "lastUpdated": "2026-02-24T14:11:24.658Z",
       "content": {
-        "h1": "Family Guy (1999) cast & key characters",
+        "h1": "The Simpsons (1989) cast & key characters",
         "paragraphs": [
-          "This page covers the cast overview for \"Family Guy\" (1999) and how to explore actor credits.",
+          "This page covers the cast overview for \"The Simpsons\" (1989) and how to explore actor credits.",
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 24 season(s), 446 episode(s), networks: FOX.",
-          "Sick, twisted, politically incorrect and Freakin' Sweet animated series featuring the adventures of the dysfunctional Griffin family. Bumbling Peter and long-suffering Lois have three kids. Stewie (a brilliant but sadistic baby bent on killing his mother and taking over the world), Meg (the oldest, and is the most unpopular girl in town) and Chris (the middle kid, he's not very bright but has a passion for movies). The final member of the family is Brian - a talking dog and much more than a pet, he keeps Stewie in check whilst sipping Martinis and sorting through his own life issues.",
+          "Quick facts: 37 season(s), 801 episode(s), networks: FOX.",
+          "Set in Springfield, the average American town, the show focuses on the antics and everyday adventures of the Simpson family; Homer, Marge, Bart, Lisa and Maggie, as well as a virtual cast of thousands. Since the beginning, the series has been a pop culture icon, attracting hundreds of celebrities to guest star. The show has also made name for itself in its fearless satirical take on politics, media and American life in general.",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -338,7 +341,7 @@
       ],
       "numberOfSeasons": 5,
       "numberOfEpisodes": 42,
-      "lastUpdated": "2026-02-23T14:07:49.278Z",
+      "lastUpdated": "2026-02-24T14:11:24.761Z",
       "content": {
         "h1": "Stranger Things (2016) overview",
         "paragraphs": [
@@ -373,7 +376,7 @@
       ],
       "numberOfSeasons": 5,
       "numberOfEpisodes": 42,
-      "lastUpdated": "2026-02-23T14:07:49.278Z",
+      "lastUpdated": "2026-02-24T14:11:24.761Z",
       "content": {
         "h1": "Where to watch Stranger Things (2016)",
         "paragraphs": [
@@ -409,7 +412,7 @@
       ],
       "numberOfSeasons": 5,
       "numberOfEpisodes": 42,
-      "lastUpdated": "2026-02-23T14:07:49.278Z",
+      "lastUpdated": "2026-02-24T14:11:24.761Z",
       "content": {
         "h1": "Stranger Things (2016) cast & key characters",
         "paragraphs": [
@@ -472,7 +475,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 59,
-      "lastUpdated": "2026-02-23T14:07:49.304Z",
+      "lastUpdated": "2026-02-24T14:11:24.862Z",
       "content": {
         "h1": "JUJUTSU KAISEN (2020) overview",
         "paragraphs": [
@@ -534,7 +537,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 59,
-      "lastUpdated": "2026-02-23T14:07:49.304Z",
+      "lastUpdated": "2026-02-24T14:11:24.862Z",
       "content": {
         "h1": "Where to watch JUJUTSU KAISEN (2020)",
         "paragraphs": [
@@ -597,7 +600,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 59,
-      "lastUpdated": "2026-02-23T14:07:49.304Z",
+      "lastUpdated": "2026-02-24T14:11:24.862Z",
       "content": {
         "h1": "JUJUTSU KAISEN (2020) cast & key characters",
         "paragraphs": [
@@ -633,7 +636,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 8,
-      "lastUpdated": "2026-02-23T14:07:49.333Z",
+      "lastUpdated": "2026-02-24T14:11:24.962Z",
       "content": {
         "h1": "56 Days (2026) overview",
         "paragraphs": [
@@ -668,7 +671,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 8,
-      "lastUpdated": "2026-02-23T14:07:49.333Z",
+      "lastUpdated": "2026-02-24T14:11:24.962Z",
       "content": {
         "h1": "Where to watch 56 Days (2026)",
         "paragraphs": [
@@ -704,7 +707,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 8,
-      "lastUpdated": "2026-02-23T14:07:49.333Z",
+      "lastUpdated": "2026-02-24T14:11:24.962Z",
       "content": {
         "h1": "56 Days (2026) cast & key characters",
         "paragraphs": [
@@ -740,7 +743,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 30,
-      "lastUpdated": "2026-02-23T14:07:49.348Z",
+      "lastUpdated": "2026-02-24T14:11:25.071Z",
       "content": {
         "h1": "The Night Agent (2023) overview",
         "paragraphs": [
@@ -775,7 +778,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 30,
-      "lastUpdated": "2026-02-23T14:07:49.348Z",
+      "lastUpdated": "2026-02-24T14:11:25.071Z",
       "content": {
         "h1": "Where to watch The Night Agent (2023)",
         "paragraphs": [
@@ -811,7 +814,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 30,
-      "lastUpdated": "2026-02-23T14:07:49.348Z",
+      "lastUpdated": "2026-02-24T14:11:25.071Z",
       "content": {
         "h1": "The Night Agent (2023) cast & key characters",
         "paragraphs": [
@@ -846,7 +849,7 @@
       ],
       "numberOfSeasons": 2,
       "numberOfEpisodes": 16,
-      "lastUpdated": "2026-02-23T14:07:49.376Z",
+      "lastUpdated": "2026-02-24T14:11:25.170Z",
       "content": {
         "h1": "In the Mud (2025) overview",
         "paragraphs": [
@@ -880,7 +883,7 @@
       ],
       "numberOfSeasons": 2,
       "numberOfEpisodes": 16,
-      "lastUpdated": "2026-02-23T14:07:49.376Z",
+      "lastUpdated": "2026-02-24T14:11:25.170Z",
       "content": {
         "h1": "Where to watch In the Mud (2025)",
         "paragraphs": [
@@ -915,7 +918,7 @@
       ],
       "numberOfSeasons": 2,
       "numberOfEpisodes": 16,
-      "lastUpdated": "2026-02-23T14:07:49.376Z",
+      "lastUpdated": "2026-02-24T14:11:25.170Z",
       "content": {
         "h1": "In the Mud (2025) cast & key characters",
         "paragraphs": [
@@ -980,7 +983,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 39,
-      "lastUpdated": "2026-02-23T14:07:49.420Z",
+      "lastUpdated": "2026-02-24T14:11:25.273Z",
       "content": {
         "h1": "Frieren: Beyond Journey's End (2023) overview",
         "paragraphs": [
@@ -1044,7 +1047,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 39,
-      "lastUpdated": "2026-02-23T14:07:49.420Z",
+      "lastUpdated": "2026-02-24T14:11:25.273Z",
       "content": {
         "h1": "Where to watch Frieren: Beyond Journey's End (2023)",
         "paragraphs": [
@@ -1109,7 +1112,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 39,
-      "lastUpdated": "2026-02-23T14:07:49.420Z",
+      "lastUpdated": "2026-02-24T14:11:25.273Z",
       "content": {
         "h1": "Frieren: Beyond Journey's End (2023) cast & key characters",
         "paragraphs": [
@@ -1117,113 +1120,6 @@
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
           "Quick facts: 1 season(s), 39 episode(s), networks: Nippon TV, YTV, FBS, Chukyo TV, RNB, HTV, FCT, STV, KNB, YBS, KTK, NKT, RAB, TVI, MMT, ABS, JRT, YBC, UMK TV Miyazaki, TSB, TeNY, RNC, NIB, KKT, Daiichi-TV, FBC, RKC, KYT, KRY.",
           "Decades after her party defeated the Demon King, an old friend's funeral launches the elf wizard Frieren on a journey of self-discovery.",
-          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
-        ],
-        "bullets": [
-          "Look up the show on TMDB or IMDb for verified cast",
-          "Check season-by-season credits (casts change)",
-          "Save actor names you like → discover similar shows"
-        ]
-      }
-    },
-    {
-      "slug": "the-art-of-sarah-273977-summary",
-      "pageType": "summary",
-      "showId": 273977,
-      "title": "The Art of Sarah",
-      "year": "2026",
-      "posterPath": "/nP2PRGSmLdbZtQtoXPPppcDAsNw.jpg",
-      "backdropPath": "/qy8gJEwspR7L5WZn4e8ItwK8m23.jpg",
-      "overview": "A body found in the middle of town. A luxe label on the rise. A detective tests every stitch of a woman's story that keeps changing. What really happened?",
-      "genres": [
-        "Crime",
-        "Mystery",
-        "Drama"
-      ],
-      "networks": [
-        "Netflix"
-      ],
-      "numberOfSeasons": 1,
-      "numberOfEpisodes": 8,
-      "lastUpdated": "2026-02-23T14:07:49.446Z",
-      "content": {
-        "h1": "The Art of Sarah (2026) overview",
-        "paragraphs": [
-          "A body found in the middle of town. A luxe label on the rise. A detective tests every stitch of a woman's story that keeps changing. What really happened?",
-          "Genres: Crime, Mystery, Drama. Networks: Netflix.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"The Art of Sarah\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
-          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
-        ],
-        "bullets": [
-          "Best for: subtitle-based language practice",
-          "Rewatch strategy beats binge-watching",
-          "Save unknown words → review after the episode"
-        ]
-      }
-    },
-    {
-      "slug": "the-art-of-sarah-273977-watch",
-      "pageType": "watch",
-      "showId": 273977,
-      "title": "The Art of Sarah",
-      "year": "2026",
-      "posterPath": "/nP2PRGSmLdbZtQtoXPPppcDAsNw.jpg",
-      "backdropPath": "/qy8gJEwspR7L5WZn4e8ItwK8m23.jpg",
-      "overview": "A body found in the middle of town. A luxe label on the rise. A detective tests every stitch of a woman's story that keeps changing. What really happened?",
-      "genres": [
-        "Crime",
-        "Mystery",
-        "Drama"
-      ],
-      "networks": [
-        "Netflix"
-      ],
-      "numberOfSeasons": 1,
-      "numberOfEpisodes": 8,
-      "lastUpdated": "2026-02-23T14:07:49.446Z",
-      "content": {
-        "h1": "Where to watch The Art of Sarah (2026)",
-        "paragraphs": [
-          "If you're looking for where to watch \"The Art of Sarah\" (2026), start by checking the major streaming platforms available in your region.",
-          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 1 season(s), 8 episode(s), genres: Crime, Mystery, Drama.",
-          "A body found in the middle of town. A luxe label on the rise. A detective tests every stitch of a woman's story that keeps changing. What really happened?",
-          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
-        ],
-        "bullets": [
-          "Search in-app for: \"The Art of Sarah\"",
-          "Try both English + Spanish title variants",
-          "Use subtitles + pause/replay for language learning"
-        ]
-      }
-    },
-    {
-      "slug": "the-art-of-sarah-273977-cast",
-      "pageType": "cast",
-      "showId": 273977,
-      "title": "The Art of Sarah",
-      "year": "2026",
-      "posterPath": "/nP2PRGSmLdbZtQtoXPPppcDAsNw.jpg",
-      "backdropPath": "/qy8gJEwspR7L5WZn4e8ItwK8m23.jpg",
-      "overview": "A body found in the middle of town. A luxe label on the rise. A detective tests every stitch of a woman's story that keeps changing. What really happened?",
-      "genres": [
-        "Crime",
-        "Mystery",
-        "Drama"
-      ],
-      "networks": [
-        "Netflix"
-      ],
-      "numberOfSeasons": 1,
-      "numberOfEpisodes": 8,
-      "lastUpdated": "2026-02-23T14:07:49.446Z",
-      "content": {
-        "h1": "The Art of Sarah (2026) cast & key characters",
-        "paragraphs": [
-          "This page covers the cast overview for \"The Art of Sarah\" (2026) and how to explore actor credits.",
-          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 1 season(s), 8 episode(s), networks: Netflix.",
-          "A body found in the middle of town. A luxe label on the rise. A detective tests every stitch of a woman's story that keeps changing. What really happened?",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -1251,7 +1147,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 30,
-      "lastUpdated": "2026-02-23T14:07:49.461Z",
+      "lastUpdated": "2026-02-24T14:11:25.373Z",
       "content": {
         "h1": "The Pitt (2025) overview",
         "paragraphs": [
@@ -1285,7 +1181,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 30,
-      "lastUpdated": "2026-02-23T14:07:49.461Z",
+      "lastUpdated": "2026-02-24T14:11:25.373Z",
       "content": {
         "h1": "Where to watch The Pitt (2025)",
         "paragraphs": [
@@ -1320,7 +1216,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 30,
-      "lastUpdated": "2026-02-23T14:07:49.462Z",
+      "lastUpdated": "2026-02-24T14:11:25.373Z",
       "content": {
         "h1": "The Pitt (2025) cast & key characters",
         "paragraphs": [
@@ -1328,110 +1224,6 @@
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
           "Quick facts: 3 season(s), 30 episode(s), networks: Max, HBO Max.",
           "The staff of Pittsburgh's Trauma Medical Center work around the clock to save lives in an overcrowded and underfunded emergency department.",
-          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
-        ],
-        "bullets": [
-          "Look up the show on TMDB or IMDb for verified cast",
-          "Check season-by-season credits (casts change)",
-          "Save actor names you like → discover similar shows"
-        ]
-      }
-    },
-    {
-      "slug": "fallout-106379-summary",
-      "pageType": "summary",
-      "showId": 106379,
-      "title": "Fallout",
-      "year": "2024",
-      "posterPath": "/c15BtJxCXMrISLVmysdsnZUPQft.jpg",
-      "backdropPath": "/coaPCIqQBPUZsOnJcWZxhaORcDT.jpg",
-      "overview": "The story of haves and have-nots in a world in which there's almost nothing left to have. 200 years after the apocalypse, the gentle denizens of luxury fallout shelters are forced to return to the irradiated hellscape their ancestors left behind — and are shocked to discover an incredibly complex, gleefully weird, and highly violent universe waiting for them.",
-      "genres": [
-        "Action & Adventure",
-        "Sci-Fi & Fantasy"
-      ],
-      "networks": [
-        "Prime Video"
-      ],
-      "numberOfSeasons": 2,
-      "numberOfEpisodes": 16,
-      "lastUpdated": "2026-02-23T14:07:49.491Z",
-      "content": {
-        "h1": "Fallout (2024) overview",
-        "paragraphs": [
-          "The story of haves and have-nots in a world in which there's almost nothing left to have. 200 years after the apocalypse, the gentle denizens of luxury fallout shelters are forced to return to the irradiated hellscape their ancestors left behind — and are shocked to discover an incredibly complex, gleefully weird, and highly violent universe waiting for them.",
-          "Genres: Action & Adventure, Sci-Fi & Fantasy. Networks: Prime Video.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Fallout\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
-          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
-        ],
-        "bullets": [
-          "Best for: subtitle-based language practice",
-          "Rewatch strategy beats binge-watching",
-          "Save unknown words → review after the episode"
-        ]
-      }
-    },
-    {
-      "slug": "fallout-106379-watch",
-      "pageType": "watch",
-      "showId": 106379,
-      "title": "Fallout",
-      "year": "2024",
-      "posterPath": "/c15BtJxCXMrISLVmysdsnZUPQft.jpg",
-      "backdropPath": "/coaPCIqQBPUZsOnJcWZxhaORcDT.jpg",
-      "overview": "The story of haves and have-nots in a world in which there's almost nothing left to have. 200 years after the apocalypse, the gentle denizens of luxury fallout shelters are forced to return to the irradiated hellscape their ancestors left behind — and are shocked to discover an incredibly complex, gleefully weird, and highly violent universe waiting for them.",
-      "genres": [
-        "Action & Adventure",
-        "Sci-Fi & Fantasy"
-      ],
-      "networks": [
-        "Prime Video"
-      ],
-      "numberOfSeasons": 2,
-      "numberOfEpisodes": 16,
-      "lastUpdated": "2026-02-23T14:07:49.491Z",
-      "content": {
-        "h1": "Where to watch Fallout (2024)",
-        "paragraphs": [
-          "If you're looking for where to watch \"Fallout\" (2024), start by checking the major streaming platforms available in your region.",
-          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 2 season(s), 16 episode(s), genres: Action & Adventure, Sci-Fi & Fantasy.",
-          "The story of haves and have-nots in a world in which there's almost nothing left to have. 200 years after the apocalypse, the gentle denizens of luxury fallout shelters are forced to return to the irradiated hellscape their ancestors left behind — and are shocked to discover an incredibly complex, gleefully weird, and highly violent universe waiting for them.",
-          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
-        ],
-        "bullets": [
-          "Search in-app for: \"Fallout\"",
-          "Try both English + Spanish title variants",
-          "Use subtitles + pause/replay for language learning"
-        ]
-      }
-    },
-    {
-      "slug": "fallout-106379-cast",
-      "pageType": "cast",
-      "showId": 106379,
-      "title": "Fallout",
-      "year": "2024",
-      "posterPath": "/c15BtJxCXMrISLVmysdsnZUPQft.jpg",
-      "backdropPath": "/coaPCIqQBPUZsOnJcWZxhaORcDT.jpg",
-      "overview": "The story of haves and have-nots in a world in which there's almost nothing left to have. 200 years after the apocalypse, the gentle denizens of luxury fallout shelters are forced to return to the irradiated hellscape their ancestors left behind — and are shocked to discover an incredibly complex, gleefully weird, and highly violent universe waiting for them.",
-      "genres": [
-        "Action & Adventure",
-        "Sci-Fi & Fantasy"
-      ],
-      "networks": [
-        "Prime Video"
-      ],
-      "numberOfSeasons": 2,
-      "numberOfEpisodes": 16,
-      "lastUpdated": "2026-02-23T14:07:49.491Z",
-      "content": {
-        "h1": "Fallout (2024) cast & key characters",
-        "paragraphs": [
-          "This page covers the cast overview for \"Fallout\" (2024) and how to explore actor credits.",
-          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 2 season(s), 16 episode(s), networks: Prime Video.",
-          "The story of haves and have-nots in a world in which there's almost nothing left to have. 200 years after the apocalypse, the gentle denizens of luxury fallout shelters are forced to return to the irradiated hellscape their ancestors left behind — and are shocked to discover an incredibly complex, gleefully weird, and highly violent universe waiting for them.",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -1465,7 +1257,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 25,
-      "lastUpdated": "2026-02-23T14:07:49.519Z",
+      "lastUpdated": "2026-02-24T14:11:25.473Z",
       "content": {
         "h1": "Hell's Paradise (2023) overview",
         "paragraphs": [
@@ -1505,7 +1297,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 25,
-      "lastUpdated": "2026-02-23T14:07:49.519Z",
+      "lastUpdated": "2026-02-24T14:11:25.473Z",
       "content": {
         "h1": "Where to watch Hell's Paradise (2023)",
         "paragraphs": [
@@ -1546,7 +1338,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 25,
-      "lastUpdated": "2026-02-23T14:07:49.519Z",
+      "lastUpdated": "2026-02-24T14:11:25.473Z",
       "content": {
         "h1": "Hell's Paradise (2023) cast & key characters",
         "paragraphs": [
@@ -1554,6 +1346,321 @@
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
           "Quick facts: 1 season(s), 25 episode(s), networks: TV Tokyo, TV Aichi, TVQ, TV Osaka, TVh, TSC.",
           "For a chance at a pardon, a ninja assassin joins other condemned criminals on a journey to a mysterious island to retrieve an elixir of immortality.",
+          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
+        ],
+        "bullets": [
+          "Look up the show on TMDB or IMDb for verified cast",
+          "Check season-by-season credits (casts change)",
+          "Save actor names you like → discover similar shows"
+        ]
+      }
+    },
+    {
+      "slug": "the-art-of-sarah-273977-summary",
+      "pageType": "summary",
+      "showId": 273977,
+      "title": "The Art of Sarah",
+      "year": "2026",
+      "posterPath": "/nP2PRGSmLdbZtQtoXPPppcDAsNw.jpg",
+      "backdropPath": "/1XZZwNzqTPVaMA9U6LGNibAeScx.jpg",
+      "overview": "A body found in the middle of town. A luxe label on the rise. A detective tests every stitch of a woman's story that keeps changing. What really happened?",
+      "genres": [
+        "Crime",
+        "Mystery",
+        "Drama"
+      ],
+      "networks": [
+        "Netflix"
+      ],
+      "numberOfSeasons": 1,
+      "numberOfEpisodes": 8,
+      "lastUpdated": "2026-02-24T14:11:25.573Z",
+      "content": {
+        "h1": "The Art of Sarah (2026) overview",
+        "paragraphs": [
+          "A body found in the middle of town. A luxe label on the rise. A detective tests every stitch of a woman's story that keeps changing. What really happened?",
+          "Genres: Crime, Mystery, Drama. Networks: Netflix.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"The Art of Sarah\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
+        ],
+        "bullets": [
+          "Best for: subtitle-based language practice",
+          "Rewatch strategy beats binge-watching",
+          "Save unknown words → review after the episode"
+        ]
+      }
+    },
+    {
+      "slug": "the-art-of-sarah-273977-watch",
+      "pageType": "watch",
+      "showId": 273977,
+      "title": "The Art of Sarah",
+      "year": "2026",
+      "posterPath": "/nP2PRGSmLdbZtQtoXPPppcDAsNw.jpg",
+      "backdropPath": "/1XZZwNzqTPVaMA9U6LGNibAeScx.jpg",
+      "overview": "A body found in the middle of town. A luxe label on the rise. A detective tests every stitch of a woman's story that keeps changing. What really happened?",
+      "genres": [
+        "Crime",
+        "Mystery",
+        "Drama"
+      ],
+      "networks": [
+        "Netflix"
+      ],
+      "numberOfSeasons": 1,
+      "numberOfEpisodes": 8,
+      "lastUpdated": "2026-02-24T14:11:25.573Z",
+      "content": {
+        "h1": "Where to watch The Art of Sarah (2026)",
+        "paragraphs": [
+          "If you're looking for where to watch \"The Art of Sarah\" (2026), start by checking the major streaming platforms available in your region.",
+          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
+          "Quick facts: 1 season(s), 8 episode(s), genres: Crime, Mystery, Drama.",
+          "A body found in the middle of town. A luxe label on the rise. A detective tests every stitch of a woman's story that keeps changing. What really happened?",
+          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
+        ],
+        "bullets": [
+          "Search in-app for: \"The Art of Sarah\"",
+          "Try both English + Spanish title variants",
+          "Use subtitles + pause/replay for language learning"
+        ]
+      }
+    },
+    {
+      "slug": "the-art-of-sarah-273977-cast",
+      "pageType": "cast",
+      "showId": 273977,
+      "title": "The Art of Sarah",
+      "year": "2026",
+      "posterPath": "/nP2PRGSmLdbZtQtoXPPppcDAsNw.jpg",
+      "backdropPath": "/1XZZwNzqTPVaMA9U6LGNibAeScx.jpg",
+      "overview": "A body found in the middle of town. A luxe label on the rise. A detective tests every stitch of a woman's story that keeps changing. What really happened?",
+      "genres": [
+        "Crime",
+        "Mystery",
+        "Drama"
+      ],
+      "networks": [
+        "Netflix"
+      ],
+      "numberOfSeasons": 1,
+      "numberOfEpisodes": 8,
+      "lastUpdated": "2026-02-24T14:11:25.573Z",
+      "content": {
+        "h1": "The Art of Sarah (2026) cast & key characters",
+        "paragraphs": [
+          "This page covers the cast overview for \"The Art of Sarah\" (2026) and how to explore actor credits.",
+          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
+          "Quick facts: 1 season(s), 8 episode(s), networks: Netflix.",
+          "A body found in the middle of town. A luxe label on the rise. A detective tests every stitch of a woman's story that keeps changing. What really happened?",
+          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
+        ],
+        "bullets": [
+          "Look up the show on TMDB or IMDb for verified cast",
+          "Check season-by-season credits (casts change)",
+          "Save actor names you like → discover similar shows"
+        ]
+      }
+    },
+    {
+      "slug": "fallout-106379-summary",
+      "pageType": "summary",
+      "showId": 106379,
+      "title": "Fallout",
+      "year": "2024",
+      "posterPath": "/c15BtJxCXMrISLVmysdsnZUPQft.jpg",
+      "backdropPath": "/coaPCIqQBPUZsOnJcWZxhaORcDT.jpg",
+      "overview": "The story of haves and have-nots in a world in which there's almost nothing left to have. 200 years after the apocalypse, the gentle denizens of luxury fallout shelters are forced to return to the irradiated hellscape their ancestors left behind — and are shocked to discover an incredibly complex, gleefully weird, and highly violent universe waiting for them.",
+      "genres": [
+        "Action & Adventure",
+        "Sci-Fi & Fantasy"
+      ],
+      "networks": [
+        "Prime Video"
+      ],
+      "numberOfSeasons": 2,
+      "numberOfEpisodes": 16,
+      "lastUpdated": "2026-02-24T14:11:25.673Z",
+      "content": {
+        "h1": "Fallout (2024) overview",
+        "paragraphs": [
+          "The story of haves and have-nots in a world in which there's almost nothing left to have. 200 years after the apocalypse, the gentle denizens of luxury fallout shelters are forced to return to the irradiated hellscape their ancestors left behind — and are shocked to discover an incredibly complex, gleefully weird, and highly violent universe waiting for them.",
+          "Genres: Action & Adventure, Sci-Fi & Fantasy. Networks: Prime Video.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Fallout\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
+        ],
+        "bullets": [
+          "Best for: subtitle-based language practice",
+          "Rewatch strategy beats binge-watching",
+          "Save unknown words → review after the episode"
+        ]
+      }
+    },
+    {
+      "slug": "fallout-106379-watch",
+      "pageType": "watch",
+      "showId": 106379,
+      "title": "Fallout",
+      "year": "2024",
+      "posterPath": "/c15BtJxCXMrISLVmysdsnZUPQft.jpg",
+      "backdropPath": "/coaPCIqQBPUZsOnJcWZxhaORcDT.jpg",
+      "overview": "The story of haves and have-nots in a world in which there's almost nothing left to have. 200 years after the apocalypse, the gentle denizens of luxury fallout shelters are forced to return to the irradiated hellscape their ancestors left behind — and are shocked to discover an incredibly complex, gleefully weird, and highly violent universe waiting for them.",
+      "genres": [
+        "Action & Adventure",
+        "Sci-Fi & Fantasy"
+      ],
+      "networks": [
+        "Prime Video"
+      ],
+      "numberOfSeasons": 2,
+      "numberOfEpisodes": 16,
+      "lastUpdated": "2026-02-24T14:11:25.673Z",
+      "content": {
+        "h1": "Where to watch Fallout (2024)",
+        "paragraphs": [
+          "If you're looking for where to watch \"Fallout\" (2024), start by checking the major streaming platforms available in your region.",
+          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
+          "Quick facts: 2 season(s), 16 episode(s), genres: Action & Adventure, Sci-Fi & Fantasy.",
+          "The story of haves and have-nots in a world in which there's almost nothing left to have. 200 years after the apocalypse, the gentle denizens of luxury fallout shelters are forced to return to the irradiated hellscape their ancestors left behind — and are shocked to discover an incredibly complex, gleefully weird, and highly violent universe waiting for them.",
+          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
+        ],
+        "bullets": [
+          "Search in-app for: \"Fallout\"",
+          "Try both English + Spanish title variants",
+          "Use subtitles + pause/replay for language learning"
+        ]
+      }
+    },
+    {
+      "slug": "fallout-106379-cast",
+      "pageType": "cast",
+      "showId": 106379,
+      "title": "Fallout",
+      "year": "2024",
+      "posterPath": "/c15BtJxCXMrISLVmysdsnZUPQft.jpg",
+      "backdropPath": "/coaPCIqQBPUZsOnJcWZxhaORcDT.jpg",
+      "overview": "The story of haves and have-nots in a world in which there's almost nothing left to have. 200 years after the apocalypse, the gentle denizens of luxury fallout shelters are forced to return to the irradiated hellscape their ancestors left behind — and are shocked to discover an incredibly complex, gleefully weird, and highly violent universe waiting for them.",
+      "genres": [
+        "Action & Adventure",
+        "Sci-Fi & Fantasy"
+      ],
+      "networks": [
+        "Prime Video"
+      ],
+      "numberOfSeasons": 2,
+      "numberOfEpisodes": 16,
+      "lastUpdated": "2026-02-24T14:11:25.673Z",
+      "content": {
+        "h1": "Fallout (2024) cast & key characters",
+        "paragraphs": [
+          "This page covers the cast overview for \"Fallout\" (2024) and how to explore actor credits.",
+          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
+          "Quick facts: 2 season(s), 16 episode(s), networks: Prime Video.",
+          "The story of haves and have-nots in a world in which there's almost nothing left to have. 200 years after the apocalypse, the gentle denizens of luxury fallout shelters are forced to return to the irradiated hellscape their ancestors left behind — and are shocked to discover an incredibly complex, gleefully weird, and highly violent universe waiting for them.",
+          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
+        ],
+        "bullets": [
+          "Look up the show on TMDB or IMDb for verified cast",
+          "Check season-by-season credits (casts change)",
+          "Save actor names you like → discover similar shows"
+        ]
+      }
+    },
+    {
+      "slug": "paradise-245927-summary",
+      "pageType": "summary",
+      "showId": 245927,
+      "title": "Paradise",
+      "year": "2025",
+      "posterPath": "/l8RqfhqEk04W5sSOjQ9zeWU1DyM.jpg",
+      "backdropPath": "/5QsLvWh8J1mXl1W05wNJknMmhzR.jpg",
+      "overview": "The tranquility in a serene, wealthy community inhabited by some of the world's most prominent individuals explodes when a shocking murder occurs and a high stakes investigation unfolds.",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "networks": [
+        "Hulu"
+      ],
+      "numberOfSeasons": 2,
+      "numberOfEpisodes": 16,
+      "lastUpdated": "2026-02-24T14:11:25.781Z",
+      "content": {
+        "h1": "Paradise (2025) overview",
+        "paragraphs": [
+          "The tranquility in a serene, wealthy community inhabited by some of the world's most prominent individuals explodes when a shocking murder occurs and a high stakes investigation unfolds.",
+          "Genres: Crime, Drama. Networks: Hulu.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Paradise\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
+        ],
+        "bullets": [
+          "Best for: subtitle-based language practice",
+          "Rewatch strategy beats binge-watching",
+          "Save unknown words → review after the episode"
+        ]
+      }
+    },
+    {
+      "slug": "paradise-245927-watch",
+      "pageType": "watch",
+      "showId": 245927,
+      "title": "Paradise",
+      "year": "2025",
+      "posterPath": "/l8RqfhqEk04W5sSOjQ9zeWU1DyM.jpg",
+      "backdropPath": "/5QsLvWh8J1mXl1W05wNJknMmhzR.jpg",
+      "overview": "The tranquility in a serene, wealthy community inhabited by some of the world's most prominent individuals explodes when a shocking murder occurs and a high stakes investigation unfolds.",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "networks": [
+        "Hulu"
+      ],
+      "numberOfSeasons": 2,
+      "numberOfEpisodes": 16,
+      "lastUpdated": "2026-02-24T14:11:25.781Z",
+      "content": {
+        "h1": "Where to watch Paradise (2025)",
+        "paragraphs": [
+          "If you're looking for where to watch \"Paradise\" (2025), start by checking the major streaming platforms available in your region.",
+          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
+          "Quick facts: 2 season(s), 16 episode(s), genres: Crime, Drama.",
+          "The tranquility in a serene, wealthy community inhabited by some of the world's most prominent individuals explodes when a shocking murder occurs and a high stakes investigation unfolds.",
+          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
+        ],
+        "bullets": [
+          "Search in-app for: \"Paradise\"",
+          "Try both English + Spanish title variants",
+          "Use subtitles + pause/replay for language learning"
+        ]
+      }
+    },
+    {
+      "slug": "paradise-245927-cast",
+      "pageType": "cast",
+      "showId": 245927,
+      "title": "Paradise",
+      "year": "2025",
+      "posterPath": "/l8RqfhqEk04W5sSOjQ9zeWU1DyM.jpg",
+      "backdropPath": "/5QsLvWh8J1mXl1W05wNJknMmhzR.jpg",
+      "overview": "The tranquility in a serene, wealthy community inhabited by some of the world's most prominent individuals explodes when a shocking murder occurs and a high stakes investigation unfolds.",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "networks": [
+        "Hulu"
+      ],
+      "numberOfSeasons": 2,
+      "numberOfEpisodes": 16,
+      "lastUpdated": "2026-02-24T14:11:25.781Z",
+      "content": {
+        "h1": "Paradise (2025) cast & key characters",
+        "paragraphs": [
+          "This page covers the cast overview for \"Paradise\" (2025) and how to explore actor credits.",
+          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
+          "Quick facts: 2 season(s), 16 episode(s), networks: Hulu.",
+          "The tranquility in a serene, wealthy community inhabited by some of the world's most prominent individuals explodes when a shocking murder occurs and a high stakes investigation unfolds.",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -1581,7 +1688,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 212,
-      "lastUpdated": "2026-02-23T14:07:49.642Z",
+      "lastUpdated": "2026-02-24T14:11:25.884Z",
       "content": {
         "h1": "The Queen of Flow (2018) overview",
         "paragraphs": [
@@ -1615,7 +1722,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 212,
-      "lastUpdated": "2026-02-23T14:07:49.642Z",
+      "lastUpdated": "2026-02-24T14:11:25.884Z",
       "content": {
         "h1": "Where to watch The Queen of Flow (2018)",
         "paragraphs": [
@@ -1650,7 +1757,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 212,
-      "lastUpdated": "2026-02-23T14:07:49.642Z",
+      "lastUpdated": "2026-02-24T14:11:25.884Z",
       "content": {
         "h1": "The Queen of Flow (2018) cast & key characters",
         "paragraphs": [
@@ -1686,7 +1793,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 92,
-      "lastUpdated": "2026-02-23T14:07:49.674Z",
+      "lastUpdated": "2026-02-24T14:11:25.983Z",
       "content": {
         "h1": "Dinastía Casillas (2025) overview",
         "paragraphs": [
@@ -1721,7 +1828,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 92,
-      "lastUpdated": "2026-02-23T14:07:49.674Z",
+      "lastUpdated": "2026-02-24T14:11:25.983Z",
       "content": {
         "h1": "Where to watch Dinastía Casillas (2025)",
         "paragraphs": [
@@ -1757,7 +1864,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 92,
-      "lastUpdated": "2026-02-23T14:07:49.674Z",
+      "lastUpdated": "2026-02-24T14:11:25.983Z",
       "content": {
         "h1": "Dinastía Casillas (2025) cast & key characters",
         "paragraphs": [
@@ -1793,7 +1900,7 @@
       ],
       "numberOfSeasons": 22,
       "numberOfEpisodes": 1155,
-      "lastUpdated": "2026-02-23T14:07:49.689Z",
+      "lastUpdated": "2026-02-24T14:11:26.082Z",
       "content": {
         "h1": "One Piece (1999) overview",
         "paragraphs": [
@@ -1828,7 +1935,7 @@
       ],
       "numberOfSeasons": 22,
       "numberOfEpisodes": 1155,
-      "lastUpdated": "2026-02-23T14:07:49.689Z",
+      "lastUpdated": "2026-02-24T14:11:26.082Z",
       "content": {
         "h1": "Where to watch One Piece (1999)",
         "paragraphs": [
@@ -1864,7 +1971,7 @@
       ],
       "numberOfSeasons": 22,
       "numberOfEpisodes": 1155,
-      "lastUpdated": "2026-02-23T14:07:49.689Z",
+      "lastUpdated": "2026-02-24T14:11:26.082Z",
       "content": {
         "h1": "One Piece (1999) cast & key characters",
         "paragraphs": [
@@ -1900,7 +2007,7 @@
       ],
       "numberOfSeasons": 5,
       "numberOfEpisodes": 773,
-      "lastUpdated": "2026-02-23T14:07:49.744Z",
+      "lastUpdated": "2026-02-24T14:11:26.234Z",
       "content": {
         "h1": "La promesa (2023) overview",
         "paragraphs": [
@@ -1935,7 +2042,7 @@
       ],
       "numberOfSeasons": 5,
       "numberOfEpisodes": 773,
-      "lastUpdated": "2026-02-23T14:07:49.744Z",
+      "lastUpdated": "2026-02-24T14:11:26.234Z",
       "content": {
         "h1": "Where to watch La promesa (2023)",
         "paragraphs": [
@@ -1971,7 +2078,7 @@
       ],
       "numberOfSeasons": 5,
       "numberOfEpisodes": 773,
-      "lastUpdated": "2026-02-23T14:07:49.744Z",
+      "lastUpdated": "2026-02-24T14:11:26.234Z",
       "content": {
         "h1": "La promesa (2023) cast & key characters",
         "paragraphs": [
@@ -1979,6 +2086,110 @@
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
           "Quick facts: 5 season(s), 773 episode(s), networks: La 1.",
           "In 1913 Spain, a woman gets a job at the palace of La Promesa as a reward for saving the marquesses' son - but nobody knows that she has her own plans, which involve avenging her mother's death and finding her missing brother.",
+          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
+        ],
+        "bullets": [
+          "Look up the show on TMDB or IMDb for verified cast",
+          "Check season-by-season credits (casts change)",
+          "Save actor names you like → discover similar shows"
+        ]
+      }
+    },
+    {
+      "slug": "like-water-for-chocolate-235635-summary",
+      "pageType": "summary",
+      "showId": 235635,
+      "title": "Like Water for Chocolate",
+      "year": "2024",
+      "posterPath": "/pXNcd4z8eBihLO9I7bIVoK4mtQt.jpg",
+      "backdropPath": "/yykLaIafqnJ4wTiSaIUwMtSEQov.jpg",
+      "overview": "Tita de la Garza and Pedro Muzquiz are two souls in love who cannot be together due to deep-rooted family customs, which will force Tita to navigate with magical tints and flavors between the destiny dictated by her family and the fight for her love, while we accompany her in her greatest refuge: the kitchen.",
+      "genres": [
+        "Drama"
+      ],
+      "networks": [
+        "HBO Latin America",
+        "HBO Latino"
+      ],
+      "numberOfSeasons": 2,
+      "numberOfEpisodes": 12,
+      "lastUpdated": "2026-02-24T14:11:26.385Z",
+      "content": {
+        "h1": "Like Water for Chocolate (2024) overview",
+        "paragraphs": [
+          "Tita de la Garza and Pedro Muzquiz are two souls in love who cannot be together due to deep-rooted family customs, which will force Tita to navigate with magical tints and flavors between the destiny dictated by her family and the fight for her love, while we accompany her in her greatest refuge: the kitchen.",
+          "Genres: Drama. Networks: HBO Latin America, HBO Latino.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Like Water for Chocolate\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
+        ],
+        "bullets": [
+          "Best for: subtitle-based language practice",
+          "Rewatch strategy beats binge-watching",
+          "Save unknown words → review after the episode"
+        ]
+      }
+    },
+    {
+      "slug": "like-water-for-chocolate-235635-watch",
+      "pageType": "watch",
+      "showId": 235635,
+      "title": "Like Water for Chocolate",
+      "year": "2024",
+      "posterPath": "/pXNcd4z8eBihLO9I7bIVoK4mtQt.jpg",
+      "backdropPath": "/yykLaIafqnJ4wTiSaIUwMtSEQov.jpg",
+      "overview": "Tita de la Garza and Pedro Muzquiz are two souls in love who cannot be together due to deep-rooted family customs, which will force Tita to navigate with magical tints and flavors between the destiny dictated by her family and the fight for her love, while we accompany her in her greatest refuge: the kitchen.",
+      "genres": [
+        "Drama"
+      ],
+      "networks": [
+        "HBO Latin America",
+        "HBO Latino"
+      ],
+      "numberOfSeasons": 2,
+      "numberOfEpisodes": 12,
+      "lastUpdated": "2026-02-24T14:11:26.385Z",
+      "content": {
+        "h1": "Where to watch Like Water for Chocolate (2024)",
+        "paragraphs": [
+          "If you're looking for where to watch \"Like Water for Chocolate\" (2024), start by checking the major streaming platforms available in your region.",
+          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
+          "Quick facts: 2 season(s), 12 episode(s), genres: Drama.",
+          "Tita de la Garza and Pedro Muzquiz are two souls in love who cannot be together due to deep-rooted family customs, which will force Tita to navigate with magical tints and flavors between the destiny dictated by her family and the fight for her love, while we accompany her in her greatest refuge: the kitchen.",
+          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
+        ],
+        "bullets": [
+          "Search in-app for: \"Like Water for Chocolate\"",
+          "Try both English + Spanish title variants",
+          "Use subtitles + pause/replay for language learning"
+        ]
+      }
+    },
+    {
+      "slug": "like-water-for-chocolate-235635-cast",
+      "pageType": "cast",
+      "showId": 235635,
+      "title": "Like Water for Chocolate",
+      "year": "2024",
+      "posterPath": "/pXNcd4z8eBihLO9I7bIVoK4mtQt.jpg",
+      "backdropPath": "/yykLaIafqnJ4wTiSaIUwMtSEQov.jpg",
+      "overview": "Tita de la Garza and Pedro Muzquiz are two souls in love who cannot be together due to deep-rooted family customs, which will force Tita to navigate with magical tints and flavors between the destiny dictated by her family and the fight for her love, while we accompany her in her greatest refuge: the kitchen.",
+      "genres": [
+        "Drama"
+      ],
+      "networks": [
+        "HBO Latin America",
+        "HBO Latino"
+      ],
+      "numberOfSeasons": 2,
+      "numberOfEpisodes": 12,
+      "lastUpdated": "2026-02-24T14:11:26.385Z",
+      "content": {
+        "h1": "Like Water for Chocolate (2024) cast & key characters",
+        "paragraphs": [
+          "This page covers the cast overview for \"Like Water for Chocolate\" (2024) and how to explore actor credits.",
+          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
+          "Quick facts: 2 season(s), 12 episode(s), networks: HBO Latin America, HBO Latino.",
+          "Tita de la Garza and Pedro Muzquiz are two souls in love who cannot be together due to deep-rooted family customs, which will force Tita to navigate with magical tints and flavors between the destiny dictated by her family and the fight for her love, while we accompany her in her greatest refuge: the kitchen.",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -2007,7 +2218,7 @@
       ],
       "numberOfSeasons": 20,
       "numberOfEpisodes": 1436,
-      "lastUpdated": "2026-02-23T14:07:49.760Z",
+      "lastUpdated": "2026-02-24T14:11:26.487Z",
       "content": {
         "h1": "El hormiguero (2006) overview",
         "paragraphs": [
@@ -2042,7 +2253,7 @@
       ],
       "numberOfSeasons": 20,
       "numberOfEpisodes": 1436,
-      "lastUpdated": "2026-02-23T14:07:49.760Z",
+      "lastUpdated": "2026-02-24T14:11:26.487Z",
       "content": {
         "h1": "Where to watch El hormiguero (2006)",
         "paragraphs": [
@@ -2078,7 +2289,7 @@
       ],
       "numberOfSeasons": 20,
       "numberOfEpisodes": 1436,
-      "lastUpdated": "2026-02-23T14:07:49.760Z",
+      "lastUpdated": "2026-02-24T14:11:26.487Z",
       "content": {
         "h1": "El hormiguero (2006) cast & key characters",
         "paragraphs": [
@@ -2086,110 +2297,6 @@
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
           "Quick facts: 20 season(s), 1436 episode(s), networks: Cuatro, Antena 3.",
           "El Hormiguero is a Spanish television program with a live audience focusing on comedy, science, and politics running since September 2006. It is hosted and produced by screenwriter Pablo Motos. The show aired on Spain's Cuatro channel from launch until June 2011 and is now broadcast on Antena 3. Recurring guests on the show include Luis Piedrahita, Raquel Martos, Marron & \"The Man in Black\", and puppet ants Trancas and Barrancas. It has proved a ratings success, and has expanded from a weekly 120-minute show to a daily 40-minute show in its third season, which began on September 17, 2007. The show won the Entertainment prize at the 2009 Rose d'Or ceremony.",
-          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
-        ],
-        "bullets": [
-          "Look up the show on TMDB or IMDb for verified cast",
-          "Check season-by-season credits (casts change)",
-          "Save actor names you like → discover similar shows"
-        ]
-      }
-    },
-    {
-      "slug": "love-story-131142-summary",
-      "pageType": "summary",
-      "showId": 131142,
-      "title": "Love Story",
-      "year": "2026",
-      "posterPath": "/7WU3cXD0rip5ONc7owI2dBWAVjW.jpg",
-      "backdropPath": "/3wKkceyLaScXvCznxFOytBJBCjP.jpg",
-      "overview": "An anthology of sweeping true love stories that captured the world’s attention.",
-      "genres": [
-        "Drama"
-      ],
-      "networks": [
-        "FX",
-        "Hulu"
-      ],
-      "numberOfSeasons": 1,
-      "numberOfEpisodes": 9,
-      "lastUpdated": "2026-02-23T14:07:49.830Z",
-      "content": {
-        "h1": "Love Story (2026) overview",
-        "paragraphs": [
-          "An anthology of sweeping true love stories that captured the world’s attention.",
-          "Genres: Drama. Networks: FX, Hulu.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Love Story\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
-          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
-        ],
-        "bullets": [
-          "Best for: subtitle-based language practice",
-          "Rewatch strategy beats binge-watching",
-          "Save unknown words → review after the episode"
-        ]
-      }
-    },
-    {
-      "slug": "love-story-131142-watch",
-      "pageType": "watch",
-      "showId": 131142,
-      "title": "Love Story",
-      "year": "2026",
-      "posterPath": "/7WU3cXD0rip5ONc7owI2dBWAVjW.jpg",
-      "backdropPath": "/3wKkceyLaScXvCznxFOytBJBCjP.jpg",
-      "overview": "An anthology of sweeping true love stories that captured the world’s attention.",
-      "genres": [
-        "Drama"
-      ],
-      "networks": [
-        "FX",
-        "Hulu"
-      ],
-      "numberOfSeasons": 1,
-      "numberOfEpisodes": 9,
-      "lastUpdated": "2026-02-23T14:07:49.830Z",
-      "content": {
-        "h1": "Where to watch Love Story (2026)",
-        "paragraphs": [
-          "If you're looking for where to watch \"Love Story\" (2026), start by checking the major streaming platforms available in your region.",
-          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 1 season(s), 9 episode(s), genres: Drama.",
-          "An anthology of sweeping true love stories that captured the world’s attention.",
-          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
-        ],
-        "bullets": [
-          "Search in-app for: \"Love Story\"",
-          "Try both English + Spanish title variants",
-          "Use subtitles + pause/replay for language learning"
-        ]
-      }
-    },
-    {
-      "slug": "love-story-131142-cast",
-      "pageType": "cast",
-      "showId": 131142,
-      "title": "Love Story",
-      "year": "2026",
-      "posterPath": "/7WU3cXD0rip5ONc7owI2dBWAVjW.jpg",
-      "backdropPath": "/3wKkceyLaScXvCznxFOytBJBCjP.jpg",
-      "overview": "An anthology of sweeping true love stories that captured the world’s attention.",
-      "genres": [
-        "Drama"
-      ],
-      "networks": [
-        "FX",
-        "Hulu"
-      ],
-      "numberOfSeasons": 1,
-      "numberOfEpisodes": 9,
-      "lastUpdated": "2026-02-23T14:07:49.830Z",
-      "content": {
-        "h1": "Love Story (2026) cast & key characters",
-        "paragraphs": [
-          "This page covers the cast overview for \"Love Story\" (2026) and how to explore actor credits.",
-          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 1 season(s), 9 episode(s), networks: FX, Hulu.",
-          "An anthology of sweeping true love stories that captured the world’s attention.",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -2218,7 +2325,7 @@
       ],
       "numberOfSeasons": 8,
       "numberOfEpisodes": 64,
-      "lastUpdated": "2026-02-23T14:07:49.903Z",
+      "lastUpdated": "2026-02-24T14:11:26.588Z",
       "content": {
         "h1": "Elite (2018) overview",
         "paragraphs": [
@@ -2253,7 +2360,7 @@
       ],
       "numberOfSeasons": 8,
       "numberOfEpisodes": 64,
-      "lastUpdated": "2026-02-23T14:07:49.903Z",
+      "lastUpdated": "2026-02-24T14:11:26.588Z",
       "content": {
         "h1": "Where to watch Elite (2018)",
         "paragraphs": [
@@ -2289,7 +2396,7 @@
       ],
       "numberOfSeasons": 8,
       "numberOfEpisodes": 64,
-      "lastUpdated": "2026-02-23T14:07:49.903Z",
+      "lastUpdated": "2026-02-24T14:11:26.588Z",
       "content": {
         "h1": "Elite (2018) cast & key characters",
         "paragraphs": [
@@ -2307,31 +2414,30 @@
       }
     },
     {
-      "slug": "the-beauty-273160-summary",
+      "slug": "love-story-131142-summary",
       "pageType": "summary",
-      "showId": 273160,
-      "title": "The Beauty",
+      "showId": 131142,
+      "title": "Love Story",
       "year": "2026",
-      "posterPath": "/tZTG2PPAukzksPkiQV9c4suIQXk.jpg",
-      "backdropPath": "/cX6dzeKsBTTXHoG3uQUuhQbqyvq.jpg",
-      "overview": "The world of high fashion turns dark when international supermodels begin dying in gruesome and mysterious ways. FBI Agents Cooper Madsen and Jordan Bennett are sent to Paris to uncover the truth. As they delve deeper into the case, they uncover a sexually transmitted virus that transforms ordinary people into visions of physical perfection, but with terrifying consequences.",
+      "posterPath": "/7WU3cXD0rip5ONc7owI2dBWAVjW.jpg",
+      "backdropPath": "/3wKkceyLaScXvCznxFOytBJBCjP.jpg",
+      "overview": "An anthology of sweeping true love stories that captured the world’s attention.",
       "genres": [
-        "Drama",
-        "Sci-Fi & Fantasy"
+        "Drama"
       ],
       "networks": [
         "FX",
         "Hulu"
       ],
       "numberOfSeasons": 1,
-      "numberOfEpisodes": 11,
-      "lastUpdated": "2026-02-23T14:07:49.974Z",
+      "numberOfEpisodes": 9,
+      "lastUpdated": "2026-02-24T14:11:26.688Z",
       "content": {
-        "h1": "The Beauty (2026) overview",
+        "h1": "Love Story (2026) overview",
         "paragraphs": [
-          "The world of high fashion turns dark when international supermodels begin dying in gruesome and mysterious ways. FBI Agents Cooper Madsen and Jordan Bennett are sent to Paris to uncover the truth. As they delve deeper into the case, they uncover a sexually transmitted virus that transforms ordinary people into visions of physical perfection, but with terrifying consequences.",
-          "Genres: Drama, Sci-Fi & Fantasy. Networks: FX, Hulu.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"The Beauty\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "An anthology of sweeping true love stories that captured the world’s attention.",
+          "Genres: Drama. Networks: FX, Hulu.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Love Story\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
           "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
         ],
         "bullets": [
@@ -2342,380 +2448,66 @@
       }
     },
     {
-      "slug": "the-beauty-273160-watch",
+      "slug": "love-story-131142-watch",
       "pageType": "watch",
-      "showId": 273160,
-      "title": "The Beauty",
+      "showId": 131142,
+      "title": "Love Story",
       "year": "2026",
-      "posterPath": "/tZTG2PPAukzksPkiQV9c4suIQXk.jpg",
-      "backdropPath": "/cX6dzeKsBTTXHoG3uQUuhQbqyvq.jpg",
-      "overview": "The world of high fashion turns dark when international supermodels begin dying in gruesome and mysterious ways. FBI Agents Cooper Madsen and Jordan Bennett are sent to Paris to uncover the truth. As they delve deeper into the case, they uncover a sexually transmitted virus that transforms ordinary people into visions of physical perfection, but with terrifying consequences.",
+      "posterPath": "/7WU3cXD0rip5ONc7owI2dBWAVjW.jpg",
+      "backdropPath": "/3wKkceyLaScXvCznxFOytBJBCjP.jpg",
+      "overview": "An anthology of sweeping true love stories that captured the world’s attention.",
       "genres": [
-        "Drama",
-        "Sci-Fi & Fantasy"
+        "Drama"
       ],
       "networks": [
         "FX",
         "Hulu"
       ],
       "numberOfSeasons": 1,
-      "numberOfEpisodes": 11,
-      "lastUpdated": "2026-02-23T14:07:49.974Z",
+      "numberOfEpisodes": 9,
+      "lastUpdated": "2026-02-24T14:11:26.688Z",
       "content": {
-        "h1": "Where to watch The Beauty (2026)",
+        "h1": "Where to watch Love Story (2026)",
         "paragraphs": [
-          "If you're looking for where to watch \"The Beauty\" (2026), start by checking the major streaming platforms available in your region.",
+          "If you're looking for where to watch \"Love Story\" (2026), start by checking the major streaming platforms available in your region.",
           "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 1 season(s), 11 episode(s), genres: Drama, Sci-Fi & Fantasy.",
-          "The world of high fashion turns dark when international supermodels begin dying in gruesome and mysterious ways. FBI Agents Cooper Madsen and Jordan Bennett are sent to Paris to uncover the truth. As they delve deeper into the case, they uncover a sexually transmitted virus that transforms ordinary people into visions of physical perfection, but with terrifying consequences.",
+          "Quick facts: 1 season(s), 9 episode(s), genres: Drama.",
+          "An anthology of sweeping true love stories that captured the world’s attention.",
           "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
         ],
         "bullets": [
-          "Search in-app for: \"The Beauty\"",
+          "Search in-app for: \"Love Story\"",
           "Try both English + Spanish title variants",
           "Use subtitles + pause/replay for language learning"
         ]
       }
     },
     {
-      "slug": "the-beauty-273160-cast",
+      "slug": "love-story-131142-cast",
       "pageType": "cast",
-      "showId": 273160,
-      "title": "The Beauty",
+      "showId": 131142,
+      "title": "Love Story",
       "year": "2026",
-      "posterPath": "/tZTG2PPAukzksPkiQV9c4suIQXk.jpg",
-      "backdropPath": "/cX6dzeKsBTTXHoG3uQUuhQbqyvq.jpg",
-      "overview": "The world of high fashion turns dark when international supermodels begin dying in gruesome and mysterious ways. FBI Agents Cooper Madsen and Jordan Bennett are sent to Paris to uncover the truth. As they delve deeper into the case, they uncover a sexually transmitted virus that transforms ordinary people into visions of physical perfection, but with terrifying consequences.",
+      "posterPath": "/7WU3cXD0rip5ONc7owI2dBWAVjW.jpg",
+      "backdropPath": "/3wKkceyLaScXvCznxFOytBJBCjP.jpg",
+      "overview": "An anthology of sweeping true love stories that captured the world’s attention.",
       "genres": [
-        "Drama",
-        "Sci-Fi & Fantasy"
+        "Drama"
       ],
       "networks": [
         "FX",
         "Hulu"
       ],
       "numberOfSeasons": 1,
-      "numberOfEpisodes": 11,
-      "lastUpdated": "2026-02-23T14:07:49.974Z",
+      "numberOfEpisodes": 9,
+      "lastUpdated": "2026-02-24T14:11:26.688Z",
       "content": {
-        "h1": "The Beauty (2026) cast & key characters",
+        "h1": "Love Story (2026) cast & key characters",
         "paragraphs": [
-          "This page covers the cast overview for \"The Beauty\" (2026) and how to explore actor credits.",
+          "This page covers the cast overview for \"Love Story\" (2026) and how to explore actor credits.",
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 1 season(s), 11 episode(s), networks: FX, Hulu.",
-          "The world of high fashion turns dark when international supermodels begin dying in gruesome and mysterious ways. FBI Agents Cooper Madsen and Jordan Bennett are sent to Paris to uncover the truth. As they delve deeper into the case, they uncover a sexually transmitted virus that transforms ordinary people into visions of physical perfection, but with terrifying consequences.",
-          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
-        ],
-        "bullets": [
-          "Look up the show on TMDB or IMDb for verified cast",
-          "Check season-by-season credits (casts change)",
-          "Save actor names you like → discover similar shows"
-        ]
-      }
-    },
-    {
-      "slug": "like-water-for-chocolate-235635-summary",
-      "pageType": "summary",
-      "showId": 235635,
-      "title": "Like Water for Chocolate",
-      "year": "2024",
-      "posterPath": "/pXNcd4z8eBihLO9I7bIVoK4mtQt.jpg",
-      "backdropPath": "/yykLaIafqnJ4wTiSaIUwMtSEQov.jpg",
-      "overview": "Tita de la Garza and Pedro Muzquiz are two souls in love who cannot be together due to deep-rooted family customs, which will force Tita to navigate with magical tints and flavors between the destiny dictated by her family and the fight for her love, while we accompany her in her greatest refuge: the kitchen.",
-      "genres": [
-        "Drama"
-      ],
-      "networks": [
-        "HBO Latin America",
-        "HBO Latino"
-      ],
-      "numberOfSeasons": 2,
-      "numberOfEpisodes": 12,
-      "lastUpdated": "2026-02-23T14:07:50.045Z",
-      "content": {
-        "h1": "Like Water for Chocolate (2024) overview",
-        "paragraphs": [
-          "Tita de la Garza and Pedro Muzquiz are two souls in love who cannot be together due to deep-rooted family customs, which will force Tita to navigate with magical tints and flavors between the destiny dictated by her family and the fight for her love, while we accompany her in her greatest refuge: the kitchen.",
-          "Genres: Drama. Networks: HBO Latin America, HBO Latino.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Like Water for Chocolate\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
-          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
-        ],
-        "bullets": [
-          "Best for: subtitle-based language practice",
-          "Rewatch strategy beats binge-watching",
-          "Save unknown words → review after the episode"
-        ]
-      }
-    },
-    {
-      "slug": "like-water-for-chocolate-235635-watch",
-      "pageType": "watch",
-      "showId": 235635,
-      "title": "Like Water for Chocolate",
-      "year": "2024",
-      "posterPath": "/pXNcd4z8eBihLO9I7bIVoK4mtQt.jpg",
-      "backdropPath": "/yykLaIafqnJ4wTiSaIUwMtSEQov.jpg",
-      "overview": "Tita de la Garza and Pedro Muzquiz are two souls in love who cannot be together due to deep-rooted family customs, which will force Tita to navigate with magical tints and flavors between the destiny dictated by her family and the fight for her love, while we accompany her in her greatest refuge: the kitchen.",
-      "genres": [
-        "Drama"
-      ],
-      "networks": [
-        "HBO Latin America",
-        "HBO Latino"
-      ],
-      "numberOfSeasons": 2,
-      "numberOfEpisodes": 12,
-      "lastUpdated": "2026-02-23T14:07:50.045Z",
-      "content": {
-        "h1": "Where to watch Like Water for Chocolate (2024)",
-        "paragraphs": [
-          "If you're looking for where to watch \"Like Water for Chocolate\" (2024), start by checking the major streaming platforms available in your region.",
-          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 2 season(s), 12 episode(s), genres: Drama.",
-          "Tita de la Garza and Pedro Muzquiz are two souls in love who cannot be together due to deep-rooted family customs, which will force Tita to navigate with magical tints and flavors between the destiny dictated by her family and the fight for her love, while we accompany her in her greatest refuge: the kitchen.",
-          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
-        ],
-        "bullets": [
-          "Search in-app for: \"Like Water for Chocolate\"",
-          "Try both English + Spanish title variants",
-          "Use subtitles + pause/replay for language learning"
-        ]
-      }
-    },
-    {
-      "slug": "like-water-for-chocolate-235635-cast",
-      "pageType": "cast",
-      "showId": 235635,
-      "title": "Like Water for Chocolate",
-      "year": "2024",
-      "posterPath": "/pXNcd4z8eBihLO9I7bIVoK4mtQt.jpg",
-      "backdropPath": "/yykLaIafqnJ4wTiSaIUwMtSEQov.jpg",
-      "overview": "Tita de la Garza and Pedro Muzquiz are two souls in love who cannot be together due to deep-rooted family customs, which will force Tita to navigate with magical tints and flavors between the destiny dictated by her family and the fight for her love, while we accompany her in her greatest refuge: the kitchen.",
-      "genres": [
-        "Drama"
-      ],
-      "networks": [
-        "HBO Latin America",
-        "HBO Latino"
-      ],
-      "numberOfSeasons": 2,
-      "numberOfEpisodes": 12,
-      "lastUpdated": "2026-02-23T14:07:50.045Z",
-      "content": {
-        "h1": "Like Water for Chocolate (2024) cast & key characters",
-        "paragraphs": [
-          "This page covers the cast overview for \"Like Water for Chocolate\" (2024) and how to explore actor credits.",
-          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 2 season(s), 12 episode(s), networks: HBO Latin America, HBO Latino.",
-          "Tita de la Garza and Pedro Muzquiz are two souls in love who cannot be together due to deep-rooted family customs, which will force Tita to navigate with magical tints and flavors between the destiny dictated by her family and the fight for her love, while we accompany her in her greatest refuge: the kitchen.",
-          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
-        ],
-        "bullets": [
-          "Look up the show on TMDB or IMDb for verified cast",
-          "Check season-by-season credits (casts change)",
-          "Save actor names you like → discover similar shows"
-        ]
-      }
-    },
-    {
-      "slug": "star-trek-starfleet-academy-223530-summary",
-      "pageType": "summary",
-      "showId": 223530,
-      "title": "Star Trek: Starfleet Academy",
-      "year": "2026",
-      "posterPath": "/m4JnADIJkF5ck6jq7GUEcPBKxd0.jpg",
-      "backdropPath": "/rXtSdCGmG07zjAg5h7GR1v52ogX.jpg",
-      "overview": "A young group of cadets come together to pursue a common dream of hope and optimism. Under the watchful and demanding eyes of their instructors, they will discover what it takes to become Starfleet officers as they navigate blossoming friendships, explosive rivalries, first loves and a new enemy that threatens both the Academy and the Federation itself.",
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Action & Adventure"
-      ],
-      "networks": [
-        "Paramount+"
-      ],
-      "numberOfSeasons": 1,
-      "numberOfEpisodes": 10,
-      "lastUpdated": "2026-02-23T14:07:50.119Z",
-      "content": {
-        "h1": "Star Trek: Starfleet Academy (2026) overview",
-        "paragraphs": [
-          "A young group of cadets come together to pursue a common dream of hope and optimism. Under the watchful and demanding eyes of their instructors, they will discover what it takes to become Starfleet officers as they navigate blossoming friendships, explosive rivalries, first loves and a new enemy that threatens both the Academy and the Federation itself.",
-          "Genres: Sci-Fi & Fantasy, Action & Adventure. Networks: Paramount+.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Star Trek: Starfleet Academy\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
-          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
-        ],
-        "bullets": [
-          "Best for: subtitle-based language practice",
-          "Rewatch strategy beats binge-watching",
-          "Save unknown words → review after the episode"
-        ]
-      }
-    },
-    {
-      "slug": "star-trek-starfleet-academy-223530-watch",
-      "pageType": "watch",
-      "showId": 223530,
-      "title": "Star Trek: Starfleet Academy",
-      "year": "2026",
-      "posterPath": "/m4JnADIJkF5ck6jq7GUEcPBKxd0.jpg",
-      "backdropPath": "/rXtSdCGmG07zjAg5h7GR1v52ogX.jpg",
-      "overview": "A young group of cadets come together to pursue a common dream of hope and optimism. Under the watchful and demanding eyes of their instructors, they will discover what it takes to become Starfleet officers as they navigate blossoming friendships, explosive rivalries, first loves and a new enemy that threatens both the Academy and the Federation itself.",
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Action & Adventure"
-      ],
-      "networks": [
-        "Paramount+"
-      ],
-      "numberOfSeasons": 1,
-      "numberOfEpisodes": 10,
-      "lastUpdated": "2026-02-23T14:07:50.119Z",
-      "content": {
-        "h1": "Where to watch Star Trek: Starfleet Academy (2026)",
-        "paragraphs": [
-          "If you're looking for where to watch \"Star Trek: Starfleet Academy\" (2026), start by checking the major streaming platforms available in your region.",
-          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 1 season(s), 10 episode(s), genres: Sci-Fi & Fantasy, Action & Adventure.",
-          "A young group of cadets come together to pursue a common dream of hope and optimism. Under the watchful and demanding eyes of their instructors, they will discover what it takes to become Starfleet officers as they navigate blossoming friendships, explosive rivalries, first loves and a new enemy that threatens both the Academy and the Federation itself.",
-          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
-        ],
-        "bullets": [
-          "Search in-app for: \"Star Trek: Starfleet Academy\"",
-          "Try both English + Spanish title variants",
-          "Use subtitles + pause/replay for language learning"
-        ]
-      }
-    },
-    {
-      "slug": "star-trek-starfleet-academy-223530-cast",
-      "pageType": "cast",
-      "showId": 223530,
-      "title": "Star Trek: Starfleet Academy",
-      "year": "2026",
-      "posterPath": "/m4JnADIJkF5ck6jq7GUEcPBKxd0.jpg",
-      "backdropPath": "/rXtSdCGmG07zjAg5h7GR1v52ogX.jpg",
-      "overview": "A young group of cadets come together to pursue a common dream of hope and optimism. Under the watchful and demanding eyes of their instructors, they will discover what it takes to become Starfleet officers as they navigate blossoming friendships, explosive rivalries, first loves and a new enemy that threatens both the Academy and the Federation itself.",
-      "genres": [
-        "Sci-Fi & Fantasy",
-        "Action & Adventure"
-      ],
-      "networks": [
-        "Paramount+"
-      ],
-      "numberOfSeasons": 1,
-      "numberOfEpisodes": 10,
-      "lastUpdated": "2026-02-23T14:07:50.119Z",
-      "content": {
-        "h1": "Star Trek: Starfleet Academy (2026) cast & key characters",
-        "paragraphs": [
-          "This page covers the cast overview for \"Star Trek: Starfleet Academy\" (2026) and how to explore actor credits.",
-          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 1 season(s), 10 episode(s), networks: Paramount+.",
-          "A young group of cadets come together to pursue a common dream of hope and optimism. Under the watchful and demanding eyes of their instructors, they will discover what it takes to become Starfleet officers as they navigate blossoming friendships, explosive rivalries, first loves and a new enemy that threatens both the Academy and the Federation itself.",
-          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
-        ],
-        "bullets": [
-          "Look up the show on TMDB or IMDb for verified cast",
-          "Check season-by-season credits (casts change)",
-          "Save actor names you like → discover similar shows"
-        ]
-      }
-    },
-    {
-      "slug": "domenica-montero-307423-summary",
-      "pageType": "summary",
-      "showId": 307423,
-      "title": "Doménica Montero",
-      "year": "2025",
-      "posterPath": "/A02M5F5DcQ3glHrvBUSGnzTlvW1.jpg",
-      "backdropPath": "/m9vxP7F52vTyFTlMqppxKFOcCPN.jpg",
-      "overview": "A respected and renowned businesswoman and philanthropist, considered one of the most sought-after brides in the country, who is left at the altar on her wedding day. Humiliated, betrayed, and turned into a target of public scrutiny, Doménica decides to flee and take refuge in one of her parents’ old estates. There, marked by pain, she faces new challenges and meets Luis Fernando, the owner of the neighboring estate, who also carries a painful past. Between them, an explosive relationship develops, marked by pride, misunderstandings, and growing attraction, where land disputes intertwine with their shared desire to rebuild, heal, and give new meaning to their lives.",
-      "genres": [
-        "Drama"
-      ],
-      "networks": [
-        "Univision",
-        "Las Estrellas"
-      ],
-      "numberOfSeasons": 1,
-      "numberOfEpisodes": 36,
-      "lastUpdated": "2026-02-23T14:07:50.188Z",
-      "content": {
-        "h1": "Doménica Montero (2025) overview",
-        "paragraphs": [
-          "A respected and renowned businesswoman and philanthropist, considered one of the most sought-after brides in the country, who is left at the altar on her wedding day. Humiliated, betrayed, and turned into a target of public scrutiny, Doménica decides to flee and take refuge in one of her parents’ old estates. There, marked by pain, she faces new challenges and meets Luis Fernando, the owner of the neighboring estate, who also carries a painful past. Between them, an explosive relationship develops, marked by pride, misunderstandings, and growing attraction, where land disputes intertwine with their shared desire to rebuild, heal, and give new meaning to their lives.",
-          "Genres: Drama. Networks: Univision, Las Estrellas.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Doménica Montero\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
-          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
-        ],
-        "bullets": [
-          "Best for: subtitle-based language practice",
-          "Rewatch strategy beats binge-watching",
-          "Save unknown words → review after the episode"
-        ]
-      }
-    },
-    {
-      "slug": "domenica-montero-307423-watch",
-      "pageType": "watch",
-      "showId": 307423,
-      "title": "Doménica Montero",
-      "year": "2025",
-      "posterPath": "/A02M5F5DcQ3glHrvBUSGnzTlvW1.jpg",
-      "backdropPath": "/m9vxP7F52vTyFTlMqppxKFOcCPN.jpg",
-      "overview": "A respected and renowned businesswoman and philanthropist, considered one of the most sought-after brides in the country, who is left at the altar on her wedding day. Humiliated, betrayed, and turned into a target of public scrutiny, Doménica decides to flee and take refuge in one of her parents’ old estates. There, marked by pain, she faces new challenges and meets Luis Fernando, the owner of the neighboring estate, who also carries a painful past. Between them, an explosive relationship develops, marked by pride, misunderstandings, and growing attraction, where land disputes intertwine with their shared desire to rebuild, heal, and give new meaning to their lives.",
-      "genres": [
-        "Drama"
-      ],
-      "networks": [
-        "Univision",
-        "Las Estrellas"
-      ],
-      "numberOfSeasons": 1,
-      "numberOfEpisodes": 36,
-      "lastUpdated": "2026-02-23T14:07:50.188Z",
-      "content": {
-        "h1": "Where to watch Doménica Montero (2025)",
-        "paragraphs": [
-          "If you're looking for where to watch \"Doménica Montero\" (2025), start by checking the major streaming platforms available in your region.",
-          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 1 season(s), 36 episode(s), genres: Drama.",
-          "A respected and renowned businesswoman and philanthropist, considered one of the most sought-after brides in the country, who is left at the altar on her wedding day. Humiliated, betrayed, and turned into a target of public scrutiny, Doménica decides to flee and take refuge in one of her parents’ old estates. There, marked by pain, she faces new challenges and meets Luis Fernando, the owner of the neighboring estate, who also carries a painful past. Between them, an explosive relationship develops, marked by pride, misunderstandings, and growing attraction, where land disputes intertwine with their shared desire to rebuild, heal, and give new meaning to their lives.",
-          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
-        ],
-        "bullets": [
-          "Search in-app for: \"Doménica Montero\"",
-          "Try both English + Spanish title variants",
-          "Use subtitles + pause/replay for language learning"
-        ]
-      }
-    },
-    {
-      "slug": "domenica-montero-307423-cast",
-      "pageType": "cast",
-      "showId": 307423,
-      "title": "Doménica Montero",
-      "year": "2025",
-      "posterPath": "/A02M5F5DcQ3glHrvBUSGnzTlvW1.jpg",
-      "backdropPath": "/m9vxP7F52vTyFTlMqppxKFOcCPN.jpg",
-      "overview": "A respected and renowned businesswoman and philanthropist, considered one of the most sought-after brides in the country, who is left at the altar on her wedding day. Humiliated, betrayed, and turned into a target of public scrutiny, Doménica decides to flee and take refuge in one of her parents’ old estates. There, marked by pain, she faces new challenges and meets Luis Fernando, the owner of the neighboring estate, who also carries a painful past. Between them, an explosive relationship develops, marked by pride, misunderstandings, and growing attraction, where land disputes intertwine with their shared desire to rebuild, heal, and give new meaning to their lives.",
-      "genres": [
-        "Drama"
-      ],
-      "networks": [
-        "Univision",
-        "Las Estrellas"
-      ],
-      "numberOfSeasons": 1,
-      "numberOfEpisodes": 36,
-      "lastUpdated": "2026-02-23T14:07:50.188Z",
-      "content": {
-        "h1": "Doménica Montero (2025) cast & key characters",
-        "paragraphs": [
-          "This page covers the cast overview for \"Doménica Montero\" (2025) and how to explore actor credits.",
-          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 1 season(s), 36 episode(s), networks: Univision, Las Estrellas.",
-          "A respected and renowned businesswoman and philanthropist, considered one of the most sought-after brides in the country, who is left at the altar on her wedding day. Humiliated, betrayed, and turned into a target of public scrutiny, Doménica decides to flee and take refuge in one of her parents’ old estates. There, marked by pain, she faces new challenges and meets Luis Fernando, the owner of the neighboring estate, who also carries a painful past. Between them, an explosive relationship develops, marked by pride, misunderstandings, and growing attraction, where land disputes intertwine with their shared desire to rebuild, heal, and give new meaning to their lives.",
+          "Quick facts: 1 season(s), 9 episode(s), networks: FX, Hulu.",
+          "An anthology of sweeping true love stories that captured the world’s attention.",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -2744,7 +2536,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 440,
-      "lastUpdated": "2026-02-23T14:07:50.203Z",
+      "lastUpdated": "2026-02-24T14:11:26.787Z",
       "content": {
         "h1": "Rebelde (2004) overview",
         "paragraphs": [
@@ -2779,7 +2571,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 440,
-      "lastUpdated": "2026-02-23T14:07:50.203Z",
+      "lastUpdated": "2026-02-24T14:11:26.787Z",
       "content": {
         "h1": "Where to watch Rebelde (2004)",
         "paragraphs": [
@@ -2815,7 +2607,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 440,
-      "lastUpdated": "2026-02-23T14:07:50.203Z",
+      "lastUpdated": "2026-02-24T14:11:26.787Z",
       "content": {
         "h1": "Rebelde (2004) cast & key characters",
         "paragraphs": [
@@ -2851,7 +2643,7 @@
       ],
       "numberOfSeasons": 9,
       "numberOfEpisodes": 793,
-      "lastUpdated": "2026-02-23T14:07:50.220Z",
+      "lastUpdated": "2026-02-24T14:11:26.887Z",
       "content": {
         "h1": "El Señor de los Cielos (2013) overview",
         "paragraphs": [
@@ -2886,7 +2678,7 @@
       ],
       "numberOfSeasons": 9,
       "numberOfEpisodes": 793,
-      "lastUpdated": "2026-02-23T14:07:50.221Z",
+      "lastUpdated": "2026-02-24T14:11:26.887Z",
       "content": {
         "h1": "Where to watch El Señor de los Cielos (2013)",
         "paragraphs": [
@@ -2922,7 +2714,7 @@
       ],
       "numberOfSeasons": 9,
       "numberOfEpisodes": 793,
-      "lastUpdated": "2026-02-23T14:07:50.221Z",
+      "lastUpdated": "2026-02-24T14:11:26.887Z",
       "content": {
         "h1": "El Señor de los Cielos (2013) cast & key characters",
         "paragraphs": [
@@ -2930,6 +2722,110 @@
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
           "Quick facts: 9 season(s), 793 episode(s), networks: Telemundo.",
           "Set in the 1990s, these are the life and times of Amado Carrillo Fuentes, a man who became the head of the Juárez cartel. Nicknamed “El Señor de los Cielos” (Lord of the Skies) because of the large fleet of airplanes he used to transport drugs, he was also known for washing more than $200 million through Colombia to finance his huge fleet. He is described as the most powerful drug trafficker of his time.",
+          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
+        ],
+        "bullets": [
+          "Look up the show on TMDB or IMDb for verified cast",
+          "Check season-by-season credits (casts change)",
+          "Save actor names you like → discover similar shows"
+        ]
+      }
+    },
+    {
+      "slug": "star-trek-starfleet-academy-223530-summary",
+      "pageType": "summary",
+      "showId": 223530,
+      "title": "Star Trek: Starfleet Academy",
+      "year": "2026",
+      "posterPath": "/m4JnADIJkF5ck6jq7GUEcPBKxd0.jpg",
+      "backdropPath": "/rXtSdCGmG07zjAg5h7GR1v52ogX.jpg",
+      "overview": "A young group of cadets come together to pursue a common dream of hope and optimism. Under the watchful and demanding eyes of their instructors, they will discover what it takes to become Starfleet officers as they navigate blossoming friendships, explosive rivalries, first loves and a new enemy that threatens both the Academy and the Federation itself.",
+      "genres": [
+        "Sci-Fi & Fantasy",
+        "Action & Adventure"
+      ],
+      "networks": [
+        "Paramount+"
+      ],
+      "numberOfSeasons": 1,
+      "numberOfEpisodes": 10,
+      "lastUpdated": "2026-02-24T14:11:26.988Z",
+      "content": {
+        "h1": "Star Trek: Starfleet Academy (2026) overview",
+        "paragraphs": [
+          "A young group of cadets come together to pursue a common dream of hope and optimism. Under the watchful and demanding eyes of their instructors, they will discover what it takes to become Starfleet officers as they navigate blossoming friendships, explosive rivalries, first loves and a new enemy that threatens both the Academy and the Federation itself.",
+          "Genres: Sci-Fi & Fantasy, Action & Adventure. Networks: Paramount+.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Star Trek: Starfleet Academy\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
+        ],
+        "bullets": [
+          "Best for: subtitle-based language practice",
+          "Rewatch strategy beats binge-watching",
+          "Save unknown words → review after the episode"
+        ]
+      }
+    },
+    {
+      "slug": "star-trek-starfleet-academy-223530-watch",
+      "pageType": "watch",
+      "showId": 223530,
+      "title": "Star Trek: Starfleet Academy",
+      "year": "2026",
+      "posterPath": "/m4JnADIJkF5ck6jq7GUEcPBKxd0.jpg",
+      "backdropPath": "/rXtSdCGmG07zjAg5h7GR1v52ogX.jpg",
+      "overview": "A young group of cadets come together to pursue a common dream of hope and optimism. Under the watchful and demanding eyes of their instructors, they will discover what it takes to become Starfleet officers as they navigate blossoming friendships, explosive rivalries, first loves and a new enemy that threatens both the Academy and the Federation itself.",
+      "genres": [
+        "Sci-Fi & Fantasy",
+        "Action & Adventure"
+      ],
+      "networks": [
+        "Paramount+"
+      ],
+      "numberOfSeasons": 1,
+      "numberOfEpisodes": 10,
+      "lastUpdated": "2026-02-24T14:11:26.988Z",
+      "content": {
+        "h1": "Where to watch Star Trek: Starfleet Academy (2026)",
+        "paragraphs": [
+          "If you're looking for where to watch \"Star Trek: Starfleet Academy\" (2026), start by checking the major streaming platforms available in your region.",
+          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
+          "Quick facts: 1 season(s), 10 episode(s), genres: Sci-Fi & Fantasy, Action & Adventure.",
+          "A young group of cadets come together to pursue a common dream of hope and optimism. Under the watchful and demanding eyes of their instructors, they will discover what it takes to become Starfleet officers as they navigate blossoming friendships, explosive rivalries, first loves and a new enemy that threatens both the Academy and the Federation itself.",
+          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
+        ],
+        "bullets": [
+          "Search in-app for: \"Star Trek: Starfleet Academy\"",
+          "Try both English + Spanish title variants",
+          "Use subtitles + pause/replay for language learning"
+        ]
+      }
+    },
+    {
+      "slug": "star-trek-starfleet-academy-223530-cast",
+      "pageType": "cast",
+      "showId": 223530,
+      "title": "Star Trek: Starfleet Academy",
+      "year": "2026",
+      "posterPath": "/m4JnADIJkF5ck6jq7GUEcPBKxd0.jpg",
+      "backdropPath": "/rXtSdCGmG07zjAg5h7GR1v52ogX.jpg",
+      "overview": "A young group of cadets come together to pursue a common dream of hope and optimism. Under the watchful and demanding eyes of their instructors, they will discover what it takes to become Starfleet officers as they navigate blossoming friendships, explosive rivalries, first loves and a new enemy that threatens both the Academy and the Federation itself.",
+      "genres": [
+        "Sci-Fi & Fantasy",
+        "Action & Adventure"
+      ],
+      "networks": [
+        "Paramount+"
+      ],
+      "numberOfSeasons": 1,
+      "numberOfEpisodes": 10,
+      "lastUpdated": "2026-02-24T14:11:26.988Z",
+      "content": {
+        "h1": "Star Trek: Starfleet Academy (2026) cast & key characters",
+        "paragraphs": [
+          "This page covers the cast overview for \"Star Trek: Starfleet Academy\" (2026) and how to explore actor credits.",
+          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
+          "Quick facts: 1 season(s), 10 episode(s), networks: Paramount+.",
+          "A young group of cadets come together to pursue a common dream of hope and optimism. Under the watchful and demanding eyes of their instructors, they will discover what it takes to become Starfleet officers as they navigate blossoming friendships, explosive rivalries, first loves and a new enemy that threatens both the Academy and the Federation itself.",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -2958,7 +2854,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 509,
-      "lastUpdated": "2026-02-23T14:07:50.290Z",
+      "lastUpdated": "2026-02-24T14:11:27.086Z",
       "content": {
         "h1": "Dreams of Freedom (2024) overview",
         "paragraphs": [
@@ -2993,7 +2889,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 509,
-      "lastUpdated": "2026-02-23T14:07:50.290Z",
+      "lastUpdated": "2026-02-24T14:11:27.086Z",
       "content": {
         "h1": "Where to watch Dreams of Freedom (2024)",
         "paragraphs": [
@@ -3029,7 +2925,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 509,
-      "lastUpdated": "2026-02-23T14:07:50.290Z",
+      "lastUpdated": "2026-02-24T14:11:27.086Z",
       "content": {
         "h1": "Dreams of Freedom (2024) cast & key characters",
         "paragraphs": [
@@ -3065,7 +2961,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 41,
-      "lastUpdated": "2026-02-23T14:07:50.303Z",
+      "lastUpdated": "2026-02-24T14:11:27.188Z",
       "content": {
         "h1": "Money Heist (2017) overview",
         "paragraphs": [
@@ -3100,7 +2996,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 41,
-      "lastUpdated": "2026-02-23T14:07:50.303Z",
+      "lastUpdated": "2026-02-24T14:11:27.188Z",
       "content": {
         "h1": "Where to watch Money Heist (2017)",
         "paragraphs": [
@@ -3136,7 +3032,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 41,
-      "lastUpdated": "2026-02-23T14:07:50.303Z",
+      "lastUpdated": "2026-02-24T14:11:27.188Z",
       "content": {
         "h1": "Money Heist (2017) cast & key characters",
         "paragraphs": [
@@ -3144,113 +3040,6 @@
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
           "Quick facts: 3 season(s), 41 episode(s), networks: Netflix, Antena 3.",
           "To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who have a single characteristic: none of them has anything to lose. Five months of seclusion - memorizing every step, every detail, every probability - culminate in eleven days locked up in the National Coinage and Stamp Factory of Spain, surrounded by police forces and with dozens of hostages in their power, to find out whether their suicide wager will lead to everything or nothing.",
-          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
-        ],
-        "bullets": [
-          "Look up the show on TMDB or IMDb for verified cast",
-          "Check season-by-season credits (casts change)",
-          "Save actor names you like → discover similar shows"
-        ]
-      }
-    },
-    {
-      "slug": "cross-213306-summary",
-      "pageType": "summary",
-      "showId": 213306,
-      "title": "Cross",
-      "year": "2024",
-      "posterPath": "/6hhKdavCEZi8d584ZtIrQIrBvZI.jpg",
-      "backdropPath": "/cYHJfdRnIhmeBoYN4jRMMnBDroO.jpg",
-      "overview": "Alex Cross is a brilliant but flawed homicide detective and full of contradictions. A doting father and family man, Cross is single-minded to the point of obsession when he hunts killers. He is desperate for love, but his wife’s murder has left him too damaged to receive it.",
-      "genres": [
-        "Crime",
-        "Drama",
-        "Mystery"
-      ],
-      "networks": [
-        "Prime Video"
-      ],
-      "numberOfSeasons": 2,
-      "numberOfEpisodes": 16,
-      "lastUpdated": "2026-02-23T14:07:50.377Z",
-      "content": {
-        "h1": "Cross (2024) overview",
-        "paragraphs": [
-          "Alex Cross is a brilliant but flawed homicide detective and full of contradictions. A doting father and family man, Cross is single-minded to the point of obsession when he hunts killers. He is desperate for love, but his wife’s murder has left him too damaged to receive it.",
-          "Genres: Crime, Drama, Mystery. Networks: Prime Video.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Cross\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
-          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
-        ],
-        "bullets": [
-          "Best for: subtitle-based language practice",
-          "Rewatch strategy beats binge-watching",
-          "Save unknown words → review after the episode"
-        ]
-      }
-    },
-    {
-      "slug": "cross-213306-watch",
-      "pageType": "watch",
-      "showId": 213306,
-      "title": "Cross",
-      "year": "2024",
-      "posterPath": "/6hhKdavCEZi8d584ZtIrQIrBvZI.jpg",
-      "backdropPath": "/cYHJfdRnIhmeBoYN4jRMMnBDroO.jpg",
-      "overview": "Alex Cross is a brilliant but flawed homicide detective and full of contradictions. A doting father and family man, Cross is single-minded to the point of obsession when he hunts killers. He is desperate for love, but his wife’s murder has left him too damaged to receive it.",
-      "genres": [
-        "Crime",
-        "Drama",
-        "Mystery"
-      ],
-      "networks": [
-        "Prime Video"
-      ],
-      "numberOfSeasons": 2,
-      "numberOfEpisodes": 16,
-      "lastUpdated": "2026-02-23T14:07:50.377Z",
-      "content": {
-        "h1": "Where to watch Cross (2024)",
-        "paragraphs": [
-          "If you're looking for where to watch \"Cross\" (2024), start by checking the major streaming platforms available in your region.",
-          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 2 season(s), 16 episode(s), genres: Crime, Drama, Mystery.",
-          "Alex Cross is a brilliant but flawed homicide detective and full of contradictions. A doting father and family man, Cross is single-minded to the point of obsession when he hunts killers. He is desperate for love, but his wife’s murder has left him too damaged to receive it.",
-          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
-        ],
-        "bullets": [
-          "Search in-app for: \"Cross\"",
-          "Try both English + Spanish title variants",
-          "Use subtitles + pause/replay for language learning"
-        ]
-      }
-    },
-    {
-      "slug": "cross-213306-cast",
-      "pageType": "cast",
-      "showId": 213306,
-      "title": "Cross",
-      "year": "2024",
-      "posterPath": "/6hhKdavCEZi8d584ZtIrQIrBvZI.jpg",
-      "backdropPath": "/cYHJfdRnIhmeBoYN4jRMMnBDroO.jpg",
-      "overview": "Alex Cross is a brilliant but flawed homicide detective and full of contradictions. A doting father and family man, Cross is single-minded to the point of obsession when he hunts killers. He is desperate for love, but his wife’s murder has left him too damaged to receive it.",
-      "genres": [
-        "Crime",
-        "Drama",
-        "Mystery"
-      ],
-      "networks": [
-        "Prime Video"
-      ],
-      "numberOfSeasons": 2,
-      "numberOfEpisodes": 16,
-      "lastUpdated": "2026-02-23T14:07:50.377Z",
-      "content": {
-        "h1": "Cross (2024) cast & key characters",
-        "paragraphs": [
-          "This page covers the cast overview for \"Cross\" (2024) and how to explore actor credits.",
-          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 2 season(s), 16 episode(s), networks: Prime Video.",
-          "Alex Cross is a brilliant but flawed homicide detective and full of contradictions. A doting father and family man, Cross is single-minded to the point of obsession when he hunts killers. He is desperate for love, but his wife’s murder has left him too damaged to receive it.",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -3281,7 +3070,7 @@
       ],
       "numberOfSeasons": 4,
       "numberOfEpisodes": 221,
-      "lastUpdated": "2026-02-23T14:07:50.394Z",
+      "lastUpdated": "2026-02-24T14:11:27.341Z",
       "content": {
         "h1": "Once (2017) overview",
         "paragraphs": [
@@ -3318,7 +3107,7 @@
       ],
       "numberOfSeasons": 4,
       "numberOfEpisodes": 221,
-      "lastUpdated": "2026-02-23T14:07:50.394Z",
+      "lastUpdated": "2026-02-24T14:11:27.341Z",
       "content": {
         "h1": "Where to watch Once (2017)",
         "paragraphs": [
@@ -3356,7 +3145,7 @@
       ],
       "numberOfSeasons": 4,
       "numberOfEpisodes": 221,
-      "lastUpdated": "2026-02-23T14:07:50.394Z",
+      "lastUpdated": "2026-02-24T14:11:27.341Z",
       "content": {
         "h1": "Once (2017) cast & key characters",
         "paragraphs": [
@@ -3374,30 +3163,30 @@
       }
     },
     {
-      "slug": "la-resistencia-76949-summary",
+      "slug": "domenica-montero-307423-summary",
       "pageType": "summary",
-      "showId": 76949,
-      "title": "La resistencia",
-      "year": "2018",
-      "posterPath": "/yFwkWTDUjLN0LQmidsUJWEViCmo.jpg",
-      "backdropPath": "/aG9lB7wVTeStYZ8eCQN0t7VVmW8.jpg",
-      "overview": "",
+      "showId": 307423,
+      "title": "Doménica Montero",
+      "year": "2025",
+      "posterPath": "/A02M5F5DcQ3glHrvBUSGnzTlvW1.jpg",
+      "backdropPath": "/m9vxP7F52vTyFTlMqppxKFOcCPN.jpg",
+      "overview": "A respected and renowned businesswoman and philanthropist, considered one of the most sought-after brides in the country, who is left at the altar on her wedding day. Humiliated, betrayed, and turned into a target of public scrutiny, Doménica decides to flee and take refuge in one of her parents’ old estates. There, marked by pain, she faces new challenges and meets Luis Fernando, the owner of the neighboring estate, who also carries a painful past. Between them, an explosive relationship develops, marked by pride, misunderstandings, and growing attraction, where land disputes intertwine with their shared desire to rebuild, heal, and give new meaning to their lives.",
       "genres": [
-        "Talk",
-        "Comedy"
+        "Drama"
       ],
       "networks": [
-        "Movistar Plus+"
+        "Univision",
+        "Las Estrellas"
       ],
-      "numberOfSeasons": 7,
-      "numberOfEpisodes": 1022,
-      "lastUpdated": "2026-02-23T14:07:50.465Z",
+      "numberOfSeasons": 1,
+      "numberOfEpisodes": 36,
+      "lastUpdated": "2026-02-24T14:11:27.441Z",
       "content": {
-        "h1": "La resistencia (2018) overview",
+        "h1": "Doménica Montero (2025) overview",
         "paragraphs": [
-          "This is a Spanish-language TV series titled \"La resistencia\".",
-          "Genres: Talk, Comedy. Networks: Movistar Plus+.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"La resistencia\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "A respected and renowned businesswoman and philanthropist, considered one of the most sought-after brides in the country, who is left at the altar on her wedding day. Humiliated, betrayed, and turned into a target of public scrutiny, Doménica decides to flee and take refuge in one of her parents’ old estates. There, marked by pain, she faces new challenges and meets Luis Fernando, the owner of the neighboring estate, who also carries a painful past. Between them, an explosive relationship develops, marked by pride, misunderstandings, and growing attraction, where land disputes intertwine with their shared desire to rebuild, heal, and give new meaning to their lives.",
+          "Genres: Drama. Networks: Univision, Las Estrellas.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Doménica Montero\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
           "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
         ],
         "bullets": [
@@ -3408,66 +3197,167 @@
       }
     },
     {
-      "slug": "la-resistencia-76949-watch",
+      "slug": "domenica-montero-307423-watch",
       "pageType": "watch",
-      "showId": 76949,
-      "title": "La resistencia",
-      "year": "2018",
-      "posterPath": "/yFwkWTDUjLN0LQmidsUJWEViCmo.jpg",
-      "backdropPath": "/aG9lB7wVTeStYZ8eCQN0t7VVmW8.jpg",
-      "overview": "",
+      "showId": 307423,
+      "title": "Doménica Montero",
+      "year": "2025",
+      "posterPath": "/A02M5F5DcQ3glHrvBUSGnzTlvW1.jpg",
+      "backdropPath": "/m9vxP7F52vTyFTlMqppxKFOcCPN.jpg",
+      "overview": "A respected and renowned businesswoman and philanthropist, considered one of the most sought-after brides in the country, who is left at the altar on her wedding day. Humiliated, betrayed, and turned into a target of public scrutiny, Doménica decides to flee and take refuge in one of her parents’ old estates. There, marked by pain, she faces new challenges and meets Luis Fernando, the owner of the neighboring estate, who also carries a painful past. Between them, an explosive relationship develops, marked by pride, misunderstandings, and growing attraction, where land disputes intertwine with their shared desire to rebuild, heal, and give new meaning to their lives.",
       "genres": [
-        "Talk",
-        "Comedy"
+        "Drama"
       ],
       "networks": [
-        "Movistar Plus+"
+        "Univision",
+        "Las Estrellas"
       ],
-      "numberOfSeasons": 7,
-      "numberOfEpisodes": 1022,
-      "lastUpdated": "2026-02-23T14:07:50.465Z",
+      "numberOfSeasons": 1,
+      "numberOfEpisodes": 36,
+      "lastUpdated": "2026-02-24T14:11:27.441Z",
       "content": {
-        "h1": "Where to watch La resistencia (2018)",
+        "h1": "Where to watch Doménica Montero (2025)",
         "paragraphs": [
-          "If you're looking for where to watch \"La resistencia\" (2018), start by checking the major streaming platforms available in your region.",
+          "If you're looking for where to watch \"Doménica Montero\" (2025), start by checking the major streaming platforms available in your region.",
           "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 7 season(s), 1022 episode(s), genres: Talk, Comedy.",
-          "This is a Spanish-language TV series titled \"La resistencia\".",
+          "Quick facts: 1 season(s), 36 episode(s), genres: Drama.",
+          "A respected and renowned businesswoman and philanthropist, considered one of the most sought-after brides in the country, who is left at the altar on her wedding day. Humiliated, betrayed, and turned into a target of public scrutiny, Doménica decides to flee and take refuge in one of her parents’ old estates. There, marked by pain, she faces new challenges and meets Luis Fernando, the owner of the neighboring estate, who also carries a painful past. Between them, an explosive relationship develops, marked by pride, misunderstandings, and growing attraction, where land disputes intertwine with their shared desire to rebuild, heal, and give new meaning to their lives.",
           "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
         ],
         "bullets": [
-          "Search in-app for: \"La resistencia\"",
+          "Search in-app for: \"Doménica Montero\"",
           "Try both English + Spanish title variants",
           "Use subtitles + pause/replay for language learning"
         ]
       }
     },
     {
-      "slug": "la-resistencia-76949-cast",
+      "slug": "domenica-montero-307423-cast",
       "pageType": "cast",
-      "showId": 76949,
-      "title": "La resistencia",
-      "year": "2018",
-      "posterPath": "/yFwkWTDUjLN0LQmidsUJWEViCmo.jpg",
-      "backdropPath": "/aG9lB7wVTeStYZ8eCQN0t7VVmW8.jpg",
-      "overview": "",
+      "showId": 307423,
+      "title": "Doménica Montero",
+      "year": "2025",
+      "posterPath": "/A02M5F5DcQ3glHrvBUSGnzTlvW1.jpg",
+      "backdropPath": "/m9vxP7F52vTyFTlMqppxKFOcCPN.jpg",
+      "overview": "A respected and renowned businesswoman and philanthropist, considered one of the most sought-after brides in the country, who is left at the altar on her wedding day. Humiliated, betrayed, and turned into a target of public scrutiny, Doménica decides to flee and take refuge in one of her parents’ old estates. There, marked by pain, she faces new challenges and meets Luis Fernando, the owner of the neighboring estate, who also carries a painful past. Between them, an explosive relationship develops, marked by pride, misunderstandings, and growing attraction, where land disputes intertwine with their shared desire to rebuild, heal, and give new meaning to their lives.",
       "genres": [
-        "Talk",
-        "Comedy"
+        "Drama"
       ],
       "networks": [
-        "Movistar Plus+"
+        "Univision",
+        "Las Estrellas"
       ],
-      "numberOfSeasons": 7,
-      "numberOfEpisodes": 1022,
-      "lastUpdated": "2026-02-23T14:07:50.465Z",
+      "numberOfSeasons": 1,
+      "numberOfEpisodes": 36,
+      "lastUpdated": "2026-02-24T14:11:27.441Z",
       "content": {
-        "h1": "La resistencia (2018) cast & key characters",
+        "h1": "Doménica Montero (2025) cast & key characters",
         "paragraphs": [
-          "This page covers the cast overview for \"La resistencia\" (2018) and how to explore actor credits.",
+          "This page covers the cast overview for \"Doménica Montero\" (2025) and how to explore actor credits.",
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 7 season(s), 1022 episode(s), networks: Movistar Plus+.",
-          "This is a Spanish-language TV series titled \"La resistencia\".",
+          "Quick facts: 1 season(s), 36 episode(s), networks: Univision, Las Estrellas.",
+          "A respected and renowned businesswoman and philanthropist, considered one of the most sought-after brides in the country, who is left at the altar on her wedding day. Humiliated, betrayed, and turned into a target of public scrutiny, Doménica decides to flee and take refuge in one of her parents’ old estates. There, marked by pain, she faces new challenges and meets Luis Fernando, the owner of the neighboring estate, who also carries a painful past. Between them, an explosive relationship develops, marked by pride, misunderstandings, and growing attraction, where land disputes intertwine with their shared desire to rebuild, heal, and give new meaning to their lives.",
+          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
+        ],
+        "bullets": [
+          "Look up the show on TMDB or IMDb for verified cast",
+          "Check season-by-season credits (casts change)",
+          "Save actor names you like → discover similar shows"
+        ]
+      }
+    },
+    {
+      "slug": "hijack-198102-summary",
+      "pageType": "summary",
+      "showId": 198102,
+      "title": "Hijack",
+      "year": "2023",
+      "posterPath": "/2C51clnxQdiqPDeqQlXcUx70hse.jpg",
+      "backdropPath": "/aRZ7k1M3AdjVv8n3Fi6cAkEdpYY.jpg",
+      "overview": "Expert negotiator Sam Nelson is in for the ride of his life—and so is everyone on board with him—after a group of hijackers take control. Sam will try every move in his playbook to take them down...as the stakes grow higher by the second.",
+      "genres": [
+        "Drama"
+      ],
+      "networks": [
+        "Apple TV"
+      ],
+      "numberOfSeasons": 2,
+      "numberOfEpisodes": 15,
+      "lastUpdated": "2026-02-24T14:11:27.539Z",
+      "content": {
+        "h1": "Hijack (2023) overview",
+        "paragraphs": [
+          "Expert negotiator Sam Nelson is in for the ride of his life—and so is everyone on board with him—after a group of hijackers take control. Sam will try every move in his playbook to take them down...as the stakes grow higher by the second.",
+          "Genres: Drama. Networks: Apple TV.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Hijack\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
+        ],
+        "bullets": [
+          "Best for: subtitle-based language practice",
+          "Rewatch strategy beats binge-watching",
+          "Save unknown words → review after the episode"
+        ]
+      }
+    },
+    {
+      "slug": "hijack-198102-watch",
+      "pageType": "watch",
+      "showId": 198102,
+      "title": "Hijack",
+      "year": "2023",
+      "posterPath": "/2C51clnxQdiqPDeqQlXcUx70hse.jpg",
+      "backdropPath": "/aRZ7k1M3AdjVv8n3Fi6cAkEdpYY.jpg",
+      "overview": "Expert negotiator Sam Nelson is in for the ride of his life—and so is everyone on board with him—after a group of hijackers take control. Sam will try every move in his playbook to take them down...as the stakes grow higher by the second.",
+      "genres": [
+        "Drama"
+      ],
+      "networks": [
+        "Apple TV"
+      ],
+      "numberOfSeasons": 2,
+      "numberOfEpisodes": 15,
+      "lastUpdated": "2026-02-24T14:11:27.539Z",
+      "content": {
+        "h1": "Where to watch Hijack (2023)",
+        "paragraphs": [
+          "If you're looking for where to watch \"Hijack\" (2023), start by checking the major streaming platforms available in your region.",
+          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
+          "Quick facts: 2 season(s), 15 episode(s), genres: Drama.",
+          "Expert negotiator Sam Nelson is in for the ride of his life—and so is everyone on board with him—after a group of hijackers take control. Sam will try every move in his playbook to take them down...as the stakes grow higher by the second.",
+          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
+        ],
+        "bullets": [
+          "Search in-app for: \"Hijack\"",
+          "Try both English + Spanish title variants",
+          "Use subtitles + pause/replay for language learning"
+        ]
+      }
+    },
+    {
+      "slug": "hijack-198102-cast",
+      "pageType": "cast",
+      "showId": 198102,
+      "title": "Hijack",
+      "year": "2023",
+      "posterPath": "/2C51clnxQdiqPDeqQlXcUx70hse.jpg",
+      "backdropPath": "/aRZ7k1M3AdjVv8n3Fi6cAkEdpYY.jpg",
+      "overview": "Expert negotiator Sam Nelson is in for the ride of his life—and so is everyone on board with him—after a group of hijackers take control. Sam will try every move in his playbook to take them down...as the stakes grow higher by the second.",
+      "genres": [
+        "Drama"
+      ],
+      "networks": [
+        "Apple TV"
+      ],
+      "numberOfSeasons": 2,
+      "numberOfEpisodes": 15,
+      "lastUpdated": "2026-02-24T14:11:27.539Z",
+      "content": {
+        "h1": "Hijack (2023) cast & key characters",
+        "paragraphs": [
+          "This page covers the cast overview for \"Hijack\" (2023) and how to explore actor credits.",
+          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
+          "Quick facts: 2 season(s), 15 episode(s), networks: Apple TV.",
+          "Expert negotiator Sam Nelson is in for the ride of his life—and so is everyone on board with him—after a group of hijackers take control. Sam will try every move in his playbook to take them down...as the stakes grow higher by the second.",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -3495,7 +3385,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 364,
-      "lastUpdated": "2026-02-23T14:07:50.481Z",
+      "lastUpdated": "2026-02-24T14:11:27.692Z",
       "content": {
         "h1": "Valle salvaje (2024) overview",
         "paragraphs": [
@@ -3529,7 +3419,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 364,
-      "lastUpdated": "2026-02-23T14:07:50.481Z",
+      "lastUpdated": "2026-02-24T14:11:27.692Z",
       "content": {
         "h1": "Where to watch Valle salvaje (2024)",
         "paragraphs": [
@@ -3564,7 +3454,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 364,
-      "lastUpdated": "2026-02-23T14:07:50.481Z",
+      "lastUpdated": "2026-02-24T14:11:27.692Z",
       "content": {
         "h1": "Valle salvaje (2024) cast & key characters",
         "paragraphs": [
@@ -3588,7 +3478,7 @@
       "title": "El Chavo del Ocho",
       "year": "1973",
       "posterPath": "/1TdBpVOASafzfWlnecwW17UL6a5.jpg",
-      "backdropPath": "/6zzyWTu3p2Diztotbnb0kf128uo.jpg",
+      "backdropPath": "/9D46nnJxmhL7CeBuU5R0Bq07BV6.jpg",
       "overview": "The mishaps of Chavo, an 8-year-old orphan boy who lives in a village. Together with Quico, Chilindrina, Ñoño and La Popis, Chavo experiences a series of humorous entanglements.",
       "genres": [
         "Comedy",
@@ -3600,7 +3490,7 @@
       ],
       "numberOfSeasons": 7,
       "numberOfEpisodes": 314,
-      "lastUpdated": "2026-02-23T14:07:50.535Z",
+      "lastUpdated": "2026-02-24T14:11:27.789Z",
       "content": {
         "h1": "El Chavo del Ocho (1973) overview",
         "paragraphs": [
@@ -3623,7 +3513,7 @@
       "title": "El Chavo del Ocho",
       "year": "1973",
       "posterPath": "/1TdBpVOASafzfWlnecwW17UL6a5.jpg",
-      "backdropPath": "/6zzyWTu3p2Diztotbnb0kf128uo.jpg",
+      "backdropPath": "/9D46nnJxmhL7CeBuU5R0Bq07BV6.jpg",
       "overview": "The mishaps of Chavo, an 8-year-old orphan boy who lives in a village. Together with Quico, Chilindrina, Ñoño and La Popis, Chavo experiences a series of humorous entanglements.",
       "genres": [
         "Comedy",
@@ -3635,7 +3525,7 @@
       ],
       "numberOfSeasons": 7,
       "numberOfEpisodes": 314,
-      "lastUpdated": "2026-02-23T14:07:50.535Z",
+      "lastUpdated": "2026-02-24T14:11:27.789Z",
       "content": {
         "h1": "Where to watch El Chavo del Ocho (1973)",
         "paragraphs": [
@@ -3659,7 +3549,7 @@
       "title": "El Chavo del Ocho",
       "year": "1973",
       "posterPath": "/1TdBpVOASafzfWlnecwW17UL6a5.jpg",
-      "backdropPath": "/6zzyWTu3p2Diztotbnb0kf128uo.jpg",
+      "backdropPath": "/9D46nnJxmhL7CeBuU5R0Bq07BV6.jpg",
       "overview": "The mishaps of Chavo, an 8-year-old orphan boy who lives in a village. Together with Quico, Chilindrina, Ñoño and La Popis, Chavo experiences a series of humorous entanglements.",
       "genres": [
         "Comedy",
@@ -3671,7 +3561,7 @@
       ],
       "numberOfSeasons": 7,
       "numberOfEpisodes": 314,
-      "lastUpdated": "2026-02-23T14:07:50.535Z",
+      "lastUpdated": "2026-02-24T14:11:27.789Z",
       "content": {
         "h1": "El Chavo del Ocho (1973) cast & key characters",
         "paragraphs": [
@@ -3689,29 +3579,30 @@
       }
     },
     {
-      "slug": "scandal-story-of-an-obsession-203505-summary",
+      "slug": "la-resistencia-76949-summary",
       "pageType": "summary",
-      "showId": 203505,
-      "title": "Scandal: Story of an Obsession",
-      "year": "2023",
-      "posterPath": "/mra3tUkixvDE0lxQw1ZjuSkCa1U.jpg",
-      "backdropPath": "/cfoFgrPULUMFAP0XCo6hfjzKZGN.jpg",
-      "overview": "Inés is a 42-year-old woman who, when times start to get tough, attempts to drown herself. She is saved by Hugo, a teenage boy who then becomes obsessed with her. A forbidden romance develops between the two, whose consequences end up affecting all those around them.",
+      "showId": 76949,
+      "title": "La resistencia",
+      "year": "2018",
+      "posterPath": "/yFwkWTDUjLN0LQmidsUJWEViCmo.jpg",
+      "backdropPath": "/aG9lB7wVTeStYZ8eCQN0t7VVmW8.jpg",
+      "overview": "",
       "genres": [
-        "Drama"
+        "Talk",
+        "Comedy"
       ],
       "networks": [
-        "Telecinco"
+        "Movistar Plus+"
       ],
-      "numberOfSeasons": 1,
-      "numberOfEpisodes": 8,
-      "lastUpdated": "2026-02-23T14:07:50.551Z",
+      "numberOfSeasons": 7,
+      "numberOfEpisodes": 1022,
+      "lastUpdated": "2026-02-24T14:11:27.899Z",
       "content": {
-        "h1": "Scandal: Story of an Obsession (2023) overview",
+        "h1": "La resistencia (2018) overview",
         "paragraphs": [
-          "Inés is a 42-year-old woman who, when times start to get tough, attempts to drown herself. She is saved by Hugo, a teenage boy who then becomes obsessed with her. A forbidden romance develops between the two, whose consequences end up affecting all those around them.",
-          "Genres: Drama. Networks: Telecinco.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Scandal: Story of an Obsession\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "This is a Spanish-language TV series titled \"La resistencia\".",
+          "Genres: Talk, Comedy. Networks: Movistar Plus+.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"La resistencia\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
           "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
         ],
         "bullets": [
@@ -3722,64 +3613,173 @@
       }
     },
     {
-      "slug": "scandal-story-of-an-obsession-203505-watch",
+      "slug": "la-resistencia-76949-watch",
       "pageType": "watch",
-      "showId": 203505,
-      "title": "Scandal: Story of an Obsession",
-      "year": "2023",
-      "posterPath": "/mra3tUkixvDE0lxQw1ZjuSkCa1U.jpg",
-      "backdropPath": "/cfoFgrPULUMFAP0XCo6hfjzKZGN.jpg",
-      "overview": "Inés is a 42-year-old woman who, when times start to get tough, attempts to drown herself. She is saved by Hugo, a teenage boy who then becomes obsessed with her. A forbidden romance develops between the two, whose consequences end up affecting all those around them.",
+      "showId": 76949,
+      "title": "La resistencia",
+      "year": "2018",
+      "posterPath": "/yFwkWTDUjLN0LQmidsUJWEViCmo.jpg",
+      "backdropPath": "/aG9lB7wVTeStYZ8eCQN0t7VVmW8.jpg",
+      "overview": "",
       "genres": [
-        "Drama"
+        "Talk",
+        "Comedy"
       ],
       "networks": [
-        "Telecinco"
+        "Movistar Plus+"
       ],
-      "numberOfSeasons": 1,
-      "numberOfEpisodes": 8,
-      "lastUpdated": "2026-02-23T14:07:50.551Z",
+      "numberOfSeasons": 7,
+      "numberOfEpisodes": 1022,
+      "lastUpdated": "2026-02-24T14:11:27.899Z",
       "content": {
-        "h1": "Where to watch Scandal: Story of an Obsession (2023)",
+        "h1": "Where to watch La resistencia (2018)",
         "paragraphs": [
-          "If you're looking for where to watch \"Scandal: Story of an Obsession\" (2023), start by checking the major streaming platforms available in your region.",
+          "If you're looking for where to watch \"La resistencia\" (2018), start by checking the major streaming platforms available in your region.",
           "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 1 season(s), 8 episode(s), genres: Drama.",
-          "Inés is a 42-year-old woman who, when times start to get tough, attempts to drown herself. She is saved by Hugo, a teenage boy who then becomes obsessed with her. A forbidden romance develops between the two, whose consequences end up affecting all those around them.",
+          "Quick facts: 7 season(s), 1022 episode(s), genres: Talk, Comedy.",
+          "This is a Spanish-language TV series titled \"La resistencia\".",
           "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
         ],
         "bullets": [
-          "Search in-app for: \"Scandal: Story of an Obsession\"",
+          "Search in-app for: \"La resistencia\"",
           "Try both English + Spanish title variants",
           "Use subtitles + pause/replay for language learning"
         ]
       }
     },
     {
-      "slug": "scandal-story-of-an-obsession-203505-cast",
+      "slug": "la-resistencia-76949-cast",
       "pageType": "cast",
-      "showId": 203505,
-      "title": "Scandal: Story of an Obsession",
-      "year": "2023",
-      "posterPath": "/mra3tUkixvDE0lxQw1ZjuSkCa1U.jpg",
-      "backdropPath": "/cfoFgrPULUMFAP0XCo6hfjzKZGN.jpg",
-      "overview": "Inés is a 42-year-old woman who, when times start to get tough, attempts to drown herself. She is saved by Hugo, a teenage boy who then becomes obsessed with her. A forbidden romance develops between the two, whose consequences end up affecting all those around them.",
+      "showId": 76949,
+      "title": "La resistencia",
+      "year": "2018",
+      "posterPath": "/yFwkWTDUjLN0LQmidsUJWEViCmo.jpg",
+      "backdropPath": "/aG9lB7wVTeStYZ8eCQN0t7VVmW8.jpg",
+      "overview": "",
       "genres": [
-        "Drama"
+        "Talk",
+        "Comedy"
       ],
       "networks": [
-        "Telecinco"
+        "Movistar Plus+"
       ],
-      "numberOfSeasons": 1,
-      "numberOfEpisodes": 8,
-      "lastUpdated": "2026-02-23T14:07:50.551Z",
+      "numberOfSeasons": 7,
+      "numberOfEpisodes": 1022,
+      "lastUpdated": "2026-02-24T14:11:27.899Z",
       "content": {
-        "h1": "Scandal: Story of an Obsession (2023) cast & key characters",
+        "h1": "La resistencia (2018) cast & key characters",
         "paragraphs": [
-          "This page covers the cast overview for \"Scandal: Story of an Obsession\" (2023) and how to explore actor credits.",
+          "This page covers the cast overview for \"La resistencia\" (2018) and how to explore actor credits.",
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 1 season(s), 8 episode(s), networks: Telecinco.",
-          "Inés is a 42-year-old woman who, when times start to get tough, attempts to drown herself. She is saved by Hugo, a teenage boy who then becomes obsessed with her. A forbidden romance develops between the two, whose consequences end up affecting all those around them.",
+          "Quick facts: 7 season(s), 1022 episode(s), networks: Movistar Plus+.",
+          "This is a Spanish-language TV series titled \"La resistencia\".",
+          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
+        ],
+        "bullets": [
+          "Look up the show on TMDB or IMDb for verified cast",
+          "Check season-by-season credits (casts change)",
+          "Save actor names you like → discover similar shows"
+        ]
+      }
+    },
+    {
+      "slug": "senora-acero-63764-summary",
+      "pageType": "summary",
+      "showId": 63764,
+      "title": "Senora Acero",
+      "year": "2014",
+      "posterPath": "/vXhBxsvpW2mGuXRbIK5Yazdp8Zg.jpg",
+      "backdropPath": "/aZFIRQR0QxIjRMHy7lxSKiug9Z2.jpg",
+      "overview": "The adventures of Vicenta Acero, the feared coyote who now leads the dynasty of illicit dealings once under the control of her father.",
+      "genres": [
+        "Drama",
+        "Crime",
+        "Soap"
+      ],
+      "networks": [
+        "Telemundo"
+      ],
+      "numberOfSeasons": 5,
+      "numberOfEpisodes": 395,
+      "lastUpdated": "2026-02-24T14:11:27.999Z",
+      "content": {
+        "h1": "Senora Acero (2014) overview",
+        "paragraphs": [
+          "The adventures of Vicenta Acero, the feared coyote who now leads the dynasty of illicit dealings once under the control of her father.",
+          "Genres: Drama, Crime, Soap. Networks: Telemundo.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Senora Acero\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
+        ],
+        "bullets": [
+          "Best for: subtitle-based language practice",
+          "Rewatch strategy beats binge-watching",
+          "Save unknown words → review after the episode"
+        ]
+      }
+    },
+    {
+      "slug": "senora-acero-63764-watch",
+      "pageType": "watch",
+      "showId": 63764,
+      "title": "Senora Acero",
+      "year": "2014",
+      "posterPath": "/vXhBxsvpW2mGuXRbIK5Yazdp8Zg.jpg",
+      "backdropPath": "/aZFIRQR0QxIjRMHy7lxSKiug9Z2.jpg",
+      "overview": "The adventures of Vicenta Acero, the feared coyote who now leads the dynasty of illicit dealings once under the control of her father.",
+      "genres": [
+        "Drama",
+        "Crime",
+        "Soap"
+      ],
+      "networks": [
+        "Telemundo"
+      ],
+      "numberOfSeasons": 5,
+      "numberOfEpisodes": 395,
+      "lastUpdated": "2026-02-24T14:11:27.999Z",
+      "content": {
+        "h1": "Where to watch Senora Acero (2014)",
+        "paragraphs": [
+          "If you're looking for where to watch \"Senora Acero\" (2014), start by checking the major streaming platforms available in your region.",
+          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
+          "Quick facts: 5 season(s), 395 episode(s), genres: Drama, Crime, Soap.",
+          "The adventures of Vicenta Acero, the feared coyote who now leads the dynasty of illicit dealings once under the control of her father.",
+          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
+        ],
+        "bullets": [
+          "Search in-app for: \"Senora Acero\"",
+          "Try both English + Spanish title variants",
+          "Use subtitles + pause/replay for language learning"
+        ]
+      }
+    },
+    {
+      "slug": "senora-acero-63764-cast",
+      "pageType": "cast",
+      "showId": 63764,
+      "title": "Senora Acero",
+      "year": "2014",
+      "posterPath": "/vXhBxsvpW2mGuXRbIK5Yazdp8Zg.jpg",
+      "backdropPath": "/aZFIRQR0QxIjRMHy7lxSKiug9Z2.jpg",
+      "overview": "The adventures of Vicenta Acero, the feared coyote who now leads the dynasty of illicit dealings once under the control of her father.",
+      "genres": [
+        "Drama",
+        "Crime",
+        "Soap"
+      ],
+      "networks": [
+        "Telemundo"
+      ],
+      "numberOfSeasons": 5,
+      "numberOfEpisodes": 395,
+      "lastUpdated": "2026-02-24T14:11:27.999Z",
+      "content": {
+        "h1": "Senora Acero (2014) cast & key characters",
+        "paragraphs": [
+          "This page covers the cast overview for \"Senora Acero\" (2014) and how to explore actor credits.",
+          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
+          "Quick facts: 5 season(s), 395 episode(s), networks: Telemundo.",
+          "The adventures of Vicenta Acero, the feared coyote who now leads the dynasty of illicit dealings once under the control of her father.",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -3807,7 +3807,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 12,
-      "lastUpdated": "2026-02-23T14:07:50.623Z",
+      "lastUpdated": "2026-02-24T14:11:28.100Z",
       "content": {
         "h1": "El Mochaorejas (2026) overview",
         "paragraphs": [
@@ -3841,7 +3841,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 12,
-      "lastUpdated": "2026-02-23T14:07:50.623Z",
+      "lastUpdated": "2026-02-24T14:11:28.100Z",
       "content": {
         "h1": "Where to watch El Mochaorejas (2026)",
         "paragraphs": [
@@ -3876,7 +3876,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 12,
-      "lastUpdated": "2026-02-23T14:07:50.623Z",
+      "lastUpdated": "2026-02-24T14:11:28.100Z",
       "content": {
         "h1": "El Mochaorejas (2026) cast & key characters",
         "paragraphs": [
@@ -3894,30 +3894,29 @@
       }
     },
     {
-      "slug": "paradise-245927-summary",
+      "slug": "scandal-story-of-an-obsession-203505-summary",
       "pageType": "summary",
-      "showId": 245927,
-      "title": "Paradise",
-      "year": "2025",
-      "posterPath": "/l8RqfhqEk04W5sSOjQ9zeWU1DyM.jpg",
-      "backdropPath": "/fM90m6bz2rdrfSNhugyLkiLErpC.jpg",
-      "overview": "The tranquility in a serene, wealthy community inhabited by some of the world's most prominent individuals explodes when a shocking murder occurs and a high stakes investigation unfolds.",
+      "showId": 203505,
+      "title": "Scandal: Story of an Obsession",
+      "year": "2023",
+      "posterPath": "/mra3tUkixvDE0lxQw1ZjuSkCa1U.jpg",
+      "backdropPath": "/cfoFgrPULUMFAP0XCo6hfjzKZGN.jpg",
+      "overview": "Inés is a 42-year-old woman who, when times start to get tough, attempts to drown herself. She is saved by Hugo, a teenage boy who then becomes obsessed with her. A forbidden romance develops between the two, whose consequences end up affecting all those around them.",
       "genres": [
-        "Crime",
         "Drama"
       ],
       "networks": [
-        "Hulu"
+        "Telecinco"
       ],
-      "numberOfSeasons": 2,
-      "numberOfEpisodes": 16,
-      "lastUpdated": "2026-02-23T14:07:50.636Z",
+      "numberOfSeasons": 1,
+      "numberOfEpisodes": 8,
+      "lastUpdated": "2026-02-24T14:11:28.258Z",
       "content": {
-        "h1": "Paradise (2025) overview",
+        "h1": "Scandal: Story of an Obsession (2023) overview",
         "paragraphs": [
-          "The tranquility in a serene, wealthy community inhabited by some of the world's most prominent individuals explodes when a shocking murder occurs and a high stakes investigation unfolds.",
-          "Genres: Crime, Drama. Networks: Hulu.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Paradise\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "Inés is a 42-year-old woman who, when times start to get tough, attempts to drown herself. She is saved by Hugo, a teenage boy who then becomes obsessed with her. A forbidden romance develops between the two, whose consequences end up affecting all those around them.",
+          "Genres: Drama. Networks: Telecinco.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Scandal: Story of an Obsession\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
           "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
         ],
         "bullets": [
@@ -3928,170 +3927,64 @@
       }
     },
     {
-      "slug": "paradise-245927-watch",
+      "slug": "scandal-story-of-an-obsession-203505-watch",
       "pageType": "watch",
-      "showId": 245927,
-      "title": "Paradise",
-      "year": "2025",
-      "posterPath": "/l8RqfhqEk04W5sSOjQ9zeWU1DyM.jpg",
-      "backdropPath": "/fM90m6bz2rdrfSNhugyLkiLErpC.jpg",
-      "overview": "The tranquility in a serene, wealthy community inhabited by some of the world's most prominent individuals explodes when a shocking murder occurs and a high stakes investigation unfolds.",
+      "showId": 203505,
+      "title": "Scandal: Story of an Obsession",
+      "year": "2023",
+      "posterPath": "/mra3tUkixvDE0lxQw1ZjuSkCa1U.jpg",
+      "backdropPath": "/cfoFgrPULUMFAP0XCo6hfjzKZGN.jpg",
+      "overview": "Inés is a 42-year-old woman who, when times start to get tough, attempts to drown herself. She is saved by Hugo, a teenage boy who then becomes obsessed with her. A forbidden romance develops between the two, whose consequences end up affecting all those around them.",
       "genres": [
-        "Crime",
         "Drama"
       ],
       "networks": [
-        "Hulu"
+        "Telecinco"
       ],
-      "numberOfSeasons": 2,
-      "numberOfEpisodes": 16,
-      "lastUpdated": "2026-02-23T14:07:50.636Z",
+      "numberOfSeasons": 1,
+      "numberOfEpisodes": 8,
+      "lastUpdated": "2026-02-24T14:11:28.258Z",
       "content": {
-        "h1": "Where to watch Paradise (2025)",
+        "h1": "Where to watch Scandal: Story of an Obsession (2023)",
         "paragraphs": [
-          "If you're looking for where to watch \"Paradise\" (2025), start by checking the major streaming platforms available in your region.",
+          "If you're looking for where to watch \"Scandal: Story of an Obsession\" (2023), start by checking the major streaming platforms available in your region.",
           "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 2 season(s), 16 episode(s), genres: Crime, Drama.",
-          "The tranquility in a serene, wealthy community inhabited by some of the world's most prominent individuals explodes when a shocking murder occurs and a high stakes investigation unfolds.",
+          "Quick facts: 1 season(s), 8 episode(s), genres: Drama.",
+          "Inés is a 42-year-old woman who, when times start to get tough, attempts to drown herself. She is saved by Hugo, a teenage boy who then becomes obsessed with her. A forbidden romance develops between the two, whose consequences end up affecting all those around them.",
           "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
         ],
         "bullets": [
-          "Search in-app for: \"Paradise\"",
+          "Search in-app for: \"Scandal: Story of an Obsession\"",
           "Try both English + Spanish title variants",
           "Use subtitles + pause/replay for language learning"
         ]
       }
     },
     {
-      "slug": "paradise-245927-cast",
+      "slug": "scandal-story-of-an-obsession-203505-cast",
       "pageType": "cast",
-      "showId": 245927,
-      "title": "Paradise",
-      "year": "2025",
-      "posterPath": "/l8RqfhqEk04W5sSOjQ9zeWU1DyM.jpg",
-      "backdropPath": "/fM90m6bz2rdrfSNhugyLkiLErpC.jpg",
-      "overview": "The tranquility in a serene, wealthy community inhabited by some of the world's most prominent individuals explodes when a shocking murder occurs and a high stakes investigation unfolds.",
+      "showId": 203505,
+      "title": "Scandal: Story of an Obsession",
+      "year": "2023",
+      "posterPath": "/mra3tUkixvDE0lxQw1ZjuSkCa1U.jpg",
+      "backdropPath": "/cfoFgrPULUMFAP0XCo6hfjzKZGN.jpg",
+      "overview": "Inés is a 42-year-old woman who, when times start to get tough, attempts to drown herself. She is saved by Hugo, a teenage boy who then becomes obsessed with her. A forbidden romance develops between the two, whose consequences end up affecting all those around them.",
       "genres": [
-        "Crime",
         "Drama"
       ],
       "networks": [
-        "Hulu"
+        "Telecinco"
       ],
-      "numberOfSeasons": 2,
-      "numberOfEpisodes": 16,
-      "lastUpdated": "2026-02-23T14:07:50.636Z",
+      "numberOfSeasons": 1,
+      "numberOfEpisodes": 8,
+      "lastUpdated": "2026-02-24T14:11:28.258Z",
       "content": {
-        "h1": "Paradise (2025) cast & key characters",
+        "h1": "Scandal: Story of an Obsession (2023) cast & key characters",
         "paragraphs": [
-          "This page covers the cast overview for \"Paradise\" (2025) and how to explore actor credits.",
+          "This page covers the cast overview for \"Scandal: Story of an Obsession\" (2023) and how to explore actor credits.",
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 2 season(s), 16 episode(s), networks: Hulu.",
-          "The tranquility in a serene, wealthy community inhabited by some of the world's most prominent individuals explodes when a shocking murder occurs and a high stakes investigation unfolds.",
-          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
-        ],
-        "bullets": [
-          "Look up the show on TMDB or IMDb for verified cast",
-          "Check season-by-season credits (casts change)",
-          "Save actor names you like → discover similar shows"
-        ]
-      }
-    },
-    {
-      "slug": "salvador-259856-summary",
-      "pageType": "summary",
-      "showId": 259856,
-      "title": "Salvador",
-      "year": "2026",
-      "posterPath": "/8pLnnRB2qG1vZHXpjm2gVFNyUX.jpg",
-      "backdropPath": "/iREgT7QU8Dfrjh0nzZpN8IspMTQ.jpg",
-      "overview": "During a violent confrontation arranged between radical fans of two football clubs, Salvador Aguirre, an ambulance driver, rescues his injured daughter Milena, a member of the ultra group, which defends racist, violent and homophobic values, totally opposed to those he instilled in her.",
-      "genres": [
-        "Drama",
-        "Mystery"
-      ],
-      "networks": [
-        "Netflix"
-      ],
-      "numberOfSeasons": 1,
-      "numberOfEpisodes": 8,
-      "lastUpdated": "2026-02-23T14:07:50.708Z",
-      "content": {
-        "h1": "Salvador (2026) overview",
-        "paragraphs": [
-          "During a violent confrontation arranged between radical fans of two football clubs, Salvador Aguirre, an ambulance driver, rescues his injured daughter Milena, a member of the ultra group, which defends racist, violent and homophobic values, totally opposed to those he instilled in her.",
-          "Genres: Drama, Mystery. Networks: Netflix.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Salvador\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
-          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
-        ],
-        "bullets": [
-          "Best for: subtitle-based language practice",
-          "Rewatch strategy beats binge-watching",
-          "Save unknown words → review after the episode"
-        ]
-      }
-    },
-    {
-      "slug": "salvador-259856-watch",
-      "pageType": "watch",
-      "showId": 259856,
-      "title": "Salvador",
-      "year": "2026",
-      "posterPath": "/8pLnnRB2qG1vZHXpjm2gVFNyUX.jpg",
-      "backdropPath": "/iREgT7QU8Dfrjh0nzZpN8IspMTQ.jpg",
-      "overview": "During a violent confrontation arranged between radical fans of two football clubs, Salvador Aguirre, an ambulance driver, rescues his injured daughter Milena, a member of the ultra group, which defends racist, violent and homophobic values, totally opposed to those he instilled in her.",
-      "genres": [
-        "Drama",
-        "Mystery"
-      ],
-      "networks": [
-        "Netflix"
-      ],
-      "numberOfSeasons": 1,
-      "numberOfEpisodes": 8,
-      "lastUpdated": "2026-02-23T14:07:50.708Z",
-      "content": {
-        "h1": "Where to watch Salvador (2026)",
-        "paragraphs": [
-          "If you're looking for where to watch \"Salvador\" (2026), start by checking the major streaming platforms available in your region.",
-          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 1 season(s), 8 episode(s), genres: Drama, Mystery.",
-          "During a violent confrontation arranged between radical fans of two football clubs, Salvador Aguirre, an ambulance driver, rescues his injured daughter Milena, a member of the ultra group, which defends racist, violent and homophobic values, totally opposed to those he instilled in her.",
-          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
-        ],
-        "bullets": [
-          "Search in-app for: \"Salvador\"",
-          "Try both English + Spanish title variants",
-          "Use subtitles + pause/replay for language learning"
-        ]
-      }
-    },
-    {
-      "slug": "salvador-259856-cast",
-      "pageType": "cast",
-      "showId": 259856,
-      "title": "Salvador",
-      "year": "2026",
-      "posterPath": "/8pLnnRB2qG1vZHXpjm2gVFNyUX.jpg",
-      "backdropPath": "/iREgT7QU8Dfrjh0nzZpN8IspMTQ.jpg",
-      "overview": "During a violent confrontation arranged between radical fans of two football clubs, Salvador Aguirre, an ambulance driver, rescues his injured daughter Milena, a member of the ultra group, which defends racist, violent and homophobic values, totally opposed to those he instilled in her.",
-      "genres": [
-        "Drama",
-        "Mystery"
-      ],
-      "networks": [
-        "Netflix"
-      ],
-      "numberOfSeasons": 1,
-      "numberOfEpisodes": 8,
-      "lastUpdated": "2026-02-23T14:07:50.708Z",
-      "content": {
-        "h1": "Salvador (2026) cast & key characters",
-        "paragraphs": [
-          "This page covers the cast overview for \"Salvador\" (2026) and how to explore actor credits.",
-          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 1 season(s), 8 episode(s), networks: Netflix.",
-          "During a violent confrontation arranged between radical fans of two football clubs, Salvador Aguirre, an ambulance driver, rescues his injured daughter Milena, a member of the ultra group, which defends racist, violent and homophobic values, totally opposed to those he instilled in her.",
+          "Quick facts: 1 season(s), 8 episode(s), networks: Telecinco.",
+          "Inés is a 42-year-old woman who, when times start to get tough, attempts to drown herself. She is saved by Hugo, a teenage boy who then becomes obsessed with her. A forbidden romance develops between the two, whose consequences end up affecting all those around them.",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -4119,7 +4012,7 @@
       ],
       "numberOfSeasons": 2,
       "numberOfEpisodes": 15,
-      "lastUpdated": "2026-02-23T14:07:50.722Z",
+      "lastUpdated": "2026-02-24T14:11:28.364Z",
       "content": {
         "h1": "The Last Thing He Told Me (2023) overview",
         "paragraphs": [
@@ -4153,7 +4046,7 @@
       ],
       "numberOfSeasons": 2,
       "numberOfEpisodes": 15,
-      "lastUpdated": "2026-02-23T14:07:50.722Z",
+      "lastUpdated": "2026-02-24T14:11:28.364Z",
       "content": {
         "h1": "Where to watch The Last Thing He Told Me (2023)",
         "paragraphs": [
@@ -4188,7 +4081,7 @@
       ],
       "numberOfSeasons": 2,
       "numberOfEpisodes": 15,
-      "lastUpdated": "2026-02-23T14:07:50.722Z",
+      "lastUpdated": "2026-02-24T14:11:28.364Z",
       "content": {
         "h1": "The Last Thing He Told Me (2023) cast & key characters",
         "paragraphs": [
