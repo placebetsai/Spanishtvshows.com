@@ -20,7 +20,7 @@ export default function AboutPage() {
           <p className="mt-3 text-sm sm:text-base text-slate-300 max-w-2xl">
             Forget 20 open tabs and random Reddit threads. SpanishTVShows.com
             is your one hub for finding the best Spanish-language series,
-            where they’re streaming, and how to use them to level up your
+            where they're streaming, and how to use them to level up your
             Spanish in real life.
           </p>
         </div>
@@ -34,7 +34,7 @@ export default function AboutPage() {
               <p className="text-sm sm:text-base text-slate-300">
                 Our rankings focus on rewatch-ability, memorable characters,
                 natural Spanish, and how easy it is to binge without subtitles
-                after a few episodes. If a show feels like homework, it doesn’t
+                after a few episodes. If a show feels like homework, it doesn't
                 stay at the top for long.
               </p>
             </div>
@@ -69,6 +69,18 @@ export default function AboutPage() {
               </ul>
             </div>
 
+            {/* NEW - How the site makes money - transparency required by AdSense */}
+            <div className="rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6">
+              <h2 className="text-xl font-semibold mb-2">How this site is funded</h2>
+              <p className="text-sm sm:text-base text-slate-300">
+                SpanishTVShows.com is an independent site supported by display advertising
+                through Google AdSense and affiliate partnerships including Amazon Associates.
+                When you click an affiliate link and make a purchase, we may earn a small
+                commission — at no extra cost to you. Ads and affiliate links never influence
+                our show rankings or recommendations.
+              </p>
+            </div>
+
             <div className="rounded-2xl bg-gradient-to-r from-orange-500/20 via-pink-500/10 to-purple-500/20 border border-orange-500/40 p-6">
               <h2 className="text-xl font-semibold mb-2">
                 Learn Spanish without boring classes.
@@ -93,6 +105,19 @@ export default function AboutPage() {
                 <li>• People who just love international series and want the good stuff</li>
               </ul>
             </div>
+
+            {/* NEW - What this site is NOT */}
+            <div className="rounded-2xl bg-slate-900/80 border border-slate-800/90 p-5">
+              <h3 className="text-sm font-semibold text-slate-200">
+                What this site is NOT
+              </h3>
+              <ul className="mt-3 space-y-2 text-xs sm:text-sm text-slate-300">
+                <li>• We do not stream or host any shows</li>
+                <li>• We are not affiliated with Netflix, Amazon, or any studio</li>
+                <li>• We are an independent recommendation site only</li>
+              </ul>
+            </div>
+
             <div className="rounded-2xl bg-slate-900/80 border border-orange-500/60 p-5">
               <h3 className="text-sm font-semibold text-orange-300">
                 Have a show we should add?
@@ -114,4 +139,4 @@ export default function AboutPage() {
       </section>
     </div>
   );
-                  }
+                    }
