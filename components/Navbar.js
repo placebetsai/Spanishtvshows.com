@@ -6,7 +6,6 @@ import { Bars3Icon, XMarkIcon, FireIcon } from "@heroicons/react/24/solid";
 
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
-
   const closeMenu = () => setIsOpen(false);
 
   return (
@@ -23,46 +22,14 @@ export default function Navbar() {
 
         {/* DESKTOP LINKS */}
         <div className="hidden md:flex items-center gap-6 font-bold text-[0.7rem] tracking-[0.25em] text-gray-400 uppercase">
-          <Link href="/" className="hover:text-neon transition-colors">
-            Home
-          </Link>
-
-          <Link href="/trending" className="hover:text-neon transition-colors">
-            Trending
-          </Link>
-
-          <Link
-            href="/best-on-netflix"
-            className="hover:text-neon transition-colors"
-          >
-            Best on Netflix
-          </Link>
-
-          <Link
-            href="/learn-spanish"
-            className="hover:text-neon transition-colors"
-          >
-            Learn Spanish
-          </Link>
-
-          <Link
-            href="/learn-english"
-            className="hover:text-neon transition-colors"
-          >
-            Learn English
-          </Link>
-
-          {/* ✅ NEW: Resources */}
-          <Link
-            href="/resources"
-            className="hover:text-neon transition-colors"
-          >
-            Resources
-          </Link>
-
-          <Link href="/contact" className="hover:text-neon transition-colors">
-            Contact
-          </Link>
+          <Link href="/" className="hover:text-neon transition-colors">Home</Link>
+          <Link href="/trending" className="hover:text-neon transition-colors">Trending</Link>
+          <Link href="/best-on-netflix" className="hover:text-neon transition-colors">Best on Netflix</Link>
+          <Link href="/learn-spanish" className="hover:text-neon transition-colors">Learn Spanish</Link>
+          <Link href="/learn-english" className="hover:text-neon transition-colors">Learn English</Link>
+          <Link href="/resources" className="hover:text-neon transition-colors">Resources</Link>
+          <Link href="/about" className="hover:text-neon transition-colors">About</Link>
+          <Link href="/contact" className="hover:text-neon transition-colors">Contact</Link>
 
           {/* CTA */}
           <Link
@@ -91,62 +58,14 @@ export default function Navbar() {
       {/* MOBILE MENU */}
       {isOpen && (
         <div className="md:hidden bg-black border-b border-gray-800 absolute w-full left-0 top-16 flex flex-col shadow-2xl shadow-neon/10 z-50">
-          <Link
-            href="/"
-            onClick={closeMenu}
-            className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon"
-          >
-            Home
-          </Link>
-
-          <Link
-            href="/trending"
-            onClick={closeMenu}
-            className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon"
-          >
-            Trending
-          </Link>
-
-          <Link
-            href="/best-on-netflix"
-            onClick={closeMenu}
-            className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon"
-          >
-            Best on Netflix
-          </Link>
-
-          <Link
-            href="/learn-spanish"
-            onClick={closeMenu}
-            className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon"
-          >
-            Learn Spanish
-          </Link>
-
-          <Link
-            href="/learn-english"
-            onClick={closeMenu}
-            className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon"
-          >
-            Learn English
-          </Link>
-
-          {/* ✅ NEW: Resources */}
-          <Link
-            href="/resources"
-            onClick={closeMenu}
-            className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon"
-          >
-            Resources
-          </Link>
-
-          <Link
-            href="/contact"
-            onClick={closeMenu}
-            className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon"
-          >
-            Contact
-          </Link>
+          <Link href="/" onClick={closeMenu} className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon">Home</Link>
+          <Link href="/trending" onClick={closeMenu} className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon">Trending</Link>
+          <Link href="/best-on-netflix" onClick={closeMenu} className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon">Best on Netflix</Link>
+          <Link href="/learn-spanish" onClick={closeMenu} className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon">Learn Spanish</Link>
+          <Link href="/learn-english" onClick={closeMenu} className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon">Learn English</Link>
+          <Link href="/resources" onClick={closeMenu} className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon">Resources</Link>
+          <Link href="/about" onClick={closeMenu} className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon">About</Link>
+          <Link href="/contact" onClick={closeMenu} className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon">Contact</Link>
 
           <div className="p-5">
             <Link
@@ -162,4 +81,4 @@ export default function Navbar() {
       )}
     </nav>
   );
-}
+        }
