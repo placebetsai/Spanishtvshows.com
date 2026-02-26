@@ -11,6 +11,9 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-wrap gap-5 text-sm font-semibold">
+            <Link className="text-gray-300 hover:text-neon" href="/about">
+              About
+            </Link>
             <Link className="text-gray-300 hover:text-neon" href="/contact">
               Contact
             </Link>
@@ -23,11 +26,10 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* REQUIRED AMAZON DISCLOSURE — keep it small + clean */}
         <div className="mt-6 text-xs text-gray-500 leading-relaxed">
           Disclosure: As an Amazon Associate, we earn from qualifying purchases.
         </div>
       </div>
     </footer>
   );
-            }
+}
