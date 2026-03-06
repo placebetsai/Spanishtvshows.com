@@ -45,6 +45,7 @@ export async function generateMetadata({ params }) {
       (page.overview && page.overview.slice(0, 155)) ||
       `Learn English with TV using "${page.title}" and subtitles.`,
     alternates: { canonical: `https://spanishtvshows.com/g/${page.slug}` },
+    robots: { index: false, follow: false },
   };
 }
 

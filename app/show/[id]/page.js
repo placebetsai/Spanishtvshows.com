@@ -185,7 +185,7 @@ export default async function ShowPage({ params }) {
                   rel="noopener noreferrer"
                   className="bg-neon text-black font-black px-6 py-3 rounded-full hover:bg-white transition"
                 >
-                  ▶ Where to Watch
+                  🔍 Find Streaming Options
                 </a>
 
                 <Link
