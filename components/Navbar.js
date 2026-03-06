@@ -14,31 +14,32 @@ export default function Navbar() {
         {/* LOGO */}
         <Link
           href="/"
-          className="text-xl md:text-2xl font-black italic tracking-tighter text-white"
+          className="flex-shrink-0 text-xl md:text-2xl font-black italic tracking-tighter text-white"
         >
           SPANISHTVSHOWS
           <span className="text-neon">.COM</span>
         </Link>
 
-        {/* DESKTOP LINKS */}
-        <div className="hidden md:flex items-center gap-8 font-bold text-[0.7rem] tracking-[0.15em] text-gray-400 uppercase">
+        {/* DESKTOP LINKS — centered */}
+        <div className="hidden md:flex flex-1 items-center justify-center gap-6 font-bold text-[0.7rem] tracking-[0.12em] text-gray-400 uppercase">
+          <Link href="/" className="hover:text-neon transition-colors">Home</Link>
           <Link href="/trending" className="hover:text-neon transition-colors">Trending</Link>
-          <Link href="/best-on-netflix" className="hover:text-neon transition-colors">Best on Netflix</Link>
+          <Link href="/best-on-netflix" className="hover:text-neon transition-colors">Netflix</Link>
           <Link href="/learn-spanish" className="hover:text-neon transition-colors">Learn Spanish</Link>
           <Link href="/learn-english" className="hover:text-neon transition-colors">Learn English</Link>
           <Link href="/resources" className="hover:text-neon transition-colors">Resources</Link>
           <Link href="/about" className="hover:text-neon transition-colors">About</Link>
           <Link href="/contact" className="hover:text-neon transition-colors">Contact</Link>
-
-          {/* CTA */}
-          <Link
-            href="/learn-spanish"
-            className="bg-neon text-black px-4 py-2 rounded-sm hover:bg-white transition-colors flex items-center gap-2 font-black"
-          >
-            <FireIcon className="h-4 w-4" />
-            START LEARNING
-          </Link>
         </div>
+
+        {/* CTA — right */}
+        <Link
+          href="/learn-spanish"
+          className="hidden md:flex flex-shrink-0 bg-neon text-black px-4 py-2 rounded-sm hover:bg-white transition-colors items-center gap-2 font-black text-[0.7rem] tracking-[0.12em] uppercase"
+        >
+          <FireIcon className="h-4 w-4" />
+          Start Learning
+        </Link>
 
         {/* MOBILE TOGGLE */}
         <button
