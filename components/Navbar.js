@@ -21,8 +21,7 @@ export default function Navbar() {
         </Link>
 
         {/* DESKTOP LINKS */}
-        <div className="hidden md:flex items-center gap-6 font-bold text-[0.7rem] tracking-[0.25em] text-gray-400 uppercase">
-          <Link href="/" className="hover:text-neon transition-colors">Home</Link>
+        <div className="hidden md:flex items-center gap-8 font-bold text-[0.7rem] tracking-[0.15em] text-gray-400 uppercase">
           <Link href="/trending" className="hover:text-neon transition-colors">Trending</Link>
           <Link href="/best-on-netflix" className="hover:text-neon transition-colors">Best on Netflix</Link>
           <Link href="/learn-spanish" className="hover:text-neon transition-colors">Learn Spanish</Link>
