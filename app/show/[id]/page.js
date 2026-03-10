@@ -241,6 +241,54 @@ export default async function ShowPage({ params }) {
               </p>
             </section>
 
+            {/* WHERE TO WATCH — streaming affiliate links */}
+            <section className="rounded-2xl overflow-hidden border border-gray-800">
+              <div className="px-6 py-4 bg-gradient-to-r from-purple-900/60 to-pink-900/60 border-b border-gray-800">
+                <h2 className="font-display text-2xl md:text-3xl text-white">Where to Watch</h2>
+                <p className="text-gray-400 text-xs mt-1">
+                  SpanishTVShows.com is a guide — we don&apos;t host content. Click a service below to check current availability.
+                </p>
+              </div>
+              <div className="p-6">
+                <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+                  {[
+                    { name: "Netflix", color: "#e50914", url: `https://www.netflix.com/search?q=${encodeURIComponent(show?.name || "")}`, emoji: "🎬" },
+                    { name: "Amazon Prime", color: "#00a8e0", url: `https://www.amazon.com/s?k=${encodeURIComponent(show?.name || "")}&i=instant-video&tag=spanishtvshows-20`, emoji: "📦" },
+                    { name: "Max (HBO)", color: "#002be0", url: `https://www.max.com/search?q=${encodeURIComponent(show?.name || "")}`, emoji: "🎭" },
+                    { name: "Hulu", color: "#1ce783", url: `https://www.hulu.com/search?q=${encodeURIComponent(show?.name || "")}`, emoji: "📺" },
+                    { name: "Apple TV+", color: "#555", url: `https://tv.apple.com/search?term=${encodeURIComponent(show?.name || "")}`, emoji: "🍎" },
+                    { name: "Fubo TV", color: "#e8001c", url: `https://www.fubo.tv/welcome?irad=1681037&irmp=3946312`, emoji: "⚽" },
+                  ].map((s) => (
+                    <a
+                      key={s.name}
+                      href={s.url}
+                      target="_blank"
+                      rel="noopener sponsored"
+                      style={{ borderColor: "#1f2937", background: "#0d0d0d" }}
+                      className="flex items-center gap-3 p-3 rounded-xl border hover:border-neon transition group"
+                    >
+                      <span className="text-2xl">{s.emoji}</span>
+                      <div>
+                        <div className="text-white font-black text-sm group-hover:text-neon transition">{s.name}</div>
+                        <div className="text-gray-500 text-xs">Check availability →</div>
+                      </div>
+                    </a>
+                  ))}
+                </div>
+                <a
+                  href={jw}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mt-4 flex items-center justify-center gap-2 w-full py-3 rounded-xl border border-gray-700 text-gray-300 hover:text-white hover:border-neon text-sm font-bold transition"
+                >
+                  🔍 Search all platforms on JustWatch
+                </a>
+                <p className="text-gray-600 text-xs mt-3">
+                  Some links are affiliate links. We may earn a small commission if you subscribe — at no cost to you.
+                </p>
+              </div>
+            </section>
+
             <section>
               <div className="flex items-center justify-between gap-4 mb-4">
                 <h2 className="font-display text-3xl md:text-4xl">

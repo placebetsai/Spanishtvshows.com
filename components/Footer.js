@@ -11,6 +11,9 @@ export default function Footer() {
           </div>
 
           <div className="flex flex-wrap gap-5 text-sm font-semibold">
+            <Link className="text-gray-300 hover:text-neon" href="/blog">
+              Blog
+            </Link>
             <Link className="text-gray-300 hover:text-neon" href="/about">
               About
             </Link>

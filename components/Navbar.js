@@ -25,6 +25,7 @@ export default function Navbar() {
           <Link href="/" className="hover:text-neon transition-colors">Home</Link>
           <Link href="/trending" className="hover:text-neon transition-colors">Trending</Link>
           <Link href="/best-on-netflix" className="hover:text-neon transition-colors">Netflix</Link>
+          <Link href="/blog" className="hover:text-neon transition-colors">Blog</Link>
           <Link href="/learn-spanish" className="hover:text-neon transition-colors">Learn Spanish</Link>
           <Link href="/learn-english" className="hover:text-neon transition-colors">Learn English</Link>
           <Link href="/resources" className="hover:text-neon transition-colors">Resources</Link>
@@ -61,6 +62,7 @@ export default function Navbar() {
           <Link href="/" onClick={closeMenu} className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon">Home</Link>
           <Link href="/trending" onClick={closeMenu} className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon">Trending</Link>
           <Link href="/best-on-netflix" onClick={closeMenu} className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon">Best on Netflix</Link>
+          <Link href="/blog" onClick={closeMenu} className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon">Blog</Link>
           <Link href="/learn-spanish" onClick={closeMenu} className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon">Learn Spanish</Link>
           <Link href="/learn-english" onClick={closeMenu} className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon">Learn English</Link>
           <Link href="/resources" onClick={closeMenu} className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon">Resources</Link>

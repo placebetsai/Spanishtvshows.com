@@ -1,6 +1,23 @@
 import fs from "fs";
 import path from "path";
 
+function loadBlogPosts() {
+  const dir = path.join(process.cwd(), "content", "blog", "posts");
+  if (!fs.existsSync(dir)) return [];
+  return fs
+    .readdirSync(dir)
+    .filter((f) => f.endsWith(".json"))
+    .map((f) => {
+      try {
+        const post = JSON.parse(fs.readFileSync(path.join(dir, f), "utf8"));
+        return { slug: post.slug, date: post.date };
+      } catch {
+        return null;
+      }
+    })
+    .filter(Boolean);
+}
+
 function loadPages() {
   const filePath = path.join(process.cwd(), "content", "generated", "spanish-pages.json");
 
