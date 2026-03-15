@@ -53,6 +53,15 @@ export default function sitemap() {
 
   const pages = loadPages();
 
+  // Show pages — extract unique TMDB show IDs
+  const showIds = [...new Set(pages.map((p) => p?.showId).filter(Boolean))];
+  const showUrls = showIds.map((id) => ({
+    url: `${baseUrl}/show/${id}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.8,
+  }));
+
   const generatedUrls = pages
     .map((p) => p?.slug)
     .filter(Boolean)
@@ -63,5 +72,5 @@ export default function sitemap() {
       priority: 0.7,
     }));
 
-  return [...staticUrls, ...generatedUrls];
+  return [...staticUrls, ...showUrls, ...generatedUrls];
 }

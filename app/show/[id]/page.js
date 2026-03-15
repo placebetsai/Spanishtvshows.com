@@ -2,6 +2,8 @@
 import Link from "next/link";
 import Image from "next/image";
 import { tmdb, tmdbImg } from "../../../lib/tmdb";
+import { AMAZON_TAG } from "../../../lib/amazon";
+import AdUnit from "../../../components/AdUnit";
 
 function yearFromDate(dateStr) {
   if (!dateStr || typeof dateStr !== "string") return "—";
@@ -241,6 +243,10 @@ export default async function ShowPage({ params }) {
               </p>
             </section>
 
+            <div className="my-2">
+              <AdUnit />
+            </div>
+
             {/* WHERE TO WATCH — streaming affiliate links */}
             <section className="rounded-2xl overflow-hidden border border-gray-800">
               <div className="px-6 py-4 bg-gradient-to-r from-purple-900/60 to-pink-900/60 border-b border-gray-800">
@@ -253,7 +259,7 @@ export default async function ShowPage({ params }) {
                 <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
                   {[
                     { name: "Netflix", color: "#e50914", url: `https://www.netflix.com/search?q=${encodeURIComponent(show?.name || "")}`, emoji: "🎬" },
-                    { name: "Amazon Prime", color: "#00a8e0", url: `https://www.amazon.com/s?k=${encodeURIComponent(show?.name || "")}&i=instant-video&tag=spanishtvshows-20`, emoji: "📦" },
+                    { name: "Amazon Prime", color: "#00a8e0", url: `https://www.amazon.com/s?k=${encodeURIComponent(show?.name || "")}&i=instant-video&tag=${AMAZON_TAG}`, emoji: "📦" },
                     { name: "Max (HBO)", color: "#002be0", url: `https://www.max.com/search?q=${encodeURIComponent(show?.name || "")}`, emoji: "🎭" },
                     { name: "Hulu", color: "#1ce783", url: `https://www.hulu.com/search?q=${encodeURIComponent(show?.name || "")}`, emoji: "📺" },
                     { name: "Apple TV+", color: "#555", url: `https://tv.apple.com/search?term=${encodeURIComponent(show?.name || "")}`, emoji: "🍎" },
@@ -288,6 +294,10 @@ export default async function ShowPage({ params }) {
                 </p>
               </div>
             </section>
+
+            <div className="my-2">
+              <AdUnit />
+            </div>
 
             <section>
               <div className="flex items-center justify-between gap-4 mb-4">
