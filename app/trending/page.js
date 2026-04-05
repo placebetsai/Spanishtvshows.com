@@ -1,4 +1,6 @@
 // app/trending/page.js
+export const runtime = "edge";
+
 import Link from "next/link";
 import {
   FireIcon,
