@@ -46,11 +46,11 @@ export default async function Home() {
 
         <div className="relative max-w-5xl mx-auto px-6 py-24 md:py-32 text-center">
           <p className="text-xs md:text-sm uppercase tracking-[0.3em] text-neon mb-4">
-            LATIN TV IS CARRYING 2026
+            MOST POPULAR RIGHT NOW · SOURCE: TMDB
           </p>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-black leading-[1.05] tracking-tighter mb-6">
-            #1 Right Now:
+            Trending Now:
             <br />
             <span className="bg-gradient-to-r from-neon via-hot to-orange-400 bg-clip-text text-transparent">
               {topShow?.name || "Spanish TV"}
@@ -58,8 +58,9 @@ export default async function Home() {
           </h1>
 
           <p className="text-gray-300 text-base md:text-lg max-w-2xl mx-auto font-mono mb-8">
-            Spanish-language TV is cooking your favorite English shows. Crime,
-            novelas, chaos, twists. We just say it out loud.
+            The most-watched Spanish-language series right now, ranked by live
+            audience data from The Movie Database (TMDB). Crime, drama, novelas,
+            thrillers — updated daily.
           </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
@@ -67,7 +68,7 @@ export default async function Home() {
               href="#top10"
               className="inline-flex items-center justify-center px-8 py-3 rounded-full bg-neon text-black font-black text-sm md:text-base tracking-wide shadow-[0_0_25px_rgba(0,243,255,0.6)] hover:bg-white transition-colors"
             >
-              See the full Top 10 →
+              See the full list →
             </a>
 
             {topShow && (
@@ -75,7 +76,7 @@ export default async function Home() {
                 href={`/show/${topShow.id}`}
                 className="inline-flex items-center justify-center px-6 py-3 rounded-full border border-gray-600 text-gray-200 text-xs md:text-sm font-bold tracking-wide hover:border-neon hover:text-neon transition-colors"
               >
-                Why this is #1 →
+                Show details →
               </Link>
             )}
           </div>
@@ -135,7 +136,7 @@ export default async function Home() {
       {/* ===================== TOP 10 GRID ===================== */}
       <section id="top10" className="max-w-7xl mx-auto px-6 pb-20 pt-12">
         <h2 className="text-3xl md:text-4xl font-black tracking-tight text-center mb-4">
-          Top 10 Spanish Shows Destroying <span className="text-neon">2026</span>
+          Most Popular Spanish Shows of <span className="text-neon">2026</span> · Live TMDB Data
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">

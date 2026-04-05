@@ -5,31 +5,30 @@ import Link from "next/link";
 import { tmdb, slugify, tmdbImg } from "../../lib/tmdb";
 
 export const metadata = {
-  title: "Best Spanish Shows on Netflix (Popular Picks 2026)",
+  title: "Spanish Shows on Netflix (2026) – Sorted by Audience Rating",
   description:
-    "Popular Spanish-language TV shows people search for on Netflix. Click a show for rating, seasons, and where to watch.",
+    "Spanish-language TV series available on Netflix, sorted by TMDB audience rating and vote count. Data source: The Movie Database (TMDB).",
 };
 
-async function getPopularSpanishNetflixStyle() {
-  // We’re NOT claiming official Netflix availability.
-  // This is a “Netflix picks” discovery page using Spanish originals popularity + vote volume.
+async function getNetflixSpanish() {
+  // Network 213 = Netflix. This only surfaces shows TMDB has tagged as Netflix originals/exclusives.
   const data = await tmdb(
     "/discover/tv",
     {
       with_original_language: "es",
       sort_by: "popularity.desc",
-      "vote_count.gte": 100,
+      with_networks: "213",
+      "vote_count.gte": 30,
       page: 1,
       language: "en-US",
     },
     { revalidate: 21600 }
   );
-
   return (data?.results || []).slice(0, 24);
 }
 
 export default async function NetflixPage() {
-  const shows = await getPopularSpanishNetflixStyle();
+  const shows = await getNetflixSpanish();
 
   return (
     <div className="bg-dark min-h-screen">
@@ -39,14 +38,20 @@ export default async function NetflixPage() {
         </Link>
 
         <h1 className="text-3xl md:text-5xl font-black mt-6 text-glow">
-          Best Spanish Shows on Netflix (Popular Picks)
+          Spanish Shows on Netflix
         </h1>
 
         <p className="text-gray-300 mt-3 max-w-3xl font-mono text-sm">
-          Ranked using popularity + real vote volume. Streaming availability varies by country—open any show for a “Where to Watch” link.
+          Spanish-language series tagged as Netflix originals or exclusives in the TMDB database,
+          sorted by audience popularity. Availability may vary by region.
+          Data: <a href="https://www.themoviedb.org" target="_blank" rel="noopener noreferrer" className="text-neon underline">TMDB</a>.
+          Not affiliated with Netflix.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
+          {shows.length === 0 && (
+            <p className="text-gray-500 col-span-3">No data available. Check back soon.</p>
+          )}
           {shows.map((s) => (
             <Link
               key={s.id}
@@ -75,7 +80,6 @@ export default async function NetflixPage() {
                     ⭐ {s.vote_average ? s.vote_average.toFixed(1) : "—"}
                   </div>
                 </div>
-
                 <p className="text-gray-400 text-xs mt-2 line-clamp-2">
                   {s.overview || "No description available."}
                 </p>
@@ -84,14 +88,11 @@ export default async function NetflixPage() {
           ))}
         </div>
 
-        <div className="mt-12 bg-black/70 border border-gray-800 rounded-xl p-6 box-glow">
-          <h2 className="text-white font-black">What this page means</h2>
-          <p className="text-gray-300 mt-2 text-sm leading-relaxed">
-            This is a discovery list of popular Spanish-language series people commonly watch and search for on Netflix.
-            Availability changes by region. Click any show for a direct “Where to Watch” link.
-          </p>
-        </div>
+        <p className="mt-8 text-xs text-gray-600">
+          This product uses the TMDB API but is not endorsed or certified by TMDB.
+          Netflix availability data may not be complete or current.
+        </p>
       </div>
     </div>
   );
-            }
+}
