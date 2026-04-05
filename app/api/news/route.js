@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
 import { XMLParser } from "fast-xml-parser";
 
-export const runtime = "nodejs";
+export const runtime = "edge";
 
 const parser = new XMLParser({
   ignoreAttributes: false,
