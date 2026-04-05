@@ -5,7 +5,7 @@ import Link from "next/link";
 import { tmdb, slugify, tmdbImg } from "../../lib/tmdb";
 
 export const metadata = {
-  title: "Best Spanish Shows on Netflix (Popular Picks 2025)",
+  title: "Best Spanish Shows on Netflix (Popular Picks 2026)",
   description:
     "Popular Spanish-language TV shows people search for on Netflix. Click a show for rating, seasons, and where to watch.",
 };

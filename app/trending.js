@@ -9,7 +9,7 @@ import {
 const API_BASE = "https://api.themoviedb.org/3";
 
 async function fetchJson(path) {
-  const apiKey = process.env.TMDB_API_KEY;
+  const apiKey = process.env.NEXT_PUBLIC_TMDB_API_KEY || process.env.TMDB_API_KEY;
   if (!apiKey) return null;
 
   const url = `${API_BASE}${path}${
@@ -47,9 +47,9 @@ async function getHiddenGems() {
 }
 
 export const metadata = {
-  title: "Trending Spanish TV Shows 2025 – What’s Actually Hot",
+  title: "Trending Spanish TV Shows 2026 – What’s Actually Hot",
   description:
-    "Live updated list of trending Spanish-language TV shows in 2025 – this week’s heat, new releases and hidden gems.",
+    "Live updated list of trending Spanish-language TV shows in 2026 – this week’s heat, new releases and hidden gems.",
 };
 
 export default async function TrendingPage() {
@@ -89,7 +89,7 @@ export default async function TrendingPage() {
 
           <p className="text-gray-300 text-xs md:text-sm max-w-2xl mx-auto font-mono mb-6">
             Live TMDB data. If it&apos;s here, people are actually watching it
-            in 2025 – Spain, Mexico, Colombia, Argentina, US Latinos and more.
+            in 2026 – Spain, Mexico, Colombia, Argentina, US Latinos and more.
           </p>
 
           {heroShow && (

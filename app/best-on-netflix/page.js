@@ -11,7 +11,7 @@ import {
 const API_BASE = "https://api.themoviedb.org/3";
 
 async function fetchJson(path) {
-  const apiKey = process.env.TMDB_API_KEY;
+  const apiKey = process.env.NEXT_PUBLIC_TMDB_API_KEY || process.env.TMDB_API_KEY;
   if (!apiKey) return null;
 
   const url = `${API_BASE}${path}${
@@ -32,9 +32,9 @@ async function getNetflixSpanish() {
 }
 
 export const metadata = {
-  title: "Best Spanish Shows on Netflix (2025) – Ranked by Heat",
+  title: "Best Spanish Shows on Netflix (2026) – Ranked by Heat",
   description:
-    "Live-ranked list of the best Spanish-language TV shows on Netflix in 2025. No fluff, just what’s actually worth watching.",
+    "Live-ranked list of the best Spanish-language TV shows on Netflix in 2026. No fluff, just what’s actually worth watching.",
 };
 
 export default async function BestOnNetflixPage() {
@@ -69,7 +69,7 @@ export default async function BestOnNetflixPage() {
 
           <p className="text-gray-300 text-xs md:text-sm max-w-2xl mx-auto font-mono mb-6">
             No more scrolling for an hour. These are the Spanish series on
-            Netflix that are actually worth your time in 2025.
+            Netflix that are actually worth your time in 2026.
           </p>
 
           <div className="flex flex-wrap items-center justify-center gap-3 mt-4">
