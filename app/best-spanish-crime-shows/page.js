@@ -1,4 +1,6 @@
 // app/best-spanish-crime-shows/page.js
+export const runtime = "edge";
+
 import Link from "next/link";
 import { tmdb, slugify, tmdbImg } from "../../lib/tmdb";
 

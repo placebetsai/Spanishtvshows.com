@@ -1,3 +1,5 @@
+export const runtime = "edge";
+
 import Link from "next/link";
 import { FireIcon, StarIcon } from "@heroicons/react/24/solid";
 import NewsTicker from "../components/NewsTicker";

@@ -1,26 +1,14 @@
 // app/g/[slug]/page.js
-import fs from "fs";
-import path from "path";
+export const runtime = "edge";
+
 import Image from "next/image";
 import Link from "next/link";
+import pagesData from "../../../content/generated/spanish-pages.json";
 
-const DATA_FILE = path.join(process.cwd(), "content", "generated", "spanish-pages.json");
-
-function readPages() {
-  if (!fs.existsSync(DATA_FILE)) return [];
-  const raw = fs.readFileSync(DATA_FILE, "utf8");
-  const json = JSON.parse(raw);
-  return json.pages || [];
-}
+const allPages = pagesData.pages || [];
 
 function getPageBySlug(slug) {
-  const pages = readPages();
-  return pages.find((p) => p.slug === slug) || null;
-}
-
-export async function generateStaticParams() {
-  const pages = readPages();
-  return pages.map((p) => ({ slug: p.slug }));
+  return allPages.find((p) => p.slug === slug) || null;
 }
 
 export async function generateMetadata({ params }) {
@@ -55,7 +43,7 @@ export default function GeneratedShowPage({ params }) {
     return (
       <div style={{ padding: 24, maxWidth: 900, margin: "0 auto" }}>
         <h1>Page not found</h1>
-        <p>This page wasn’t generated yet.</p>
+        <p>This page wasn't generated yet.</p>
         <Link href="/">Go home</Link>
       </div>
     );
