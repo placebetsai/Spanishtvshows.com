@@ -6,7 +6,7 @@ export const metadata = {
   metadataBase: new URL("https://spanishtvshows.com"),
 
   title: {
-    default: "SpanishTVShows.com – Best Spanish Shows Ranked (2025)",
+    default: "SpanishTVShows.com – Best Spanish Shows Ranked (2026)",
     template: "%s | SpanishTVShows.com",
   },
 
@@ -14,7 +14,7 @@ export const metadata = {
     "Top Spanish-language TV shows ranked from Spain to Latin America. Discover the best series, where to stream them, and how to learn Spanish using TV.",
 
   openGraph: {
-    title: "SpanishTVShows.com – Top Ranked Spanish Shows (2025)",
+    title: "SpanishTVShows.com – Top Ranked Spanish Shows (2026)",
     description:
       "Top Spanish TV shows from Spain to Latin America. Rankings, reviews, streaming links, and language-learning tips.",
     url: "https://spanishtvshows.com",
@@ -33,7 +33,7 @@ export const metadata = {
 
   twitter: {
     card: "summary_large_image",
-    title: "SpanishTVShows.com – Best Spanish Shows (2025)",
+    title: "SpanishTVShows.com – Best Spanish Shows (2026)",
     description:
       "Ranked Spanish-language TV shows with reviews, streaming links, and learning tips.",
     images: ["/Screenshot_20251210_154428_Grok.jpg"],

@@ -23,6 +23,7 @@ jobs:
           NODE_VERSION: '20'
           SITE_URL: https://spanishtvshows.com
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          NEXT_PUBLIC_TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
       - name: Deploy to Cloudflare Pages

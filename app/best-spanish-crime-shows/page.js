@@ -5,7 +5,7 @@ import Link from "next/link";
 import { tmdb, slugify, tmdbImg } from "../../lib/tmdb";
 
 export const metadata = {
-  title: "Best Spanish Crime Shows (Top Picks 2025)",
+  title: "Best Spanish Crime Shows (Top Picks 2026)",
   description: "Top Spanish-language crime series ranked by ratings + real vote volume.",
 };
 
