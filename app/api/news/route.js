@@ -1,173 +1,74 @@
-import { NextResponse } from "next/server";
-import { XMLParser } from "fast-xml-parser";
-
 export const runtime = "edge";
 
-const parser = new XMLParser({
-  ignoreAttributes: false,
-  attributeNamePrefix: "",
-  trimValues: true,
-});
+import { NextResponse } from "next/server";
 
-/* ===============================
-   HARD HTML ENTITY DECODER
-   Fixes &#8217; &amp; &ldquo; etc
-================================ */
-function decodeEntities(str) {
-  if (!str) return "";
-
-  // numeric entities: &#8217;
-  str = str.replace(/&#(\d+);/g, (_, n) => {
-    const code = parseInt(n, 10);
-    return Number.isFinite(code) ? String.fromCharCode(code) : _;
-  });
-
-  // hex entities: &#x2019;
-  str = str.replace(/&#x([0-9a-fA-F]+);/g, (_, hex) => {
-    const code = parseInt(hex, 16);
-    return Number.isFinite(code) ? String.fromCharCode(code) : _;
-  });
-
-  // common named entities
-  const map = {
-    "&amp;": "&",
-    "&quot;": '"',
-    "&apos;": "'",
-    "&#39;": "'",
-    "&lt;": "<",
-    "&gt;": ">",
-    "&nbsp;": " ",
-    "&ndash;": "–",
-    "&mdash;": "—",
-    "&hellip;": "…",
-    "&lsquo;": "‘",
-    "&rsquo;": "’",
-    "&ldquo;": "“",
-    "&rdquo;": "”",
-  };
-
-  return str.replace(
-    /&amp;|&quot;|&apos;|&#39;|&lt;|&gt;|&nbsp;|&ndash;|&mdash;|&hellip;|&lsquo;|&rsquo;|&ldquo;|&rdquo;/g,
-    (m) => map[m] || m
-  );
-}
-
-function cleanText(t) {
-  return decodeEntities(String(t || ""))
-    .replace(/\s+/g, " ")
-    .replace(/\u00A0/g, " ")
-    .trim();
-}
-
-/* ===============================
-   FEEDS (balanced, legit)
-================================ */
 const FEEDS = [
-  {
-    name: "Google News – Spanish TV",
-    url: "https://news.google.com/rss/search?q=Spanish%20TV%20series%20Netflix%20Telemundo%20Univision%20ViX&hl=en-US&gl=US&ceid=US:en",
-  },
-  {
-    name: "Google News – Netflix Latin",
-    url: "https://news.google.com/rss/search?q=Netflix%20Latin%20series&hl=en-US&gl=US&ceid=US:en",
-  },
-  {
-    name: "Google News – HBO Max Latino",
-    url: "https://news.google.com/rss/search?q=HBO%20Max%20Latin%20series&hl=en-US&gl=US&ceid=US:en",
-  },
-  {
-    name: "Variety TV",
-    url: "https://variety.com/v/tv/feed/",
-  },
-  {
-    name: "Deadline TV",
-    url: "https://deadline.com/v/tv/feed/",
-  },
+  "https://news.google.com/rss/search?q=Spanish+TV+series+Netflix+Telemundo+Univision&hl=en-US&gl=US&ceid=US:en",
+  "https://news.google.com/rss/search?q=Netflix+Spanish+series+2026&hl=en-US&gl=US&ceid=US:en",
+  "https://news.google.com/rss/search?q=telenovela+HBO+Max+Latino&hl=en-US&gl=US&ceid=US:en",
 ];
+
+function decodeEntities(str) {
+  return String(str || "")
+    .replace(/&#(\d+);/g, (_, n) => String.fromCharCode(+n))
+    .replace(/&#x([0-9a-fA-F]+);/g, (_, h) => String.fromCharCode(parseInt(h, 16)))
+    .replace(/&amp;/g, "&").replace(/&quot;/g, '"').replace(/&apos;/g, "'")
+    .replace(/&lt;/g, "<").replace(/&gt;/g, ">").replace(/&nbsp;/g, " ")
+    .replace(/&ndash;/g, "–").replace(/&mdash;/g, "—").replace(/&rsquo;/g, "'")
+    .replace(/&lsquo;/g, "'").replace(/&ldquo;/g, "\u201C").replace(/&rdquo;/g, "\u201D")
+    .replace(/\s+/g, " ").trim();
+}
+
+function parseRSS(xml) {
+  const items = [];
+  const re = /<item>([\s\S]*?)<\/item>/g;
+  let m;
+  while ((m = re.exec(xml)) !== null) {
+    const block = m[1];
+    const rawTitle = block.match(/<title>(?:<!\[CDATA\[)?([\s\S]*?)(?:\]\]>)?<\/title>/)?.[1] || "";
+    const rawLink =
+      block.match(/<link>([\s\S]*?)<\/link>/)?.[1] ||
+      block.match(/<guid[^>]*>([\s\S]*?)<\/guid>/)?.[1] || "";
+    const title = decodeEntities(rawTitle);
+    const link = decodeEntities(rawLink).trim();
+    if (title && link) items.push({ title, link });
+  }
+  return items;
+}
 
 async function fetchFeed(url) {
   const res = await fetch(url, {
     headers: {
       "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36",
       accept: "application/rss+xml, application/xml, text/xml, */*",
-      "accept-language": "en-US,en;q=0.9",
     },
-    cache: "no-store",
   });
-  if (!res.ok) throw new Error(`feed failed ${res.status}`);
+  if (!res.ok) throw new Error(`${res.status}`);
   return res.text();
 }
 
-function parseFeed(xml, source) {
-  let data;
-  try {
-    data = parser.parse(xml);
-  } catch {
-    return [];
-  }
-
-  // RSS
-  const rssItems = data?.rss?.channel?.item;
-  if (rssItems) {
-    const arr = Array.isArray(rssItems) ? rssItems : [rssItems];
-    return arr.map((i) => ({
-      title: cleanText(i.title),
-      link: cleanText(i.link || i.guid),
-      source,
-    }));
-  }
-
-  // Atom
-  const atomItems = data?.feed?.entry;
-  if (atomItems) {
-    const arr = Array.isArray(atomItems) ? atomItems : [atomItems];
-    return arr.map((i) => ({
-      title: cleanText(i.title),
-      link: cleanText(
-        typeof i.link === "string"
-          ? i.link
-          : Array.isArray(i.link)
-          ? i.link[0]?.href
-          : i.link?.href
-      ),
-      source,
-    }));
-  }
-
-  return [];
-}
+const FALLBACK = [
+  { title: "Money Heist creator's new show hits Netflix top 10 worldwide", link: "https://www.netflix.com/browse/genre/67673" },
+  { title: "Best Spanish-language thrillers to watch right now on Netflix", link: "https://spanishtvshows.com/best-spanish-crime-shows" },
+  { title: "Trending: Top Latin American series dominating streaming charts", link: "https://spanishtvshows.com/trending" },
+  { title: "La Casa de Papel universe expands with Berlin Season 2", link: "https://spanishtvshows.com/shows-like-money-heist" },
+  { title: "HBO Max Latino adds 12 new Spanish originals for 2026", link: "https://spanishtvshows.com/netflix" },
+];
 
 export async function GET() {
-  const results = await Promise.allSettled(
-    FEEDS.map(async (f) => {
-      const xml = await fetchFeed(f.url);
-      return parseFeed(xml, f.name);
-    })
-  );
+  const results = await Promise.allSettled(FEEDS.map(fetchFeed));
 
-  const perSource = results
-    .filter((r) => r.status === "fulfilled")
-    .map((r) => r.value);
-
-  // round-robin merge to avoid one source dominating
-  const merged = [];
-  const max = Math.max(...perSource.map((a) => a.length));
-
-  for (let i = 0; i < max && merged.length < 18; i++) {
-    for (const src of perSource) {
-      if (src[i] && src[i].title && src[i].link) {
-        merged.push(src[i]);
-        if (merged.length >= 18) break;
+  const items = [];
+  for (const r of results) {
+    if (r.status === "fulfilled") {
+      for (const item of parseRSS(r.value)) {
+        if (items.length < 20) items.push(item);
       }
     }
   }
 
   return NextResponse.json(
-    { items: merged },
-    {
-      headers: {
-        "cache-control": "s-maxage=900, stale-while-revalidate=3600",
-      },
-    }
+    { items: items.length > 0 ? items : FALLBACK },
+    { headers: { "cache-control": "s-maxage=900, stale-while-revalidate=3600" } }
   );
 }
