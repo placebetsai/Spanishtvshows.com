@@ -23,9 +23,17 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* REQUIRED AMAZON DISCLOSURE — keep it small + clean */}
-        <div className="mt-6 text-xs text-gray-500 leading-relaxed">
-          Disclosure: As an Amazon Associate, we earn from qualifying purchases.
+        <div className="mt-6 text-xs text-gray-500 leading-relaxed space-y-1">
+          <p>Disclosure: As an Amazon Associate, we earn from qualifying purchases.</p>
+          <p>
+            Show data provided by{" "}
+            <a href="https://www.themoviedb.org" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-300">
+              The Movie Database (TMDB)
+            </a>
+            . This site is not endorsed or certified by TMDB and is not affiliated with Netflix,
+            HBO, Telemundo, Univision, ViX, or any streaming platform.
+          </p>
+          <p>SpanishTVShows.com is an independent fan resource. All trademarks belong to their respective owners.</p>
         </div>
       </div>
     </footer>

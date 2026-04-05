@@ -32,41 +32,47 @@ export default function AboutPage() {
                 Built for real humans, not critics.
               </h2>
               <p className="text-sm sm:text-base text-slate-300">
-                Our rankings focus on rewatch-ability, memorable characters,
-                natural Spanish, and how easy it is to binge without subtitles
-                after a few episodes. If a show feels like homework, it doesn’t
-                stay at the top for long.
+                We pull live data from{" "}
+                <a href="https://www.themoviedb.org" target="_blank" rel="noopener noreferrer" className="text-orange-300 underline">
+                  The Movie Database (TMDB)
+                </a>{" "}
+                — real audience ratings and popularity scores from millions of
+                viewers worldwide. No paid placements, no critic scores, no
+                guesswork. If people are watching it, it shows up here.
               </p>
             </div>
 
             <div className="rounded-2xl bg-slate-900/60 border border-slate-800/80 p-6">
-              <h2 className="text-xl font-semibold mb-2">How we rank shows</h2>
+              <h2 className="text-xl font-semibold mb-2">How shows are ranked</h2>
               <ul className="mt-2 space-y-2 text-sm sm:text-base text-slate-300 list-disc list-inside">
                 <li>
                   <span className="font-semibold text-orange-300">
-                    Streaming access:
+                    Popularity score:
                   </span>{" "}
-                  Is it actually easy to watch in the US and Latin America?
+                  Live from TMDB — reflects actual viewer activity globally.
                 </li>
                 <li>
                   <span className="font-semibold text-orange-300">
-                    Language level:
+                    Audience rating:
                   </span>{" "}
-                  From beginner-friendly to rapid-fire street slang.
+                  Average vote score from TMDB users, minimum vote threshold applied.
                 </li>
                 <li>
                   <span className="font-semibold text-orange-300">
-                    Binge factor:
+                    Original language:
                   </span>{" "}
-                  Does it hook you by episode 2 or does it drag?
+                  We only surface shows originally produced in Spanish.
                 </li>
                 <li>
                   <span className="font-semibold text-orange-300">
-                    Rewatch value:
+                    Where to watch:
                   </span>{" "}
-                  Shows that still slap on the third watch get a rankings boost.
+                  Links go to JustWatch search — we don’t claim official streaming partnerships.
                 </li>
               </ul>
+              <p className="text-xs text-slate-500 mt-3">
+                This product uses the TMDB API but is not endorsed or certified by TMDB.
+              </p>
             </div>
 
             <div className="rounded-2xl bg-gradient-to-r from-orange-500/20 via-pink-500/10 to-purple-500/20 border border-orange-500/40 p-6">

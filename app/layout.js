@@ -66,12 +66,8 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        {/* ✅ AdSense ownership / loader (NEW ACCOUNT) */}
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7215975042937417"
-          crossOrigin="anonymous"
-        />
+        {/* Google AdSense – verify at google.com/adsense before activating */}
+        {/* <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXXXXXXXXXX" crossOrigin="anonymous" /> */}
 
         {/* JSON-LD Structured Data */}
         <script
