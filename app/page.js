@@ -3,9 +3,10 @@ export const runtime = "edge";
 import Link from "next/link";
 import { FireIcon, StarIcon } from "@heroicons/react/24/solid";
 import NewsTicker from "../components/NewsTicker";
+import AdUnit from "../components/AdUnit";
 
 async function getTopSpanish() {
-  const apiKey = process.env.NEXT_PUBLIC_TMDB_API_KEY || process.env.TMDB_API_KEY;
+  const apiKey = process.env.TMDB_API_KEY;
   if (!apiKey) return [];
 
   try {
@@ -133,6 +134,11 @@ export default async function Home() {
         </div>
       </section>
 
+      {/* ===================== AD UNIT ===================== */}
+      <div className="max-w-6xl mx-auto px-6">
+        <AdUnit className="my-6" />
+      </div>
+
       {/* ===================== TOP 10 GRID ===================== */}
       <section id="top10" className="max-w-7xl mx-auto px-6 pb-20 pt-12">
         <h2 className="text-3xl md:text-4xl font-black tracking-tight text-center mb-4">
@@ -161,6 +167,11 @@ export default async function Home() {
           ))}
         </div>
       </section>
+
+      {/* ===================== BOTTOM AD UNIT ===================== */}
+      <div className="max-w-6xl mx-auto px-6 pb-10">
+        <AdUnit className="my-6" />
+      </div>
     </div>
   );
         }
