@@ -16,6 +16,8 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          ref: Dev
 
       - name: Setup Node
         uses: actions/setup-node@v4
@@ -46,4 +48,4 @@ jobs:
           fi
 
           git commit -m "Auto-generate Spanish pages"
-          git push
+          git push origin Dev
