@@ -2,6 +2,7 @@
 export const runtime = "edge";
 
 import Link from "next/link";
+import AdUnit from "../../components/AdUnit";
 import {
   FireIcon,
   StarIcon,
@@ -178,6 +179,8 @@ export default async function TrendingPage() {
             ))}
           </div>
         </section>
+
+        <AdUnit className="my-6" />
 
         {/* NEW RELEASES */}
         <section>

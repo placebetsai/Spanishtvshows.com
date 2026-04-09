@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AdUnit from "../../components/AdUnit";
 import { amazonSearchUrl } from "@/lib/amazon";
 
 export const metadata = {
@@ -106,6 +107,8 @@ export default function LearnSpanishPage() {
           </div>
         ))}
       </section>
+
+      <AdUnit className="my-6" />
 
       {/* Tools */}
       <section className="mt-12">

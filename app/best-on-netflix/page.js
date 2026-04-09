@@ -2,6 +2,7 @@
 export const runtime = "edge";
 
 import Link from "next/link";
+import AdUnit from "../../components/AdUnit";
 import {
   FireIcon,
   StarIcon,
@@ -121,7 +122,7 @@ export default async function BestOnNetflixPage() {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-x-8 gap-y-12">
           {shows.slice(0, 18).map((show, index) => (
-            <div key={show.id} className="group block">
+            <Link key={show.id} href={`/show/${show.id}`} className="group block">
               <div className="relative aspect-[4/3] rounded-xl overflow-hidden mb-3 border border-gray-800 group-hover:border-neon transition-colors box-glow">
                 <img
                   src={`https://image.tmdb.org/t/p/w500${
@@ -159,27 +160,14 @@ export default async function BestOnNetflixPage() {
                 {show.overview || "No description available."}
               </p>
 
-              <div className="mt-3 flex items-center gap-3">
-                <a
-                  href={`https://www.justwatch.com/us/search?q=${encodeURIComponent(
-                    show.name
-                  )}`}
-                  target="_blank"
-                  className="inline-flex items-center gap-2 text-[0.7rem] md:text-xs font-bold text-neon hover:underline"
-                >
-                  <PlayCircleIcon className="h-3 w-3" />
-                  Where to watch
-                </a>
-                <Link
-                  href={`/show/${show.id}`}
-                  className="text-[0.7rem] md:text-xs text-gray-400 hover:text-gray-200"
-                >
-                  Details →
-                </Link>
+              <div className="mt-3 text-neon font-black text-xs">
+                Details →
               </div>
-            </div>
+            </Link>
           ))}
         </div>
+
+        <AdUnit className="my-6" />
 
         <section className="border-t border-gray-900 mt-12 pt-8 md:pt-10">
           <p className="text-gray-400 text-[0.7rem] md:text-xs text-center max-w-2xl mx-auto leading-relaxed">

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import AdUnit from "../../components/AdUnit";
 import { amazonSearchUrl } from "@/lib/amazon";
 
 export const metadata = {
@@ -45,6 +46,8 @@ export default function LearnEnglishPage() {
         If you speak Spanish and want English fast: watch daily, steal phrases,
         and speak weekly.
       </p>
+
+      <AdUnit className="my-6" />
 
       <section className="mt-12">
         <h2 className="text-2xl font-black uppercase tracking-tight">

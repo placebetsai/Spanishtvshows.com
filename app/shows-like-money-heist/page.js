@@ -2,6 +2,7 @@
 export const runtime = "edge";
 
 import Link from "next/link";
+import AdUnit from "../../components/AdUnit";
 import { tmdb, slugify, tmdbImg } from "../../lib/tmdb";
 
 export const metadata = {
@@ -40,7 +41,44 @@ export default async function Page() {
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 mt-10">
-          {shows.map((s) => (
+          {shows.slice(0, 12).map((s) => (
+            <Link
+              key={s.id}
+              href={`/show/${s.id}-${slugify(s.name)}`}
+              className="group block bg-black/80 border border-gray-800 rounded-xl overflow-hidden hover:border-neon transition box-glow"
+            >
+              <div
+                className="aspect-[16/9] bg-black"
+                style={{
+                  backgroundImage: s.backdrop_path
+                    ? `url(${tmdbImg(s.backdrop_path, "w780")})`
+                    : "radial-gradient(circle at top, #111827, #000000 60%)",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                }}
+              >
+                <div className="w-full h-full bg-black/55 group-hover:bg-black/35 transition" />
+              </div>
+
+              <div className="p-5">
+                <div className="flex items-start justify-between gap-3">
+                  <h2 className="font-black text-white group-hover:text-neon transition">{s.name}</h2>
+                  <div className="text-xs text-gray-300 whitespace-nowrap">
+                    ⭐ {s.vote_average ? s.vote_average.toFixed(1) : "—"}
+                  </div>
+                </div>
+                <p className="text-gray-400 text-xs mt-2 line-clamp-2">
+                  {s.overview || "No description available."}
+                </p>
+              </div>
+            </Link>
+          ))}
+        </div>
+
+        <AdUnit className="my-6" />
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          {shows.slice(12).map((s) => (
             <Link
               key={s.id}
               href={`/show/${s.id}-${slugify(s.name)}`}
