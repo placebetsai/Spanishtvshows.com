@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 
-export default function AdUnit({ className = "", style = {} }) {
+export default function AdUnit({ slot = "6600722153", className = "", style = {} }) {
   const adRef = useRef(null);
   const pushed = useRef(false);
 
@@ -19,12 +19,12 @@ export default function AdUnit({ className = "", style = {} }) {
   }, []);
 
   return (
-    <div className={className} style={{ textAlign: "center", overflow: "hidden", ...style }}>
+    <div className={className} style={{ textAlign: "center", overflow: "hidden", minHeight: "250px", ...style }}>
       <ins
         className="adsbygoogle"
         style={{ display: "block" }}
         data-ad-client="ca-pub-7215975042937417"
-        data-ad-slot="auto"
+        data-ad-slot={slot}
         data-ad-format="auto"
         data-full-width-responsive="true"
         ref={adRef}
