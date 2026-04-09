@@ -23,7 +23,14 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-6 text-xs text-gray-500 leading-relaxed space-y-1">
+        <div className="mt-6 border-t border-gray-800 pt-6 text-xs text-gray-600">
+          <p className="text-gray-500 font-semibold mb-2 uppercase tracking-wider text-[10px]">Partner Sites</p>
+          <div className="flex flex-wrap gap-x-5 gap-y-1 mb-4">
+            <a href="https://hiddencameras.tv" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition">HiddenCameras.tv — Live World Cams &amp; Security Camera Reviews</a>
+            <a href="https://ihatecollege.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-300 transition">IHateCollege.com — Real College Data &amp; Alternatives</a>
+          </div>
+        </div>
+        <div className="mt-0 text-xs text-gray-500 leading-relaxed space-y-1">
           <p>Disclosure: As an Amazon Associate, we earn from qualifying purchases.</p>
           <p>
             Show data provided by{" "}
