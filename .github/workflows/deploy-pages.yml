@@ -3,6 +3,7 @@ name: Deploy to Cloudflare Pages
 on:
   push:
     branches: [Dev]
+  workflow_dispatch:
 
 jobs:
   deploy:
