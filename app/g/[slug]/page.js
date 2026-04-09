@@ -3,6 +3,7 @@ export const runtime = "edge";
 
 import Image from "next/image";
 import Link from "next/link";
+import AdUnit from "../../../components/AdUnit";
 import pagesData from "../../../content/generated/spanish-pages.json";
 
 const allPages = pagesData.pages || [];
@@ -93,6 +94,8 @@ export default function GeneratedShowPage({ params }) {
             </p>
           ))}
 
+          <AdUnit className="my-4" />
+
           {page.content?.bullets?.length ? (
             <ul style={{ marginTop: 14, paddingLeft: 18, lineHeight: 1.6 }}>
               {page.content.bullets.map((b, idx) => (
@@ -100,6 +103,8 @@ export default function GeneratedShowPage({ params }) {
               ))}
             </ul>
           ) : null}
+
+          <AdUnit className="my-4" />
 
           <hr style={{ margin: "22px 0", opacity: 0.2 }} />
 

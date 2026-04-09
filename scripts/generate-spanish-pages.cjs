@@ -1,7 +1,7 @@
 // scripts/generate-spanish-pages.cjs
 // Generates content/generated/spanish-pages.json from TMDB.
 // No OpenAI required. Uses TMDB show data + templates.
-// Runs on Vercel via "prebuild".
+// Runs on Cloudflare Pages. Triggered by GitHub Actions workflow.
 
 const fs = require("fs");
 const path = require("path");
@@ -163,7 +163,7 @@ function makeSlug(show, details, pageType) {
 
 async function main() {
   if (!TMDB_API_KEY) {
-    die("Missing TMDB_API_KEY env var. Add it to Vercel Environment Variables.");
+    die("Missing TMDB_API_KEY env var. Add it to GitHub Secrets for the Actions workflow.");
   }
 
   console.log(`[generate] fetching shows... (limit=${SHOW_LIMIT})`);
