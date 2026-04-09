@@ -45,25 +45,6 @@ export default function Navbar() {
             Learn Spanish
           </Link>
 
-          <Link
-            href="/learn-english"
-            className="hover:text-neon transition-colors"
-          >
-            Learn English
-          </Link>
-
-          {/* ✅ NEW: Resources */}
-          <Link
-            href="/resources"
-            className="hover:text-neon transition-colors"
-          >
-            Resources
-          </Link>
-
-          <Link href="/contact" className="hover:text-neon transition-colors">
-            Contact
-          </Link>
-
           {/* CTA */}
           <Link
             href="/learn-spanish"
@@ -121,31 +102,6 @@ export default function Navbar() {
             className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon"
           >
             Learn Spanish
-          </Link>
-
-          <Link
-            href="/learn-english"
-            onClick={closeMenu}
-            className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon"
-          >
-            Learn English
-          </Link>
-
-          {/* ✅ NEW: Resources */}
-          <Link
-            href="/resources"
-            onClick={closeMenu}
-            className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon"
-          >
-            Resources
-          </Link>
-
-          <Link
-            href="/contact"
-            onClick={closeMenu}
-            className="p-5 border-b border-gray-900 text-lg font-bold uppercase hover:text-neon"
-          >
-            Contact
           </Link>
 
           <div className="p-5">

@@ -1,6 +1,7 @@
 import "./globals.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
+import AdUnit from "../components/AdUnit";
 
 export const metadata = {
   metadataBase: new URL("https://spanishtvshows.com"),
@@ -23,7 +24,7 @@ export const metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/Screenshot_20251210_154428_Grok.jpg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "SpanishTVShows.com – Top Ranked Spanish Shows",
@@ -36,13 +37,13 @@ export const metadata = {
     title: "SpanishTVShows.com – Best Spanish Shows (2026)",
     description:
       "Ranked Spanish-language TV shows with reviews, streaming links, and learning tips.",
-    images: ["/Screenshot_20251210_154428_Grok.jpg"],
+    images: ["/og-image.png"],
   },
 
   icons: {
-    icon: "/Screenshot_20251210_150918_Grok.jpg",
-    shortcut: "/Screenshot_20251210_150918_Grok.jpg",
-    apple: "/Screenshot_20251210_150918_Grok.jpg",
+    icon: "/favicon.png",
+    shortcut: "/favicon.png",
+    apple: "/favicon.png",
   },
 
   manifest: "/manifest.json",
@@ -59,7 +60,7 @@ export default function RootLayout({ children }) {
     publisher: {
       "@type": "Organization",
       name: "SpanishTVShows.com",
-      logo: "https://spanishtvshows.com/Screenshot_20251210_150918_Grok.jpg",
+      logo: "https://spanishtvshows.com/favicon.png",
     },
   };
 
@@ -85,12 +86,12 @@ export default function RootLayout({ children }) {
         {/* Extra favicons for browsers */}
         <link
           rel="icon"
-          href="/Screenshot_20251210_150918_Grok.jpg"
-          type="image/jpeg"
+          href="/favicon.png"
+          type="image/png"
         />
         <link
           rel="apple-touch-icon"
-          href="/Screenshot_20251210_150918_Grok.jpg"
+          href="/favicon.png"
         />
       </head>
 
@@ -98,6 +99,10 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />
+        <div className="fixed bottom-0 left-0 right-0 z-40">
+          <AdUnit className="my-0" style={{ minHeight: "50px" }} />
+        </div>
+        <div className="pb-16" />
       </body>
     </html>
   );

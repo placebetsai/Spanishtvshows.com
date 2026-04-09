@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useMemo, useState } from "react";
+import AdUnit from "../../components/AdUnit";
 
 const KEYWORDS = [
   "Netflix",
@@ -123,6 +124,10 @@ export default function NewsPage() {
           )}
         </div>
       </header>
+
+      <div style={{ maxWidth: 1100, margin: "0 auto" }}>
+        <AdUnit className="my-6" />
+      </div>
 
       <main className="grid">
         {filtered.map((it, idx) => (

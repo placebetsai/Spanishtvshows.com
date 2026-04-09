@@ -1,5 +1,6 @@
 // app/resources/page.js
 import Link from "next/link";
+import AdUnit from "../../components/AdUnit";
 import { FireIcon } from "@heroicons/react/24/solid";
 
 export const metadata = {
@@ -84,6 +85,8 @@ export default function ResourcesPage() {
               As an Amazon Associate, we earn from qualifying purchases.
             </p>
           </div>
+
+          <AdUnit className="my-6" />
 
           <div className="grid gap-4">
             {resources.map((r) => (
