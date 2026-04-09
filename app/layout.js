@@ -24,7 +24,7 @@ export const metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/og-image.png",
+        url: "/og-image.svg",
         width: 1200,
         height: 630,
         alt: "SpanishTVShows.com – Top Ranked Spanish Shows",
@@ -37,13 +37,13 @@ export const metadata = {
     title: "SpanishTVShows.com – Best Spanish Shows (2026)",
     description:
       "Ranked Spanish-language TV shows with reviews, streaming links, and learning tips.",
-    images: ["/og-image.png"],
+    images: ["/og-image.svg"],
   },
 
   icons: {
-    icon: "/favicon.png",
-    shortcut: "/favicon.png",
-    apple: "/favicon.png",
+    icon: { url: "/favicon.svg", type: "image/svg+xml" },
+    shortcut: "/favicon.svg",
+    apple: "/favicon.svg",
   },
 
   manifest: "/manifest.json",
@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
     publisher: {
       "@type": "Organization",
       name: "SpanishTVShows.com",
-      logo: "https://spanishtvshows.com/favicon.png",
+      logo: "https://spanishtvshows.com/favicon.svg",
     },
   };
 
@@ -86,12 +86,12 @@ export default function RootLayout({ children }) {
         {/* Extra favicons for browsers */}
         <link
           rel="icon"
-          href="/favicon.png"
-          type="image/png"
+          href="/favicon.svg"
+          type="image/svg+xml"
         />
         <link
           rel="apple-touch-icon"
-          href="/favicon.png"
+          href="/favicon.svg"
         />
       </head>
 
