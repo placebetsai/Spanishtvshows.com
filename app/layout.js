@@ -7,15 +7,19 @@ export const metadata = {
   metadataBase: new URL("https://spanishtvshows.com"),
 
   title: {
-    default: "SpanishTVShows.com – Best Spanish Shows Ranked (2026)",
+    default: "SpanishTVShows.com - Best Spanish TV Shows Ranked (2026)",
     template: "%s | SpanishTVShows.com",
   },
 
   description:
-    "Top Spanish-language TV shows ranked from Spain to Latin America. Discover the best series, where to stream them, and how to learn Spanish using TV.",
+    "Discover the best Spanish-language TV shows ranked by real audience data. Crime, drama, novelas, thrillers from Spain, Mexico, Colombia and Argentina. Updated daily with TMDB data.",
+
+  alternates: {
+    canonical: "https://spanishtvshows.com",
+  },
 
   openGraph: {
-    title: "SpanishTVShows.com – Top Ranked Spanish Shows (2026)",
+    title: "SpanishTVShows.com - Top Ranked Spanish Shows (2026)",
     description:
       "Top Spanish TV shows from Spain to Latin America. Rankings, reviews, streaming links, and language-learning tips.",
     url: "https://spanishtvshows.com",
@@ -27,14 +31,14 @@ export const metadata = {
         url: "/og-image.svg",
         width: 1200,
         height: 630,
-        alt: "SpanishTVShows.com – Top Ranked Spanish Shows",
+        alt: "SpanishTVShows.com - Top Ranked Spanish Shows",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title: "SpanishTVShows.com – Best Spanish Shows (2026)",
+    title: "SpanishTVShows.com - Best Spanish Shows (2026)",
     description:
       "Ranked Spanish-language TV shows with reviews, streaming links, and learning tips.",
     images: ["/og-image.svg"],
@@ -62,6 +66,11 @@ export default function RootLayout({ children }) {
       name: "SpanishTVShows.com",
       logo: "https://spanishtvshows.com/favicon.svg",
     },
+    potentialAction: {
+      "@type": "SearchAction",
+      target: "https://spanishtvshows.com/trending?q={search_term_string}",
+      "query-input": "required name=search_term_string",
+    },
   };
 
   return (
@@ -84,22 +93,20 @@ export default function RootLayout({ children }) {
         <link rel="manifest" href="/manifest.json" />
 
         {/* Extra favicons for browsers */}
-        <link
-          rel="icon"
-          href="/favicon.svg"
-          type="image/svg+xml"
-        />
-        <link
-          rel="apple-touch-icon"
-          href="/favicon.svg"
-        />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+        <link rel="apple-touch-icon" href="/favicon.svg" />
+
+        {/* Preconnect for perf */}
+        <link rel="preconnect" href="https://image.tmdb.org" />
+        <link rel="dns-prefetch" href="https://api.themoviedb.org" />
       </head>
 
       <body className="bg-dark text-white">
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />
-        <div className="fixed bottom-0 left-0 right-0 z-40">
+        {/* Sticky anchor ad at bottom */}
+        <div className="fixed bottom-0 left-0 right-0 z-40 bg-black/90 backdrop-blur-sm border-t border-gray-800/50">
           <AdUnit className="my-0" style={{ minHeight: "50px" }} />
         </div>
         <div className="pb-16" />

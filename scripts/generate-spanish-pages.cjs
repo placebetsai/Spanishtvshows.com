@@ -163,7 +163,12 @@ function makeSlug(show, details, pageType) {
 
 async function main() {
   if (!TMDB_API_KEY) {
-    die("Missing TMDB_API_KEY env var. Add it to GitHub Secrets for the Actions workflow.");
+    // If content already exists, skip generation gracefully so the build can proceed.
+    if (fs.existsSync(OUT_FILE)) {
+      console.log("[generate] TMDB_API_KEY not set but generated content already exists. Skipping generation.");
+      return;
+    }
+    die("Missing TMDB_API_KEY env var and no pre-generated content found. Add TMDB_API_KEY to GitHub Secrets.");
   }
 
   console.log(`[generate] fetching shows... (limit=${SHOW_LIMIT})`);

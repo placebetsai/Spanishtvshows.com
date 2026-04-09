@@ -25,6 +25,26 @@ jobs:
           TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
           ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
 
+      - name: Set TMDB_API_KEY on Cloudflare Pages (production)
+        run: |
+          PAYLOAD=$(jq -n --arg key "$TMDB_API_KEY" '{
+            deployment_configs: {
+              production: {
+                env_vars: {
+                  TMDB_API_KEY: { type: "secret_text", value: $key }
+                }
+              }
+            }
+          }')
+          curl -sf -X PATCH \
+            "https://api.cloudflare.com/client/v4/accounts/555c6765a482638bb35788790f03e763/pages/projects/spanishtvshows" \
+            -H "Authorization: Bearer $CF_API_TOKEN" \
+            -H "Content-Type: application/json" \
+            -d "$PAYLOAD"
+        env:
+          TMDB_API_KEY: ${{ secrets.TMDB_API_KEY }}
+          CF_API_TOKEN: ${{ secrets.CF_API_TOKEN_SPANISHTVSHOWS }}
+
       - name: Deploy to Cloudflare Pages
         uses: cloudflare/wrangler-action@v3
         with:
