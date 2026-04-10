@@ -102,28 +102,18 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* PARTNER SITES */}
+        {/* OUR NETWORK */}
         <div className="border-t border-gray-800/50 pt-6 mb-6">
           <p className="text-gray-600 font-bold uppercase tracking-[0.15em] text-[10px] mb-3">
-            Partner Sites
+            Our Network
           </p>
           <div className="flex flex-wrap gap-x-6 gap-y-2 text-xs text-gray-600">
-            <a
-              href="https://hiddencameras.tv"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gray-400 transition-colors"
-            >
-              HiddenCameras.tv
-            </a>
-            <a
-              href="https://ihatecollege.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-gray-400 transition-colors"
-            >
-              IHateCollege.com
-            </a>
+            <a href="https://spanishtvshows.com" className="text-neon hover:text-gray-400 transition-colors">SpanishTVShows.com</a>
+            <a href="https://hiddencameras.tv" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition-colors">HiddenCameras.tv</a>
+            <a href="https://ihatecollege.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition-colors">IHateCollege.com</a>
+            <a href="https://shopkurt.com" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition-colors">ShopKurt.com</a>
+            <a href="https://placebets.ai" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition-colors">PlaceBets.ai</a>
+            <a href="https://fashionistas.ai" target="_blank" rel="noopener noreferrer" className="hover:text-gray-400 transition-colors">Fashionistas.ai</a>
           </div>
         </div>
 
