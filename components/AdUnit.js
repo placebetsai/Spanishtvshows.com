@@ -19,7 +19,7 @@ export default function AdUnit({ slot = "6600722153", className = "", style = {}
   }, []);
 
   return (
-    <div className={className} style={{ textAlign: "center", overflow: "hidden", minHeight: "250px", ...style }}>
+    <div className={className} style={{ textAlign: "center", overflow: "hidden", ...style }}>
       <ins
         className="adsbygoogle"
         style={{ display: "block" }}

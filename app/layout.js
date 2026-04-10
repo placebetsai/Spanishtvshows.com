@@ -105,9 +105,9 @@ export default function RootLayout({ children }) {
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />
-        {/* Sticky anchor ad at bottom */}
-        <div className="fixed bottom-0 left-0 right-0 z-40 bg-black/90 backdrop-blur-sm border-t border-gray-800/50">
-          <AdUnit className="my-0" style={{ minHeight: "50px" }} />
+        {/* Sticky anchor ad at bottom — only visible when ad loads */}
+        <div className="fixed bottom-0 left-0 right-0 z-40">
+          <AdUnit className="my-0" style={{ minHeight: "0" }} />
         </div>
         <div className="pb-16" />
       </body>
