@@ -19,7 +19,7 @@ export default function Navbar() {
   const closeMenu = () => setIsOpen(false);
 
   return (
-    <nav className="sticky top-0 z-50 border-b border-gray-800/60 bg-black/95 backdrop-blur-xl">
+    <nav className="sticky top-0 z-50 border-b border-gray-800 bg-black">
       <div className="max-w-7xl mx-auto px-6 h-16 flex items-center justify-between">
         {/* LOGO */}
         <Link
@@ -68,7 +68,7 @@ export default function Navbar() {
 
       {/* MOBILE MENU */}
       {isOpen && (
-        <div className="lg:hidden bg-black/98 border-b border-gray-800 absolute w-full left-0 top-16 flex flex-col shadow-2xl shadow-black/50 z-50 backdrop-blur-xl">
+        <div className="lg:hidden bg-black border-b border-gray-800 absolute w-full left-0 top-16 flex flex-col shadow-2xl shadow-black/50 z-50">
           {NAV_LINKS.map((link) => (
             <Link
               key={link.href}
