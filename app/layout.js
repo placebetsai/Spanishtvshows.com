@@ -28,7 +28,7 @@ export const metadata = {
     locale: "en_US",
     images: [
       {
-        url: "/og-image.svg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "SpanishTVShows.com - Top Ranked Spanish Shows",
@@ -41,7 +41,7 @@ export const metadata = {
     title: "SpanishTVShows.com - Best Spanish Shows (2026)",
     description:
       "Ranked Spanish-language TV shows with reviews, streaming links, and learning tips.",
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
 
   icons: {
@@ -65,11 +65,6 @@ export default function RootLayout({ children }) {
       "@type": "Organization",
       name: "SpanishTVShows.com",
       logo: "https://spanishtvshows.com/favicon.svg",
-    },
-    potentialAction: {
-      "@type": "SearchAction",
-      target: "https://spanishtvshows.com/trending?q={search_term_string}",
-      "query-input": "required name=search_term_string",
     },
   };
 
