@@ -1,5 +1,3 @@
-export const runtime = "edge";
-
 import Link from "next/link";
 import AdUnit from "../../../components/AdUnit";
 import VpnCta from "../../../components/VpnCta";
