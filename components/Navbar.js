@@ -11,6 +11,7 @@ const NAV_LINKS = [
   { href: "/best-spanish-crime-shows", label: "Crime Shows" },
   { href: "/shows-like-money-heist", label: "Like Money Heist" },
   { href: "/learn-spanish", label: "Learn Spanish" },
+  { href: "/blog", label: "Blog" },
 ];
 
 export default function Navbar() {

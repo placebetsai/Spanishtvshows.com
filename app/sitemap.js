@@ -1,4 +1,5 @@
 import pagesData from "../content/generated/spanish-pages.json";
+import blogIndex from "../content/blog/_index.json";
 
 const TMDB_API_BASE = "https://api.themoviedb.org/3";
 
@@ -73,5 +74,21 @@ export default async function sitemap() {
     priority: 0.8,
   }));
 
-  return [...staticUrls, ...generatedUrls, ...showUrls];
+  // Blog articles
+  const blogArticles = (blogIndex?.articles || []).map((article) => ({
+    url: `${baseUrl}/blog/${article.slug}`,
+    lastModified: new Date(),
+    changeFrequency: "monthly",
+    priority: 0.7,
+  }));
+
+  // Blog index page
+  const blogIndexUrl = {
+    url: `${baseUrl}/blog`,
+    lastModified: new Date(),
+    changeFrequency: "weekly",
+    priority: 0.8,
+  };
+
+  return [...staticUrls, blogIndexUrl, ...blogArticles, ...generatedUrls, ...showUrls];
 }

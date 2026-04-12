@@ -299,6 +299,59 @@ export default async function Home() {
         </div>
       </section>
 
+      {/* ===================== LATEST ARTICLES ===================== */}
+      <section className="max-w-6xl mx-auto px-6 mb-14">
+        <div className="flex items-center justify-between mb-6">
+          <div>
+            <h2 className="text-white font-black text-xl md:text-2xl mb-1">
+              Latest Articles
+            </h2>
+            <p className="text-gray-500 text-sm">
+              Reviews, guides, and recommendations for Spanish TV fans.
+            </p>
+          </div>
+          <Link
+            href="/blog"
+            className="text-neon text-sm font-bold hover:underline hidden sm:block"
+          >
+            View All →
+          </Link>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
+          <Link href="/blog/best-spanish-shows-on-netflix-2026" className="show-card p-6 block group">
+            <div className="text-neon font-black text-lg group-hover:text-white transition-colors">
+              Best Spanish Shows on Netflix 2026
+            </div>
+            <div className="text-gray-500 text-sm mt-2 leading-relaxed">
+              The top 15 Spanish-language series streaming on Netflix right now, ranked and reviewed.
+            </div>
+          </Link>
+          <Link href="/blog/la-casa-de-papel-review" className="show-card p-6 block group">
+            <div className="text-neon font-black text-lg group-hover:text-white transition-colors">
+              Money Heist: Complete Review
+            </div>
+            <div className="text-gray-500 text-sm mt-2 leading-relaxed">
+              Why La Casa de Papel became a global phenomenon and whether it lives up to the hype.
+            </div>
+          </Link>
+          <Link href="/blog/how-to-learn-spanish-watching-tv" className="show-card p-6 block group">
+            <div className="text-neon font-black text-lg group-hover:text-white transition-colors">
+              Learn Spanish Through TV Shows
+            </div>
+            <div className="text-gray-500 text-sm mt-2 leading-relaxed">
+              A complete guide to using Spanish TV as a language-learning tool, with show recommendations by level.
+            </div>
+          </Link>
+        </div>
+
+        <div className="text-center mt-6 sm:hidden">
+          <Link href="/blog" className="text-neon text-sm font-bold hover:underline">
+            View All Articles →
+          </Link>
+        </div>
+      </section>
+
       {/* ===================== WHY SPANISH TV ===================== */}
       <section className="max-w-5xl mx-auto px-6 pb-16">
         <div className="section-divider" />
