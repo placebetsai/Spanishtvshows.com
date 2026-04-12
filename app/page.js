@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FireIcon, StarIcon } from "@heroicons/react/24/solid";
 import NewsTicker from "../components/NewsTicker";
 import AdUnit from "../components/AdUnit";
+import NewsletterSignup from "../components/NewsletterSignup";
 
 export const metadata = {
   alternates: {
@@ -335,6 +336,11 @@ export default async function Home() {
             </p>
           </div>
         </div>
+      </section>
+
+      {/* ===================== NEWSLETTER SIGNUP ===================== */}
+      <section className="max-w-5xl mx-auto px-6 pb-14">
+        <NewsletterSignup />
       </section>
 
       {/* ===================== BOTTOM AD UNIT ===================== */}

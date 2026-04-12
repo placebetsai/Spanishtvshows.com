@@ -5,6 +5,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { tmdb, tmdbImg } from "../../../lib/tmdb";
 import AdUnit from "../../../components/AdUnit";
+import VpnCta from "../../../components/VpnCta";
+import StreamingLinks from "../../../components/StreamingLinks";
+import LanguageLearningCta from "../../../components/LanguageLearningCta";
+import NewsletterSignup from "../../../components/NewsletterSignup";
 
 // Generate unique editorial review for each show
 function generateShowReview(showName, overview, genres, rating, seasons) {
@@ -339,6 +343,25 @@ export default async function ShowPage({ params }) {
                 <p className="text-gray-600 text-xs mt-3">
                   Streaming availability data from TMDB/JustWatch. Availability may vary by region.
                 </p>
+
+                {/* Affiliate streaming links */}
+                <div className="mt-4">
+                  <p className="text-gray-500 text-xs font-bold uppercase tracking-wider mb-2">
+                    Also check
+                  </p>
+                  <StreamingLinks />
+                </div>
+              </div>
+            )}
+
+            {/* Streaming links fallback when no TMDB providers */}
+            {allProviders.length === 0 && (
+              <div>
+                <h2 className="text-xl font-black mb-4">Where to Watch</h2>
+                <p className="text-gray-400 text-sm mb-3">
+                  Check these popular streaming services for availability:
+                </p>
+                <StreamingLinks />
               </div>
             )}
 
@@ -349,6 +372,9 @@ export default async function ShowPage({ params }) {
                 {show?.overview || "No description available yet."}
               </p>
             </div>
+
+            {/* VPN CTA */}
+            <VpnCta />
 
             {/* Ad Unit */}
             <AdUnit className="my-4" />
@@ -429,6 +455,12 @@ export default async function ShowPage({ params }) {
                   : `Whether you're new to Spanish-language TV or a seasoned viewer, ${show.name} offers a compelling viewing experience that transcends language barriers. A great entry point for exploring international television.`}
               </p>
             </div>
+
+            {/* Language Learning CTA */}
+            <LanguageLearningCta />
+
+            {/* Newsletter Signup */}
+            <NewsletterSignup />
 
             {/* Ad Unit */}
             <AdUnit className="my-4" />
