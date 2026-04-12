@@ -1,5 +1,7 @@
 import Link from "next/link";
 import AdUnit from "../../components/AdUnit";
+import LanguageLearningCta from "../../components/LanguageLearningCta";
+import AffiliateDisclosure from "../../components/AffiliateDisclosure";
 import { amazonSearchUrl } from "@/lib/amazon";
 
 export const metadata = {
@@ -110,6 +112,11 @@ export default function LearnSpanishPage() {
 
       <AdUnit className="my-6" />
 
+      {/* Language Learning Platforms */}
+      <section className="mt-12">
+        <LanguageLearningCta showLearnLink={false} />
+      </section>
+
       {/* Tools */}
       <section className="mt-12">
         <h2 className="text-2xl font-black uppercase tracking-tight">
@@ -175,6 +182,7 @@ export default function LearnSpanishPage() {
         <p className="mt-6 text-xs text-gray-500">
           As an Amazon Associate, we earn from qualifying purchases.
         </p>
+        <AffiliateDisclosure className="mt-2" />
       </section>
 
       <div className="mt-12 flex flex-col sm:flex-row gap-4">
