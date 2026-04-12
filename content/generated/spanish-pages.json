@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-04-11T13:55:29.528Z",
+  "generatedAt": "2026-04-12T13:59:22.046Z",
   "pages": [
     {
       "slug": "the-boys-76479-summary",
@@ -19,7 +19,7 @@
       ],
       "numberOfSeasons": 5,
       "numberOfEpisodes": 40,
-      "lastUpdated": "2026-04-11T13:55:26.445Z",
+      "lastUpdated": "2026-04-12T13:59:20.425Z",
       "content": {
         "h1": "The Boys (2019) overview",
         "paragraphs": [
@@ -53,7 +53,7 @@
       ],
       "numberOfSeasons": 5,
       "numberOfEpisodes": 40,
-      "lastUpdated": "2026-04-11T13:55:26.445Z",
+      "lastUpdated": "2026-04-12T13:59:20.425Z",
       "content": {
         "h1": "Where to watch The Boys (2019)",
         "paragraphs": [
@@ -88,7 +88,7 @@
       ],
       "numberOfSeasons": 5,
       "numberOfEpisodes": 40,
-      "lastUpdated": "2026-04-11T13:55:26.445Z",
+      "lastUpdated": "2026-04-12T13:59:20.425Z",
       "content": {
         "h1": "The Boys (2019) cast & key characters",
         "paragraphs": [
@@ -96,6 +96,110 @@
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
           "Quick facts: 5 season(s), 40 episode(s), networks: Prime Video.",
           "A group of vigilantes known informally as “The Boys” set out to take down corrupt superheroes with no more than blue-collar grit and a willingness to fight dirty.",
+          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
+        ],
+        "bullets": [
+          "Look up the show on TMDB or IMDb for verified cast",
+          "Check season-by-season credits (casts change)",
+          "Save actor names you like → discover similar shows"
+        ]
+      }
+    },
+    {
+      "slug": "malcolm-in-the-middle-lifes-still-unfair-279471-summary",
+      "pageType": "summary",
+      "showId": 279471,
+      "title": "Malcolm in the Middle: Life's Still Unfair",
+      "year": "2026",
+      "posterPath": "/oax4kzeFdt2DAQdukrE3pIvizhC.jpg",
+      "backdropPath": "/uekZzyLReK777QKO9xKwiPOelCQ.jpg",
+      "overview": "After shielding himself and his daughter from his family for over a decade, Malcolm is dragged back into their orbit when Hal and Lois demand his presence at their 40th anniversary party.",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "networks": [
+        "Hulu"
+      ],
+      "numberOfSeasons": 1,
+      "numberOfEpisodes": 4,
+      "lastUpdated": "2026-04-12T13:59:20.456Z",
+      "content": {
+        "h1": "Malcolm in the Middle: Life's Still Unfair (2026) overview",
+        "paragraphs": [
+          "After shielding himself and his daughter from his family for over a decade, Malcolm is dragged back into their orbit when Hal and Lois demand his presence at their 40th anniversary party.",
+          "Genres: Comedy, Drama. Networks: Hulu.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Malcolm in the Middle: Life's Still Unfair\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
+        ],
+        "bullets": [
+          "Best for: subtitle-based language practice",
+          "Rewatch strategy beats binge-watching",
+          "Save unknown words → review after the episode"
+        ]
+      }
+    },
+    {
+      "slug": "malcolm-in-the-middle-lifes-still-unfair-279471-watch",
+      "pageType": "watch",
+      "showId": 279471,
+      "title": "Malcolm in the Middle: Life's Still Unfair",
+      "year": "2026",
+      "posterPath": "/oax4kzeFdt2DAQdukrE3pIvizhC.jpg",
+      "backdropPath": "/uekZzyLReK777QKO9xKwiPOelCQ.jpg",
+      "overview": "After shielding himself and his daughter from his family for over a decade, Malcolm is dragged back into their orbit when Hal and Lois demand his presence at their 40th anniversary party.",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "networks": [
+        "Hulu"
+      ],
+      "numberOfSeasons": 1,
+      "numberOfEpisodes": 4,
+      "lastUpdated": "2026-04-12T13:59:20.456Z",
+      "content": {
+        "h1": "Where to watch Malcolm in the Middle: Life's Still Unfair (2026)",
+        "paragraphs": [
+          "If you're looking for where to watch \"Malcolm in the Middle: Life's Still Unfair\" (2026), start by checking the major streaming platforms available in your region.",
+          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
+          "Quick facts: 1 season(s), 4 episode(s), genres: Comedy, Drama.",
+          "After shielding himself and his daughter from his family for over a decade, Malcolm is dragged back into their orbit when Hal and Lois demand his presence at their 40th anniversary party.",
+          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
+        ],
+        "bullets": [
+          "Search in-app for: \"Malcolm in the Middle: Life's Still Unfair\"",
+          "Try both English + Spanish title variants",
+          "Use subtitles + pause/replay for language learning"
+        ]
+      }
+    },
+    {
+      "slug": "malcolm-in-the-middle-lifes-still-unfair-279471-cast",
+      "pageType": "cast",
+      "showId": 279471,
+      "title": "Malcolm in the Middle: Life's Still Unfair",
+      "year": "2026",
+      "posterPath": "/oax4kzeFdt2DAQdukrE3pIvizhC.jpg",
+      "backdropPath": "/uekZzyLReK777QKO9xKwiPOelCQ.jpg",
+      "overview": "After shielding himself and his daughter from his family for over a decade, Malcolm is dragged back into their orbit when Hal and Lois demand his presence at their 40th anniversary party.",
+      "genres": [
+        "Comedy",
+        "Drama"
+      ],
+      "networks": [
+        "Hulu"
+      ],
+      "numberOfSeasons": 1,
+      "numberOfEpisodes": 4,
+      "lastUpdated": "2026-04-12T13:59:20.456Z",
+      "content": {
+        "h1": "Malcolm in the Middle: Life's Still Unfair (2026) cast & key characters",
+        "paragraphs": [
+          "This page covers the cast overview for \"Malcolm in the Middle: Life's Still Unfair\" (2026) and how to explore actor credits.",
+          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
+          "Quick facts: 1 season(s), 4 episode(s), networks: Hulu.",
+          "After shielding himself and his daughter from his family for over a decade, Malcolm is dragged back into their orbit when Hal and Lois demand his presence at their 40th anniversary party.",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -124,7 +228,7 @@
       ],
       "numberOfSeasons": 2,
       "numberOfEpisodes": 15,
-      "lastUpdated": "2026-04-11T13:55:26.533Z",
+      "lastUpdated": "2026-04-12T13:59:20.491Z",
       "content": {
         "h1": "Bloodhounds (2023) overview",
         "paragraphs": [
@@ -159,7 +263,7 @@
       ],
       "numberOfSeasons": 2,
       "numberOfEpisodes": 15,
-      "lastUpdated": "2026-04-11T13:55:26.533Z",
+      "lastUpdated": "2026-04-12T13:59:20.491Z",
       "content": {
         "h1": "Where to watch Bloodhounds (2023)",
         "paragraphs": [
@@ -195,7 +299,7 @@
       ],
       "numberOfSeasons": 2,
       "numberOfEpisodes": 15,
-      "lastUpdated": "2026-04-11T13:55:26.533Z",
+      "lastUpdated": "2026-04-12T13:59:20.491Z",
       "content": {
         "h1": "Bloodhounds (2023) cast & key characters",
         "paragraphs": [
@@ -232,7 +336,7 @@
       ],
       "numberOfSeasons": 5,
       "numberOfEpisodes": 32,
-      "lastUpdated": "2026-04-11T13:55:26.619Z",
+      "lastUpdated": "2026-04-12T13:59:20.527Z",
       "content": {
         "h1": "Invincible (2021) overview",
         "paragraphs": [
@@ -268,7 +372,7 @@
       ],
       "numberOfSeasons": 5,
       "numberOfEpisodes": 32,
-      "lastUpdated": "2026-04-11T13:55:26.619Z",
+      "lastUpdated": "2026-04-12T13:59:20.527Z",
       "content": {
         "h1": "Where to watch Invincible (2021)",
         "paragraphs": [
@@ -305,7 +409,7 @@
       ],
       "numberOfSeasons": 5,
       "numberOfEpisodes": 32,
-      "lastUpdated": "2026-04-11T13:55:26.619Z",
+      "lastUpdated": "2026-04-12T13:59:20.527Z",
       "content": {
         "h1": "Invincible (2021) cast & key characters",
         "paragraphs": [
@@ -368,7 +472,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 59,
-      "lastUpdated": "2026-04-11T13:55:26.707Z",
+      "lastUpdated": "2026-04-12T13:59:20.564Z",
       "content": {
         "h1": "JUJUTSU KAISEN (2020) overview",
         "paragraphs": [
@@ -430,7 +534,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 59,
-      "lastUpdated": "2026-04-11T13:55:26.707Z",
+      "lastUpdated": "2026-04-12T13:59:20.564Z",
       "content": {
         "h1": "Where to watch JUJUTSU KAISEN (2020)",
         "paragraphs": [
@@ -493,7 +597,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 59,
-      "lastUpdated": "2026-04-11T13:55:26.707Z",
+      "lastUpdated": "2026-04-12T13:59:20.564Z",
       "content": {
         "h1": "JUJUTSU KAISEN (2020) cast & key characters",
         "paragraphs": [
@@ -501,110 +605,6 @@
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
           "Quick facts: 1 season(s), 59 episode(s), networks: MBS, TBS, CBC, Tulip Television, SBC, BSN, tys, NBC, HBC, RKK, i-Television, SBS, IBC, BSS, MRO, OBS, TUF, RSK, TUY, tbc, RKB, KUTV, RBC, UTY, RCC, MRT, ATV, MBC.",
           "Yuji Itadori is a boy with tremendous physical strength, though he lives a completely ordinary high school life. One day, to save a classmate who has been attacked by curses, he eats the finger of Ryomen Sukuna, taking the curse into his own soul. From then on, he shares one body with Ryomen Sukuna. Guided by the most powerful of sorcerers, Satoru Gojo, Itadori is admitted to Tokyo Jujutsu High School, an organization that fights the curses... and thus begins the heroic tale of a boy who became a curse to exorcise a curse, a life from which he could never turn back.",
-          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
-        ],
-        "bullets": [
-          "Look up the show on TMDB or IMDb for verified cast",
-          "Check season-by-season credits (casts change)",
-          "Save actor names you like → discover similar shows"
-        ]
-      }
-    },
-    {
-      "slug": "malcolm-in-the-middle-lifes-still-unfair-279471-summary",
-      "pageType": "summary",
-      "showId": 279471,
-      "title": "Malcolm in the Middle: Life's Still Unfair",
-      "year": "2026",
-      "posterPath": "/oax4kzeFdt2DAQdukrE3pIvizhC.jpg",
-      "backdropPath": "/bDr3QDZbuIKYZDV34zo0PcG8Mt.jpg",
-      "overview": "After shielding himself and his daughter from his family for over a decade, Malcolm is dragged back into their orbit when Hal and Lois demand his presence at their 40th anniversary party.",
-      "genres": [
-        "Comedy",
-        "Drama"
-      ],
-      "networks": [
-        "Hulu"
-      ],
-      "numberOfSeasons": 1,
-      "numberOfEpisodes": 4,
-      "lastUpdated": "2026-04-11T13:55:26.794Z",
-      "content": {
-        "h1": "Malcolm in the Middle: Life's Still Unfair (2026) overview",
-        "paragraphs": [
-          "After shielding himself and his daughter from his family for over a decade, Malcolm is dragged back into their orbit when Hal and Lois demand his presence at their 40th anniversary party.",
-          "Genres: Comedy, Drama. Networks: Hulu.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Malcolm in the Middle: Life's Still Unfair\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
-          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
-        ],
-        "bullets": [
-          "Best for: subtitle-based language practice",
-          "Rewatch strategy beats binge-watching",
-          "Save unknown words → review after the episode"
-        ]
-      }
-    },
-    {
-      "slug": "malcolm-in-the-middle-lifes-still-unfair-279471-watch",
-      "pageType": "watch",
-      "showId": 279471,
-      "title": "Malcolm in the Middle: Life's Still Unfair",
-      "year": "2026",
-      "posterPath": "/oax4kzeFdt2DAQdukrE3pIvizhC.jpg",
-      "backdropPath": "/bDr3QDZbuIKYZDV34zo0PcG8Mt.jpg",
-      "overview": "After shielding himself and his daughter from his family for over a decade, Malcolm is dragged back into their orbit when Hal and Lois demand his presence at their 40th anniversary party.",
-      "genres": [
-        "Comedy",
-        "Drama"
-      ],
-      "networks": [
-        "Hulu"
-      ],
-      "numberOfSeasons": 1,
-      "numberOfEpisodes": 4,
-      "lastUpdated": "2026-04-11T13:55:26.794Z",
-      "content": {
-        "h1": "Where to watch Malcolm in the Middle: Life's Still Unfair (2026)",
-        "paragraphs": [
-          "If you're looking for where to watch \"Malcolm in the Middle: Life's Still Unfair\" (2026), start by checking the major streaming platforms available in your region.",
-          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 1 season(s), 4 episode(s), genres: Comedy, Drama.",
-          "After shielding himself and his daughter from his family for over a decade, Malcolm is dragged back into their orbit when Hal and Lois demand his presence at their 40th anniversary party.",
-          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
-        ],
-        "bullets": [
-          "Search in-app for: \"Malcolm in the Middle: Life's Still Unfair\"",
-          "Try both English + Spanish title variants",
-          "Use subtitles + pause/replay for language learning"
-        ]
-      }
-    },
-    {
-      "slug": "malcolm-in-the-middle-lifes-still-unfair-279471-cast",
-      "pageType": "cast",
-      "showId": 279471,
-      "title": "Malcolm in the Middle: Life's Still Unfair",
-      "year": "2026",
-      "posterPath": "/oax4kzeFdt2DAQdukrE3pIvizhC.jpg",
-      "backdropPath": "/bDr3QDZbuIKYZDV34zo0PcG8Mt.jpg",
-      "overview": "After shielding himself and his daughter from his family for over a decade, Malcolm is dragged back into their orbit when Hal and Lois demand his presence at their 40th anniversary party.",
-      "genres": [
-        "Comedy",
-        "Drama"
-      ],
-      "networks": [
-        "Hulu"
-      ],
-      "numberOfSeasons": 1,
-      "numberOfEpisodes": 4,
-      "lastUpdated": "2026-04-11T13:55:26.794Z",
-      "content": {
-        "h1": "Malcolm in the Middle: Life's Still Unfair (2026) cast & key characters",
-        "paragraphs": [
-          "This page covers the cast overview for \"Malcolm in the Middle: Life's Still Unfair\" (2026) and how to explore actor credits.",
-          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 1 season(s), 4 episode(s), networks: Hulu.",
-          "After shielding himself and his daughter from his family for over a decade, Malcolm is dragged back into their orbit when Hal and Lois demand his presence at their 40th anniversary party.",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -633,7 +633,7 @@
       ],
       "numberOfSeasons": 2,
       "numberOfEpisodes": 17,
-      "lastUpdated": "2026-04-11T13:55:26.883Z",
+      "lastUpdated": "2026-04-12T13:59:20.601Z",
       "content": {
         "h1": "Daredevil: Born Again (2025) overview",
         "paragraphs": [
@@ -668,7 +668,7 @@
       ],
       "numberOfSeasons": 2,
       "numberOfEpisodes": 17,
-      "lastUpdated": "2026-04-11T13:55:26.883Z",
+      "lastUpdated": "2026-04-12T13:59:20.601Z",
       "content": {
         "h1": "Where to watch Daredevil: Born Again (2025)",
         "paragraphs": [
@@ -704,7 +704,7 @@
       ],
       "numberOfSeasons": 2,
       "numberOfEpisodes": 17,
-      "lastUpdated": "2026-04-11T13:55:26.883Z",
+      "lastUpdated": "2026-04-12T13:59:20.601Z",
       "content": {
         "h1": "Daredevil: Born Again (2025) cast & key characters",
         "paragraphs": [
@@ -740,7 +740,7 @@
       ],
       "numberOfSeasons": 2,
       "numberOfEpisodes": 20,
-      "lastUpdated": "2026-04-11T13:55:26.978Z",
+      "lastUpdated": "2026-04-12T13:59:20.634Z",
       "content": {
         "h1": "Monarch: Legacy of Monsters (2023) overview",
         "paragraphs": [
@@ -775,7 +775,7 @@
       ],
       "numberOfSeasons": 2,
       "numberOfEpisodes": 20,
-      "lastUpdated": "2026-04-11T13:55:26.978Z",
+      "lastUpdated": "2026-04-12T13:59:20.634Z",
       "content": {
         "h1": "Where to watch Monarch: Legacy of Monsters (2023)",
         "paragraphs": [
@@ -811,7 +811,7 @@
       ],
       "numberOfSeasons": 2,
       "numberOfEpisodes": 20,
-      "lastUpdated": "2026-04-11T13:55:26.978Z",
+      "lastUpdated": "2026-04-12T13:59:20.634Z",
       "content": {
         "h1": "Monarch: Legacy of Monsters (2023) cast & key characters",
         "paragraphs": [
@@ -819,6 +819,110 @@
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
           "Quick facts: 2 season(s), 20 episode(s), networks: Apple TV.",
           "After surviving Godzilla's attack on San Francisco, Cate is shaken yet again by a shocking secret. Amid monstrous threats, she embarks on a globetrotting adventure to learn the truth about her family—and the mysterious organization known as Monarch.",
+          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
+        ],
+        "bullets": [
+          "Look up the show on TMDB or IMDb for verified cast",
+          "Check season-by-season credits (casts change)",
+          "Save actor names you like → discover similar shows"
+        ]
+      }
+    },
+    {
+      "slug": "the-pitt-250307-summary",
+      "pageType": "summary",
+      "showId": 250307,
+      "title": "The Pitt",
+      "year": "2025",
+      "posterPath": "/kvFSpESyBZMjaeOJDx7RS3P1jey.jpg",
+      "backdropPath": "/z3BkMbCy5ajZPMyKEUwsPHuz2cV.jpg",
+      "overview": "The staff of Pittsburgh's Trauma Medical Center work around the clock to save lives in an overcrowded and underfunded emergency department.",
+      "genres": [
+        "Drama"
+      ],
+      "networks": [
+        "Max",
+        "HBO Max"
+      ],
+      "numberOfSeasons": 3,
+      "numberOfEpisodes": 30,
+      "lastUpdated": "2026-04-12T13:59:20.710Z",
+      "content": {
+        "h1": "The Pitt (2025) overview",
+        "paragraphs": [
+          "The staff of Pittsburgh's Trauma Medical Center work around the clock to save lives in an overcrowded and underfunded emergency department.",
+          "Genres: Drama. Networks: Max, HBO Max.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"The Pitt\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
+        ],
+        "bullets": [
+          "Best for: subtitle-based language practice",
+          "Rewatch strategy beats binge-watching",
+          "Save unknown words → review after the episode"
+        ]
+      }
+    },
+    {
+      "slug": "the-pitt-250307-watch",
+      "pageType": "watch",
+      "showId": 250307,
+      "title": "The Pitt",
+      "year": "2025",
+      "posterPath": "/kvFSpESyBZMjaeOJDx7RS3P1jey.jpg",
+      "backdropPath": "/z3BkMbCy5ajZPMyKEUwsPHuz2cV.jpg",
+      "overview": "The staff of Pittsburgh's Trauma Medical Center work around the clock to save lives in an overcrowded and underfunded emergency department.",
+      "genres": [
+        "Drama"
+      ],
+      "networks": [
+        "Max",
+        "HBO Max"
+      ],
+      "numberOfSeasons": 3,
+      "numberOfEpisodes": 30,
+      "lastUpdated": "2026-04-12T13:59:20.710Z",
+      "content": {
+        "h1": "Where to watch The Pitt (2025)",
+        "paragraphs": [
+          "If you're looking for where to watch \"The Pitt\" (2025), start by checking the major streaming platforms available in your region.",
+          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
+          "Quick facts: 3 season(s), 30 episode(s), genres: Drama.",
+          "The staff of Pittsburgh's Trauma Medical Center work around the clock to save lives in an overcrowded and underfunded emergency department.",
+          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
+        ],
+        "bullets": [
+          "Search in-app for: \"The Pitt\"",
+          "Try both English + Spanish title variants",
+          "Use subtitles + pause/replay for language learning"
+        ]
+      }
+    },
+    {
+      "slug": "the-pitt-250307-cast",
+      "pageType": "cast",
+      "showId": 250307,
+      "title": "The Pitt",
+      "year": "2025",
+      "posterPath": "/kvFSpESyBZMjaeOJDx7RS3P1jey.jpg",
+      "backdropPath": "/z3BkMbCy5ajZPMyKEUwsPHuz2cV.jpg",
+      "overview": "The staff of Pittsburgh's Trauma Medical Center work around the clock to save lives in an overcrowded and underfunded emergency department.",
+      "genres": [
+        "Drama"
+      ],
+      "networks": [
+        "Max",
+        "HBO Max"
+      ],
+      "numberOfSeasons": 3,
+      "numberOfEpisodes": 30,
+      "lastUpdated": "2026-04-12T13:59:20.710Z",
+      "content": {
+        "h1": "The Pitt (2025) cast & key characters",
+        "paragraphs": [
+          "This page covers the cast overview for \"The Pitt\" (2025) and how to explore actor credits.",
+          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
+          "Quick facts: 3 season(s), 30 episode(s), networks: Max, HBO Max.",
+          "The staff of Pittsburgh's Trauma Medical Center work around the clock to save lives in an overcrowded and underfunded emergency department.",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -876,7 +980,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 38,
-      "lastUpdated": "2026-04-11T13:55:27.067Z",
+      "lastUpdated": "2026-04-12T13:59:20.778Z",
       "content": {
         "h1": "Frieren: Beyond Journey's End (2023) overview",
         "paragraphs": [
@@ -940,7 +1044,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 38,
-      "lastUpdated": "2026-04-11T13:55:27.067Z",
+      "lastUpdated": "2026-04-12T13:59:20.778Z",
       "content": {
         "h1": "Where to watch Frieren: Beyond Journey's End (2023)",
         "paragraphs": [
@@ -1005,7 +1109,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 38,
-      "lastUpdated": "2026-04-11T13:55:27.067Z",
+      "lastUpdated": "2026-04-12T13:59:20.778Z",
       "content": {
         "h1": "Frieren: Beyond Journey's End (2023) cast & key characters",
         "paragraphs": [
@@ -1023,117 +1127,13 @@
       }
     },
     {
-      "slug": "the-pitt-250307-summary",
-      "pageType": "summary",
-      "showId": 250307,
-      "title": "The Pitt",
-      "year": "2025",
-      "posterPath": "/kvFSpESyBZMjaeOJDx7RS3P1jey.jpg",
-      "backdropPath": "/z3BkMbCy5ajZPMyKEUwsPHuz2cV.jpg",
-      "overview": "The staff of Pittsburgh's Trauma Medical Center work around the clock to save lives in an overcrowded and underfunded emergency department.",
-      "genres": [
-        "Drama"
-      ],
-      "networks": [
-        "Max",
-        "HBO Max"
-      ],
-      "numberOfSeasons": 3,
-      "numberOfEpisodes": 30,
-      "lastUpdated": "2026-04-11T13:55:27.155Z",
-      "content": {
-        "h1": "The Pitt (2025) overview",
-        "paragraphs": [
-          "The staff of Pittsburgh's Trauma Medical Center work around the clock to save lives in an overcrowded and underfunded emergency department.",
-          "Genres: Drama. Networks: Max, HBO Max.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"The Pitt\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
-          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
-        ],
-        "bullets": [
-          "Best for: subtitle-based language practice",
-          "Rewatch strategy beats binge-watching",
-          "Save unknown words → review after the episode"
-        ]
-      }
-    },
-    {
-      "slug": "the-pitt-250307-watch",
-      "pageType": "watch",
-      "showId": 250307,
-      "title": "The Pitt",
-      "year": "2025",
-      "posterPath": "/kvFSpESyBZMjaeOJDx7RS3P1jey.jpg",
-      "backdropPath": "/z3BkMbCy5ajZPMyKEUwsPHuz2cV.jpg",
-      "overview": "The staff of Pittsburgh's Trauma Medical Center work around the clock to save lives in an overcrowded and underfunded emergency department.",
-      "genres": [
-        "Drama"
-      ],
-      "networks": [
-        "Max",
-        "HBO Max"
-      ],
-      "numberOfSeasons": 3,
-      "numberOfEpisodes": 30,
-      "lastUpdated": "2026-04-11T13:55:27.155Z",
-      "content": {
-        "h1": "Where to watch The Pitt (2025)",
-        "paragraphs": [
-          "If you're looking for where to watch \"The Pitt\" (2025), start by checking the major streaming platforms available in your region.",
-          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 3 season(s), 30 episode(s), genres: Drama.",
-          "The staff of Pittsburgh's Trauma Medical Center work around the clock to save lives in an overcrowded and underfunded emergency department.",
-          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
-        ],
-        "bullets": [
-          "Search in-app for: \"The Pitt\"",
-          "Try both English + Spanish title variants",
-          "Use subtitles + pause/replay for language learning"
-        ]
-      }
-    },
-    {
-      "slug": "the-pitt-250307-cast",
-      "pageType": "cast",
-      "showId": 250307,
-      "title": "The Pitt",
-      "year": "2025",
-      "posterPath": "/kvFSpESyBZMjaeOJDx7RS3P1jey.jpg",
-      "backdropPath": "/z3BkMbCy5ajZPMyKEUwsPHuz2cV.jpg",
-      "overview": "The staff of Pittsburgh's Trauma Medical Center work around the clock to save lives in an overcrowded and underfunded emergency department.",
-      "genres": [
-        "Drama"
-      ],
-      "networks": [
-        "Max",
-        "HBO Max"
-      ],
-      "numberOfSeasons": 3,
-      "numberOfEpisodes": 30,
-      "lastUpdated": "2026-04-11T13:55:27.155Z",
-      "content": {
-        "h1": "The Pitt (2025) cast & key characters",
-        "paragraphs": [
-          "This page covers the cast overview for \"The Pitt\" (2025) and how to explore actor credits.",
-          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 3 season(s), 30 episode(s), networks: Max, HBO Max.",
-          "The staff of Pittsburgh's Trauma Medical Center work around the clock to save lives in an overcrowded and underfunded emergency department.",
-          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
-        ],
-        "bullets": [
-          "Look up the show on TMDB or IMDb for verified cast",
-          "Check season-by-season credits (casts change)",
-          "Save actor names you like → discover similar shows"
-        ]
-      }
-    },
-    {
       "slug": "euphoria-85552-summary",
       "pageType": "summary",
       "showId": 85552,
       "title": "Euphoria",
       "year": "2019",
       "posterPath": "/zvVt4xPUDR6SglHvUa8ECg8uREV.jpg",
-      "backdropPath": "/9KnIzPCv9XpWA0MqmwiKBZvV1Sj.jpg",
+      "backdropPath": "/GN2KFXiHPVV6sIw4v2P2pqCJty.jpg",
       "overview": "A group of high school students navigate love and friendships in a world of drugs, sex, trauma, and social media.",
       "genres": [
         "Drama"
@@ -1143,7 +1143,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 24,
-      "lastUpdated": "2026-04-11T13:55:27.241Z",
+      "lastUpdated": "2026-04-12T13:59:20.848Z",
       "content": {
         "h1": "Euphoria (2019) overview",
         "paragraphs": [
@@ -1166,7 +1166,7 @@
       "title": "Euphoria",
       "year": "2019",
       "posterPath": "/zvVt4xPUDR6SglHvUa8ECg8uREV.jpg",
-      "backdropPath": "/9KnIzPCv9XpWA0MqmwiKBZvV1Sj.jpg",
+      "backdropPath": "/GN2KFXiHPVV6sIw4v2P2pqCJty.jpg",
       "overview": "A group of high school students navigate love and friendships in a world of drugs, sex, trauma, and social media.",
       "genres": [
         "Drama"
@@ -1176,7 +1176,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 24,
-      "lastUpdated": "2026-04-11T13:55:27.241Z",
+      "lastUpdated": "2026-04-12T13:59:20.848Z",
       "content": {
         "h1": "Where to watch Euphoria (2019)",
         "paragraphs": [
@@ -1200,7 +1200,7 @@
       "title": "Euphoria",
       "year": "2019",
       "posterPath": "/zvVt4xPUDR6SglHvUa8ECg8uREV.jpg",
-      "backdropPath": "/9KnIzPCv9XpWA0MqmwiKBZvV1Sj.jpg",
+      "backdropPath": "/GN2KFXiHPVV6sIw4v2P2pqCJty.jpg",
       "overview": "A group of high school students navigate love and friendships in a world of drugs, sex, trauma, and social media.",
       "genres": [
         "Drama"
@@ -1210,7 +1210,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 24,
-      "lastUpdated": "2026-04-11T13:55:27.241Z",
+      "lastUpdated": "2026-04-12T13:59:20.848Z",
       "content": {
         "h1": "Euphoria (2019) cast & key characters",
         "paragraphs": [
@@ -1218,6 +1218,113 @@
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
           "Quick facts: 3 season(s), 24 episode(s), networks: HBO.",
           "A group of high school students navigate love and friendships in a world of drugs, sex, trauma, and social media.",
+          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
+        ],
+        "bullets": [
+          "Look up the show on TMDB or IMDb for verified cast",
+          "Check season-by-season credits (casts change)",
+          "Save actor names you like → discover similar shows"
+        ]
+      }
+    },
+    {
+      "slug": "star-wars-maul-shadow-lord-289219-summary",
+      "pageType": "summary",
+      "showId": 289219,
+      "title": "Star Wars: Maul - Shadow Lord",
+      "year": "2026",
+      "posterPath": "/fTfLd3s9yBNOzbFHD2aXvwEs93H.jpg",
+      "backdropPath": "/5SrsdKcN9Flvccq59sIfJbhq1Fk.jpg",
+      "overview": "After the Clone Wars, Maul plots to rebuild his criminal syndicate on a planet untouched by the Empire.",
+      "genres": [
+        "Animation",
+        "Sci-Fi & Fantasy",
+        "Action & Adventure"
+      ],
+      "networks": [
+        "Disney+"
+      ],
+      "numberOfSeasons": 1,
+      "numberOfEpisodes": 10,
+      "lastUpdated": "2026-04-12T13:59:20.881Z",
+      "content": {
+        "h1": "Star Wars: Maul - Shadow Lord (2026) overview",
+        "paragraphs": [
+          "After the Clone Wars, Maul plots to rebuild his criminal syndicate on a planet untouched by the Empire.",
+          "Genres: Animation, Sci-Fi & Fantasy, Action & Adventure. Networks: Disney+.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Star Wars: Maul - Shadow Lord\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
+        ],
+        "bullets": [
+          "Best for: subtitle-based language practice",
+          "Rewatch strategy beats binge-watching",
+          "Save unknown words → review after the episode"
+        ]
+      }
+    },
+    {
+      "slug": "star-wars-maul-shadow-lord-289219-watch",
+      "pageType": "watch",
+      "showId": 289219,
+      "title": "Star Wars: Maul - Shadow Lord",
+      "year": "2026",
+      "posterPath": "/fTfLd3s9yBNOzbFHD2aXvwEs93H.jpg",
+      "backdropPath": "/5SrsdKcN9Flvccq59sIfJbhq1Fk.jpg",
+      "overview": "After the Clone Wars, Maul plots to rebuild his criminal syndicate on a planet untouched by the Empire.",
+      "genres": [
+        "Animation",
+        "Sci-Fi & Fantasy",
+        "Action & Adventure"
+      ],
+      "networks": [
+        "Disney+"
+      ],
+      "numberOfSeasons": 1,
+      "numberOfEpisodes": 10,
+      "lastUpdated": "2026-04-12T13:59:20.881Z",
+      "content": {
+        "h1": "Where to watch Star Wars: Maul - Shadow Lord (2026)",
+        "paragraphs": [
+          "If you're looking for where to watch \"Star Wars: Maul - Shadow Lord\" (2026), start by checking the major streaming platforms available in your region.",
+          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
+          "Quick facts: 1 season(s), 10 episode(s), genres: Animation, Sci-Fi & Fantasy, Action & Adventure.",
+          "After the Clone Wars, Maul plots to rebuild his criminal syndicate on a planet untouched by the Empire.",
+          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
+        ],
+        "bullets": [
+          "Search in-app for: \"Star Wars: Maul - Shadow Lord\"",
+          "Try both English + Spanish title variants",
+          "Use subtitles + pause/replay for language learning"
+        ]
+      }
+    },
+    {
+      "slug": "star-wars-maul-shadow-lord-289219-cast",
+      "pageType": "cast",
+      "showId": 289219,
+      "title": "Star Wars: Maul - Shadow Lord",
+      "year": "2026",
+      "posterPath": "/fTfLd3s9yBNOzbFHD2aXvwEs93H.jpg",
+      "backdropPath": "/5SrsdKcN9Flvccq59sIfJbhq1Fk.jpg",
+      "overview": "After the Clone Wars, Maul plots to rebuild his criminal syndicate on a planet untouched by the Empire.",
+      "genres": [
+        "Animation",
+        "Sci-Fi & Fantasy",
+        "Action & Adventure"
+      ],
+      "networks": [
+        "Disney+"
+      ],
+      "numberOfSeasons": 1,
+      "numberOfEpisodes": 10,
+      "lastUpdated": "2026-04-12T13:59:20.881Z",
+      "content": {
+        "h1": "Star Wars: Maul - Shadow Lord (2026) cast & key characters",
+        "paragraphs": [
+          "This page covers the cast overview for \"Star Wars: Maul - Shadow Lord\" (2026) and how to explore actor credits.",
+          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
+          "Quick facts: 1 season(s), 10 episode(s), networks: Disney+.",
+          "After the Clone Wars, Maul plots to rebuild his criminal syndicate on a planet untouched by the Empire.",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -1248,7 +1355,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 85,
-      "lastUpdated": "2026-04-11T13:55:27.326Z",
+      "lastUpdated": "2026-04-12T13:59:20.918Z",
       "content": {
         "h1": "Re:ZERO -Starting Life in Another World- (2016) overview",
         "paragraphs": [
@@ -1285,7 +1392,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 85,
-      "lastUpdated": "2026-04-11T13:55:27.326Z",
+      "lastUpdated": "2026-04-12T13:59:20.918Z",
       "content": {
         "h1": "Where to watch Re:ZERO -Starting Life in Another World- (2016)",
         "paragraphs": [
@@ -1323,7 +1430,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 85,
-      "lastUpdated": "2026-04-11T13:55:27.326Z",
+      "lastUpdated": "2026-04-12T13:59:20.918Z",
       "content": {
         "h1": "Re:ZERO -Starting Life in Another World- (2016) cast & key characters",
         "paragraphs": [
@@ -1331,6 +1438,110 @@
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
           "Quick facts: 1 season(s), 85 episode(s), networks: TV Tokyo, AT-X.",
           "Natsuki Subaru, an ordinary high school  student, is on his way home from the convenience store when he finds  himself transported to another world. As he's lost and confused in a new  world where he doesn't even know left from right, the only person to  reach out to him was a beautiful girl with silver hair. Determined to  repay her somehow for saving him from his own despair, Subaru agrees to  help the girl find something she's looking for.",
+          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
+        ],
+        "bullets": [
+          "Look up the show on TMDB or IMDb for verified cast",
+          "Check season-by-season credits (casts change)",
+          "Save actor names you like → discover similar shows"
+        ]
+      }
+    },
+    {
+      "slug": "one-piece-111110-summary",
+      "pageType": "summary",
+      "showId": 111110,
+      "title": "ONE PIECE",
+      "year": "2023",
+      "posterPath": "/blWCPEqDGLBuLB9u89CxP9ORQP4.jpg",
+      "backdropPath": "/qD211Hb5XwFxrszzBBe5EUYJerh.jpg",
+      "overview": "With his straw hat and ragtag crew, young pirate Monkey D. Luffy goes on an epic voyage for treasure.",
+      "genres": [
+        "Action & Adventure",
+        "Sci-Fi & Fantasy"
+      ],
+      "networks": [
+        "Netflix"
+      ],
+      "numberOfSeasons": 3,
+      "numberOfEpisodes": 17,
+      "lastUpdated": "2026-04-12T13:59:20.952Z",
+      "content": {
+        "h1": "ONE PIECE (2023) overview",
+        "paragraphs": [
+          "With his straw hat and ragtag crew, young pirate Monkey D. Luffy goes on an epic voyage for treasure.",
+          "Genres: Action & Adventure, Sci-Fi & Fantasy. Networks: Netflix.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"ONE PIECE\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
+        ],
+        "bullets": [
+          "Best for: subtitle-based language practice",
+          "Rewatch strategy beats binge-watching",
+          "Save unknown words → review after the episode"
+        ]
+      }
+    },
+    {
+      "slug": "one-piece-111110-watch",
+      "pageType": "watch",
+      "showId": 111110,
+      "title": "ONE PIECE",
+      "year": "2023",
+      "posterPath": "/blWCPEqDGLBuLB9u89CxP9ORQP4.jpg",
+      "backdropPath": "/qD211Hb5XwFxrszzBBe5EUYJerh.jpg",
+      "overview": "With his straw hat and ragtag crew, young pirate Monkey D. Luffy goes on an epic voyage for treasure.",
+      "genres": [
+        "Action & Adventure",
+        "Sci-Fi & Fantasy"
+      ],
+      "networks": [
+        "Netflix"
+      ],
+      "numberOfSeasons": 3,
+      "numberOfEpisodes": 17,
+      "lastUpdated": "2026-04-12T13:59:20.952Z",
+      "content": {
+        "h1": "Where to watch ONE PIECE (2023)",
+        "paragraphs": [
+          "If you're looking for where to watch \"ONE PIECE\" (2023), start by checking the major streaming platforms available in your region.",
+          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
+          "Quick facts: 3 season(s), 17 episode(s), genres: Action & Adventure, Sci-Fi & Fantasy.",
+          "With his straw hat and ragtag crew, young pirate Monkey D. Luffy goes on an epic voyage for treasure.",
+          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
+        ],
+        "bullets": [
+          "Search in-app for: \"ONE PIECE\"",
+          "Try both English + Spanish title variants",
+          "Use subtitles + pause/replay for language learning"
+        ]
+      }
+    },
+    {
+      "slug": "one-piece-111110-cast",
+      "pageType": "cast",
+      "showId": 111110,
+      "title": "ONE PIECE",
+      "year": "2023",
+      "posterPath": "/blWCPEqDGLBuLB9u89CxP9ORQP4.jpg",
+      "backdropPath": "/qD211Hb5XwFxrszzBBe5EUYJerh.jpg",
+      "overview": "With his straw hat and ragtag crew, young pirate Monkey D. Luffy goes on an epic voyage for treasure.",
+      "genres": [
+        "Action & Adventure",
+        "Sci-Fi & Fantasy"
+      ],
+      "networks": [
+        "Netflix"
+      ],
+      "numberOfSeasons": 3,
+      "numberOfEpisodes": 17,
+      "lastUpdated": "2026-04-12T13:59:20.952Z",
+      "content": {
+        "h1": "ONE PIECE (2023) cast & key characters",
+        "paragraphs": [
+          "This page covers the cast overview for \"ONE PIECE\" (2023) and how to explore actor credits.",
+          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
+          "Quick facts: 3 season(s), 17 episode(s), networks: Netflix.",
+          "With his straw hat and ragtag crew, young pirate Monkey D. Luffy goes on an epic voyage for treasure.",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -1360,7 +1571,7 @@
       ],
       "numberOfSeasons": 23,
       "numberOfEpisodes": 1163,
-      "lastUpdated": "2026-04-11T13:55:27.415Z",
+      "lastUpdated": "2026-04-12T13:59:20.989Z",
       "content": {
         "h1": "One Piece (1999) overview",
         "paragraphs": [
@@ -1396,7 +1607,7 @@
       ],
       "numberOfSeasons": 23,
       "numberOfEpisodes": 1163,
-      "lastUpdated": "2026-04-11T13:55:27.415Z",
+      "lastUpdated": "2026-04-12T13:59:20.989Z",
       "content": {
         "h1": "Where to watch One Piece (1999)",
         "paragraphs": [
@@ -1433,7 +1644,7 @@
       ],
       "numberOfSeasons": 23,
       "numberOfEpisodes": 1163,
-      "lastUpdated": "2026-04-11T13:55:27.415Z",
+      "lastUpdated": "2026-04-12T13:59:20.989Z",
       "content": {
         "h1": "One Piece (1999) cast & key characters",
         "paragraphs": [
@@ -1451,31 +1662,29 @@
       }
     },
     {
-      "slug": "star-wars-maul-shadow-lord-289219-summary",
+      "slug": "the-testaments-287527-summary",
       "pageType": "summary",
-      "showId": 289219,
-      "title": "Star Wars: Maul - Shadow Lord",
+      "showId": 287527,
+      "title": "The Testaments",
       "year": "2026",
-      "posterPath": "/fTfLd3s9yBNOzbFHD2aXvwEs93H.jpg",
-      "backdropPath": "/5SrsdKcN9Flvccq59sIfJbhq1Fk.jpg",
-      "overview": "After the Clone Wars, Maul plots to rebuild his criminal syndicate on a planet untouched by the Empire.",
+      "posterPath": "/xVsFopLisBoiKdXXecaNTN4pJ9A.jpg",
+      "backdropPath": "/n8fffwUPi9DMxtwDIR6xoGx9ItP.jpg",
+      "overview": "Growing up in Gilead is all they have ever known. As a new generation of young women grapple with the bleak future that awaits them, they will be forced to search for allies, new and old, to help in their fight for freedom.",
       "genres": [
-        "Animation",
-        "Sci-Fi & Fantasy",
-        "Action & Adventure"
+        "Drama"
       ],
       "networks": [
-        "Disney+"
+        "Hulu"
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 10,
-      "lastUpdated": "2026-04-11T13:55:27.503Z",
+      "lastUpdated": "2026-04-12T13:59:21.058Z",
       "content": {
-        "h1": "Star Wars: Maul - Shadow Lord (2026) overview",
+        "h1": "The Testaments (2026) overview",
         "paragraphs": [
-          "After the Clone Wars, Maul plots to rebuild his criminal syndicate on a planet untouched by the Empire.",
-          "Genres: Animation, Sci-Fi & Fantasy, Action & Adventure. Networks: Disney+.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Star Wars: Maul - Shadow Lord\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "Growing up in Gilead is all they have ever known. As a new generation of young women grapple with the bleak future that awaits them, they will be forced to search for allies, new and old, to help in their fight for freedom.",
+          "Genres: Drama. Networks: Hulu.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"The Testaments\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
           "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
         ],
         "bullets": [
@@ -1486,172 +1695,64 @@
       }
     },
     {
-      "slug": "star-wars-maul-shadow-lord-289219-watch",
+      "slug": "the-testaments-287527-watch",
       "pageType": "watch",
-      "showId": 289219,
-      "title": "Star Wars: Maul - Shadow Lord",
+      "showId": 287527,
+      "title": "The Testaments",
       "year": "2026",
-      "posterPath": "/fTfLd3s9yBNOzbFHD2aXvwEs93H.jpg",
-      "backdropPath": "/5SrsdKcN9Flvccq59sIfJbhq1Fk.jpg",
-      "overview": "After the Clone Wars, Maul plots to rebuild his criminal syndicate on a planet untouched by the Empire.",
+      "posterPath": "/xVsFopLisBoiKdXXecaNTN4pJ9A.jpg",
+      "backdropPath": "/n8fffwUPi9DMxtwDIR6xoGx9ItP.jpg",
+      "overview": "Growing up in Gilead is all they have ever known. As a new generation of young women grapple with the bleak future that awaits them, they will be forced to search for allies, new and old, to help in their fight for freedom.",
       "genres": [
-        "Animation",
-        "Sci-Fi & Fantasy",
-        "Action & Adventure"
+        "Drama"
       ],
       "networks": [
-        "Disney+"
+        "Hulu"
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 10,
-      "lastUpdated": "2026-04-11T13:55:27.503Z",
+      "lastUpdated": "2026-04-12T13:59:21.058Z",
       "content": {
-        "h1": "Where to watch Star Wars: Maul - Shadow Lord (2026)",
+        "h1": "Where to watch The Testaments (2026)",
         "paragraphs": [
-          "If you're looking for where to watch \"Star Wars: Maul - Shadow Lord\" (2026), start by checking the major streaming platforms available in your region.",
+          "If you're looking for where to watch \"The Testaments\" (2026), start by checking the major streaming platforms available in your region.",
           "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 1 season(s), 10 episode(s), genres: Animation, Sci-Fi & Fantasy, Action & Adventure.",
-          "After the Clone Wars, Maul plots to rebuild his criminal syndicate on a planet untouched by the Empire.",
+          "Quick facts: 1 season(s), 10 episode(s), genres: Drama.",
+          "Growing up in Gilead is all they have ever known. As a new generation of young women grapple with the bleak future that awaits them, they will be forced to search for allies, new and old, to help in their fight for freedom.",
           "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
         ],
         "bullets": [
-          "Search in-app for: \"Star Wars: Maul - Shadow Lord\"",
+          "Search in-app for: \"The Testaments\"",
           "Try both English + Spanish title variants",
           "Use subtitles + pause/replay for language learning"
         ]
       }
     },
     {
-      "slug": "star-wars-maul-shadow-lord-289219-cast",
+      "slug": "the-testaments-287527-cast",
       "pageType": "cast",
-      "showId": 289219,
-      "title": "Star Wars: Maul - Shadow Lord",
+      "showId": 287527,
+      "title": "The Testaments",
       "year": "2026",
-      "posterPath": "/fTfLd3s9yBNOzbFHD2aXvwEs93H.jpg",
-      "backdropPath": "/5SrsdKcN9Flvccq59sIfJbhq1Fk.jpg",
-      "overview": "After the Clone Wars, Maul plots to rebuild his criminal syndicate on a planet untouched by the Empire.",
+      "posterPath": "/xVsFopLisBoiKdXXecaNTN4pJ9A.jpg",
+      "backdropPath": "/n8fffwUPi9DMxtwDIR6xoGx9ItP.jpg",
+      "overview": "Growing up in Gilead is all they have ever known. As a new generation of young women grapple with the bleak future that awaits them, they will be forced to search for allies, new and old, to help in their fight for freedom.",
       "genres": [
-        "Animation",
-        "Sci-Fi & Fantasy",
-        "Action & Adventure"
+        "Drama"
       ],
       "networks": [
-        "Disney+"
+        "Hulu"
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 10,
-      "lastUpdated": "2026-04-11T13:55:27.503Z",
+      "lastUpdated": "2026-04-12T13:59:21.058Z",
       "content": {
-        "h1": "Star Wars: Maul - Shadow Lord (2026) cast & key characters",
+        "h1": "The Testaments (2026) cast & key characters",
         "paragraphs": [
-          "This page covers the cast overview for \"Star Wars: Maul - Shadow Lord\" (2026) and how to explore actor credits.",
+          "This page covers the cast overview for \"The Testaments\" (2026) and how to explore actor credits.",
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 1 season(s), 10 episode(s), networks: Disney+.",
-          "After the Clone Wars, Maul plots to rebuild his criminal syndicate on a planet untouched by the Empire.",
-          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
-        ],
-        "bullets": [
-          "Look up the show on TMDB or IMDb for verified cast",
-          "Check season-by-season credits (casts change)",
-          "Save actor names you like → discover similar shows"
-        ]
-      }
-    },
-    {
-      "slug": "one-piece-111110-summary",
-      "pageType": "summary",
-      "showId": 111110,
-      "title": "ONE PIECE",
-      "year": "2023",
-      "posterPath": "/blWCPEqDGLBuLB9u89CxP9ORQP4.jpg",
-      "backdropPath": "/qD211Hb5XwFxrszzBBe5EUYJerh.jpg",
-      "overview": "With his straw hat and ragtag crew, young pirate Monkey D. Luffy goes on an epic voyage for treasure.",
-      "genres": [
-        "Action & Adventure",
-        "Sci-Fi & Fantasy"
-      ],
-      "networks": [
-        "Netflix"
-      ],
-      "numberOfSeasons": 3,
-      "numberOfEpisodes": 17,
-      "lastUpdated": "2026-04-11T13:55:27.599Z",
-      "content": {
-        "h1": "ONE PIECE (2023) overview",
-        "paragraphs": [
-          "With his straw hat and ragtag crew, young pirate Monkey D. Luffy goes on an epic voyage for treasure.",
-          "Genres: Action & Adventure, Sci-Fi & Fantasy. Networks: Netflix.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"ONE PIECE\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
-          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
-        ],
-        "bullets": [
-          "Best for: subtitle-based language practice",
-          "Rewatch strategy beats binge-watching",
-          "Save unknown words → review after the episode"
-        ]
-      }
-    },
-    {
-      "slug": "one-piece-111110-watch",
-      "pageType": "watch",
-      "showId": 111110,
-      "title": "ONE PIECE",
-      "year": "2023",
-      "posterPath": "/blWCPEqDGLBuLB9u89CxP9ORQP4.jpg",
-      "backdropPath": "/qD211Hb5XwFxrszzBBe5EUYJerh.jpg",
-      "overview": "With his straw hat and ragtag crew, young pirate Monkey D. Luffy goes on an epic voyage for treasure.",
-      "genres": [
-        "Action & Adventure",
-        "Sci-Fi & Fantasy"
-      ],
-      "networks": [
-        "Netflix"
-      ],
-      "numberOfSeasons": 3,
-      "numberOfEpisodes": 17,
-      "lastUpdated": "2026-04-11T13:55:27.599Z",
-      "content": {
-        "h1": "Where to watch ONE PIECE (2023)",
-        "paragraphs": [
-          "If you're looking for where to watch \"ONE PIECE\" (2023), start by checking the major streaming platforms available in your region.",
-          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 3 season(s), 17 episode(s), genres: Action & Adventure, Sci-Fi & Fantasy.",
-          "With his straw hat and ragtag crew, young pirate Monkey D. Luffy goes on an epic voyage for treasure.",
-          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
-        ],
-        "bullets": [
-          "Search in-app for: \"ONE PIECE\"",
-          "Try both English + Spanish title variants",
-          "Use subtitles + pause/replay for language learning"
-        ]
-      }
-    },
-    {
-      "slug": "one-piece-111110-cast",
-      "pageType": "cast",
-      "showId": 111110,
-      "title": "ONE PIECE",
-      "year": "2023",
-      "posterPath": "/blWCPEqDGLBuLB9u89CxP9ORQP4.jpg",
-      "backdropPath": "/qD211Hb5XwFxrszzBBe5EUYJerh.jpg",
-      "overview": "With his straw hat and ragtag crew, young pirate Monkey D. Luffy goes on an epic voyage for treasure.",
-      "genres": [
-        "Action & Adventure",
-        "Sci-Fi & Fantasy"
-      ],
-      "networks": [
-        "Netflix"
-      ],
-      "numberOfSeasons": 3,
-      "numberOfEpisodes": 17,
-      "lastUpdated": "2026-04-11T13:55:27.599Z",
-      "content": {
-        "h1": "ONE PIECE (2023) cast & key characters",
-        "paragraphs": [
-          "This page covers the cast overview for \"ONE PIECE\" (2023) and how to explore actor credits.",
-          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 3 season(s), 17 episode(s), networks: Netflix.",
-          "With his straw hat and ragtag crew, young pirate Monkey D. Luffy goes on an epic voyage for treasure.",
+          "Quick facts: 1 season(s), 10 episode(s), networks: Hulu.",
+          "Growing up in Gilead is all they have ever known. As a new generation of young women grapple with the bleak future that awaits them, they will be forced to search for allies, new and old, to help in their fight for freedom.",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -1680,7 +1781,7 @@
       ],
       "numberOfSeasons": 8,
       "numberOfEpisodes": 64,
-      "lastUpdated": "2026-04-11T13:55:27.689Z",
+      "lastUpdated": "2026-04-12T13:59:21.091Z",
       "content": {
         "h1": "Elite (2018) overview",
         "paragraphs": [
@@ -1715,7 +1816,7 @@
       ],
       "numberOfSeasons": 8,
       "numberOfEpisodes": 64,
-      "lastUpdated": "2026-04-11T13:55:27.689Z",
+      "lastUpdated": "2026-04-12T13:59:21.091Z",
       "content": {
         "h1": "Where to watch Elite (2018)",
         "paragraphs": [
@@ -1751,7 +1852,7 @@
       ],
       "numberOfSeasons": 8,
       "numberOfEpisodes": 64,
-      "lastUpdated": "2026-04-11T13:55:27.689Z",
+      "lastUpdated": "2026-04-12T13:59:21.091Z",
       "content": {
         "h1": "Elite (2018) cast & key characters",
         "paragraphs": [
@@ -1759,107 +1860,6 @@
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
           "Quick facts: 8 season(s), 64 episode(s), networks: Netflix.",
           "When three working class kids enroll in the most exclusive school in Spain, the clash between the wealthy and the poor students leads to tragedy.",
-          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
-        ],
-        "bullets": [
-          "Look up the show on TMDB or IMDb for verified cast",
-          "Check season-by-season credits (casts change)",
-          "Save actor names you like → discover similar shows"
-        ]
-      }
-    },
-    {
-      "slug": "the-testaments-287527-summary",
-      "pageType": "summary",
-      "showId": 287527,
-      "title": "The Testaments",
-      "year": "2026",
-      "posterPath": "/xVsFopLisBoiKdXXecaNTN4pJ9A.jpg",
-      "backdropPath": "/n8fffwUPi9DMxtwDIR6xoGx9ItP.jpg",
-      "overview": "Growing up in Gilead is all they have ever known. As a new generation of young women grapple with the bleak future that awaits them, they will be forced to search for allies, new and old, to help in their fight for freedom.",
-      "genres": [
-        "Drama"
-      ],
-      "networks": [
-        "Hulu"
-      ],
-      "numberOfSeasons": 1,
-      "numberOfEpisodes": 10,
-      "lastUpdated": "2026-04-11T13:55:27.776Z",
-      "content": {
-        "h1": "The Testaments (2026) overview",
-        "paragraphs": [
-          "Growing up in Gilead is all they have ever known. As a new generation of young women grapple with the bleak future that awaits them, they will be forced to search for allies, new and old, to help in their fight for freedom.",
-          "Genres: Drama. Networks: Hulu.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"The Testaments\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
-          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
-        ],
-        "bullets": [
-          "Best for: subtitle-based language practice",
-          "Rewatch strategy beats binge-watching",
-          "Save unknown words → review after the episode"
-        ]
-      }
-    },
-    {
-      "slug": "the-testaments-287527-watch",
-      "pageType": "watch",
-      "showId": 287527,
-      "title": "The Testaments",
-      "year": "2026",
-      "posterPath": "/xVsFopLisBoiKdXXecaNTN4pJ9A.jpg",
-      "backdropPath": "/n8fffwUPi9DMxtwDIR6xoGx9ItP.jpg",
-      "overview": "Growing up in Gilead is all they have ever known. As a new generation of young women grapple with the bleak future that awaits them, they will be forced to search for allies, new and old, to help in their fight for freedom.",
-      "genres": [
-        "Drama"
-      ],
-      "networks": [
-        "Hulu"
-      ],
-      "numberOfSeasons": 1,
-      "numberOfEpisodes": 10,
-      "lastUpdated": "2026-04-11T13:55:27.776Z",
-      "content": {
-        "h1": "Where to watch The Testaments (2026)",
-        "paragraphs": [
-          "If you're looking for where to watch \"The Testaments\" (2026), start by checking the major streaming platforms available in your region.",
-          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 1 season(s), 10 episode(s), genres: Drama.",
-          "Growing up in Gilead is all they have ever known. As a new generation of young women grapple with the bleak future that awaits them, they will be forced to search for allies, new and old, to help in their fight for freedom.",
-          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
-        ],
-        "bullets": [
-          "Search in-app for: \"The Testaments\"",
-          "Try both English + Spanish title variants",
-          "Use subtitles + pause/replay for language learning"
-        ]
-      }
-    },
-    {
-      "slug": "the-testaments-287527-cast",
-      "pageType": "cast",
-      "showId": 287527,
-      "title": "The Testaments",
-      "year": "2026",
-      "posterPath": "/xVsFopLisBoiKdXXecaNTN4pJ9A.jpg",
-      "backdropPath": "/n8fffwUPi9DMxtwDIR6xoGx9ItP.jpg",
-      "overview": "Growing up in Gilead is all they have ever known. As a new generation of young women grapple with the bleak future that awaits them, they will be forced to search for allies, new and old, to help in their fight for freedom.",
-      "genres": [
-        "Drama"
-      ],
-      "networks": [
-        "Hulu"
-      ],
-      "numberOfSeasons": 1,
-      "numberOfEpisodes": 10,
-      "lastUpdated": "2026-04-11T13:55:27.776Z",
-      "content": {
-        "h1": "The Testaments (2026) cast & key characters",
-        "paragraphs": [
-          "This page covers the cast overview for \"The Testaments\" (2026) and how to explore actor credits.",
-          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 1 season(s), 10 episode(s), networks: Hulu.",
-          "Growing up in Gilead is all they have ever known. As a new generation of young women grapple with the bleak future that awaits them, they will be forced to search for allies, new and old, to help in their fight for freedom.",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -1888,7 +1888,7 @@
       ],
       "numberOfSeasons": 5,
       "numberOfEpisodes": 800,
-      "lastUpdated": "2026-04-11T13:55:27.869Z",
+      "lastUpdated": "2026-04-12T13:59:21.124Z",
       "content": {
         "h1": "La promesa (2023) overview",
         "paragraphs": [
@@ -1923,7 +1923,7 @@
       ],
       "numberOfSeasons": 5,
       "numberOfEpisodes": 800,
-      "lastUpdated": "2026-04-11T13:55:27.869Z",
+      "lastUpdated": "2026-04-12T13:59:21.124Z",
       "content": {
         "h1": "Where to watch La promesa (2023)",
         "paragraphs": [
@@ -1959,7 +1959,7 @@
       ],
       "numberOfSeasons": 5,
       "numberOfEpisodes": 800,
-      "lastUpdated": "2026-04-11T13:55:27.869Z",
+      "lastUpdated": "2026-04-12T13:59:21.124Z",
       "content": {
         "h1": "La promesa (2023) cast & key characters",
         "paragraphs": [
@@ -1967,110 +1967,6 @@
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
           "Quick facts: 5 season(s), 800 episode(s), networks: La 1.",
           "In 1913 Spain, a woman gets a job at the palace of La Promesa as a reward for saving the marquesses' son - but nobody knows that she has her own plans, which involve avenging her mother's death and finding her missing brother.",
-          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
-        ],
-        "bullets": [
-          "Look up the show on TMDB or IMDb for verified cast",
-          "Check season-by-season credits (casts change)",
-          "Save actor names you like → discover similar shows"
-        ]
-      }
-    },
-    {
-      "slug": "the-queen-of-flow-80240-summary",
-      "pageType": "summary",
-      "showId": 80240,
-      "title": "The Queen of Flow",
-      "year": "2018",
-      "posterPath": "/fuVuDYrs8sxvEolnYr0wCSvtyTi.jpg",
-      "backdropPath": "/cWJJk2C3QMZg2FgG3tVu6T1IiY0.jpg",
-      "overview": "Seventeen years after being wrongly imprisoned, a talented songwriter seeks justice against the men who caused her downfall and killed her family.",
-      "genres": [
-        "Drama",
-        "Crime"
-      ],
-      "networks": [
-        "Caracol TV"
-      ],
-      "numberOfSeasons": 3,
-      "numberOfEpisodes": 237,
-      "lastUpdated": "2026-04-11T13:55:27.956Z",
-      "content": {
-        "h1": "The Queen of Flow (2018) overview",
-        "paragraphs": [
-          "Seventeen years after being wrongly imprisoned, a talented songwriter seeks justice against the men who caused her downfall and killed her family.",
-          "Genres: Drama, Crime. Networks: Caracol TV.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"The Queen of Flow\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
-          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
-        ],
-        "bullets": [
-          "Best for: subtitle-based language practice",
-          "Rewatch strategy beats binge-watching",
-          "Save unknown words → review after the episode"
-        ]
-      }
-    },
-    {
-      "slug": "the-queen-of-flow-80240-watch",
-      "pageType": "watch",
-      "showId": 80240,
-      "title": "The Queen of Flow",
-      "year": "2018",
-      "posterPath": "/fuVuDYrs8sxvEolnYr0wCSvtyTi.jpg",
-      "backdropPath": "/cWJJk2C3QMZg2FgG3tVu6T1IiY0.jpg",
-      "overview": "Seventeen years after being wrongly imprisoned, a talented songwriter seeks justice against the men who caused her downfall and killed her family.",
-      "genres": [
-        "Drama",
-        "Crime"
-      ],
-      "networks": [
-        "Caracol TV"
-      ],
-      "numberOfSeasons": 3,
-      "numberOfEpisodes": 237,
-      "lastUpdated": "2026-04-11T13:55:27.956Z",
-      "content": {
-        "h1": "Where to watch The Queen of Flow (2018)",
-        "paragraphs": [
-          "If you're looking for where to watch \"The Queen of Flow\" (2018), start by checking the major streaming platforms available in your region.",
-          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 3 season(s), 237 episode(s), genres: Drama, Crime.",
-          "Seventeen years after being wrongly imprisoned, a talented songwriter seeks justice against the men who caused her downfall and killed her family.",
-          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
-        ],
-        "bullets": [
-          "Search in-app for: \"The Queen of Flow\"",
-          "Try both English + Spanish title variants",
-          "Use subtitles + pause/replay for language learning"
-        ]
-      }
-    },
-    {
-      "slug": "the-queen-of-flow-80240-cast",
-      "pageType": "cast",
-      "showId": 80240,
-      "title": "The Queen of Flow",
-      "year": "2018",
-      "posterPath": "/fuVuDYrs8sxvEolnYr0wCSvtyTi.jpg",
-      "backdropPath": "/cWJJk2C3QMZg2FgG3tVu6T1IiY0.jpg",
-      "overview": "Seventeen years after being wrongly imprisoned, a talented songwriter seeks justice against the men who caused her downfall and killed her family.",
-      "genres": [
-        "Drama",
-        "Crime"
-      ],
-      "networks": [
-        "Caracol TV"
-      ],
-      "numberOfSeasons": 3,
-      "numberOfEpisodes": 237,
-      "lastUpdated": "2026-04-11T13:55:27.956Z",
-      "content": {
-        "h1": "The Queen of Flow (2018) cast & key characters",
-        "paragraphs": [
-          "This page covers the cast overview for \"The Queen of Flow\" (2018) and how to explore actor credits.",
-          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 3 season(s), 237 episode(s), networks: Caracol TV.",
-          "Seventeen years after being wrongly imprisoned, a talented songwriter seeks justice against the men who caused her downfall and killed her family.",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -2100,7 +1996,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 13,
-      "lastUpdated": "2026-04-11T13:55:28.044Z",
+      "lastUpdated": "2026-04-12T13:59:21.179Z",
       "content": {
         "h1": "Witch Hat Atelier (2026) overview",
         "paragraphs": [
@@ -2136,7 +2032,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 13,
-      "lastUpdated": "2026-04-11T13:55:28.044Z",
+      "lastUpdated": "2026-04-12T13:59:21.179Z",
       "content": {
         "h1": "Where to watch Witch Hat Atelier (2026)",
         "paragraphs": [
@@ -2173,7 +2069,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 13,
-      "lastUpdated": "2026-04-11T13:55:28.044Z",
+      "lastUpdated": "2026-04-12T13:59:21.179Z",
       "content": {
         "h1": "Witch Hat Atelier (2026) cast & key characters",
         "paragraphs": [
@@ -2191,59 +2087,30 @@
       }
     },
     {
-      "slug": "ascendance-of-a-bookworm-91768-summary",
+      "slug": "the-queen-of-flow-80240-summary",
       "pageType": "summary",
-      "showId": 91768,
-      "title": "Ascendance of a Bookworm",
-      "year": "2019",
-      "posterPath": "/aVGueAM88cc4sX6PeMvuAPObDc4.jpg",
-      "backdropPath": "/2ta3O7D1Nh42nTZof9qxJCVAvwk.jpg",
-      "overview": "When a sickly young girl suddenly becomes obsessed with inventing new things, her family and friends are all puzzled. \"What has gotten into Myne?\" they wondered, never dreaming that the answer is not a \"What\" but a \"Who\": Urano Motosu, a book-loving apprentice librarian who died in an earthquake in Tokyo who somehow found herself in Myne's body! And since Myne's world is still in a medieval stage, where books can only be owned by the elite, the new Myne intends to do everything she can to bring her beloved books to the masses in the time she has left.",
+      "showId": 80240,
+      "title": "The Queen of Flow",
+      "year": "2018",
+      "posterPath": "/fuVuDYrs8sxvEolnYr0wCSvtyTi.jpg",
+      "backdropPath": "/cWJJk2C3QMZg2FgG3tVu6T1IiY0.jpg",
+      "overview": "Seventeen years after being wrongly imprisoned, a talented songwriter seeks justice against the men who caused her downfall and killed her family.",
       "genres": [
-        "Animation",
         "Drama",
-        "Sci-Fi & Fantasy"
+        "Crime"
       ],
       "networks": [
-        "Nippon TV",
-        "WOWOW Prime",
-        "YTV",
-        "ABC TV",
-        "FBS",
-        "Chukyo TV",
-        "RNB",
-        "HTV",
-        "FCT",
-        "STV",
-        "KNB",
-        "KTK",
-        "RAB",
-        "TVI",
-        "MMT",
-        "ABS",
-        "JRT",
-        "TOS",
-        "YBC",
-        "UMK TV Miyazaki",
-        "TeNY",
-        "RNC",
-        "NIB",
-        "KKT",
-        "Daiichi-TV",
-        "FBC",
-        "RKC",
-        "KYT",
-        "KRY"
+        "Caracol TV"
       ],
-      "numberOfSeasons": 2,
-      "numberOfEpisodes": 38,
-      "lastUpdated": "2026-04-11T13:55:28.142Z",
+      "numberOfSeasons": 3,
+      "numberOfEpisodes": 237,
+      "lastUpdated": "2026-04-12T13:59:21.232Z",
       "content": {
-        "h1": "Ascendance of a Bookworm (2019) overview",
+        "h1": "The Queen of Flow (2018) overview",
         "paragraphs": [
-          "When a sickly young girl suddenly becomes obsessed with inventing new things, her family and friends are all puzzled. \"What has gotten into Myne?\" they wondered, never dreaming that the answer is not a \"What\" but a \"Who\": Urano Motosu, a book-loving apprentice librarian who died in an earthquake in Tokyo who somehow found herself in Myne's body! And since Myne's world is still in a medieval stage, where books can only be owned by the elite, the new Myne intends to do everything she can to bring her beloved books to the masses in the time she has left.",
-          "Genres: Animation, Drama, Sci-Fi & Fantasy. Networks: Nippon TV, WOWOW Prime, YTV, ABC TV, FBS, Chukyo TV, RNB, HTV, FCT, STV, KNB, KTK, RAB, TVI, MMT, ABS, JRT, TOS, YBC, UMK TV Miyazaki, TeNY, RNC, NIB, KKT, Daiichi-TV, FBC, RKC, KYT, KRY.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Ascendance of a Bookworm\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "Seventeen years after being wrongly imprisoned, a talented songwriter seeks justice against the men who caused her downfall and killed her family.",
+          "Genres: Drama, Crime. Networks: Caracol TV.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"The Queen of Flow\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
           "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
         ],
         "bullets": [
@@ -2254,124 +2121,182 @@
       }
     },
     {
-      "slug": "ascendance-of-a-bookworm-91768-watch",
+      "slug": "the-queen-of-flow-80240-watch",
       "pageType": "watch",
-      "showId": 91768,
-      "title": "Ascendance of a Bookworm",
-      "year": "2019",
-      "posterPath": "/aVGueAM88cc4sX6PeMvuAPObDc4.jpg",
-      "backdropPath": "/2ta3O7D1Nh42nTZof9qxJCVAvwk.jpg",
-      "overview": "When a sickly young girl suddenly becomes obsessed with inventing new things, her family and friends are all puzzled. \"What has gotten into Myne?\" they wondered, never dreaming that the answer is not a \"What\" but a \"Who\": Urano Motosu, a book-loving apprentice librarian who died in an earthquake in Tokyo who somehow found herself in Myne's body! And since Myne's world is still in a medieval stage, where books can only be owned by the elite, the new Myne intends to do everything she can to bring her beloved books to the masses in the time she has left.",
+      "showId": 80240,
+      "title": "The Queen of Flow",
+      "year": "2018",
+      "posterPath": "/fuVuDYrs8sxvEolnYr0wCSvtyTi.jpg",
+      "backdropPath": "/cWJJk2C3QMZg2FgG3tVu6T1IiY0.jpg",
+      "overview": "Seventeen years after being wrongly imprisoned, a talented songwriter seeks justice against the men who caused her downfall and killed her family.",
       "genres": [
-        "Animation",
         "Drama",
-        "Sci-Fi & Fantasy"
+        "Crime"
       ],
       "networks": [
-        "Nippon TV",
-        "WOWOW Prime",
-        "YTV",
-        "ABC TV",
-        "FBS",
-        "Chukyo TV",
-        "RNB",
-        "HTV",
-        "FCT",
-        "STV",
-        "KNB",
-        "KTK",
-        "RAB",
-        "TVI",
-        "MMT",
-        "ABS",
-        "JRT",
-        "TOS",
-        "YBC",
-        "UMK TV Miyazaki",
-        "TeNY",
-        "RNC",
-        "NIB",
-        "KKT",
-        "Daiichi-TV",
-        "FBC",
-        "RKC",
-        "KYT",
-        "KRY"
+        "Caracol TV"
       ],
-      "numberOfSeasons": 2,
-      "numberOfEpisodes": 38,
-      "lastUpdated": "2026-04-11T13:55:28.142Z",
+      "numberOfSeasons": 3,
+      "numberOfEpisodes": 237,
+      "lastUpdated": "2026-04-12T13:59:21.233Z",
       "content": {
-        "h1": "Where to watch Ascendance of a Bookworm (2019)",
+        "h1": "Where to watch The Queen of Flow (2018)",
         "paragraphs": [
-          "If you're looking for where to watch \"Ascendance of a Bookworm\" (2019), start by checking the major streaming platforms available in your region.",
+          "If you're looking for where to watch \"The Queen of Flow\" (2018), start by checking the major streaming platforms available in your region.",
           "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 2 season(s), 38 episode(s), genres: Animation, Drama, Sci-Fi & Fantasy.",
-          "When a sickly young girl suddenly becomes obsessed with inventing new things, her family and friends are all puzzled. \"What has gotten into Myne?\" they wondered, never dreaming that the answer is not a \"What\" but a \"Who\": Urano Motosu, a book-loving apprentice librarian who died in an earthquake in Tokyo who somehow found herself in Myne's body! And since Myne's world is still in a medieval stage, where books can only be owned by the elite, the new Myne intends to do everything she can to bring her beloved books to the masses in the time she has left.",
+          "Quick facts: 3 season(s), 237 episode(s), genres: Drama, Crime.",
+          "Seventeen years after being wrongly imprisoned, a talented songwriter seeks justice against the men who caused her downfall and killed her family.",
           "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
         ],
         "bullets": [
-          "Search in-app for: \"Ascendance of a Bookworm\"",
+          "Search in-app for: \"The Queen of Flow\"",
           "Try both English + Spanish title variants",
           "Use subtitles + pause/replay for language learning"
         ]
       }
     },
     {
-      "slug": "ascendance-of-a-bookworm-91768-cast",
+      "slug": "the-queen-of-flow-80240-cast",
       "pageType": "cast",
-      "showId": 91768,
-      "title": "Ascendance of a Bookworm",
-      "year": "2019",
-      "posterPath": "/aVGueAM88cc4sX6PeMvuAPObDc4.jpg",
-      "backdropPath": "/2ta3O7D1Nh42nTZof9qxJCVAvwk.jpg",
-      "overview": "When a sickly young girl suddenly becomes obsessed with inventing new things, her family and friends are all puzzled. \"What has gotten into Myne?\" they wondered, never dreaming that the answer is not a \"What\" but a \"Who\": Urano Motosu, a book-loving apprentice librarian who died in an earthquake in Tokyo who somehow found herself in Myne's body! And since Myne's world is still in a medieval stage, where books can only be owned by the elite, the new Myne intends to do everything she can to bring her beloved books to the masses in the time she has left.",
+      "showId": 80240,
+      "title": "The Queen of Flow",
+      "year": "2018",
+      "posterPath": "/fuVuDYrs8sxvEolnYr0wCSvtyTi.jpg",
+      "backdropPath": "/cWJJk2C3QMZg2FgG3tVu6T1IiY0.jpg",
+      "overview": "Seventeen years after being wrongly imprisoned, a talented songwriter seeks justice against the men who caused her downfall and killed her family.",
+      "genres": [
+        "Drama",
+        "Crime"
+      ],
+      "networks": [
+        "Caracol TV"
+      ],
+      "numberOfSeasons": 3,
+      "numberOfEpisodes": 237,
+      "lastUpdated": "2026-04-12T13:59:21.233Z",
+      "content": {
+        "h1": "The Queen of Flow (2018) cast & key characters",
+        "paragraphs": [
+          "This page covers the cast overview for \"The Queen of Flow\" (2018) and how to explore actor credits.",
+          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
+          "Quick facts: 3 season(s), 237 episode(s), networks: Caracol TV.",
+          "Seventeen years after being wrongly imprisoned, a talented songwriter seeks justice against the men who caused her downfall and killed her family.",
+          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
+        ],
+        "bullets": [
+          "Look up the show on TMDB or IMDb for verified cast",
+          "Check season-by-season credits (casts change)",
+          "Save actor names you like → discover similar shows"
+        ]
+      }
+    },
+    {
+      "slug": "daemons-of-the-shadow-realm-260463-summary",
+      "pageType": "summary",
+      "showId": 260463,
+      "title": "Daemons of the Shadow Realm",
+      "year": "2026",
+      "posterPath": "/nEdHDUhaC80lIFh1WWvi1KYtcfL.jpg",
+      "backdropPath": "/qc30hdrxHQgN5wiopU4bkRZow5L.jpg",
+      "overview": "Yuru, a young hunter, lives in a small village deep in the mountains, hunting wild game and leading a humble life with Asa, his younger twin sister. Their peaceful lives are torn apart when a dragon’s roar echoes across the sky. What secrets lurk within their village? What fate awaits them?",
       "genres": [
         "Animation",
-        "Drama",
+        "Action & Adventure",
         "Sci-Fi & Fantasy"
       ],
       "networks": [
-        "Nippon TV",
-        "WOWOW Prime",
-        "YTV",
-        "ABC TV",
-        "FBS",
-        "Chukyo TV",
-        "RNB",
-        "HTV",
-        "FCT",
-        "STV",
-        "KNB",
-        "KTK",
-        "RAB",
-        "TVI",
-        "MMT",
-        "ABS",
-        "JRT",
-        "TOS",
-        "YBC",
-        "UMK TV Miyazaki",
-        "TeNY",
-        "RNC",
-        "NIB",
-        "KKT",
-        "Daiichi-TV",
-        "FBC",
-        "RKC",
-        "KYT",
-        "KRY"
+        "Gunma TV",
+        "Tokyo MX",
+        "BS11",
+        "Tochigi TV"
       ],
-      "numberOfSeasons": 2,
-      "numberOfEpisodes": 38,
-      "lastUpdated": "2026-04-11T13:55:28.142Z",
+      "numberOfSeasons": 1,
+      "numberOfEpisodes": 24,
+      "lastUpdated": "2026-04-12T13:59:21.270Z",
       "content": {
-        "h1": "Ascendance of a Bookworm (2019) cast & key characters",
+        "h1": "Daemons of the Shadow Realm (2026) overview",
         "paragraphs": [
-          "This page covers the cast overview for \"Ascendance of a Bookworm\" (2019) and how to explore actor credits.",
+          "Yuru, a young hunter, lives in a small village deep in the mountains, hunting wild game and leading a humble life with Asa, his younger twin sister. Their peaceful lives are torn apart when a dragon’s roar echoes across the sky. What secrets lurk within their village? What fate awaits them?",
+          "Genres: Animation, Action & Adventure, Sci-Fi & Fantasy. Networks: Gunma TV, Tokyo MX, BS11, Tochigi TV.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Daemons of the Shadow Realm\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
+        ],
+        "bullets": [
+          "Best for: subtitle-based language practice",
+          "Rewatch strategy beats binge-watching",
+          "Save unknown words → review after the episode"
+        ]
+      }
+    },
+    {
+      "slug": "daemons-of-the-shadow-realm-260463-watch",
+      "pageType": "watch",
+      "showId": 260463,
+      "title": "Daemons of the Shadow Realm",
+      "year": "2026",
+      "posterPath": "/nEdHDUhaC80lIFh1WWvi1KYtcfL.jpg",
+      "backdropPath": "/qc30hdrxHQgN5wiopU4bkRZow5L.jpg",
+      "overview": "Yuru, a young hunter, lives in a small village deep in the mountains, hunting wild game and leading a humble life with Asa, his younger twin sister. Their peaceful lives are torn apart when a dragon’s roar echoes across the sky. What secrets lurk within their village? What fate awaits them?",
+      "genres": [
+        "Animation",
+        "Action & Adventure",
+        "Sci-Fi & Fantasy"
+      ],
+      "networks": [
+        "Gunma TV",
+        "Tokyo MX",
+        "BS11",
+        "Tochigi TV"
+      ],
+      "numberOfSeasons": 1,
+      "numberOfEpisodes": 24,
+      "lastUpdated": "2026-04-12T13:59:21.270Z",
+      "content": {
+        "h1": "Where to watch Daemons of the Shadow Realm (2026)",
+        "paragraphs": [
+          "If you're looking for where to watch \"Daemons of the Shadow Realm\" (2026), start by checking the major streaming platforms available in your region.",
+          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
+          "Quick facts: 1 season(s), 24 episode(s), genres: Animation, Action & Adventure, Sci-Fi & Fantasy.",
+          "Yuru, a young hunter, lives in a small village deep in the mountains, hunting wild game and leading a humble life with Asa, his younger twin sister. Their peaceful lives are torn apart when a dragon’s roar echoes across the sky. What secrets lurk within their village? What fate awaits them?",
+          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
+        ],
+        "bullets": [
+          "Search in-app for: \"Daemons of the Shadow Realm\"",
+          "Try both English + Spanish title variants",
+          "Use subtitles + pause/replay for language learning"
+        ]
+      }
+    },
+    {
+      "slug": "daemons-of-the-shadow-realm-260463-cast",
+      "pageType": "cast",
+      "showId": 260463,
+      "title": "Daemons of the Shadow Realm",
+      "year": "2026",
+      "posterPath": "/nEdHDUhaC80lIFh1WWvi1KYtcfL.jpg",
+      "backdropPath": "/qc30hdrxHQgN5wiopU4bkRZow5L.jpg",
+      "overview": "Yuru, a young hunter, lives in a small village deep in the mountains, hunting wild game and leading a humble life with Asa, his younger twin sister. Their peaceful lives are torn apart when a dragon’s roar echoes across the sky. What secrets lurk within their village? What fate awaits them?",
+      "genres": [
+        "Animation",
+        "Action & Adventure",
+        "Sci-Fi & Fantasy"
+      ],
+      "networks": [
+        "Gunma TV",
+        "Tokyo MX",
+        "BS11",
+        "Tochigi TV"
+      ],
+      "numberOfSeasons": 1,
+      "numberOfEpisodes": 24,
+      "lastUpdated": "2026-04-12T13:59:21.270Z",
+      "content": {
+        "h1": "Daemons of the Shadow Realm (2026) cast & key characters",
+        "paragraphs": [
+          "This page covers the cast overview for \"Daemons of the Shadow Realm\" (2026) and how to explore actor credits.",
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 2 season(s), 38 episode(s), networks: Nippon TV, WOWOW Prime, YTV, ABC TV, FBS, Chukyo TV, RNB, HTV, FCT, STV, KNB, KTK, RAB, TVI, MMT, ABS, JRT, TOS, YBC, UMK TV Miyazaki, TeNY, RNC, NIB, KKT, Daiichi-TV, FBC, RKC, KYT, KRY.",
-          "When a sickly young girl suddenly becomes obsessed with inventing new things, her family and friends are all puzzled. \"What has gotten into Myne?\" they wondered, never dreaming that the answer is not a \"What\" but a \"Who\": Urano Motosu, a book-loving apprentice librarian who died in an earthquake in Tokyo who somehow found herself in Myne's body! And since Myne's world is still in a medieval stage, where books can only be owned by the elite, the new Myne intends to do everything she can to bring her beloved books to the masses in the time she has left.",
+          "Quick facts: 1 season(s), 24 episode(s), networks: Gunma TV, Tokyo MX, BS11, Tochigi TV.",
+          "Yuru, a young hunter, lives in a small village deep in the mountains, hunting wild game and leading a humble life with Asa, his younger twin sister. Their peaceful lives are torn apart when a dragon’s roar echoes across the sky. What secrets lurk within their village? What fate awaits them?",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -2400,7 +2325,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 220,
-      "lastUpdated": "2026-04-11T13:55:28.228Z",
+      "lastUpdated": "2026-04-12T13:59:21.303Z",
       "content": {
         "h1": "Once (2017) overview",
         "paragraphs": [
@@ -2435,7 +2360,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 220,
-      "lastUpdated": "2026-04-11T13:55:28.228Z",
+      "lastUpdated": "2026-04-12T13:59:21.303Z",
       "content": {
         "h1": "Where to watch Once (2017)",
         "paragraphs": [
@@ -2471,7 +2396,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 220,
-      "lastUpdated": "2026-04-11T13:55:28.228Z",
+      "lastUpdated": "2026-04-12T13:59:21.303Z",
       "content": {
         "h1": "Once (2017) cast & key characters",
         "paragraphs": [
@@ -2479,113 +2404,6 @@
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
           "Quick facts: 3 season(s), 220 episode(s), networks: Disney XD.",
           "The series revolves around Gabo, a soccer-loving teenager who, upon receiving a scholarship from the prestigious Sports Academic Institute (IAD) of Buenos Aires, will see his dream of playing at Los Halcones Dorados, the renowned amateur team of the school, and also his longing to become a professional footballer.",
-          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
-        ],
-        "bullets": [
-          "Look up the show on TMDB or IMDb for verified cast",
-          "Check season-by-season credits (casts change)",
-          "Save actor names you like → discover similar shows"
-        ]
-      }
-    },
-    {
-      "slug": "el-hormiguero-6809-summary",
-      "pageType": "summary",
-      "showId": 6809,
-      "title": "El hormiguero",
-      "year": "2006",
-      "posterPath": "/tT4hXTYXtZVadi6AZ0rhdVgNo2T.jpg",
-      "backdropPath": "/3hOxwqn1P2AY0d20VVtxN2f3Lfh.jpg",
-      "overview": "El Hormiguero is a Spanish television program with a live audience focusing on comedy, science, and politics running since September 2006. It is hosted and produced by screenwriter Pablo Motos. The show aired on Spain's Cuatro channel from launch until June 2011 and is now broadcast on Antena 3. Recurring guests on the show include Luis Piedrahita, Raquel Martos, Marron & \"The Man in Black\", and puppet ants Trancas and Barrancas. It has proved a ratings success, and has expanded from a weekly 120-minute show to a daily 40-minute show in its third season, which began on September 17, 2007. The show won the Entertainment prize at the 2009 Rose d'Or ceremony.",
-      "genres": [
-        "Comedy",
-        "Talk"
-      ],
-      "networks": [
-        "Cuatro",
-        "Antena 3"
-      ],
-      "numberOfSeasons": 20,
-      "numberOfEpisodes": 1436,
-      "lastUpdated": "2026-04-11T13:55:28.315Z",
-      "content": {
-        "h1": "El hormiguero (2006) overview",
-        "paragraphs": [
-          "El Hormiguero is a Spanish television program with a live audience focusing on comedy, science, and politics running since September 2006. It is hosted and produced by screenwriter Pablo Motos. The show aired on Spain's Cuatro channel from launch until June 2011 and is now broadcast on Antena 3. Recurring guests on the show include Luis Piedrahita, Raquel Martos, Marron & \"The Man in Black\", and puppet ants Trancas and Barrancas. It has proved a ratings success, and has expanded from a weekly 120-minute show to a daily 40-minute show in its third season, which began on September 17, 2007. The show won the Entertainment prize at the 2009 Rose d'Or ceremony.",
-          "Genres: Comedy, Talk. Networks: Cuatro, Antena 3.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"El hormiguero\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
-          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
-        ],
-        "bullets": [
-          "Best for: subtitle-based language practice",
-          "Rewatch strategy beats binge-watching",
-          "Save unknown words → review after the episode"
-        ]
-      }
-    },
-    {
-      "slug": "el-hormiguero-6809-watch",
-      "pageType": "watch",
-      "showId": 6809,
-      "title": "El hormiguero",
-      "year": "2006",
-      "posterPath": "/tT4hXTYXtZVadi6AZ0rhdVgNo2T.jpg",
-      "backdropPath": "/3hOxwqn1P2AY0d20VVtxN2f3Lfh.jpg",
-      "overview": "El Hormiguero is a Spanish television program with a live audience focusing on comedy, science, and politics running since September 2006. It is hosted and produced by screenwriter Pablo Motos. The show aired on Spain's Cuatro channel from launch until June 2011 and is now broadcast on Antena 3. Recurring guests on the show include Luis Piedrahita, Raquel Martos, Marron & \"The Man in Black\", and puppet ants Trancas and Barrancas. It has proved a ratings success, and has expanded from a weekly 120-minute show to a daily 40-minute show in its third season, which began on September 17, 2007. The show won the Entertainment prize at the 2009 Rose d'Or ceremony.",
-      "genres": [
-        "Comedy",
-        "Talk"
-      ],
-      "networks": [
-        "Cuatro",
-        "Antena 3"
-      ],
-      "numberOfSeasons": 20,
-      "numberOfEpisodes": 1436,
-      "lastUpdated": "2026-04-11T13:55:28.315Z",
-      "content": {
-        "h1": "Where to watch El hormiguero (2006)",
-        "paragraphs": [
-          "If you're looking for where to watch \"El hormiguero\" (2006), start by checking the major streaming platforms available in your region.",
-          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 20 season(s), 1436 episode(s), genres: Comedy, Talk.",
-          "El Hormiguero is a Spanish television program with a live audience focusing on comedy, science, and politics running since September 2006. It is hosted and produced by screenwriter Pablo Motos. The show aired on Spain's Cuatro channel from launch until June 2011 and is now broadcast on Antena 3. Recurring guests on the show include Luis Piedrahita, Raquel Martos, Marron & \"The Man in Black\", and puppet ants Trancas and Barrancas. It has proved a ratings success, and has expanded from a weekly 120-minute show to a daily 40-minute show in its third season, which began on September 17, 2007. The show won the Entertainment prize at the 2009 Rose d'Or ceremony.",
-          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
-        ],
-        "bullets": [
-          "Search in-app for: \"El hormiguero\"",
-          "Try both English + Spanish title variants",
-          "Use subtitles + pause/replay for language learning"
-        ]
-      }
-    },
-    {
-      "slug": "el-hormiguero-6809-cast",
-      "pageType": "cast",
-      "showId": 6809,
-      "title": "El hormiguero",
-      "year": "2006",
-      "posterPath": "/tT4hXTYXtZVadi6AZ0rhdVgNo2T.jpg",
-      "backdropPath": "/3hOxwqn1P2AY0d20VVtxN2f3Lfh.jpg",
-      "overview": "El Hormiguero is a Spanish television program with a live audience focusing on comedy, science, and politics running since September 2006. It is hosted and produced by screenwriter Pablo Motos. The show aired on Spain's Cuatro channel from launch until June 2011 and is now broadcast on Antena 3. Recurring guests on the show include Luis Piedrahita, Raquel Martos, Marron & \"The Man in Black\", and puppet ants Trancas and Barrancas. It has proved a ratings success, and has expanded from a weekly 120-minute show to a daily 40-minute show in its third season, which began on September 17, 2007. The show won the Entertainment prize at the 2009 Rose d'Or ceremony.",
-      "genres": [
-        "Comedy",
-        "Talk"
-      ],
-      "networks": [
-        "Cuatro",
-        "Antena 3"
-      ],
-      "numberOfSeasons": 20,
-      "numberOfEpisodes": 1436,
-      "lastUpdated": "2026-04-11T13:55:28.315Z",
-      "content": {
-        "h1": "El hormiguero (2006) cast & key characters",
-        "paragraphs": [
-          "This page covers the cast overview for \"El hormiguero\" (2006) and how to explore actor credits.",
-          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 20 season(s), 1436 episode(s), networks: Cuatro, Antena 3.",
-          "El Hormiguero is a Spanish television program with a live audience focusing on comedy, science, and politics running since September 2006. It is hosted and produced by screenwriter Pablo Motos. The show aired on Spain's Cuatro channel from launch until June 2011 and is now broadcast on Antena 3. Recurring guests on the show include Luis Piedrahita, Raquel Martos, Marron & \"The Man in Black\", and puppet ants Trancas and Barrancas. It has proved a ratings success, and has expanded from a weekly 120-minute show to a daily 40-minute show in its third season, which began on September 17, 2007. The show won the Entertainment prize at the 2009 Rose d'Or ceremony.",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -2614,7 +2432,7 @@
       ],
       "numberOfSeasons": 9,
       "numberOfEpisodes": 793,
-      "lastUpdated": "2026-04-11T13:55:28.402Z",
+      "lastUpdated": "2026-04-12T13:59:21.338Z",
       "content": {
         "h1": "El Señor de los Cielos (2013) overview",
         "paragraphs": [
@@ -2649,7 +2467,7 @@
       ],
       "numberOfSeasons": 9,
       "numberOfEpisodes": 793,
-      "lastUpdated": "2026-04-11T13:55:28.402Z",
+      "lastUpdated": "2026-04-12T13:59:21.338Z",
       "content": {
         "h1": "Where to watch El Señor de los Cielos (2013)",
         "paragraphs": [
@@ -2685,7 +2503,7 @@
       ],
       "numberOfSeasons": 9,
       "numberOfEpisodes": 793,
-      "lastUpdated": "2026-04-11T13:55:28.402Z",
+      "lastUpdated": "2026-04-12T13:59:21.338Z",
       "content": {
         "h1": "El Señor de los Cielos (2013) cast & key characters",
         "paragraphs": [
@@ -2693,6 +2511,113 @@
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
           "Quick facts: 9 season(s), 793 episode(s), networks: Telemundo.",
           "Set in the 1990s, these are the life and times of Amado Carrillo Fuentes, a man who became the head of the Juárez cartel. Nicknamed “El Señor de los Cielos” (Lord of the Skies) because of the large fleet of airplanes he used to transport drugs, he was also known for washing more than $200 million through Colombia to finance his huge fleet. He is described as the most powerful drug trafficker of his time.",
+          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
+        ],
+        "bullets": [
+          "Look up the show on TMDB or IMDb for verified cast",
+          "Check season-by-season credits (casts change)",
+          "Save actor names you like → discover similar shows"
+        ]
+      }
+    },
+    {
+      "slug": "el-hormiguero-6809-summary",
+      "pageType": "summary",
+      "showId": 6809,
+      "title": "El hormiguero",
+      "year": "2006",
+      "posterPath": "/tT4hXTYXtZVadi6AZ0rhdVgNo2T.jpg",
+      "backdropPath": "/3hOxwqn1P2AY0d20VVtxN2f3Lfh.jpg",
+      "overview": "El Hormiguero is a Spanish television program with a live audience focusing on comedy, science, and politics running since September 2006. It is hosted and produced by screenwriter Pablo Motos. The show aired on Spain's Cuatro channel from launch until June 2011 and is now broadcast on Antena 3. Recurring guests on the show include Luis Piedrahita, Raquel Martos, Marron & \"The Man in Black\", and puppet ants Trancas and Barrancas. It has proved a ratings success, and has expanded from a weekly 120-minute show to a daily 40-minute show in its third season, which began on September 17, 2007. The show won the Entertainment prize at the 2009 Rose d'Or ceremony.",
+      "genres": [
+        "Comedy",
+        "Talk"
+      ],
+      "networks": [
+        "Cuatro",
+        "Antena 3"
+      ],
+      "numberOfSeasons": 20,
+      "numberOfEpisodes": 1436,
+      "lastUpdated": "2026-04-12T13:59:21.408Z",
+      "content": {
+        "h1": "El hormiguero (2006) overview",
+        "paragraphs": [
+          "El Hormiguero is a Spanish television program with a live audience focusing on comedy, science, and politics running since September 2006. It is hosted and produced by screenwriter Pablo Motos. The show aired on Spain's Cuatro channel from launch until June 2011 and is now broadcast on Antena 3. Recurring guests on the show include Luis Piedrahita, Raquel Martos, Marron & \"The Man in Black\", and puppet ants Trancas and Barrancas. It has proved a ratings success, and has expanded from a weekly 120-minute show to a daily 40-minute show in its third season, which began on September 17, 2007. The show won the Entertainment prize at the 2009 Rose d'Or ceremony.",
+          "Genres: Comedy, Talk. Networks: Cuatro, Antena 3.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"El hormiguero\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
+        ],
+        "bullets": [
+          "Best for: subtitle-based language practice",
+          "Rewatch strategy beats binge-watching",
+          "Save unknown words → review after the episode"
+        ]
+      }
+    },
+    {
+      "slug": "el-hormiguero-6809-watch",
+      "pageType": "watch",
+      "showId": 6809,
+      "title": "El hormiguero",
+      "year": "2006",
+      "posterPath": "/tT4hXTYXtZVadi6AZ0rhdVgNo2T.jpg",
+      "backdropPath": "/3hOxwqn1P2AY0d20VVtxN2f3Lfh.jpg",
+      "overview": "El Hormiguero is a Spanish television program with a live audience focusing on comedy, science, and politics running since September 2006. It is hosted and produced by screenwriter Pablo Motos. The show aired on Spain's Cuatro channel from launch until June 2011 and is now broadcast on Antena 3. Recurring guests on the show include Luis Piedrahita, Raquel Martos, Marron & \"The Man in Black\", and puppet ants Trancas and Barrancas. It has proved a ratings success, and has expanded from a weekly 120-minute show to a daily 40-minute show in its third season, which began on September 17, 2007. The show won the Entertainment prize at the 2009 Rose d'Or ceremony.",
+      "genres": [
+        "Comedy",
+        "Talk"
+      ],
+      "networks": [
+        "Cuatro",
+        "Antena 3"
+      ],
+      "numberOfSeasons": 20,
+      "numberOfEpisodes": 1436,
+      "lastUpdated": "2026-04-12T13:59:21.408Z",
+      "content": {
+        "h1": "Where to watch El hormiguero (2006)",
+        "paragraphs": [
+          "If you're looking for where to watch \"El hormiguero\" (2006), start by checking the major streaming platforms available in your region.",
+          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
+          "Quick facts: 20 season(s), 1436 episode(s), genres: Comedy, Talk.",
+          "El Hormiguero is a Spanish television program with a live audience focusing on comedy, science, and politics running since September 2006. It is hosted and produced by screenwriter Pablo Motos. The show aired on Spain's Cuatro channel from launch until June 2011 and is now broadcast on Antena 3. Recurring guests on the show include Luis Piedrahita, Raquel Martos, Marron & \"The Man in Black\", and puppet ants Trancas and Barrancas. It has proved a ratings success, and has expanded from a weekly 120-minute show to a daily 40-minute show in its third season, which began on September 17, 2007. The show won the Entertainment prize at the 2009 Rose d'Or ceremony.",
+          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
+        ],
+        "bullets": [
+          "Search in-app for: \"El hormiguero\"",
+          "Try both English + Spanish title variants",
+          "Use subtitles + pause/replay for language learning"
+        ]
+      }
+    },
+    {
+      "slug": "el-hormiguero-6809-cast",
+      "pageType": "cast",
+      "showId": 6809,
+      "title": "El hormiguero",
+      "year": "2006",
+      "posterPath": "/tT4hXTYXtZVadi6AZ0rhdVgNo2T.jpg",
+      "backdropPath": "/3hOxwqn1P2AY0d20VVtxN2f3Lfh.jpg",
+      "overview": "El Hormiguero is a Spanish television program with a live audience focusing on comedy, science, and politics running since September 2006. It is hosted and produced by screenwriter Pablo Motos. The show aired on Spain's Cuatro channel from launch until June 2011 and is now broadcast on Antena 3. Recurring guests on the show include Luis Piedrahita, Raquel Martos, Marron & \"The Man in Black\", and puppet ants Trancas and Barrancas. It has proved a ratings success, and has expanded from a weekly 120-minute show to a daily 40-minute show in its third season, which began on September 17, 2007. The show won the Entertainment prize at the 2009 Rose d'Or ceremony.",
+      "genres": [
+        "Comedy",
+        "Talk"
+      ],
+      "networks": [
+        "Cuatro",
+        "Antena 3"
+      ],
+      "numberOfSeasons": 20,
+      "numberOfEpisodes": 1436,
+      "lastUpdated": "2026-04-12T13:59:21.408Z",
+      "content": {
+        "h1": "El hormiguero (2006) cast & key characters",
+        "paragraphs": [
+          "This page covers the cast overview for \"El hormiguero\" (2006) and how to explore actor credits.",
+          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
+          "Quick facts: 20 season(s), 1436 episode(s), networks: Cuatro, Antena 3.",
+          "El Hormiguero is a Spanish television program with a live audience focusing on comedy, science, and politics running since September 2006. It is hosted and produced by screenwriter Pablo Motos. The show aired on Spain's Cuatro channel from launch until June 2011 and is now broadcast on Antena 3. Recurring guests on the show include Luis Piedrahita, Raquel Martos, Marron & \"The Man in Black\", and puppet ants Trancas and Barrancas. It has proved a ratings success, and has expanded from a weekly 120-minute show to a daily 40-minute show in its third season, which began on September 17, 2007. The show won the Entertainment prize at the 2009 Rose d'Or ceremony.",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -2721,7 +2646,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 440,
-      "lastUpdated": "2026-04-11T13:55:28.487Z",
+      "lastUpdated": "2026-04-12T13:59:21.440Z",
       "content": {
         "h1": "Rebelde (2004) overview",
         "paragraphs": [
@@ -2756,7 +2681,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 440,
-      "lastUpdated": "2026-04-11T13:55:28.487Z",
+      "lastUpdated": "2026-04-12T13:59:21.440Z",
       "content": {
         "h1": "Where to watch Rebelde (2004)",
         "paragraphs": [
@@ -2792,7 +2717,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 440,
-      "lastUpdated": "2026-04-11T13:55:28.487Z",
+      "lastUpdated": "2026-04-12T13:59:21.440Z",
       "content": {
         "h1": "Rebelde (2004) cast & key characters",
         "paragraphs": [
@@ -2800,214 +2725,6 @@
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
           "Quick facts: 3 season(s), 440 episode(s), networks: Univision, Las Estrellas.",
           "A group of young adults will spend their adolescence at the Elite Way School, where they will learn about love, life and live their passion for music.",
-          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
-        ],
-        "bullets": [
-          "Look up the show on TMDB or IMDb for verified cast",
-          "Check season-by-season credits (casts change)",
-          "Save actor names you like → discover similar shows"
-        ]
-      }
-    },
-    {
-      "slug": "la-rosa-de-guadalupe-30826-summary",
-      "pageType": "summary",
-      "showId": 30826,
-      "title": "La rosa de Guadalupe",
-      "year": "2008",
-      "posterPath": "/9RaNva340arNWeZn2uKpKePkg91.jpg",
-      "backdropPath": "/ho48HnguL11niYrqMETtP8A6SWY.jpg",
-      "overview": "Stories about people who get into problems who use the help of Virgin Mary and where a rose appears and their problems are solved.",
-      "genres": [
-        "Drama",
-        "Soap"
-      ],
-      "networks": [
-        "Las Estrellas"
-      ],
-      "numberOfSeasons": 15,
-      "numberOfEpisodes": 872,
-      "lastUpdated": "2026-04-11T13:55:28.574Z",
-      "content": {
-        "h1": "La rosa de Guadalupe (2008) overview",
-        "paragraphs": [
-          "Stories about people who get into problems who use the help of Virgin Mary and where a rose appears and their problems are solved.",
-          "Genres: Drama, Soap. Networks: Las Estrellas.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"La rosa de Guadalupe\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
-          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
-        ],
-        "bullets": [
-          "Best for: subtitle-based language practice",
-          "Rewatch strategy beats binge-watching",
-          "Save unknown words → review after the episode"
-        ]
-      }
-    },
-    {
-      "slug": "la-rosa-de-guadalupe-30826-watch",
-      "pageType": "watch",
-      "showId": 30826,
-      "title": "La rosa de Guadalupe",
-      "year": "2008",
-      "posterPath": "/9RaNva340arNWeZn2uKpKePkg91.jpg",
-      "backdropPath": "/ho48HnguL11niYrqMETtP8A6SWY.jpg",
-      "overview": "Stories about people who get into problems who use the help of Virgin Mary and where a rose appears and their problems are solved.",
-      "genres": [
-        "Drama",
-        "Soap"
-      ],
-      "networks": [
-        "Las Estrellas"
-      ],
-      "numberOfSeasons": 15,
-      "numberOfEpisodes": 872,
-      "lastUpdated": "2026-04-11T13:55:28.574Z",
-      "content": {
-        "h1": "Where to watch La rosa de Guadalupe (2008)",
-        "paragraphs": [
-          "If you're looking for where to watch \"La rosa de Guadalupe\" (2008), start by checking the major streaming platforms available in your region.",
-          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 15 season(s), 872 episode(s), genres: Drama, Soap.",
-          "Stories about people who get into problems who use the help of Virgin Mary and where a rose appears and their problems are solved.",
-          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
-        ],
-        "bullets": [
-          "Search in-app for: \"La rosa de Guadalupe\"",
-          "Try both English + Spanish title variants",
-          "Use subtitles + pause/replay for language learning"
-        ]
-      }
-    },
-    {
-      "slug": "la-rosa-de-guadalupe-30826-cast",
-      "pageType": "cast",
-      "showId": 30826,
-      "title": "La rosa de Guadalupe",
-      "year": "2008",
-      "posterPath": "/9RaNva340arNWeZn2uKpKePkg91.jpg",
-      "backdropPath": "/ho48HnguL11niYrqMETtP8A6SWY.jpg",
-      "overview": "Stories about people who get into problems who use the help of Virgin Mary and where a rose appears and their problems are solved.",
-      "genres": [
-        "Drama",
-        "Soap"
-      ],
-      "networks": [
-        "Las Estrellas"
-      ],
-      "numberOfSeasons": 15,
-      "numberOfEpisodes": 872,
-      "lastUpdated": "2026-04-11T13:55:28.574Z",
-      "content": {
-        "h1": "La rosa de Guadalupe (2008) cast & key characters",
-        "paragraphs": [
-          "This page covers the cast overview for \"La rosa de Guadalupe\" (2008) and how to explore actor credits.",
-          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 15 season(s), 872 episode(s), networks: Las Estrellas.",
-          "Stories about people who get into problems who use the help of Virgin Mary and where a rose appears and their problems are solved.",
-          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
-        ],
-        "bullets": [
-          "Look up the show on TMDB or IMDb for verified cast",
-          "Check season-by-season credits (casts change)",
-          "Save actor names you like → discover similar shows"
-        ]
-      }
-    },
-    {
-      "slug": "la-resistencia-76949-summary",
-      "pageType": "summary",
-      "showId": 76949,
-      "title": "La resistencia",
-      "year": "2018",
-      "posterPath": "/yFwkWTDUjLN0LQmidsUJWEViCmo.jpg",
-      "backdropPath": "/aG9lB7wVTeStYZ8eCQN0t7VVmW8.jpg",
-      "overview": "",
-      "genres": [
-        "Talk",
-        "Comedy"
-      ],
-      "networks": [
-        "Movistar Plus+"
-      ],
-      "numberOfSeasons": 7,
-      "numberOfEpisodes": 1022,
-      "lastUpdated": "2026-04-11T13:55:28.662Z",
-      "content": {
-        "h1": "La resistencia (2018) overview",
-        "paragraphs": [
-          "This is a Spanish-language TV series titled \"La resistencia\".",
-          "Genres: Talk, Comedy. Networks: Movistar Plus+.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"La resistencia\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
-          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
-        ],
-        "bullets": [
-          "Best for: subtitle-based language practice",
-          "Rewatch strategy beats binge-watching",
-          "Save unknown words → review after the episode"
-        ]
-      }
-    },
-    {
-      "slug": "la-resistencia-76949-watch",
-      "pageType": "watch",
-      "showId": 76949,
-      "title": "La resistencia",
-      "year": "2018",
-      "posterPath": "/yFwkWTDUjLN0LQmidsUJWEViCmo.jpg",
-      "backdropPath": "/aG9lB7wVTeStYZ8eCQN0t7VVmW8.jpg",
-      "overview": "",
-      "genres": [
-        "Talk",
-        "Comedy"
-      ],
-      "networks": [
-        "Movistar Plus+"
-      ],
-      "numberOfSeasons": 7,
-      "numberOfEpisodes": 1022,
-      "lastUpdated": "2026-04-11T13:55:28.662Z",
-      "content": {
-        "h1": "Where to watch La resistencia (2018)",
-        "paragraphs": [
-          "If you're looking for where to watch \"La resistencia\" (2018), start by checking the major streaming platforms available in your region.",
-          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 7 season(s), 1022 episode(s), genres: Talk, Comedy.",
-          "This is a Spanish-language TV series titled \"La resistencia\".",
-          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
-        ],
-        "bullets": [
-          "Search in-app for: \"La resistencia\"",
-          "Try both English + Spanish title variants",
-          "Use subtitles + pause/replay for language learning"
-        ]
-      }
-    },
-    {
-      "slug": "la-resistencia-76949-cast",
-      "pageType": "cast",
-      "showId": 76949,
-      "title": "La resistencia",
-      "year": "2018",
-      "posterPath": "/yFwkWTDUjLN0LQmidsUJWEViCmo.jpg",
-      "backdropPath": "/aG9lB7wVTeStYZ8eCQN0t7VVmW8.jpg",
-      "overview": "",
-      "genres": [
-        "Talk",
-        "Comedy"
-      ],
-      "networks": [
-        "Movistar Plus+"
-      ],
-      "numberOfSeasons": 7,
-      "numberOfEpisodes": 1022,
-      "lastUpdated": "2026-04-11T13:55:28.663Z",
-      "content": {
-        "h1": "La resistencia (2018) cast & key characters",
-        "paragraphs": [
-          "This page covers the cast overview for \"La resistencia\" (2018) and how to explore actor credits.",
-          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 7 season(s), 1022 episode(s), networks: Movistar Plus+.",
-          "This is a Spanish-language TV series titled \"La resistencia\".",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -3035,7 +2752,7 @@
       ],
       "numberOfSeasons": 12,
       "numberOfEpisodes": 2327,
-      "lastUpdated": "2026-04-11T13:55:28.750Z",
+      "lastUpdated": "2026-04-12T13:59:21.512Z",
       "content": {
         "h1": "Al Fondo Hay Sitio (2009) overview",
         "paragraphs": [
@@ -3069,7 +2786,7 @@
       ],
       "numberOfSeasons": 12,
       "numberOfEpisodes": 2327,
-      "lastUpdated": "2026-04-11T13:55:28.750Z",
+      "lastUpdated": "2026-04-12T13:59:21.512Z",
       "content": {
         "h1": "Where to watch Al Fondo Hay Sitio (2009)",
         "paragraphs": [
@@ -3104,7 +2821,7 @@
       ],
       "numberOfSeasons": 12,
       "numberOfEpisodes": 2327,
-      "lastUpdated": "2026-04-11T13:55:28.750Z",
+      "lastUpdated": "2026-04-12T13:59:21.512Z",
       "content": {
         "h1": "Al Fondo Hay Sitio (2009) cast & key characters",
         "paragraphs": [
@@ -3139,7 +2856,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 50,
-      "lastUpdated": "2026-04-11T13:55:28.837Z",
+      "lastUpdated": "2026-04-12T13:59:21.549Z",
       "content": {
         "h1": "Doménica Montero (2025) overview",
         "paragraphs": [
@@ -3173,7 +2890,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 50,
-      "lastUpdated": "2026-04-11T13:55:28.837Z",
+      "lastUpdated": "2026-04-12T13:59:21.549Z",
       "content": {
         "h1": "Where to watch Doménica Montero (2025)",
         "paragraphs": [
@@ -3208,7 +2925,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 50,
-      "lastUpdated": "2026-04-11T13:55:28.837Z",
+      "lastUpdated": "2026-04-12T13:59:21.549Z",
       "content": {
         "h1": "Doménica Montero (2025) cast & key characters",
         "paragraphs": [
@@ -3226,31 +2943,58 @@
       }
     },
     {
-      "slug": "money-heist-71446-summary",
+      "slug": "wistoria-wand-and-sword-245842-summary",
       "pageType": "summary",
-      "showId": 71446,
-      "title": "Money Heist",
-      "year": "2017",
-      "posterPath": "/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg",
-      "backdropPath": "/xGexTKCJDkl12dTW4YCBDXWb1AD.jpg",
-      "overview": "To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who have a single characteristic: none of them has anything to lose. Five months of seclusion - memorizing every step, every detail, every probability - culminate in eleven days locked up in the National Coinage and Stamp Factory of Spain, surrounded by police forces and with dozens of hostages in their power, to find out whether their suicide wager will lead to everything or nothing.",
+      "showId": 245842,
+      "title": "Wistoria: Wand and Sword",
+      "year": "2024",
+      "posterPath": "/5n0IZQA9MiXn5JBKZibtNhhFSAZ.jpg",
+      "backdropPath": "/7sGeLiMVrD0QyKWjhEbLWmZIj2w.jpg",
+      "overview": "In a world where magic reigns, Will Serfort can’t cast a spell. Though hardworking, Will’s classmates think less of him for it. However, he has a secret strength: his sword. Can Will defy expectations with muscle over magic and blade over wand? Find out in this epic sword-and-sorcery adventure!",
       "genres": [
-        "Crime",
-        "Drama"
+        "Animation",
+        "Action & Adventure",
+        "Sci-Fi & Fantasy"
       ],
       "networks": [
-        "Netflix",
-        "Antena 3"
+        "MBS",
+        "TBS",
+        "CBC",
+        "Tulip Television",
+        "SBC",
+        "BSN",
+        "tys",
+        "NBC",
+        "HBC",
+        "RKK",
+        "i-Television",
+        "SBS",
+        "IBC",
+        "BSS",
+        "MRO",
+        "OBS",
+        "TUF",
+        "RSK",
+        "TUY",
+        "tbc",
+        "RKB",
+        "KUTV",
+        "RBC",
+        "UTY",
+        "RCC",
+        "MRT",
+        "ATV",
+        "MBC"
       ],
-      "numberOfSeasons": 3,
-      "numberOfEpisodes": 41,
-      "lastUpdated": "2026-04-11T13:55:28.924Z",
+      "numberOfSeasons": 2,
+      "numberOfEpisodes": 13,
+      "lastUpdated": "2026-04-12T13:59:21.618Z",
       "content": {
-        "h1": "Money Heist (2017) overview",
+        "h1": "Wistoria: Wand and Sword (2024) overview",
         "paragraphs": [
-          "To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who have a single characteristic: none of them has anything to lose. Five months of seclusion - memorizing every step, every detail, every probability - culminate in eleven days locked up in the National Coinage and Stamp Factory of Spain, surrounded by police forces and with dozens of hostages in their power, to find out whether their suicide wager will lead to everything or nothing.",
-          "Genres: Crime, Drama. Networks: Netflix, Antena 3.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Money Heist\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "In a world where magic reigns, Will Serfort can’t cast a spell. Though hardworking, Will’s classmates think less of him for it. However, he has a secret strength: his sword. Can Will defy expectations with muscle over magic and blade over wand? Find out in this epic sword-and-sorcery adventure!",
+          "Genres: Animation, Action & Adventure, Sci-Fi & Fantasy. Networks: MBS, TBS, CBC, Tulip Television, SBC, BSN, tys, NBC, HBC, RKK, i-Television, SBS, IBC, BSS, MRO, OBS, TUF, RSK, TUY, tbc, RKB, KUTV, RBC, UTY, RCC, MRT, ATV, MBC.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Wistoria: Wand and Sword\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
           "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
         ],
         "bullets": [
@@ -3261,273 +3005,122 @@
       }
     },
     {
-      "slug": "money-heist-71446-watch",
+      "slug": "wistoria-wand-and-sword-245842-watch",
       "pageType": "watch",
-      "showId": 71446,
-      "title": "Money Heist",
-      "year": "2017",
-      "posterPath": "/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg",
-      "backdropPath": "/xGexTKCJDkl12dTW4YCBDXWb1AD.jpg",
-      "overview": "To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who have a single characteristic: none of them has anything to lose. Five months of seclusion - memorizing every step, every detail, every probability - culminate in eleven days locked up in the National Coinage and Stamp Factory of Spain, surrounded by police forces and with dozens of hostages in their power, to find out whether their suicide wager will lead to everything or nothing.",
+      "showId": 245842,
+      "title": "Wistoria: Wand and Sword",
+      "year": "2024",
+      "posterPath": "/5n0IZQA9MiXn5JBKZibtNhhFSAZ.jpg",
+      "backdropPath": "/7sGeLiMVrD0QyKWjhEbLWmZIj2w.jpg",
+      "overview": "In a world where magic reigns, Will Serfort can’t cast a spell. Though hardworking, Will’s classmates think less of him for it. However, he has a secret strength: his sword. Can Will defy expectations with muscle over magic and blade over wand? Find out in this epic sword-and-sorcery adventure!",
       "genres": [
-        "Crime",
-        "Drama"
+        "Animation",
+        "Action & Adventure",
+        "Sci-Fi & Fantasy"
       ],
       "networks": [
-        "Netflix",
-        "Antena 3"
+        "MBS",
+        "TBS",
+        "CBC",
+        "Tulip Television",
+        "SBC",
+        "BSN",
+        "tys",
+        "NBC",
+        "HBC",
+        "RKK",
+        "i-Television",
+        "SBS",
+        "IBC",
+        "BSS",
+        "MRO",
+        "OBS",
+        "TUF",
+        "RSK",
+        "TUY",
+        "tbc",
+        "RKB",
+        "KUTV",
+        "RBC",
+        "UTY",
+        "RCC",
+        "MRT",
+        "ATV",
+        "MBC"
       ],
-      "numberOfSeasons": 3,
-      "numberOfEpisodes": 41,
-      "lastUpdated": "2026-04-11T13:55:28.924Z",
+      "numberOfSeasons": 2,
+      "numberOfEpisodes": 13,
+      "lastUpdated": "2026-04-12T13:59:21.618Z",
       "content": {
-        "h1": "Where to watch Money Heist (2017)",
+        "h1": "Where to watch Wistoria: Wand and Sword (2024)",
         "paragraphs": [
-          "If you're looking for where to watch \"Money Heist\" (2017), start by checking the major streaming platforms available in your region.",
+          "If you're looking for where to watch \"Wistoria: Wand and Sword\" (2024), start by checking the major streaming platforms available in your region.",
           "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 3 season(s), 41 episode(s), genres: Crime, Drama.",
-          "To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who have a single characteristic: none of them has anything to lose. Five months of seclusion - memorizing every step, every detail, every probability - culminate in eleven days locked up in the National Coinage and Stamp Factory of Spain, surrounded by police forces and with dozens of hostages in their power, to find out whether their suicide wager will lead to everything or nothing.",
+          "Quick facts: 2 season(s), 13 episode(s), genres: Animation, Action & Adventure, Sci-Fi & Fantasy.",
+          "In a world where magic reigns, Will Serfort can’t cast a spell. Though hardworking, Will’s classmates think less of him for it. However, he has a secret strength: his sword. Can Will defy expectations with muscle over magic and blade over wand? Find out in this epic sword-and-sorcery adventure!",
           "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
         ],
         "bullets": [
-          "Search in-app for: \"Money Heist\"",
+          "Search in-app for: \"Wistoria: Wand and Sword\"",
           "Try both English + Spanish title variants",
           "Use subtitles + pause/replay for language learning"
         ]
       }
     },
     {
-      "slug": "money-heist-71446-cast",
+      "slug": "wistoria-wand-and-sword-245842-cast",
       "pageType": "cast",
-      "showId": 71446,
-      "title": "Money Heist",
-      "year": "2017",
-      "posterPath": "/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg",
-      "backdropPath": "/xGexTKCJDkl12dTW4YCBDXWb1AD.jpg",
-      "overview": "To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who have a single characteristic: none of them has anything to lose. Five months of seclusion - memorizing every step, every detail, every probability - culminate in eleven days locked up in the National Coinage and Stamp Factory of Spain, surrounded by police forces and with dozens of hostages in their power, to find out whether their suicide wager will lead to everything or nothing.",
-      "genres": [
-        "Crime",
-        "Drama"
-      ],
-      "networks": [
-        "Netflix",
-        "Antena 3"
-      ],
-      "numberOfSeasons": 3,
-      "numberOfEpisodes": 41,
-      "lastUpdated": "2026-04-11T13:55:28.924Z",
-      "content": {
-        "h1": "Money Heist (2017) cast & key characters",
-        "paragraphs": [
-          "This page covers the cast overview for \"Money Heist\" (2017) and how to explore actor credits.",
-          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 3 season(s), 41 episode(s), networks: Netflix, Antena 3.",
-          "To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who have a single characteristic: none of them has anything to lose. Five months of seclusion - memorizing every step, every detail, every probability - culminate in eleven days locked up in the National Coinage and Stamp Factory of Spain, surrounded by police forces and with dozens of hostages in their power, to find out whether their suicide wager will lead to everything or nothing.",
-          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
-        ],
-        "bullets": [
-          "Look up the show on TMDB or IMDb for verified cast",
-          "Check season-by-season credits (casts change)",
-          "Save actor names you like → discover similar shows"
-        ]
-      }
-    },
-    {
-      "slug": "valle-salvaje-242874-summary",
-      "pageType": "summary",
-      "showId": 242874,
-      "title": "Valle salvaje",
+      "showId": 245842,
+      "title": "Wistoria: Wand and Sword",
       "year": "2024",
-      "posterPath": "/qB356qujmLpMZrY4TobXE9Wtalm.jpg",
-      "backdropPath": "/oncTvFY9goRyWAQRdDh2FKQ5Zhs.jpg",
-      "overview": "1763. The life of Adriana, a brave and loyal woman, suffers an unexpected setback when she receives a devastating blow: her father has died, and, as a result of a secret pact, she must travel from the city of Madrid to Valle Salvaje, in northern Spain, to marry a stranger. A dark secret from her past follows her to the remote valley, home to her fiancé's family and her troubled aunt, Doña Victoria. There, her life will change forever. She will experience true love, betrayal, and danger as she tries to uncover the truth behind her father's death.",
+      "posterPath": "/5n0IZQA9MiXn5JBKZibtNhhFSAZ.jpg",
+      "backdropPath": "/7sGeLiMVrD0QyKWjhEbLWmZIj2w.jpg",
+      "overview": "In a world where magic reigns, Will Serfort can’t cast a spell. Though hardworking, Will’s classmates think less of him for it. However, he has a secret strength: his sword. Can Will defy expectations with muscle over magic and blade over wand? Find out in this epic sword-and-sorcery adventure!",
       "genres": [
-        "Drama",
-        "Soap"
+        "Animation",
+        "Action & Adventure",
+        "Sci-Fi & Fantasy"
       ],
       "networks": [
-        "La 1"
-      ],
-      "numberOfSeasons": 3,
-      "numberOfEpisodes": 383,
-      "lastUpdated": "2026-04-11T13:55:29.050Z",
-      "content": {
-        "h1": "Valle salvaje (2024) overview",
-        "paragraphs": [
-          "1763. The life of Adriana, a brave and loyal woman, suffers an unexpected setback when she receives a devastating blow: her father has died, and, as a result of a secret pact, she must travel from the city of Madrid to Valle Salvaje, in northern Spain, to marry a stranger. A dark secret from her past follows her to the remote valley, home to her fiancé's family and her troubled aunt, Doña Victoria. There, her life will change forever. She will experience true love, betrayal, and danger as she tries to uncover the truth behind her father's death.",
-          "Genres: Drama, Soap. Networks: La 1.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Valle salvaje\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
-          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
-        ],
-        "bullets": [
-          "Best for: subtitle-based language practice",
-          "Rewatch strategy beats binge-watching",
-          "Save unknown words → review after the episode"
-        ]
-      }
-    },
-    {
-      "slug": "valle-salvaje-242874-watch",
-      "pageType": "watch",
-      "showId": 242874,
-      "title": "Valle salvaje",
-      "year": "2024",
-      "posterPath": "/qB356qujmLpMZrY4TobXE9Wtalm.jpg",
-      "backdropPath": "/oncTvFY9goRyWAQRdDh2FKQ5Zhs.jpg",
-      "overview": "1763. The life of Adriana, a brave and loyal woman, suffers an unexpected setback when she receives a devastating blow: her father has died, and, as a result of a secret pact, she must travel from the city of Madrid to Valle Salvaje, in northern Spain, to marry a stranger. A dark secret from her past follows her to the remote valley, home to her fiancé's family and her troubled aunt, Doña Victoria. There, her life will change forever. She will experience true love, betrayal, and danger as she tries to uncover the truth behind her father's death.",
-      "genres": [
-        "Drama",
-        "Soap"
-      ],
-      "networks": [
-        "La 1"
-      ],
-      "numberOfSeasons": 3,
-      "numberOfEpisodes": 383,
-      "lastUpdated": "2026-04-11T13:55:29.050Z",
-      "content": {
-        "h1": "Where to watch Valle salvaje (2024)",
-        "paragraphs": [
-          "If you're looking for where to watch \"Valle salvaje\" (2024), start by checking the major streaming platforms available in your region.",
-          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 3 season(s), 383 episode(s), genres: Drama, Soap.",
-          "1763. The life of Adriana, a brave and loyal woman, suffers an unexpected setback when she receives a devastating blow: her father has died, and, as a result of a secret pact, she must travel from the city of Madrid to Valle Salvaje, in northern Spain, to marry a stranger. A dark secret from her past follows her to the remote valley, home to her fiancé's family and her troubled aunt, Doña Victoria. There, her life will change forever. She will experience true love, betrayal, and danger as she tries to uncover the truth behind her father's death.",
-          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
-        ],
-        "bullets": [
-          "Search in-app for: \"Valle salvaje\"",
-          "Try both English + Spanish title variants",
-          "Use subtitles + pause/replay for language learning"
-        ]
-      }
-    },
-    {
-      "slug": "valle-salvaje-242874-cast",
-      "pageType": "cast",
-      "showId": 242874,
-      "title": "Valle salvaje",
-      "year": "2024",
-      "posterPath": "/qB356qujmLpMZrY4TobXE9Wtalm.jpg",
-      "backdropPath": "/oncTvFY9goRyWAQRdDh2FKQ5Zhs.jpg",
-      "overview": "1763. The life of Adriana, a brave and loyal woman, suffers an unexpected setback when she receives a devastating blow: her father has died, and, as a result of a secret pact, she must travel from the city of Madrid to Valle Salvaje, in northern Spain, to marry a stranger. A dark secret from her past follows her to the remote valley, home to her fiancé's family and her troubled aunt, Doña Victoria. There, her life will change forever. She will experience true love, betrayal, and danger as she tries to uncover the truth behind her father's death.",
-      "genres": [
-        "Drama",
-        "Soap"
-      ],
-      "networks": [
-        "La 1"
-      ],
-      "numberOfSeasons": 3,
-      "numberOfEpisodes": 383,
-      "lastUpdated": "2026-04-11T13:55:29.050Z",
-      "content": {
-        "h1": "Valle salvaje (2024) cast & key characters",
-        "paragraphs": [
-          "This page covers the cast overview for \"Valle salvaje\" (2024) and how to explore actor credits.",
-          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 3 season(s), 383 episode(s), networks: La 1.",
-          "1763. The life of Adriana, a brave and loyal woman, suffers an unexpected setback when she receives a devastating blow: her father has died, and, as a result of a secret pact, she must travel from the city of Madrid to Valle Salvaje, in northern Spain, to marry a stranger. A dark secret from her past follows her to the remote valley, home to her fiancé's family and her troubled aunt, Doña Victoria. There, her life will change forever. She will experience true love, betrayal, and danger as she tries to uncover the truth behind her father's death.",
-          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
-        ],
-        "bullets": [
-          "Look up the show on TMDB or IMDb for verified cast",
-          "Check season-by-season credits (casts change)",
-          "Save actor names you like → discover similar shows"
-        ]
-      }
-    },
-    {
-      "slug": "a-que-estas-esperando-242865-summary",
-      "pageType": "summary",
-      "showId": 242865,
-      "title": "¿A qué estás esperando?",
-      "year": "2024",
-      "posterPath": "/mj1oN9iRqqsX5PpVVCWsMPA2YP.jpg",
-      "backdropPath": "/kyaGLfYtzt8FdiDo0k3ostfkH8S.jpg",
-      "overview": "",
-      "genres": [
-        "Comedy"
-      ],
-      "networks": [
-        "Atresplayer"
+        "MBS",
+        "TBS",
+        "CBC",
+        "Tulip Television",
+        "SBC",
+        "BSN",
+        "tys",
+        "NBC",
+        "HBC",
+        "RKK",
+        "i-Television",
+        "SBS",
+        "IBC",
+        "BSS",
+        "MRO",
+        "OBS",
+        "TUF",
+        "RSK",
+        "TUY",
+        "tbc",
+        "RKB",
+        "KUTV",
+        "RBC",
+        "UTY",
+        "RCC",
+        "MRT",
+        "ATV",
+        "MBC"
       ],
       "numberOfSeasons": 2,
-      "numberOfEpisodes": 9,
-      "lastUpdated": "2026-04-11T13:55:29.138Z",
+      "numberOfEpisodes": 13,
+      "lastUpdated": "2026-04-12T13:59:21.618Z",
       "content": {
-        "h1": "¿A qué estás esperando? (2024) overview",
+        "h1": "Wistoria: Wand and Sword (2024) cast & key characters",
         "paragraphs": [
-          "This is a Spanish-language TV series titled \"¿A qué estás esperando?\".",
-          "Genres: Comedy. Networks: Atresplayer.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"¿A qué estás esperando?\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
-          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
-        ],
-        "bullets": [
-          "Best for: subtitle-based language practice",
-          "Rewatch strategy beats binge-watching",
-          "Save unknown words → review after the episode"
-        ]
-      }
-    },
-    {
-      "slug": "a-que-estas-esperando-242865-watch",
-      "pageType": "watch",
-      "showId": 242865,
-      "title": "¿A qué estás esperando?",
-      "year": "2024",
-      "posterPath": "/mj1oN9iRqqsX5PpVVCWsMPA2YP.jpg",
-      "backdropPath": "/kyaGLfYtzt8FdiDo0k3ostfkH8S.jpg",
-      "overview": "",
-      "genres": [
-        "Comedy"
-      ],
-      "networks": [
-        "Atresplayer"
-      ],
-      "numberOfSeasons": 2,
-      "numberOfEpisodes": 9,
-      "lastUpdated": "2026-04-11T13:55:29.138Z",
-      "content": {
-        "h1": "Where to watch ¿A qué estás esperando? (2024)",
-        "paragraphs": [
-          "If you're looking for where to watch \"¿A qué estás esperando?\" (2024), start by checking the major streaming platforms available in your region.",
-          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 2 season(s), 9 episode(s), genres: Comedy.",
-          "This is a Spanish-language TV series titled \"¿A qué estás esperando?\".",
-          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
-        ],
-        "bullets": [
-          "Search in-app for: \"¿A qué estás esperando?\"",
-          "Try both English + Spanish title variants",
-          "Use subtitles + pause/replay for language learning"
-        ]
-      }
-    },
-    {
-      "slug": "a-que-estas-esperando-242865-cast",
-      "pageType": "cast",
-      "showId": 242865,
-      "title": "¿A qué estás esperando?",
-      "year": "2024",
-      "posterPath": "/mj1oN9iRqqsX5PpVVCWsMPA2YP.jpg",
-      "backdropPath": "/kyaGLfYtzt8FdiDo0k3ostfkH8S.jpg",
-      "overview": "",
-      "genres": [
-        "Comedy"
-      ],
-      "networks": [
-        "Atresplayer"
-      ],
-      "numberOfSeasons": 2,
-      "numberOfEpisodes": 9,
-      "lastUpdated": "2026-04-11T13:55:29.138Z",
-      "content": {
-        "h1": "¿A qué estás esperando? (2024) cast & key characters",
-        "paragraphs": [
-          "This page covers the cast overview for \"¿A qué estás esperando?\" (2024) and how to explore actor credits.",
+          "This page covers the cast overview for \"Wistoria: Wand and Sword\" (2024) and how to explore actor credits.",
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 2 season(s), 9 episode(s), networks: Atresplayer.",
-          "This is a Spanish-language TV series titled \"¿A qué estás esperando?\".",
+          "Quick facts: 2 season(s), 13 episode(s), networks: MBS, TBS, CBC, Tulip Television, SBC, BSN, tys, NBC, HBC, RKK, i-Television, SBS, IBC, BSS, MRO, OBS, TUF, RSK, TUY, tbc, RKB, KUTV, RBC, UTY, RCC, MRT, ATV, MBC.",
+          "In a world where magic reigns, Will Serfort can’t cast a spell. Though hardworking, Will’s classmates think less of him for it. However, he has a secret strength: his sword. Can Will defy expectations with muscle over magic and blade over wand? Find out in this epic sword-and-sorcery adventure!",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -3556,7 +3149,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 544,
-      "lastUpdated": "2026-04-11T13:55:29.222Z",
+      "lastUpdated": "2026-04-12T13:59:21.689Z",
       "content": {
         "h1": "Dreams of Freedom (2024) overview",
         "paragraphs": [
@@ -3591,7 +3184,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 544,
-      "lastUpdated": "2026-04-11T13:55:29.222Z",
+      "lastUpdated": "2026-04-12T13:59:21.689Z",
       "content": {
         "h1": "Where to watch Dreams of Freedom (2024)",
         "paragraphs": [
@@ -3627,7 +3220,7 @@
       ],
       "numberOfSeasons": 3,
       "numberOfEpisodes": 544,
-      "lastUpdated": "2026-04-11T13:55:29.222Z",
+      "lastUpdated": "2026-04-12T13:59:21.689Z",
       "content": {
         "h1": "Dreams of Freedom (2024) cast & key characters",
         "paragraphs": [
@@ -3635,6 +3228,422 @@
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
           "Quick facts: 3 season(s), 544 episode(s), networks: Antena 3, Atresplayer.",
           "Begoña Montes is a woman who lives trapped in a toxic marriage and seeks the long-awaited freedom in Spain in 1958.",
+          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
+        ],
+        "bullets": [
+          "Look up the show on TMDB or IMDb for verified cast",
+          "Check season-by-season credits (casts change)",
+          "Save actor names you like → discover similar shows"
+        ]
+      }
+    },
+    {
+      "slug": "la-rosa-de-guadalupe-30826-summary",
+      "pageType": "summary",
+      "showId": 30826,
+      "title": "La rosa de Guadalupe",
+      "year": "2008",
+      "posterPath": "/9RaNva340arNWeZn2uKpKePkg91.jpg",
+      "backdropPath": "/ho48HnguL11niYrqMETtP8A6SWY.jpg",
+      "overview": "Stories about people who get into problems who use the help of Virgin Mary and where a rose appears and their problems are solved.",
+      "genres": [
+        "Drama",
+        "Soap"
+      ],
+      "networks": [
+        "Las Estrellas"
+      ],
+      "numberOfSeasons": 15,
+      "numberOfEpisodes": 872,
+      "lastUpdated": "2026-04-12T13:59:21.723Z",
+      "content": {
+        "h1": "La rosa de Guadalupe (2008) overview",
+        "paragraphs": [
+          "Stories about people who get into problems who use the help of Virgin Mary and where a rose appears and their problems are solved.",
+          "Genres: Drama, Soap. Networks: Las Estrellas.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"La rosa de Guadalupe\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
+        ],
+        "bullets": [
+          "Best for: subtitle-based language practice",
+          "Rewatch strategy beats binge-watching",
+          "Save unknown words → review after the episode"
+        ]
+      }
+    },
+    {
+      "slug": "la-rosa-de-guadalupe-30826-watch",
+      "pageType": "watch",
+      "showId": 30826,
+      "title": "La rosa de Guadalupe",
+      "year": "2008",
+      "posterPath": "/9RaNva340arNWeZn2uKpKePkg91.jpg",
+      "backdropPath": "/ho48HnguL11niYrqMETtP8A6SWY.jpg",
+      "overview": "Stories about people who get into problems who use the help of Virgin Mary and where a rose appears and their problems are solved.",
+      "genres": [
+        "Drama",
+        "Soap"
+      ],
+      "networks": [
+        "Las Estrellas"
+      ],
+      "numberOfSeasons": 15,
+      "numberOfEpisodes": 872,
+      "lastUpdated": "2026-04-12T13:59:21.723Z",
+      "content": {
+        "h1": "Where to watch La rosa de Guadalupe (2008)",
+        "paragraphs": [
+          "If you're looking for where to watch \"La rosa de Guadalupe\" (2008), start by checking the major streaming platforms available in your region.",
+          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
+          "Quick facts: 15 season(s), 872 episode(s), genres: Drama, Soap.",
+          "Stories about people who get into problems who use the help of Virgin Mary and where a rose appears and their problems are solved.",
+          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
+        ],
+        "bullets": [
+          "Search in-app for: \"La rosa de Guadalupe\"",
+          "Try both English + Spanish title variants",
+          "Use subtitles + pause/replay for language learning"
+        ]
+      }
+    },
+    {
+      "slug": "la-rosa-de-guadalupe-30826-cast",
+      "pageType": "cast",
+      "showId": 30826,
+      "title": "La rosa de Guadalupe",
+      "year": "2008",
+      "posterPath": "/9RaNva340arNWeZn2uKpKePkg91.jpg",
+      "backdropPath": "/ho48HnguL11niYrqMETtP8A6SWY.jpg",
+      "overview": "Stories about people who get into problems who use the help of Virgin Mary and where a rose appears and their problems are solved.",
+      "genres": [
+        "Drama",
+        "Soap"
+      ],
+      "networks": [
+        "Las Estrellas"
+      ],
+      "numberOfSeasons": 15,
+      "numberOfEpisodes": 872,
+      "lastUpdated": "2026-04-12T13:59:21.723Z",
+      "content": {
+        "h1": "La rosa de Guadalupe (2008) cast & key characters",
+        "paragraphs": [
+          "This page covers the cast overview for \"La rosa de Guadalupe\" (2008) and how to explore actor credits.",
+          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
+          "Quick facts: 15 season(s), 872 episode(s), networks: Las Estrellas.",
+          "Stories about people who get into problems who use the help of Virgin Mary and where a rose appears and their problems are solved.",
+          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
+        ],
+        "bullets": [
+          "Look up the show on TMDB or IMDb for verified cast",
+          "Check season-by-season credits (casts change)",
+          "Save actor names you like → discover similar shows"
+        ]
+      }
+    },
+    {
+      "slug": "a-que-estas-esperando-242865-summary",
+      "pageType": "summary",
+      "showId": 242865,
+      "title": "¿A qué estás esperando?",
+      "year": "2024",
+      "posterPath": "/mj1oN9iRqqsX5PpVVCWsMPA2YP.jpg",
+      "backdropPath": "/kyaGLfYtzt8FdiDo0k3ostfkH8S.jpg",
+      "overview": "",
+      "genres": [
+        "Comedy"
+      ],
+      "networks": [
+        "Atresplayer"
+      ],
+      "numberOfSeasons": 2,
+      "numberOfEpisodes": 9,
+      "lastUpdated": "2026-04-12T13:59:21.766Z",
+      "content": {
+        "h1": "¿A qué estás esperando? (2024) overview",
+        "paragraphs": [
+          "This is a Spanish-language TV series titled \"¿A qué estás esperando?\".",
+          "Genres: Comedy. Networks: Atresplayer.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"¿A qué estás esperando?\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
+        ],
+        "bullets": [
+          "Best for: subtitle-based language practice",
+          "Rewatch strategy beats binge-watching",
+          "Save unknown words → review after the episode"
+        ]
+      }
+    },
+    {
+      "slug": "a-que-estas-esperando-242865-watch",
+      "pageType": "watch",
+      "showId": 242865,
+      "title": "¿A qué estás esperando?",
+      "year": "2024",
+      "posterPath": "/mj1oN9iRqqsX5PpVVCWsMPA2YP.jpg",
+      "backdropPath": "/kyaGLfYtzt8FdiDo0k3ostfkH8S.jpg",
+      "overview": "",
+      "genres": [
+        "Comedy"
+      ],
+      "networks": [
+        "Atresplayer"
+      ],
+      "numberOfSeasons": 2,
+      "numberOfEpisodes": 9,
+      "lastUpdated": "2026-04-12T13:59:21.766Z",
+      "content": {
+        "h1": "Where to watch ¿A qué estás esperando? (2024)",
+        "paragraphs": [
+          "If you're looking for where to watch \"¿A qué estás esperando?\" (2024), start by checking the major streaming platforms available in your region.",
+          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
+          "Quick facts: 2 season(s), 9 episode(s), genres: Comedy.",
+          "This is a Spanish-language TV series titled \"¿A qué estás esperando?\".",
+          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
+        ],
+        "bullets": [
+          "Search in-app for: \"¿A qué estás esperando?\"",
+          "Try both English + Spanish title variants",
+          "Use subtitles + pause/replay for language learning"
+        ]
+      }
+    },
+    {
+      "slug": "a-que-estas-esperando-242865-cast",
+      "pageType": "cast",
+      "showId": 242865,
+      "title": "¿A qué estás esperando?",
+      "year": "2024",
+      "posterPath": "/mj1oN9iRqqsX5PpVVCWsMPA2YP.jpg",
+      "backdropPath": "/kyaGLfYtzt8FdiDo0k3ostfkH8S.jpg",
+      "overview": "",
+      "genres": [
+        "Comedy"
+      ],
+      "networks": [
+        "Atresplayer"
+      ],
+      "numberOfSeasons": 2,
+      "numberOfEpisodes": 9,
+      "lastUpdated": "2026-04-12T13:59:21.766Z",
+      "content": {
+        "h1": "¿A qué estás esperando? (2024) cast & key characters",
+        "paragraphs": [
+          "This page covers the cast overview for \"¿A qué estás esperando?\" (2024) and how to explore actor credits.",
+          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
+          "Quick facts: 2 season(s), 9 episode(s), networks: Atresplayer.",
+          "This is a Spanish-language TV series titled \"¿A qué estás esperando?\".",
+          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
+        ],
+        "bullets": [
+          "Look up the show on TMDB or IMDb for verified cast",
+          "Check season-by-season credits (casts change)",
+          "Save actor names you like → discover similar shows"
+        ]
+      }
+    },
+    {
+      "slug": "la-resistencia-76949-summary",
+      "pageType": "summary",
+      "showId": 76949,
+      "title": "La resistencia",
+      "year": "2018",
+      "posterPath": "/yFwkWTDUjLN0LQmidsUJWEViCmo.jpg",
+      "backdropPath": "/aG9lB7wVTeStYZ8eCQN0t7VVmW8.jpg",
+      "overview": "",
+      "genres": [
+        "Talk",
+        "Comedy"
+      ],
+      "networks": [
+        "Movistar Plus+"
+      ],
+      "numberOfSeasons": 7,
+      "numberOfEpisodes": 1022,
+      "lastUpdated": "2026-04-12T13:59:21.834Z",
+      "content": {
+        "h1": "La resistencia (2018) overview",
+        "paragraphs": [
+          "This is a Spanish-language TV series titled \"La resistencia\".",
+          "Genres: Talk, Comedy. Networks: Movistar Plus+.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"La resistencia\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
+        ],
+        "bullets": [
+          "Best for: subtitle-based language practice",
+          "Rewatch strategy beats binge-watching",
+          "Save unknown words → review after the episode"
+        ]
+      }
+    },
+    {
+      "slug": "la-resistencia-76949-watch",
+      "pageType": "watch",
+      "showId": 76949,
+      "title": "La resistencia",
+      "year": "2018",
+      "posterPath": "/yFwkWTDUjLN0LQmidsUJWEViCmo.jpg",
+      "backdropPath": "/aG9lB7wVTeStYZ8eCQN0t7VVmW8.jpg",
+      "overview": "",
+      "genres": [
+        "Talk",
+        "Comedy"
+      ],
+      "networks": [
+        "Movistar Plus+"
+      ],
+      "numberOfSeasons": 7,
+      "numberOfEpisodes": 1022,
+      "lastUpdated": "2026-04-12T13:59:21.834Z",
+      "content": {
+        "h1": "Where to watch La resistencia (2018)",
+        "paragraphs": [
+          "If you're looking for where to watch \"La resistencia\" (2018), start by checking the major streaming platforms available in your region.",
+          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
+          "Quick facts: 7 season(s), 1022 episode(s), genres: Talk, Comedy.",
+          "This is a Spanish-language TV series titled \"La resistencia\".",
+          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
+        ],
+        "bullets": [
+          "Search in-app for: \"La resistencia\"",
+          "Try both English + Spanish title variants",
+          "Use subtitles + pause/replay for language learning"
+        ]
+      }
+    },
+    {
+      "slug": "la-resistencia-76949-cast",
+      "pageType": "cast",
+      "showId": 76949,
+      "title": "La resistencia",
+      "year": "2018",
+      "posterPath": "/yFwkWTDUjLN0LQmidsUJWEViCmo.jpg",
+      "backdropPath": "/aG9lB7wVTeStYZ8eCQN0t7VVmW8.jpg",
+      "overview": "",
+      "genres": [
+        "Talk",
+        "Comedy"
+      ],
+      "networks": [
+        "Movistar Plus+"
+      ],
+      "numberOfSeasons": 7,
+      "numberOfEpisodes": 1022,
+      "lastUpdated": "2026-04-12T13:59:21.834Z",
+      "content": {
+        "h1": "La resistencia (2018) cast & key characters",
+        "paragraphs": [
+          "This page covers the cast overview for \"La resistencia\" (2018) and how to explore actor credits.",
+          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
+          "Quick facts: 7 season(s), 1022 episode(s), networks: Movistar Plus+.",
+          "This is a Spanish-language TV series titled \"La resistencia\".",
+          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
+        ],
+        "bullets": [
+          "Look up the show on TMDB or IMDb for verified cast",
+          "Check season-by-season credits (casts change)",
+          "Save actor names you like → discover similar shows"
+        ]
+      }
+    },
+    {
+      "slug": "money-heist-71446-summary",
+      "pageType": "summary",
+      "showId": 71446,
+      "title": "Money Heist",
+      "year": "2017",
+      "posterPath": "/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg",
+      "backdropPath": "/xGexTKCJDkl12dTW4YCBDXWb1AD.jpg",
+      "overview": "To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who have a single characteristic: none of them has anything to lose. Five months of seclusion - memorizing every step, every detail, every probability - culminate in eleven days locked up in the National Coinage and Stamp Factory of Spain, surrounded by police forces and with dozens of hostages in their power, to find out whether their suicide wager will lead to everything or nothing.",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "networks": [
+        "Netflix",
+        "Antena 3"
+      ],
+      "numberOfSeasons": 3,
+      "numberOfEpisodes": 41,
+      "lastUpdated": "2026-04-12T13:59:21.868Z",
+      "content": {
+        "h1": "Money Heist (2017) overview",
+        "paragraphs": [
+          "To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who have a single characteristic: none of them has anything to lose. Five months of seclusion - memorizing every step, every detail, every probability - culminate in eleven days locked up in the National Coinage and Stamp Factory of Spain, surrounded by police forces and with dozens of hostages in their power, to find out whether their suicide wager will lead to everything or nothing.",
+          "Genres: Crime, Drama. Networks: Netflix, Antena 3.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Money Heist\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
+        ],
+        "bullets": [
+          "Best for: subtitle-based language practice",
+          "Rewatch strategy beats binge-watching",
+          "Save unknown words → review after the episode"
+        ]
+      }
+    },
+    {
+      "slug": "money-heist-71446-watch",
+      "pageType": "watch",
+      "showId": 71446,
+      "title": "Money Heist",
+      "year": "2017",
+      "posterPath": "/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg",
+      "backdropPath": "/xGexTKCJDkl12dTW4YCBDXWb1AD.jpg",
+      "overview": "To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who have a single characteristic: none of them has anything to lose. Five months of seclusion - memorizing every step, every detail, every probability - culminate in eleven days locked up in the National Coinage and Stamp Factory of Spain, surrounded by police forces and with dozens of hostages in their power, to find out whether their suicide wager will lead to everything or nothing.",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "networks": [
+        "Netflix",
+        "Antena 3"
+      ],
+      "numberOfSeasons": 3,
+      "numberOfEpisodes": 41,
+      "lastUpdated": "2026-04-12T13:59:21.868Z",
+      "content": {
+        "h1": "Where to watch Money Heist (2017)",
+        "paragraphs": [
+          "If you're looking for where to watch \"Money Heist\" (2017), start by checking the major streaming platforms available in your region.",
+          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
+          "Quick facts: 3 season(s), 41 episode(s), genres: Crime, Drama.",
+          "To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who have a single characteristic: none of them has anything to lose. Five months of seclusion - memorizing every step, every detail, every probability - culminate in eleven days locked up in the National Coinage and Stamp Factory of Spain, surrounded by police forces and with dozens of hostages in their power, to find out whether their suicide wager will lead to everything or nothing.",
+          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
+        ],
+        "bullets": [
+          "Search in-app for: \"Money Heist\"",
+          "Try both English + Spanish title variants",
+          "Use subtitles + pause/replay for language learning"
+        ]
+      }
+    },
+    {
+      "slug": "money-heist-71446-cast",
+      "pageType": "cast",
+      "showId": 71446,
+      "title": "Money Heist",
+      "year": "2017",
+      "posterPath": "/reEMJA1uzscCbkpeRJeTT2bjqUp.jpg",
+      "backdropPath": "/xGexTKCJDkl12dTW4YCBDXWb1AD.jpg",
+      "overview": "To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who have a single characteristic: none of them has anything to lose. Five months of seclusion - memorizing every step, every detail, every probability - culminate in eleven days locked up in the National Coinage and Stamp Factory of Spain, surrounded by police forces and with dozens of hostages in their power, to find out whether their suicide wager will lead to everything or nothing.",
+      "genres": [
+        "Crime",
+        "Drama"
+      ],
+      "networks": [
+        "Netflix",
+        "Antena 3"
+      ],
+      "numberOfSeasons": 3,
+      "numberOfEpisodes": 41,
+      "lastUpdated": "2026-04-12T13:59:21.868Z",
+      "content": {
+        "h1": "Money Heist (2017) cast & key characters",
+        "paragraphs": [
+          "This page covers the cast overview for \"Money Heist\" (2017) and how to explore actor credits.",
+          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
+          "Quick facts: 3 season(s), 41 episode(s), networks: Netflix, Antena 3.",
+          "To carry out the biggest heist in history, a mysterious man called The Professor recruits a band of eight robbers who have a single characteristic: none of them has anything to lose. Five months of seclusion - memorizing every step, every detail, every probability - culminate in eleven days locked up in the National Coinage and Stamp Factory of Spain, surrounded by police forces and with dozens of hostages in their power, to find out whether their suicide wager will lead to everything or nothing.",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -3664,7 +3673,7 @@
       ],
       "numberOfSeasons": 4,
       "numberOfEpisodes": 340,
-      "lastUpdated": "2026-04-11T13:55:29.350Z",
+      "lastUpdated": "2026-04-12T13:59:21.902Z",
       "content": {
         "h1": "Sin senos sí hay paraíso (2016) overview",
         "paragraphs": [
@@ -3700,7 +3709,7 @@
       ],
       "numberOfSeasons": 4,
       "numberOfEpisodes": 340,
-      "lastUpdated": "2026-04-11T13:55:29.350Z",
+      "lastUpdated": "2026-04-12T13:59:21.902Z",
       "content": {
         "h1": "Where to watch Sin senos sí hay paraíso (2016)",
         "paragraphs": [
@@ -3737,7 +3746,7 @@
       ],
       "numberOfSeasons": 4,
       "numberOfEpisodes": 340,
-      "lastUpdated": "2026-04-11T13:55:29.350Z",
+      "lastUpdated": "2026-04-12T13:59:21.902Z",
       "content": {
         "h1": "Sin senos sí hay paraíso (2016) cast & key characters",
         "paragraphs": [
@@ -3745,6 +3754,217 @@
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
           "Quick facts: 4 season(s), 340 episode(s), networks: Telemundo.",
           "A young woman born in a mafia-controlled town seeks revenge on those who wrongfully harmed and imprisoned her family.",
+          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
+        ],
+        "bullets": [
+          "Look up the show on TMDB or IMDb for verified cast",
+          "Check season-by-season credits (casts change)",
+          "Save actor names you like → discover similar shows"
+        ]
+      }
+    },
+    {
+      "slug": "valle-salvaje-242874-summary",
+      "pageType": "summary",
+      "showId": 242874,
+      "title": "Valle salvaje",
+      "year": "2024",
+      "posterPath": "/qB356qujmLpMZrY4TobXE9Wtalm.jpg",
+      "backdropPath": "/oncTvFY9goRyWAQRdDh2FKQ5Zhs.jpg",
+      "overview": "1763. The life of Adriana, a brave and loyal woman, suffers an unexpected setback when she receives a devastating blow: her father has died, and, as a result of a secret pact, she must travel from the city of Madrid to Valle Salvaje, in northern Spain, to marry a stranger. A dark secret from her past follows her to the remote valley, home to her fiancé's family and her troubled aunt, Doña Victoria. There, her life will change forever. She will experience true love, betrayal, and danger as she tries to uncover the truth behind her father's death.",
+      "genres": [
+        "Drama",
+        "Soap"
+      ],
+      "networks": [
+        "La 1"
+      ],
+      "numberOfSeasons": 3,
+      "numberOfEpisodes": 383,
+      "lastUpdated": "2026-04-12T13:59:21.939Z",
+      "content": {
+        "h1": "Valle salvaje (2024) overview",
+        "paragraphs": [
+          "1763. The life of Adriana, a brave and loyal woman, suffers an unexpected setback when she receives a devastating blow: her father has died, and, as a result of a secret pact, she must travel from the city of Madrid to Valle Salvaje, in northern Spain, to marry a stranger. A dark secret from her past follows her to the remote valley, home to her fiancé's family and her troubled aunt, Doña Victoria. There, her life will change forever. She will experience true love, betrayal, and danger as she tries to uncover the truth behind her father's death.",
+          "Genres: Drama, Soap. Networks: La 1.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Valle salvaje\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
+        ],
+        "bullets": [
+          "Best for: subtitle-based language practice",
+          "Rewatch strategy beats binge-watching",
+          "Save unknown words → review after the episode"
+        ]
+      }
+    },
+    {
+      "slug": "valle-salvaje-242874-watch",
+      "pageType": "watch",
+      "showId": 242874,
+      "title": "Valle salvaje",
+      "year": "2024",
+      "posterPath": "/qB356qujmLpMZrY4TobXE9Wtalm.jpg",
+      "backdropPath": "/oncTvFY9goRyWAQRdDh2FKQ5Zhs.jpg",
+      "overview": "1763. The life of Adriana, a brave and loyal woman, suffers an unexpected setback when she receives a devastating blow: her father has died, and, as a result of a secret pact, she must travel from the city of Madrid to Valle Salvaje, in northern Spain, to marry a stranger. A dark secret from her past follows her to the remote valley, home to her fiancé's family and her troubled aunt, Doña Victoria. There, her life will change forever. She will experience true love, betrayal, and danger as she tries to uncover the truth behind her father's death.",
+      "genres": [
+        "Drama",
+        "Soap"
+      ],
+      "networks": [
+        "La 1"
+      ],
+      "numberOfSeasons": 3,
+      "numberOfEpisodes": 383,
+      "lastUpdated": "2026-04-12T13:59:21.939Z",
+      "content": {
+        "h1": "Where to watch Valle salvaje (2024)",
+        "paragraphs": [
+          "If you're looking for where to watch \"Valle salvaje\" (2024), start by checking the major streaming platforms available in your region.",
+          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
+          "Quick facts: 3 season(s), 383 episode(s), genres: Drama, Soap.",
+          "1763. The life of Adriana, a brave and loyal woman, suffers an unexpected setback when she receives a devastating blow: her father has died, and, as a result of a secret pact, she must travel from the city of Madrid to Valle Salvaje, in northern Spain, to marry a stranger. A dark secret from her past follows her to the remote valley, home to her fiancé's family and her troubled aunt, Doña Victoria. There, her life will change forever. She will experience true love, betrayal, and danger as she tries to uncover the truth behind her father's death.",
+          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
+        ],
+        "bullets": [
+          "Search in-app for: \"Valle salvaje\"",
+          "Try both English + Spanish title variants",
+          "Use subtitles + pause/replay for language learning"
+        ]
+      }
+    },
+    {
+      "slug": "valle-salvaje-242874-cast",
+      "pageType": "cast",
+      "showId": 242874,
+      "title": "Valle salvaje",
+      "year": "2024",
+      "posterPath": "/qB356qujmLpMZrY4TobXE9Wtalm.jpg",
+      "backdropPath": "/oncTvFY9goRyWAQRdDh2FKQ5Zhs.jpg",
+      "overview": "1763. The life of Adriana, a brave and loyal woman, suffers an unexpected setback when she receives a devastating blow: her father has died, and, as a result of a secret pact, she must travel from the city of Madrid to Valle Salvaje, in northern Spain, to marry a stranger. A dark secret from her past follows her to the remote valley, home to her fiancé's family and her troubled aunt, Doña Victoria. There, her life will change forever. She will experience true love, betrayal, and danger as she tries to uncover the truth behind her father's death.",
+      "genres": [
+        "Drama",
+        "Soap"
+      ],
+      "networks": [
+        "La 1"
+      ],
+      "numberOfSeasons": 3,
+      "numberOfEpisodes": 383,
+      "lastUpdated": "2026-04-12T13:59:21.939Z",
+      "content": {
+        "h1": "Valle salvaje (2024) cast & key characters",
+        "paragraphs": [
+          "This page covers the cast overview for \"Valle salvaje\" (2024) and how to explore actor credits.",
+          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
+          "Quick facts: 3 season(s), 383 episode(s), networks: La 1.",
+          "1763. The life of Adriana, a brave and loyal woman, suffers an unexpected setback when she receives a devastating blow: her father has died, and, as a result of a secret pact, she must travel from the city of Madrid to Valle Salvaje, in northern Spain, to marry a stranger. A dark secret from her past follows her to the remote valley, home to her fiancé's family and her troubled aunt, Doña Victoria. There, her life will change forever. She will experience true love, betrayal, and danger as she tries to uncover the truth behind her father's death.",
+          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
+        ],
+        "bullets": [
+          "Look up the show on TMDB or IMDb for verified cast",
+          "Check season-by-season credits (casts change)",
+          "Save actor names you like → discover similar shows"
+        ]
+      }
+    },
+    {
+      "slug": "el-chavo-del-ocho-47-summary",
+      "pageType": "summary",
+      "showId": 47,
+      "title": "El Chavo del Ocho",
+      "year": "1973",
+      "posterPath": "/1TdBpVOASafzfWlnecwW17UL6a5.jpg",
+      "backdropPath": "/6zzyWTu3p2Diztotbnb0kf128uo.jpg",
+      "overview": "The mishaps of Chavo, an 8-year-old orphan boy who lives in a village. Together with Quico, Chilindrina, Ñoño and La Popis, Chavo experiences a series of humorous entanglements.",
+      "genres": [
+        "Comedy",
+        "Family",
+        "Drama"
+      ],
+      "networks": [
+        "Las Estrellas"
+      ],
+      "numberOfSeasons": 7,
+      "numberOfEpisodes": 314,
+      "lastUpdated": "2026-04-12T13:59:22.011Z",
+      "content": {
+        "h1": "El Chavo del Ocho (1973) overview",
+        "paragraphs": [
+          "The mishaps of Chavo, an 8-year-old orphan boy who lives in a village. Together with Quico, Chilindrina, Ñoño and La Popis, Chavo experiences a series of humorous entanglements.",
+          "Genres: Comedy, Family, Drama. Networks: Las Estrellas.",
+          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"El Chavo del Ocho\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
+          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
+        ],
+        "bullets": [
+          "Best for: subtitle-based language practice",
+          "Rewatch strategy beats binge-watching",
+          "Save unknown words → review after the episode"
+        ]
+      }
+    },
+    {
+      "slug": "el-chavo-del-ocho-47-watch",
+      "pageType": "watch",
+      "showId": 47,
+      "title": "El Chavo del Ocho",
+      "year": "1973",
+      "posterPath": "/1TdBpVOASafzfWlnecwW17UL6a5.jpg",
+      "backdropPath": "/6zzyWTu3p2Diztotbnb0kf128uo.jpg",
+      "overview": "The mishaps of Chavo, an 8-year-old orphan boy who lives in a village. Together with Quico, Chilindrina, Ñoño and La Popis, Chavo experiences a series of humorous entanglements.",
+      "genres": [
+        "Comedy",
+        "Family",
+        "Drama"
+      ],
+      "networks": [
+        "Las Estrellas"
+      ],
+      "numberOfSeasons": 7,
+      "numberOfEpisodes": 314,
+      "lastUpdated": "2026-04-12T13:59:22.011Z",
+      "content": {
+        "h1": "Where to watch El Chavo del Ocho (1973)",
+        "paragraphs": [
+          "If you're looking for where to watch \"El Chavo del Ocho\" (1973), start by checking the major streaming platforms available in your region.",
+          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
+          "Quick facts: 7 season(s), 314 episode(s), genres: Comedy, Family, Drama.",
+          "The mishaps of Chavo, an 8-year-old orphan boy who lives in a village. Together with Quico, Chilindrina, Ñoño and La Popis, Chavo experiences a series of humorous entanglements.",
+          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
+        ],
+        "bullets": [
+          "Search in-app for: \"El Chavo del Ocho\"",
+          "Try both English + Spanish title variants",
+          "Use subtitles + pause/replay for language learning"
+        ]
+      }
+    },
+    {
+      "slug": "el-chavo-del-ocho-47-cast",
+      "pageType": "cast",
+      "showId": 47,
+      "title": "El Chavo del Ocho",
+      "year": "1973",
+      "posterPath": "/1TdBpVOASafzfWlnecwW17UL6a5.jpg",
+      "backdropPath": "/6zzyWTu3p2Diztotbnb0kf128uo.jpg",
+      "overview": "The mishaps of Chavo, an 8-year-old orphan boy who lives in a village. Together with Quico, Chilindrina, Ñoño and La Popis, Chavo experiences a series of humorous entanglements.",
+      "genres": [
+        "Comedy",
+        "Family",
+        "Drama"
+      ],
+      "networks": [
+        "Las Estrellas"
+      ],
+      "numberOfSeasons": 7,
+      "numberOfEpisodes": 314,
+      "lastUpdated": "2026-04-12T13:59:22.011Z",
+      "content": {
+        "h1": "El Chavo del Ocho (1973) cast & key characters",
+        "paragraphs": [
+          "This page covers the cast overview for \"El Chavo del Ocho\" (1973) and how to explore actor credits.",
+          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
+          "Quick facts: 7 season(s), 314 episode(s), networks: Las Estrellas.",
+          "The mishaps of Chavo, an 8-year-old orphan boy who lives in a village. Together with Quico, Chilindrina, Ñoño and La Popis, Chavo experiences a series of humorous entanglements.",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
@@ -3771,7 +3991,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 8,
-      "lastUpdated": "2026-04-11T13:55:29.436Z",
+      "lastUpdated": "2026-04-12T13:59:22.045Z",
       "content": {
         "h1": "Scandal: Story of an Obsession (2023) overview",
         "paragraphs": [
@@ -3804,7 +4024,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 8,
-      "lastUpdated": "2026-04-11T13:55:29.436Z",
+      "lastUpdated": "2026-04-12T13:59:22.045Z",
       "content": {
         "h1": "Where to watch Scandal: Story of an Obsession (2023)",
         "paragraphs": [
@@ -3838,7 +4058,7 @@
       ],
       "numberOfSeasons": 1,
       "numberOfEpisodes": 8,
-      "lastUpdated": "2026-04-11T13:55:29.436Z",
+      "lastUpdated": "2026-04-12T13:59:22.045Z",
       "content": {
         "h1": "Scandal: Story of an Obsession (2023) cast & key characters",
         "paragraphs": [
@@ -3846,110 +4066,6 @@
           "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
           "Quick facts: 1 season(s), 8 episode(s), networks: Telecinco.",
           "Inés is a 42-year-old woman who, when times start to get tough, attempts to drown herself. She is saved by Hugo, a teenage boy who then becomes obsessed with her. A forbidden romance develops between the two, whose consequences end up affecting all those around them.",
-          "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
-        ],
-        "bullets": [
-          "Look up the show on TMDB or IMDb for verified cast",
-          "Check season-by-season credits (casts change)",
-          "Save actor names you like → discover similar shows"
-        ]
-      }
-    },
-    {
-      "slug": "gangs-of-galicia-227042-summary",
-      "pageType": "summary",
-      "showId": 227042,
-      "title": "Gangs of Galicia",
-      "year": "2024",
-      "posterPath": "/yAltqHzzA1WhrN5HWCPbAgfI9xR.jpg",
-      "backdropPath": "/aqyeIdqUzVBwd22mXHI7I6tk1EM.jpg",
-      "overview": "When her father's murder reveals a hidden double life, a lawyer seeks revenge by infiltrating a Galician drug cartel and becoming close to its leader.",
-      "genres": [
-        "Drama",
-        "Crime"
-      ],
-      "networks": [
-        "Netflix"
-      ],
-      "numberOfSeasons": 2,
-      "numberOfEpisodes": 13,
-      "lastUpdated": "2026-04-11T13:55:29.527Z",
-      "content": {
-        "h1": "Gangs of Galicia (2024) overview",
-        "paragraphs": [
-          "When her father's murder reveals a hidden double life, a lawyer seeks revenge by infiltrating a Galician drug cartel and becoming close to its leader.",
-          "Genres: Drama, Crime. Networks: Netflix.",
-          "If you're exploring Spanish-language TV and want to learn English with subtitles, \"Gangs of Galicia\" can work well if you build a simple routine: watch → pause → repeat → rewatch.",
-          "Quick structure: pick one episode, write down 10 phrases, say them out loud, then rewatch the same scene until you can follow it without pausing."
-        ],
-        "bullets": [
-          "Best for: subtitle-based language practice",
-          "Rewatch strategy beats binge-watching",
-          "Save unknown words → review after the episode"
-        ]
-      }
-    },
-    {
-      "slug": "gangs-of-galicia-227042-watch",
-      "pageType": "watch",
-      "showId": 227042,
-      "title": "Gangs of Galicia",
-      "year": "2024",
-      "posterPath": "/yAltqHzzA1WhrN5HWCPbAgfI9xR.jpg",
-      "backdropPath": "/aqyeIdqUzVBwd22mXHI7I6tk1EM.jpg",
-      "overview": "When her father's murder reveals a hidden double life, a lawyer seeks revenge by infiltrating a Galician drug cartel and becoming close to its leader.",
-      "genres": [
-        "Drama",
-        "Crime"
-      ],
-      "networks": [
-        "Netflix"
-      ],
-      "numberOfSeasons": 2,
-      "numberOfEpisodes": 13,
-      "lastUpdated": "2026-04-11T13:55:29.527Z",
-      "content": {
-        "h1": "Where to watch Gangs of Galicia (2024)",
-        "paragraphs": [
-          "If you're looking for where to watch \"Gangs of Galicia\" (2024), start by checking the major streaming platforms available in your region.",
-          "Because streaming rights change, the best approach is to search the show title directly inside your streaming apps (Netflix, Prime Video, Hulu, Max, etc.) and compare availability.",
-          "Quick facts: 2 season(s), 13 episode(s), genres: Drama, Crime.",
-          "When her father's murder reveals a hidden double life, a lawyer seeks revenge by infiltrating a Galician drug cartel and becoming close to its leader.",
-          "Tip: If you’re learning English, try watching with English subtitles first, then rewatch key scenes with Spanish subtitles to reinforce vocabulary and pronunciation."
-        ],
-        "bullets": [
-          "Search in-app for: \"Gangs of Galicia\"",
-          "Try both English + Spanish title variants",
-          "Use subtitles + pause/replay for language learning"
-        ]
-      }
-    },
-    {
-      "slug": "gangs-of-galicia-227042-cast",
-      "pageType": "cast",
-      "showId": 227042,
-      "title": "Gangs of Galicia",
-      "year": "2024",
-      "posterPath": "/yAltqHzzA1WhrN5HWCPbAgfI9xR.jpg",
-      "backdropPath": "/aqyeIdqUzVBwd22mXHI7I6tk1EM.jpg",
-      "overview": "When her father's murder reveals a hidden double life, a lawyer seeks revenge by infiltrating a Galician drug cartel and becoming close to its leader.",
-      "genres": [
-        "Drama",
-        "Crime"
-      ],
-      "networks": [
-        "Netflix"
-      ],
-      "numberOfSeasons": 2,
-      "numberOfEpisodes": 13,
-      "lastUpdated": "2026-04-11T13:55:29.527Z",
-      "content": {
-        "h1": "Gangs of Galicia (2024) cast & key characters",
-        "paragraphs": [
-          "This page covers the cast overview for \"Gangs of Galicia\" (2024) and how to explore actor credits.",
-          "For the most accurate cast list, use official sources (TMDB/IMDb) and the show's platform page, since credits can differ by season.",
-          "Quick facts: 2 season(s), 13 episode(s), networks: Netflix.",
-          "When her father's murder reveals a hidden double life, a lawyer seeks revenge by infiltrating a Galician drug cartel and becoming close to its leader.",
           "If you're using this show to learn English: focus on 5–10 recurring phrases per episode, and repeat them out loud until you can say them without reading."
         ],
         "bullets": [
