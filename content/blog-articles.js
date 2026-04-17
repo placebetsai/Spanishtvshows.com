@@ -18,6 +18,7 @@ import best_argentine_shows from "./blog/best-argentine-shows.json";
 import narcos_vs_narcos_mexico_comparison from "./blog/narcos-vs-narcos-mexico-comparison.json";
 import best_spanish_horror_shows from "./blog/best-spanish-horror-shows.json";
 import spanish_shows_for_beginners from "./blog/spanish-shows-for-beginners.json";
+import top_spanish_tv_shows_netflix_2026 from "./blog/top-spanish-tv-shows-netflix-2026.json";
 
 const articles = {
   "best-spanish-shows-on-netflix-2026": best_spanish_shows_on_netflix_2026,
@@ -40,6 +41,7 @@ const articles = {
   "narcos-vs-narcos-mexico-comparison": narcos_vs_narcos_mexico_comparison,
   "best-spanish-horror-shows": best_spanish_horror_shows,
   "spanish-shows-for-beginners": spanish_shows_for_beginners,
+  "top-spanish-tv-shows-netflix-2026": top_spanish_tv_shows_netflix_2026,
 };
 
 export default articles;
