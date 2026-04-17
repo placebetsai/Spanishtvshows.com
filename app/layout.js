@@ -17,7 +17,7 @@ export const metadata = {
   },
 
   description:
-    "Discover the best Spanish-language TV shows ranked by real audience data. Crime, drama, novelas, thrillers from Spain, Mexico, Colombia and Argentina. Updated daily with TMDB data.",
+    "Best Spanish-language TV shows ranked by real audience data. Crime, drama, novelas from Spain, Mexico, Colombia & Argentina. Updated daily.",
 
   alternates: {
     canonical: "https://spanishtvshows.com",
