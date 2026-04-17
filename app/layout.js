@@ -3,6 +3,11 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import AdUnit from "../components/AdUnit";
 
+export const viewport = {
+  width: "device-width",
+  initialScale: 1,
+};
+
 export const metadata = {
   metadataBase: new URL("https://spanishtvshows.com"),
 

@@ -100,7 +100,7 @@ export default function NewsTicker() {
 
         <div className="viewport">
           {!hasItems ? (
-            <div className="idle">Loading Spanish TV headlines…</div>
+            <div className="idle">&nbsp;</div>
           ) : (
             <div key={runKey} className={`track ${ready ? "run desktopSpeed" : ""}`}>
               <div className="content">
@@ -155,7 +155,7 @@ export default function NewsTicker() {
           onClick={() => setPausedMobile((p) => !p)}
         >
           {!hasItems ? (
-            <div className="idle">Loading Spanish TV headlines…</div>
+            <div className="idle">&nbsp;</div>
           ) : (
             <div
               key={`m-${runKey}`}
