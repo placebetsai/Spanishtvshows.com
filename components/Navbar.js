@@ -12,6 +12,7 @@ const NAV_LINKS = [
   { href: "/shows-like-money-heist", label: "Like Money Heist" },
   { href: "/learn-spanish", label: "Learn Spanish" },
   { href: "/blog", label: "Blog" },
+  { href: "/contact", label: "Contact" },
 ];
 
 export default function Navbar() {
