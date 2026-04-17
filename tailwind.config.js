@@ -7,11 +7,12 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        neon: "#00f3ff",
-        hot: "#ff0055",
-        dark: "#050505"
+        neon: "#f59e0b",
+        hot: "#dc6843",
+        dark: "#0c0a09"
       },
       fontFamily: {
+        sans: ["Inter", "system-ui", "sans-serif"],
         mono: ["Courier New", "monospace"]
       }
     }

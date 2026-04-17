@@ -97,6 +97,8 @@ export default function RootLayout({ children }) {
         <link rel="apple-touch-icon" href="/favicon.svg" />
 
         {/* Preconnect for perf */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link rel="preconnect" href="https://image.tmdb.org" />
         <link rel="dns-prefetch" href="https://api.themoviedb.org" />
       </head>

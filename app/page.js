@@ -124,7 +124,7 @@ export default async function Home() {
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
               href="#top-shows"
-              className="inline-flex items-center justify-center px-8 py-3.5 rounded-lg bg-neon text-black font-black text-sm md:text-base tracking-wide shadow-[0_0_30px_rgba(0,243,255,0.4)] hover:bg-white hover:shadow-[0_0_30px_rgba(255,255,255,0.3)] transition-all"
+              className="inline-flex items-center justify-center px-8 py-3.5 rounded-lg bg-neon text-black font-black text-sm md:text-base tracking-wide shadow-[0_0_20px_rgba(245,158,11,0.3)] hover:bg-amber-400 hover:shadow-[0_0_20px_rgba(245,158,11,0.4)] transition-all"
             >
               <FireIcon className="h-5 w-5 mr-2" />
               See Top Shows
@@ -133,7 +133,7 @@ export default async function Home() {
             {topShow && (
               <Link
                 href={`/show/${topShow.id}`}
-                className="inline-flex items-center justify-center px-6 py-3.5 rounded-lg border border-gray-600 text-gray-200 text-sm font-bold tracking-wide hover:border-neon hover:text-neon transition-all"
+                className="inline-flex items-center justify-center px-6 py-3.5 rounded-lg border border-gray-600 text-gray-200 text-sm font-bold tracking-wide hover:border-amber-400 hover:text-amber-400 transition-all"
               >
                 #{1} Trending: {topShow.name} &rarr;
               </Link>
@@ -291,7 +291,7 @@ export default async function Home() {
         <div className="text-center mt-12">
           <Link
             href="/trending"
-            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg border border-gray-700 text-gray-300 font-bold text-sm hover:border-neon hover:text-neon transition-all"
+            className="inline-flex items-center gap-2 px-8 py-3.5 rounded-lg border border-gray-700 text-gray-300 font-bold text-sm hover:border-amber-400 hover:text-amber-400 transition-all"
           >
             <FireIcon className="h-4 w-4" />
             View All Trending Shows
