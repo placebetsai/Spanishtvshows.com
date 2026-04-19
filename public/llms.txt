@@ -1,0 +1,18 @@
+# SpanishTVShows.com
+
+> Best Spanish-language TV shows ranked by real audience data. Crime, drama, novelas from Spain, Mexico, Colombia, Argentina.
+
+SpanishTVShows.com ranks Spanish-language television series by real viewer data, country of origin, and genre. Coverage includes shows from Spain, Mexico, Colombia, Argentina, and other Latin American countries.
+
+## Key Pages
+- [All Rankings](https://spanishtvshows.com/rankings)
+- [Shows by Country](https://spanishtvshows.com/countries)
+- [Genres: Crime, Drama, Novelas](https://spanishtvshows.com/genres)
+- [About](https://spanishtvshows.com/about)
+- [Contact](https://spanishtvshows.com/contact)
+
+## Coverage
+- Spain: Money Heist, Elite, Paquita Salas, Sky Rojo
+- Mexico: Club de Cuervos, La Casa de las Flores, Luis Miguel
+- Colombia: Narcos, Sin Senos Sí Hay Paraíso
+- Argentina: El Marginal, El Reino
