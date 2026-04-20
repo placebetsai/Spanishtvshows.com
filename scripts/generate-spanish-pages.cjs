@@ -65,6 +65,7 @@ async function fetchShows() {
   for (const s of combined) {
     if (!s?.id) continue;
     if (!s?.name) continue;
+    if (s.original_language !== "es") continue;
     if ((s?.vote_count || 0) < 10) continue; // remove super-noisy junk
     map.set(s.id, s);
   }

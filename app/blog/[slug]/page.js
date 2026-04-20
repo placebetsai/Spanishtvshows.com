@@ -2,6 +2,7 @@ import Link from "next/link";
 import AdUnit from "../../../components/AdUnit";
 import VpnCta from "../../../components/VpnCta";
 import NewsletterSignup from "../../../components/NewsletterSignup";
+import ShopTheShowsCta from "../../../components/ShopTheShowsCta";
 import blogIndex from "../../../content/blog/_index.json";
 import allArticles from "../../../content/blog-articles";
 
@@ -156,6 +157,10 @@ export default function BlogArticle({ params }) {
         {/* VPN CTA */}
         <div className="my-10">
           <VpnCta />
+        </div>
+
+        <div className="my-10">
+          <ShopTheShowsCta />
         </div>
 
         {/* Newsletter */}

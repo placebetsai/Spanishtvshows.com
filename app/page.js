@@ -5,6 +5,7 @@ import { FireIcon, StarIcon } from "@heroicons/react/24/solid";
 import NewsTicker from "../components/NewsTicker";
 import AdUnit from "../components/AdUnit";
 import NewsletterSignup from "../components/NewsletterSignup";
+import ShopTheShowsCta from "../components/ShopTheShowsCta";
 
 export const metadata = {
   alternates: {
@@ -226,6 +227,8 @@ export default async function Home() {
       <div className="max-w-6xl mx-auto px-6">
         <AdUnit className="my-6" />
       </div>
+
+      <ShopTheShowsCta />
 
       {/* ===================== TOP SHOWS GRID ===================== */}
       <section id="top-shows" className="max-w-7xl mx-auto px-6 pb-20 pt-14">

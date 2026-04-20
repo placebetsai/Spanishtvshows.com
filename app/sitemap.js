@@ -54,18 +54,6 @@ export default async function sitemap() {
     { url: `${baseUrl}/terms`, lastModified: new Date(), changeFrequency: "yearly", priority: 0.3 },
   ];
 
-  // Generated /g/ pages from JSON
-  const pages = pagesData?.pages || [];
-  const generatedUrls = pages
-    .map((p) => p?.slug)
-    .filter(Boolean)
-    .map((slug) => ({
-      url: `${baseUrl}/g/${slug}`,
-      lastModified: new Date(),
-      changeFrequency: "weekly",
-      priority: 0.7,
-    }));
-
   // Dynamic /show/ pages from TMDB (top 100 Spanish shows)
   const showIds = await getTopShowIds();
   const showUrls = showIds.map((id) => ({
@@ -91,5 +79,5 @@ export default async function sitemap() {
     priority: 0.8,
   };
 
-  return [...staticUrls, blogIndexUrl, ...blogArticles, ...generatedUrls, ...showUrls];
+  return [...staticUrls, blogIndexUrl, ...blogArticles, ...showUrls];
 }
