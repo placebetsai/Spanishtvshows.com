@@ -325,12 +325,6 @@ export default async function ShowPage({ params }) {
               </p>
             </div>
 
-            {/* VPN CTA */}
-            <VpnCta />
-
-            {/* Ad Unit */}
-            <AdUnit className="my-4" />
-
             {/* Show Details Grid */}
             <div>
               <h2 className="text-xl font-black mb-4">Show Details</h2>
@@ -386,22 +380,6 @@ export default async function ShowPage({ params }) {
               </div>
             </div>
 
-            {/* Who Should Watch */}
-            <div className="show-card p-6 md:p-8">
-              <h2 className="text-lg font-black mb-3">
-                Who Should Watch {show.name}?
-              </h2>
-              <p className="text-gray-300 text-sm leading-relaxed">
-                {genres.includes("Crime") || genres.includes("Mystery")
-                  ? `If you enjoy edge-of-your-seat crime thrillers with unpredictable twists, ${show.name} is a must-watch. Perfect for fans of Money Heist, Narcos, and Elite.`
-                  : genres.includes("Comedy")
-                  ? `Looking for a show that balances humor with heart? ${show.name} delivers laughs alongside meaningful storytelling. Great for fans of light-hearted Spanish comedies.`
-                  : genres.includes("Drama")
-                  ? `Drama lovers who appreciate rich character development and compelling storylines will find ${show.name} deeply satisfying. Comparable in quality to the best international prestige dramas.`
-                  : `Whether you're new to Spanish-language TV or a seasoned viewer, ${show.name} offers a compelling viewing experience that transcends language barriers. A great entry point for exploring international television.`}
-              </p>
-            </div>
-
             {/* Language Learning CTA */}
             <LanguageLearningCta />
 
@@ -410,6 +388,9 @@ export default async function ShowPage({ params }) {
 
             {/* Ad Unit */}
             <AdUnit className="my-4" />
+
+            {/* VPN CTA — moved below primary content for AdSense thin-affiliate compliance */}
+            <VpnCta />
 
             {/* Related Shows */}
             {relatedShows.length > 0 && (
