@@ -6,7 +6,8 @@ export const metadata = {
   description: "Questions, partnerships, or media? Reach the team.",
 };
 
-export default function ContactPage() {
+export default function ContactPage({ searchParams }) {
+  const sent = searchParams?.sent === "true";
   return (
     <div className="min-h-screen w-full bg-[#050505] text-white flex items-center justify-center p-6 relative overflow-hidden">
 
@@ -21,7 +22,7 @@ export default function ContactPage() {
 
         {/* The Content Card */}
         <div className="relative bg-black/90 border border-white/10 rounded-xl p-10 md:p-14 backdrop-blur-xl shadow-2xl">
-          <ContactForm />
+          <ContactForm sent={sent} />
         </div>
 
       </div>

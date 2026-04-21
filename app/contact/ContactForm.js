@@ -1,16 +1,12 @@
-"use client";
+// SERVER COMPONENT — renders form HTML on first paint, no JS hydration delay.
+// Was a "use client" component wrapped in Suspense which caused fillable
+// fields to lag while JS downloaded + hydrated. Reading ?sent=true from
+// searchParams (passed by parent page) instead of useSearchParams().
 
-import { useSearchParams } from "next/navigation";
-import { Suspense } from "react";
-
-function ContactFormInner() {
-  const searchParams = useSearchParams();
-  const sent = searchParams.get("sent") === "true";
-
+export default function ContactForm({ sent = false }) {
   if (sent) {
     return (
       <div className="text-center">
-        {/* Success checkmark */}
         <div className="mx-auto mb-6 flex h-16 w-16 items-center justify-center rounded-full bg-green-500/20 border border-green-500/40">
           <svg className="h-8 w-8 text-green-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={2.5}>
             <path strokeLinecap="round" strokeLinejoin="round" d="M5 13l4 4L19 7" />
@@ -37,12 +33,10 @@ function ContactFormInner() {
 
   return (
     <div>
-      {/* Eyebrow Text */}
-      <p className="text-xs font-mono tracking-[0.25em] uppercase text-rose-500 mb-6 animate-pulse text-center">
+      <p className="text-xs font-mono tracking-[0.25em] uppercase text-rose-500 mb-6 text-center">
         Direct Access
       </p>
 
-      {/* Headline */}
       <h1 className="text-3xl md:text-5xl font-black tracking-tight mb-6 leading-tight text-center">
         Talk to the people who{" "}
         <span className="text-transparent bg-clip-text bg-gradient-to-r from-rose-400 to-fuchsia-400">
@@ -51,24 +45,20 @@ function ContactFormInner() {
         this stuff.
       </h1>
 
-      {/* Subtext */}
       <p className="text-lg text-gray-400 mb-10 leading-relaxed max-w-lg mx-auto text-center">
         Whether you&apos;ve got a partnership idea, a wild recommendation, or you
         just want to roast a season finale &mdash; we read every message.
       </p>
 
-      {/* Form */}
       <form
         action="https://formsubmit.co/info@spanishtvshows.com"
         method="POST"
         className="space-y-5"
       >
-        {/* Hidden fields */}
         <input type="hidden" name="_captcha" value="false" />
         <input type="hidden" name="_next" value="https://spanishtvshows.com/contact?sent=true" />
         <input type="hidden" name="_subject" value="SpanishTVShows Contact Form" />
 
-        {/* Name */}
         <div>
           <label htmlFor="name" className="block text-sm font-bold text-gray-300 mb-2 tracking-wide uppercase">
             Name
@@ -79,11 +69,11 @@ function ContactFormInner() {
             id="name"
             required
             placeholder="Your name"
+            autoComplete="name"
             className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-rose-500/50 focus:ring-1 focus:ring-rose-500/50 transition-colors duration-200"
           />
         </div>
 
-        {/* Email */}
         <div>
           <label htmlFor="email" className="block text-sm font-bold text-gray-300 mb-2 tracking-wide uppercase">
             Email
@@ -94,11 +84,11 @@ function ContactFormInner() {
             id="email"
             required
             placeholder="you@example.com"
+            autoComplete="email"
             className="w-full px-4 py-3 bg-white/5 border border-white/10 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-rose-500/50 focus:ring-1 focus:ring-rose-500/50 transition-colors duration-200"
           />
         </div>
 
-        {/* Subject Dropdown */}
         <div>
           <label htmlFor="subject" className="block text-sm font-bold text-gray-300 mb-2 tracking-wide uppercase">
             Subject
@@ -120,7 +110,6 @@ function ContactFormInner() {
           </select>
         </div>
 
-        {/* Message */}
         <div>
           <label htmlFor="message" className="block text-sm font-bold text-gray-300 mb-2 tracking-wide uppercase">
             Message
@@ -135,7 +124,6 @@ function ContactFormInner() {
           />
         </div>
 
-        {/* Submit */}
         <div className="flex justify-center pt-2">
           <button
             type="submit"
@@ -146,14 +134,12 @@ function ContactFormInner() {
         </div>
       </form>
 
-      {/* Divider */}
       <div className="mt-10 flex items-center gap-4">
         <div className="flex-1 h-px bg-white/10"></div>
         <span className="text-[10px] text-gray-500 font-mono tracking-widest uppercase">or</span>
         <div className="flex-1 h-px bg-white/10"></div>
       </div>
 
-      {/* Backup mailto */}
       <div className="mt-6 text-center">
         <a
           href="mailto:info@spanishtvshows.com"
@@ -166,7 +152,6 @@ function ContactFormInner() {
         </a>
       </div>
 
-      {/* Footer Note */}
       <div className="mt-8 flex items-center justify-center gap-2 opacity-50">
         <div className="h-px w-8 bg-gray-600"></div>
         <p className="text-[10px] text-gray-400 font-mono tracking-widest uppercase">
@@ -175,17 +160,5 @@ function ContactFormInner() {
         <div className="h-px w-8 bg-gray-600"></div>
       </div>
     </div>
-  );
-}
-
-export default function ContactForm() {
-  return (
-    <Suspense
-      fallback={
-        <div className="text-center text-gray-500 py-10">Loading...</div>
-      }
-    >
-      <ContactFormInner />
-    </Suspense>
   );
 }
