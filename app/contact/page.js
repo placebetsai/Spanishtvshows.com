@@ -1,6 +1,8 @@
 import React from 'react';
 import ContactForm from './ContactForm';
 
+export const runtime = 'edge';
+
 export const metadata = {
   title: "Contact – Spanishtvshows.com",
   description: "Questions, partnerships, or media? Reach the team.",
