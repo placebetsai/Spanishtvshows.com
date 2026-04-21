@@ -1,3 +1,4 @@
+import { alternatesFor } from "@/lib/seo";
 export const revalidate = 3600;
 
 const SHOP = "https://fashionistas.ai";
@@ -123,7 +124,8 @@ async function getProducts() {
 }
 
 export const metadata = {
-  title: "Shop | SpanishTVShows.com",
+  alternates: alternatesFor("/shop"),
+  title: "Shop",
   description: "Money Heist merch, flamenco accessories, and language-learning products routed through the Fashionistas.ai catalog.",
 };
 

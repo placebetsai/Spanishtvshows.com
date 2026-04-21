@@ -19,9 +19,9 @@ export const metadata = {
   description:
     "Best Spanish-language TV shows ranked by real audience data. Crime, drama, novelas from Spain, Mexico, Colombia & Argentina. Updated daily.",
 
-  alternates: {
-    canonical: "https://spanishtvshows.com",
-  },
+  // NOTE: do NOT set `alternates.canonical` here — Next.js inherits it into
+  // every child route, which canonicalizes the entire site to the homepage.
+  // Each page sets its own canonical via `lib/seo.js#canonicalFor`.
 
   openGraph: {
     title: "SpanishTVShows.com - Top Ranked Spanish Shows (2026)",

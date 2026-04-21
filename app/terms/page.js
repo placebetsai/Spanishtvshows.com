@@ -1,6 +1,8 @@
+import { alternatesFor } from "@/lib/seo";
 // app/terms/page.js
 export const metadata = {
-  title: "Terms of Use | SpanishTVShows.com",
+  alternates: alternatesFor("/terms"),
+  title: "Terms of Use",
   description:
     "Terms and conditions for using SpanishTVShows.com. Educational rankings, not streaming or legal advice.",
 };

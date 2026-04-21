@@ -20,7 +20,7 @@ export async function generateMetadata({ params }) {
   const article = loadArticle(params.slug);
   if (!article) {
     return {
-      title: "Article Not Found | SpanishTVShows.com",
+      title: "Article Not Found",
       robots: { index: false, follow: false },
     };
   }

@@ -2,8 +2,10 @@
 import Link from "next/link";
 import AdUnit from "../../components/AdUnit";
 import { FireIcon } from "@heroicons/react/24/solid";
+import { alternatesFor } from "@/lib/seo";
 
 export const metadata = {
+  alternates: alternatesFor("/resources"),
   title: "Resources – Learn Spanish with TV",
   description:
     "Tools and resources to learn Spanish faster using Spanish-language TV: books, workbooks, flashcards, and more.",

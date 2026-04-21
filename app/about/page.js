@@ -1,5 +1,7 @@
+import { alternatesFor } from "@/lib/seo";
 // app/about/page.js
 export const metadata = {
+  alternates: alternatesFor("/about"),
   title: "About SpanishTVShows.com",
   description:
     "Why SpanishTVShows.com exists, who it's for, and how we rank Spanish-language TV shows.",

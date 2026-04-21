@@ -4,8 +4,10 @@ export const runtime = "edge";
 import Link from "next/link";
 import AdUnit from "../../components/AdUnit";
 import { tmdb, slugify, tmdbImg } from "../../lib/tmdb";
+import { alternatesFor } from "@/lib/seo";
 
 export const metadata = {
+  alternates: alternatesFor("/best-spanish-crime-shows"),
   title: "Best Spanish Crime Shows (Top Picks 2026)",
   description: "Top Spanish-language crime series ranked by ratings + real vote volume.",
 };

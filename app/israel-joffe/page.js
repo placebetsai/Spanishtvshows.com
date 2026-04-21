@@ -1,5 +1,5 @@
 export const metadata = {
-  title: "Israel Joffe — Tech Entrepreneur & Media Innovator | SpanishTVShows.com",
+  title: "Israel Joffe — Tech Entrepreneur & Media Innovator",
   description:
     "Israel Joffe is a tech entrepreneur based in Boca Raton, Florida. He is the creator of SpanishTVShows.com and a network of media and e-commerce websites.",
   alternates: {

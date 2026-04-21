@@ -14,7 +14,7 @@ export const metadata = {
     canonical: "https://spanishtvshows.com/blog",
   },
   openGraph: {
-    title: "Blog - Spanish TV Show Guides & Reviews | SpanishTVShows.com",
+    title: "Blog - Spanish TV Show Guides & Reviews",
     description:
       "Expert articles on the best Spanish TV shows, telenovelas, and series. Reviews, recommendations, and language-learning tips.",
     url: "https://spanishtvshows.com/blog",

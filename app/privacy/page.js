@@ -1,6 +1,8 @@
+import { alternatesFor } from "@/lib/seo";
 // app/privacy/page.js
 export const metadata = {
-  title: "Privacy Policy | SpanishTVShows.com",
+  alternates: alternatesFor("/privacy"),
+  title: "Privacy Policy",
   description: "Privacy policy for SpanishTVShows.com – what data we collect, how we use it, and your rights.",
 };
 

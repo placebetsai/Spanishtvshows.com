@@ -1,8 +1,10 @@
 import Link from "next/link";
 import AdUnit from "../../components/AdUnit";
 import { amazonSearchUrl } from "@/lib/amazon";
+import { alternatesFor } from "@/lib/seo";
 
 export const metadata = {
+  alternates: alternatesFor("/learn-english"),
   title: "Learn English with TV – SpanishTVShows.com",
   description:
     "For Spanish speakers learning English: use TV + subtitles + a weekly speaking routine.",

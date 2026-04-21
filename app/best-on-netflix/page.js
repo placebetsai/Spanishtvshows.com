@@ -8,6 +8,7 @@ import {
   StarIcon,
   PlayCircleIcon,
 } from "@heroicons/react/24/solid";
+import { alternatesFor } from "@/lib/seo";
 
 const API_BASE = "https://api.themoviedb.org/3";
 
@@ -33,6 +34,7 @@ async function getNetflixSpanish() {
 }
 
 export const metadata = {
+  alternates: alternatesFor("/best-on-netflix"),
   title: "Best Spanish Shows on Netflix (2026) – Ranked by Heat",
   description:
     "Live-ranked list of the best Spanish-language TV shows on Netflix in 2026. No fluff, just what’s actually worth watching.",

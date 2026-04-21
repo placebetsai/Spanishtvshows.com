@@ -1,9 +1,11 @@
 import React from 'react';
 import ContactForm from './ContactForm';
+import { alternatesFor } from "@/lib/seo";
 
 export const runtime = 'edge';
 
 export const metadata = {
+  alternates: alternatesFor("/contact"),
   title: "Contact – Spanishtvshows.com",
   description: "Questions, partnerships, or media? Reach the team.",
 };

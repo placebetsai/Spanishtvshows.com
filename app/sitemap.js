@@ -41,6 +41,7 @@ export default async function sitemap() {
     { url: `${baseUrl}/`, lastModified: new Date(), changeFrequency: "daily", priority: 1.0 },
     { url: `${baseUrl}/trending`, lastModified: new Date(), changeFrequency: "daily", priority: 0.9 },
     { url: `${baseUrl}/best-on-netflix`, lastModified: new Date(), changeFrequency: "daily", priority: 0.9 },
+    { url: `${baseUrl}/netflix`, lastModified: new Date(), changeFrequency: "daily", priority: 0.9 },
     { url: `${baseUrl}/best-spanish-crime-shows`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/shows-like-money-heist`, lastModified: new Date(), changeFrequency: "weekly", priority: 0.8 },
     { url: `${baseUrl}/shop`, lastModified: new Date(), changeFrequency: "daily", priority: 0.8 },
@@ -67,9 +68,17 @@ export default async function sitemap() {
   // Blog articles
   const blogArticles = (blogIndex?.articles || []).map((article) => ({
     url: `${baseUrl}/blog/${article.slug}`,
-    lastModified: new Date(),
+    lastModified: article.publishedAt ? new Date(article.publishedAt) : new Date(),
     changeFrequency: "monthly",
     priority: 0.7,
+  }));
+
+  // Generated /g/[slug] pages (overview / watch / cast per show)
+  const generatedPages = (pagesData?.pages || []).map((page) => ({
+    url: `${baseUrl}/g/${page.slug}`,
+    lastModified: page.lastUpdated ? new Date(page.lastUpdated) : new Date(),
+    changeFrequency: "monthly",
+    priority: 0.6,
   }));
 
   // Blog index page
@@ -80,5 +89,5 @@ export default async function sitemap() {
     priority: 0.8,
   };
 
-  return [...staticUrls, blogIndexUrl, ...blogArticles, ...showUrls];
+  return [...staticUrls, blogIndexUrl, ...blogArticles, ...showUrls, ...generatedPages];
 }

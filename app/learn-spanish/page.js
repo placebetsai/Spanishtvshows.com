@@ -3,8 +3,10 @@ import AdUnit from "../../components/AdUnit";
 import LanguageLearningCta from "../../components/LanguageLearningCta";
 import AffiliateDisclosure from "../../components/AffiliateDisclosure";
 import { amazonSearchUrl } from "@/lib/amazon";
+import { alternatesFor } from "@/lib/seo";
 
 export const metadata = {
+  alternates: alternatesFor("/learn-spanish"),
   title: "Learn Spanish with TV – SpanishTVShows.com",
   description:
     "Learn Spanish faster using TV shows, subtitles, and a simple routine. Tools + resources that actually help.",

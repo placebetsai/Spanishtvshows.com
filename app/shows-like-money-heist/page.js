@@ -4,8 +4,10 @@ export const runtime = "edge";
 import Link from "next/link";
 import AdUnit from "../../components/AdUnit";
 import { tmdb, slugify, tmdbImg } from "../../lib/tmdb";
+import { alternatesFor } from "@/lib/seo";
 
 export const metadata = {
+  alternates: alternatesFor("/shows-like-money-heist"),
   title: "Shows Like Money Heist (Spanish Crime & Thriller Picks)",
   description: "Spanish-language crime and thriller picks with similar vibes to Money Heist.",
 };

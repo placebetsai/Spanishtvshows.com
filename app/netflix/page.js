@@ -3,8 +3,10 @@ export const runtime = "edge";
 
 import Link from "next/link";
 import { tmdb, slugify, tmdbImg } from "../../lib/tmdb";
+import { alternatesFor } from "@/lib/seo";
 
 export const metadata = {
+  alternates: alternatesFor("/netflix"),
   title: "Spanish Shows on Netflix (2026) – Sorted by Audience Rating",
   description:
     "Spanish-language TV series available on Netflix, sorted by TMDB audience rating and vote count. Data source: The Movie Database (TMDB).",
