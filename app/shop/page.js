@@ -128,7 +128,7 @@ async function getProducts() {
       return {
         products: [],
         state: "empty",
-        message: `All ${available.length} tagged products are missing on Fashionistas.ai right now (dropped to avoid dead links).`,
+        message: `All ${available.length} tagged products are out of stock right now.`,
         dropped,
       };
     }
@@ -137,7 +137,7 @@ async function getProducts() {
       products: live,
       state: "ready",
       message: dropped.length > 0
-        ? `Filtered ${dropped.length} product(s) whose Fashionistas.ai pages are not live.`
+        ? `Filtered ${dropped.length} product(s) that are not available right now.`
         : null,
       dropped,
     };
@@ -154,7 +154,7 @@ async function getProducts() {
 export const metadata = {
   alternates: alternatesFor("/shop"),
   title: "Shop Money Heist Merch, Flamenco Style & Learning Gear",
-  description: "Money Heist merch, flamenco accessories, and language-learning products routed through live Fashionistas.ai product pages.",
+  description: "Money Heist merch, flamenco accessories, and language-learning products. Live inventory, fast US shipping.",
 };
 
 function shopifyImage(url, width = 700) {
@@ -190,7 +190,7 @@ function ProductCard({ p }) {
       </div>
       <div className="p-5">
         <h3 className="text-base font-black text-white leading-snug min-h-[3.2rem] line-clamp-2">{p.title}</h3>
-        <p className="mt-3 text-[11px] uppercase tracking-[0.18em] text-gray-400">Open on Fashionistas →</p>
+        <p className="mt-3 text-[11px] uppercase tracking-[0.18em] text-gray-400">View product →</p>
       </div>
     </a>
   );
@@ -283,7 +283,7 @@ export default async function ShopPage() {
           </h2>
           <p className="mt-3 max-w-3xl text-sm leading-7 text-gray-300">
             {state !== "ready"
-              ? `${message} We are only linking to working Fashionistas product pages and the live storefront until the feed recovers.`
+              ? `${message} We are only linking to verified live products and the live storefront until the feed recovers.`
               : "This page hides empty categories and only shows the items that are actually live. If a category looks light, that is the current live inventory rather than a padded placeholder grid."}
           </p>
         </div>
@@ -344,7 +344,7 @@ export default async function ShopPage() {
               <p className="text-xs font-bold uppercase tracking-[0.24em] text-gray-400">Fallback mode</p>
               <h2 className="mt-3 text-3xl font-black text-white">No live SpanishTVShows-tagged merch is rendering right now.</h2>
               <p className="mt-4 text-base leading-7 text-gray-300">
-                Instead of exposing dead collection paths, this page falls back to the working Fashionistas storefront and any verified live product pages we could fetch.
+                Instead of exposing dead collection paths, this page falls back to the working storefront and any verified live product pages we could fetch.
               </p>
               <div className="mt-6 flex flex-wrap gap-3">
                 {featuredFallbacks.map((product) => (
