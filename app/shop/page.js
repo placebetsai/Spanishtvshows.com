@@ -71,6 +71,34 @@ const SUBSECTIONS = [
   { tag: "learn-spanish", title: "Learn Spanish Gear", blurb: "Language-learning products and study aids that fit the site's education lane." },
 ];
 
+function productText(product) {
+  return [
+    product?.title,
+    ...(product?.tags || []),
+    product?.product_type,
+    product?.body_html,
+  ]
+    .filter(Boolean)
+    .join(" ")
+    .toLowerCase();
+}
+
+function getSectionTag(product) {
+  const text = productText(product);
+
+  if (/(money heist|dali|jumpsuit|costume|hoodie|graphic t-shirt|paper money)/.test(text)) {
+    return "money-heist";
+  }
+  if (/(flamenco|fan|skirt|rose hair|lace earring|choker)/.test(text)) {
+    return "flamenco";
+  }
+  if (/(spanish|bilingual|language|word game|educational tablet|learn)/.test(text)) {
+    return "learn-spanish";
+  }
+
+  return null;
+}
+
 async function getProducts() {
   try {
     const res = await fetch(`${CATALOG}/collections/${COLLECTION}/products.json?limit=250`, { next: { revalidate: 3600 } });
@@ -166,7 +194,7 @@ function getCollectionHref() {
 }
 
 function getFullCatalogHref() {
-  return `${CATALOG}/collections/all`;
+  return `${SHOP}/products?ref=${REF}`;
 }
 
 export default async function ShopPage() {
@@ -174,13 +202,12 @@ export default async function ShopPage() {
   void dropped; // referenced for future UI surfacing; kept in closure for build-log trace.
   const sections = SUBSECTIONS.map((section) => ({
     ...section,
-    products: products.filter((p) => (p.tags || []).includes(section.tag)),
+    products: products.filter((p) => getSectionTag(p) === section.tag),
   }));
   const populatedSections = sections.filter((section) => section.products.length > 0);
-  const thinSections = populatedSections.filter((section) => section.products.length < THIN_SECTION_COUNT);
   const featuredFallbacks = products.slice(0, 4);
   const hasProducts = populatedSections.length > 0;
-  const showCatalogNotice = state !== "ready" || thinSections.length > 0;
+  const showCatalogNotice = state !== "ready";
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-14">
