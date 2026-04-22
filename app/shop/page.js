@@ -5,7 +5,7 @@ const SHOP = "https://fashionistas.ai";
 const CATALOG = "https://js0hy0-ux.myshopify.com";
 const COLLECTION = "spanishtvshows-merch";
 const REF = "spanishtvshows";
-const THIN_SECTION_COUNT = 2;
+const THIN_SECTION_COUNT = 4;
 const VERIFY_CHUNK = 5;
 const VERIFY_TIMEOUT_MS = 7000;
 
@@ -153,8 +153,8 @@ async function getProducts() {
 
 export const metadata = {
   alternates: alternatesFor("/shop"),
-  title: "Shop",
-  description: "Money Heist merch, flamenco accessories, and language-learning products routed through the Fashionistas.ai catalog.",
+  title: "Shop Money Heist Merch, Flamenco Style & Learning Gear",
+  description: "Money Heist merch, flamenco accessories, and language-learning products routed through live Fashionistas.ai product pages.",
 };
 
 function shopifyImage(url, width = 700) {
@@ -219,9 +219,33 @@ export default async function ShopPage() {
   const featuredFallbacks = products.slice(0, 4);
   const hasProducts = populatedSections.length > 0;
   const showCatalogNotice = state !== "ready";
+  const itemListProducts = populatedSections.flatMap((section) => section.products);
+  const itemListSchema = {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    name: "SpanishTVShows Shop",
+    url: "https://spanishtvshows.com/shop",
+    numberOfItems: itemListProducts.length,
+    itemListElement: itemListProducts.map((p, i) => ({
+      "@type": "ListItem",
+      position: i + 1,
+      url: `${SHOP}/products/${p.handle}?ref=${REF}`,
+      name: p.title,
+    })),
+  };
+  const breadcrumbSchema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: "Home", item: "https://spanishtvshows.com" },
+      { "@type": "ListItem", position: 2, name: "Shop", item: "https://spanishtvshows.com/shop" },
+    ],
+  };
 
   return (
     <div className="max-w-7xl mx-auto px-6 py-14">
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(itemListSchema) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <div className="max-w-4xl">
         <p className="text-neon text-xs uppercase tracking-[0.3em] mb-4">Shop</p>
         <h1 className="text-4xl md:text-6xl font-black tracking-tight text-white leading-none">
@@ -308,7 +332,7 @@ export default async function ShopPage() {
                 This category is thin right now, so we are only showing the live item we could verify.
               </p>
             )}
-            <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+            <div className="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4">
               {section.products.map((p) => <ProductCard key={p.id} p={p} />)}
             </div>
           </section>
