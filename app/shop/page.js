@@ -157,29 +157,40 @@ export const metadata = {
   description: "Money Heist merch, flamenco accessories, and language-learning products routed through the Fashionistas.ai catalog.",
 };
 
+function shopifyImage(url, width = 700) {
+  if (!url) return url;
+  const sep = url.includes("?") ? "&" : "?";
+  return `${url}${sep}width=${width}`;
+}
+
 function ProductCard({ p }) {
   const variant = p.variants[0] || {};
-  const image = (p.images || [])[0]?.src;
+  const image = shopifyImage((p.images || [])[0]?.src, 700);
   return (
     <a
       href={`${SHOP}/products/${p.handle}?ref=${REF}`}
       target="_blank"
       rel="noopener nofollow"
-      className="group rounded-2xl overflow-hidden border border-white/10 bg-white/[0.03] hover:border-neon/60 transition-all"
+      className="group rounded-[28px] overflow-hidden border border-white/10 bg-white/[0.04] hover:border-neon/60 hover:-translate-y-1 transition-all shadow-[0_18px_40px_-24px_rgba(0,0,0,0.8)]"
     >
-      <div className="aspect-[4/5] bg-black overflow-hidden">
+      <div className="aspect-[4/5] bg-black overflow-hidden relative">
         {image ? (
           <img src={image} alt={p.title} loading="lazy" className="w-full h-full object-cover group-hover:scale-[1.03] transition-transform duration-500" />
         ) : (
           <div className="w-full h-full flex items-center justify-center text-xs uppercase tracking-[0.18em] text-gray-500">No image</div>
         )}
-      </div>
-      <div className="p-4">
-        <h3 className="text-sm font-bold text-white leading-snug min-h-[2.8rem]">{p.title}</h3>
-        <div className="mt-3 flex items-baseline gap-2">
-          <span className="text-neon font-black">${variant.price || "?"}</span>
-          <span className="ml-auto text-[10px] uppercase tracking-[0.18em] text-gray-400">Shop →</span>
+        <div className="absolute inset-x-3 bottom-3 flex items-center justify-between gap-3">
+          <span className="rounded-full border border-white/15 bg-black/60 px-3 py-1 text-[10px] font-bold uppercase tracking-[0.18em] text-white backdrop-blur">
+            {(getSectionTag(p) || "shop").replace("-", " ")}
+          </span>
+          <span className="rounded-full border border-white/15 bg-black/60 px-3 py-1 text-xs font-black text-neon backdrop-blur">
+            ${variant.price || "?"}
+          </span>
         </div>
+      </div>
+      <div className="p-5">
+        <h3 className="text-base font-black text-white leading-snug min-h-[3.2rem] line-clamp-2">{p.title}</h3>
+        <p className="mt-3 text-[11px] uppercase tracking-[0.18em] text-gray-400">Open on Fashionistas →</p>
       </div>
     </a>
   );
@@ -220,6 +231,18 @@ export default async function ShopPage() {
           SpanishTVShows.com now has a dedicated commerce lane for viewers who want Money Heist energy,
           Spanish-style accessories, and learning-Spanish items without dumping them into a random generic store.
         </p>
+        <div className="mt-8 grid max-w-2xl grid-cols-3 gap-3">
+          {[
+            { label: "Visible items", value: `${products.length}` },
+            { label: "Live lanes", value: `${populatedSections.length}` },
+            { label: "Catalog", value: state === "ready" ? "Live" : "Check" },
+          ].map((stat) => (
+            <div key={stat.label} className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
+              <div className="text-2xl font-black text-white">{stat.value}</div>
+              <div className="mt-1 text-[10px] uppercase tracking-[0.18em] text-gray-400">{stat.label}</div>
+            </div>
+          ))}
+        </div>
       </div>
 
       {showCatalogNotice && (
