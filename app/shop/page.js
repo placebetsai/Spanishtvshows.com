@@ -66,9 +66,9 @@ async function verifyFashionistasHandles(products) {
 }
 
 const SUBSECTIONS = [
-  { tag: "money-heist", title: "Money Heist Merch", blurb: "Red jumpsuits, Dali-mask energy, and products tied directly to the site's biggest entertainment intent cluster." },
-  { tag: "flamenco", title: "Flamenco Style", blurb: "Fans, skirts, and accessories with stronger Spanish-style visual language." },
-  { tag: "learn-spanish", title: "Learn Spanish Gear", blurb: "Language-learning products and study aids that fit the site's education lane." },
+  { tag: "money-heist", title: "Money Heist Merch", blurb: "Red jumpsuits, Dalí masks, and costume pieces from the show." },
+  { tag: "flamenco", title: "Flamenco Style", blurb: "Fans, rose hair clips, lace earrings, and skirts with a Spanish feel." },
+  { tag: "learn-spanish", title: "Learn Spanish Gear", blurb: "Bilingual tablets, language-learning toys, and study aids." },
 ];
 
 function productText(product) {
@@ -244,16 +244,16 @@ export default async function ShopPage() {
       <div className="max-w-4xl">
         <p className="text-neon text-xs uppercase tracking-[0.3em] mb-4">Shop</p>
         <h1 className="text-4xl md:text-6xl font-black tracking-tight text-white leading-none">
-          Merch tied to the shows, style, and language-learning lane.
+          Merch from the shows, Spanish style, and language-learning gear.
         </h1>
         <p className="mt-5 max-w-3xl text-gray-300 text-base md:text-lg leading-8">
-          SpanishTVShows.com now has a dedicated commerce lane for viewers who want Money Heist energy,
-          Spanish-style accessories, and learning-Spanish items without dumping them into a random generic store.
+          Money Heist costume pieces, flamenco accessories, and bilingual study tools — pulled together in
+          one place instead of scattered across a generic store.
         </p>
         <div className="mt-8 grid max-w-2xl grid-cols-3 gap-3">
           {[
             { label: "Visible items", value: `${products.length}` },
-            { label: "Live lanes", value: `${populatedSections.length}` },
+            { label: "Categories", value: `${populatedSections.length}` },
             { label: "Catalog", value: state === "ready" ? "Live" : "Check" },
           ].map((stat) => (
             <div key={stat.label} className="rounded-2xl border border-white/10 bg-white/[0.04] p-4">
