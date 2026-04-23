@@ -46,6 +46,22 @@ export default function Navbar() {
             </Link>
           ))}
 
+          <form
+            role="search"
+            className="flex items-center bg-white/5 border border-white/10 rounded-full pl-3 ml-2 focus-within:border-neon/40"
+            onSubmit={(e) => {
+              e.preventDefault();
+              const q = e.currentTarget.q.value.trim();
+              if (!q) return;
+              window.open(`https://www.google.com/search?q=${encodeURIComponent("site:spanishtvshows.com " + q)}`, "_blank", "noopener");
+            }}
+          >
+            <input name="q" type="search" placeholder="Search…" aria-label="Search site" autoComplete="off" className="bg-transparent outline-none text-white text-xs w-28 py-1.5 placeholder-gray-500" />
+            <button type="submit" aria-label="Search" className="w-7 h-7 flex items-center justify-center rounded-full bg-neon/20 hover:bg-neon text-neon hover:text-black transition-colors">
+              <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round"><circle cx="11" cy="11" r="8" /><line x1="21" y1="21" x2="16.65" y2="16.65" /></svg>
+            </button>
+          </form>
+
           {/* CTA */}
           <Link
             href="/trending"
