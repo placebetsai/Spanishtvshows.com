@@ -322,7 +322,7 @@ export default async function ShopPage() {
               </span>
             </div>
             <p className="text-gray-400 max-w-3xl leading-7 mb-6">{section.blurb}</p>
-            <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-3">
+            <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3">
               {section.products.map((p) => <ProductCard key={p.id} p={p} />)}
             </div>
           </section>
