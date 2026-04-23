@@ -243,7 +243,7 @@ export default async function ShopPage() {
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }} />
       <div className="max-w-4xl">
         <p className="text-neon text-xs uppercase tracking-[0.3em] mb-4">Shop</p>
-        <h1 className="text-4xl md:text-6xl font-black tracking-tight text-white leading-none">
+        <h1 className="text-3xl md:text-5xl font-black tracking-tight text-white leading-none">
           Merch from the shows, Spanish style, and language-learning gear.
         </h1>
         <p className="mt-5 max-w-3xl text-gray-300 text-base md:text-lg leading-8">
