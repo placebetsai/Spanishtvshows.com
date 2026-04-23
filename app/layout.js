@@ -1,4 +1,5 @@
 import "./globals.css";
+import Script from "next/script";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import AdUnit from "../components/AdUnit";
@@ -76,12 +77,6 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <head>
-        <script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7215975042937417"
-          crossOrigin="anonymous"
-        />
-
         {/* JSON-LD Structured Data */}
         <script
           type="application/ld+json"
@@ -112,6 +107,12 @@ export default function RootLayout({ children }) {
           <AdUnit className="my-0" style={{ minHeight: "0" }} />
         </div>
         <div className="pb-16" />
+        {/* AdSense loader — lazyOnload = runs after page interactive, doesn't block FCP */}
+        <Script
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7215975042937417"
+          strategy="lazyOnload"
+          crossOrigin="anonymous"
+        />
       </body>
     </html>
   );
